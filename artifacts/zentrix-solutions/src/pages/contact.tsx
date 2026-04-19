@@ -1,115 +1,233 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from '@/context/TranslationContext';
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
+};
 
 const Contact = () => {
   const { t } = useTranslation();
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent",
-      description: "We will get back to you shortly.",
-    });
-    (e.target as HTMLFormElement).reset();
+    setIsSubmitting(true);
+    setTimeout(() => {
+      setIsSubmitting(false);
+      toast({
+        title: "Bericht verzonden",
+        description: "We nemen zo snel mogelijk contact met u op.",
+      });
+      (e.target as HTMLFormElement).reset();
+    }, 900);
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-background pt-20">
-      <section className="py-20 md:py-32 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-6xl font-bold text-white mb-6"
-            >
-              {t.contact.heroTitle}
-            </motion.h1>
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-              className="text-xl text-muted-foreground max-w-2xl mx-auto"
-            >
-              {t.contact.heroSubtitle}
-            </motion.p>
-          </div>
+    <div className="flex flex-col min-h-screen bg-[#0B0B0B] text-white overflow-x-hidden pt-[72px]">
 
-          <div className="grid md:grid-cols-5 gap-12">
-            {/* Form */}
-            <motion.div 
-              initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }}
-              className="md:col-span-3 bg-card/30 p-8 rounded-2xl border border-border/50"
+      {/* Hero */}
+      <section className="relative py-20 px-5 text-center overflow-hidden">
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-600/10 blur-[100px] rounded-full" />
+        </div>
+        <motion.div
+          initial="hidden" animate="visible" variants={fadeUp}
+          className="relative max-w-3xl mx-auto"
+        >
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-5">
+            {t.contact.heroTitle}
+          </h1>
+          <p className="text-gray-400 text-base sm:text-lg leading-relaxed max-w-xl mx-auto">
+            {t.contact.heroSubtitle}
+          </p>
+        </motion.div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-16 px-5 pb-32">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+
+            {/* LEFT — Info */}
+            <motion.div
+              initial={{ opacity: 0, x: -24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 0.1 }}
+              className="flex flex-col gap-8"
             >
-              <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div className="flex flex-col gap-2">
-                    <Label htmlFor="name" className="text-white">{t.contact.form.name}</Label>
-                    <Input id="name" required className="bg-background/50 border-border/50 focus-visible:ring-primary h-12" data-testid="input-name" />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <Label htmlFor="email" className="text-white">{t.contact.form.email}</Label>
-                    <Input id="email" type="email" required className="bg-background/50 border-border/50 focus-visible:ring-primary h-12" data-testid="input-email" />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-2">
-                  <Label htmlFor="phone" className="text-white">{t.contact.form.phone}</Label>
-                  <Input id="phone" type="tel" className="bg-background/50 border-border/50 focus-visible:ring-primary h-12" data-testid="input-phone" />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <Label htmlFor="message" className="text-white">{t.contact.form.message}</Label>
-                  <Textarea id="message" required className="bg-background/50 border-border/50 focus-visible:ring-primary min-h-[150px] resize-none" data-testid="input-message" />
-                </div>
-                <Button type="submit" size="lg" className="w-full sm:w-auto h-14 bg-primary hover:bg-primary/90 text-white rounded-xl text-lg mt-2" data-testid="btn-submit-contact">
-                  {t.contact.form.send}
-                </Button>
-              </form>
-            </motion.div>
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 leading-snug">
+                  Klaar om uw website te verbeteren?
+                </h2>
+                <p className="text-gray-400 text-base leading-relaxed">
+                  Wil u weten waar uw website klanten laat liggen? Vraag een gratis analyse aan of neem direct contact op. Wij reageren doorgaans binnen 24 uur.
+                </p>
+              </div>
 
-            {/* Info */}
-            <motion.div 
-              initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }}
-              className="md:col-span-2 flex flex-col gap-8"
-            >
-              <div className="bg-card/30 p-8 rounded-2xl border border-border/50 h-full flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-white mb-8">{t.contact.infoTitle}</h3>
-                
-                <div className="flex flex-col gap-8">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-primary/10 rounded-lg text-primary shrink-0">
-                      <MapPin className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-white text-lg">{t.contact.company}</p>
-                      <p className="text-muted-foreground">{t.contact.location}</p>
-                    </div>
+              {/* Contact details */}
+              <div className="flex flex-col gap-5">
+                <a
+                  href="https://maps.google.com/?q=Amsterdam,Netherlands"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group flex items-center gap-4 p-5 rounded-2xl bg-white/[0.03] border border-white/8 hover:border-blue-500/30 transition-colors duration-300"
+                  data-testid="contact-location"
+                >
+                  <div className="w-11 h-11 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0 group-hover:bg-blue-500/20 transition-colors duration-300">
+                    <MapPin className="w-5 h-5 text-blue-400" />
                   </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-primary/10 rounded-lg text-primary shrink-0">
-                      <Phone className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <p className="text-muted-foreground">{t.contact.phone}</p>
-                    </div>
+                  <div>
+                    <p className="text-xs text-gray-500 uppercase tracking-widest font-semibold mb-0.5">Locatie</p>
+                    <p className="text-white font-medium">{t.contact.location}</p>
                   </div>
+                </a>
 
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-primary/10 rounded-lg text-primary shrink-0">
-                      <Mail className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <p className="text-muted-foreground">{t.contact.email}</p>
-                    </div>
+                <a
+                  href="tel:+31683284995"
+                  className="group flex items-center gap-4 p-5 rounded-2xl bg-white/[0.03] border border-white/8 hover:border-blue-500/30 transition-colors duration-300"
+                  data-testid="contact-phone"
+                >
+                  <div className="w-11 h-11 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0 group-hover:bg-blue-500/20 transition-colors duration-300">
+                    <Phone className="w-5 h-5 text-blue-400" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 uppercase tracking-widest font-semibold mb-0.5">Telefoon</p>
+                    <p className="text-white font-medium">{t.contact.phone}</p>
+                  </div>
+                </a>
+
+                <a
+                  href="mailto:info@zentrixsolutions.nl"
+                  className="group flex items-center gap-4 p-5 rounded-2xl bg-white/[0.03] border border-white/8 hover:border-blue-500/30 transition-colors duration-300"
+                  data-testid="contact-email"
+                >
+                  <div className="w-11 h-11 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0 group-hover:bg-blue-500/20 transition-colors duration-300">
+                    <Mail className="w-5 h-5 text-blue-400" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 uppercase tracking-widest font-semibold mb-0.5">E-mail</p>
+                    <p className="text-white font-medium">{t.contact.email}</p>
+                  </div>
+                </a>
+
+                <div className="flex items-center gap-4 p-5 rounded-2xl bg-white/[0.03] border border-white/8">
+                  <div className="w-11 h-11 rounded-xl bg-green-500/10 flex items-center justify-center shrink-0">
+                    <Clock className="w-5 h-5 text-green-400" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 uppercase tracking-widest font-semibold mb-0.5">Reactietijd</p>
+                    <p className="text-white font-medium">Meestal binnen 24 uur</p>
                   </div>
                 </div>
               </div>
+
+              {/* WhatsApp quick action */}
+              <a
+                href="https://wa.me/31683284995?text=Hi,%20ik%20wil%20meer%20weten%20over%20een%20website%20of%20analyse"
+                target="_blank"
+                rel="noreferrer"
+                data-testid="btn-whatsapp-contact"
+                className="flex items-center justify-center gap-3 p-4 rounded-2xl bg-[#25D366]/10 border border-[#25D366]/25 hover:bg-[#25D366]/20 hover:border-[#25D366]/50 text-[#25D366] font-semibold transition-all duration-200"
+              >
+                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Direct via WhatsApp
+              </a>
             </motion.div>
+
+            {/* RIGHT — Form */}
+            <motion.div
+              initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 0.2 }}
+              className="rounded-2xl border border-white/8 bg-white/[0.03] p-7 sm:p-9"
+            >
+              <h3 className="text-xl font-bold text-white mb-7">Vraag een gratis analyse aan</h3>
+
+              <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="name" className="text-sm font-medium text-gray-300">
+                    {t.contact.form.name}
+                  </label>
+                  <input
+                    id="name"
+                    type="text"
+                    required
+                    placeholder={t.contact.form.namePlaceholder}
+                    data-testid="input-name"
+                    className="w-full h-12 px-4 rounded-xl bg-[#1a1a1a] border border-white/10 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-blue-500/60 focus:ring-1 focus:ring-blue-500/30 transition-all duration-200"
+                  />
+                </div>
+
+                <div className="grid sm:grid-cols-2 gap-5">
+                  <div className="flex flex-col gap-2">
+                    <label htmlFor="email" className="text-sm font-medium text-gray-300">
+                      {t.contact.form.email}
+                    </label>
+                    <input
+                      id="email"
+                      type="email"
+                      required
+                      placeholder={t.contact.form.emailPlaceholder}
+                      data-testid="input-email"
+                      className="w-full h-12 px-4 rounded-xl bg-[#1a1a1a] border border-white/10 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-blue-500/60 focus:ring-1 focus:ring-blue-500/30 transition-all duration-200"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <label htmlFor="phone" className="text-sm font-medium text-gray-300">
+                      {t.contact.form.phone}
+                    </label>
+                    <input
+                      id="phone"
+                      type="tel"
+                      placeholder={t.contact.form.phonePlaceholder}
+                      data-testid="input-phone"
+                      className="w-full h-12 px-4 rounded-xl bg-[#1a1a1a] border border-white/10 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-blue-500/60 focus:ring-1 focus:ring-blue-500/30 transition-all duration-200"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="message" className="text-sm font-medium text-gray-300">
+                    {t.contact.form.message}
+                  </label>
+                  <textarea
+                    id="message"
+                    required
+                    rows={5}
+                    placeholder={t.contact.form.messagePlaceholder}
+                    data-testid="input-message"
+                    className="w-full px-4 py-3 rounded-xl bg-[#1a1a1a] border border-white/10 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-blue-500/60 focus:ring-1 focus:ring-blue-500/30 transition-all duration-200 resize-none"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  data-testid="btn-submit-contact"
+                  className="w-full flex items-center justify-center gap-2 h-13 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold text-base transition-all duration-200 shadow-[0_0_20px_rgba(37,99,235,0.35)] hover:shadow-[0_0_32px_rgba(37,99,235,0.55)] mt-1"
+                >
+                  {isSubmitting ? (
+                    <span className="flex items-center gap-2">
+                      <svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/>
+                      </svg>
+                      Verzenden...
+                    </span>
+                  ) : (
+                    <>Vraag gratis analyse aan <ArrowRight className="w-4 h-4" /></>
+                  )}
+                </button>
+
+                <p className="text-center text-xs text-gray-600 mt-1">
+                  Geen spam. Gewoon een korte analyse en eerlijk advies.
+                </p>
+              </form>
+            </motion.div>
+
           </div>
         </div>
       </section>

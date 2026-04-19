@@ -1,0 +1,139 @@
+You are a senior UI/UX designer, frontend developer, and conversion strategist.
+
+Your task:
+Upgrade the Zentrix Solutions website by adding a HIGH-CONVERTING contact section and a professional WhatsApp integration, fully optimized for mobile, tablet (iPad), and desktop.
+
+The result must feel premium, clean, modern, and trustworthy — like a serious digital agency.
+
+---
+
+🎯 GOAL:
+Increase conversions (more messages, more leads, more contact).
+
+---
+
+1. CONTACT SECTION (VERY IMPORTANT)
+
+Create a premium contact section with a 2-column layout on desktop and stacked layout on mobile.
+
+LEFT SIDE:
+- Title:
+  "Klaar om jouw website te verbeteren?"
+- Text:
+  "Wil je weten waar jouw website klanten laat liggen? Vraag een gratis analyse aan of neem direct contact op."
+- Contact details:
+  📍 Amsterdam, Nederland  
+  📞 06-83284995 (clickable tel link)  
+  ✉️ info@zentrixsolutions.nl (clickable mail link)
+- Add small line:
+  "Reactie meestal binnen 24 uur"
+
+RIGHT SIDE:
+Create a clean modern form:
+- Naam input
+- E-mailadres input
+- Telefoonnummer input
+- Bericht textarea
+
+Button:
+"Vraag gratis analyse aan"
+
+Form styling:
+- Dark inputs (#1a1a1a background)
+- Light borders
+- Blue focus state
+- Rounded corners
+- Spacious padding
+
+Below form:
+Add small trust text:
+"Geen spam. Gewoon een korte analyse en eerlijk advies."
+
+---
+
+2. WHATSAPP BUTTON (FLOATING)
+
+Add a floating WhatsApp button:
+
+Position:
+- Bottom right
+- Always visible
+- Above content (z-index high)
+
+Style:
+- Green background
+- Rounded full
+- Subtle shadow
+- Smooth hover effect
+
+Text:
+"WhatsApp ons" (hidden on small screens, visible on desktop)
+
+Link:
+https://wa.me/31683284995?text=Hi,%20ik%20wil%20meer%20weten%20over%20een%20website%20of%20analyse
+
+Behavior:
+- Opens WhatsApp with pre-filled message
+- Must work on mobile and desktop
+
+---
+
+3. CONVERSION IMPROVEMENTS
+
+Ensure:
+- CTA buttons are large and clear
+- Mobile buttons are full-width
+- Proper spacing between elements (min 24px)
+- Sections feel clean and not crowded
+
+Primary CTA:
+"Vraag gratis website analyse"
+
+Secondary CTA:
+"Neem contact op"
+
+---
+
+4. MOBILE & TABLET OPTIMIZATION (CRITICAL)
+
+- Mobile-first layout
+- Contact section stacks vertically on small screens
+- Inputs are easy to tap
+- Buttons are thumb-friendly
+- No overflow or broken layout
+- Proper spacing on iPad (768px–1024px)
+
+---
+
+5. DESIGN STYLE
+
+- Keep dark premium design
+- Black background (#0B0B0B)
+- White text
+- Blue accent (#2563EB)
+- Minimal, clean, high-end
+- No clutter
+- No unnecessary animations
+
+---
+
+6. CLEAN CODE
+
+- Use Tailwind CSS
+- No inline messy styles
+- Reusable structure
+- Production-ready code
+- Everything must be functional
+
+---
+
+FINAL RESULT:
+The contact section must feel like a premium agency and make it EASY for users to:
+- Fill in the form
+- Call
+- Email
+- Send a WhatsApp message
+
+The WhatsApp button + contact section together must increase conversions significantly.
+
+END.

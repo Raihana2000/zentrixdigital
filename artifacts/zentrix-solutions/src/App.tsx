@@ -7,6 +7,7 @@ import NotFound from "@/pages/not-found";
 import { TranslationProvider } from "@/context/TranslationContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 // Pages
 import Home from "@/pages/home";
@@ -30,6 +31,7 @@ function Router() {
         </Switch>
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
