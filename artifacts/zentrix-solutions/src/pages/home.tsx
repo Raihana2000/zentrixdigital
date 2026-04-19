@@ -321,6 +321,33 @@ const Home = () => {
         </div>
       </section>
 
+      {/* ─── GEOGRAPHIC REACH ────────────────────────────────── */}
+      <section className="py-16 px-5 bg-[#0e0e0e] border-y border-white/5">
+        <div className="max-w-5xl mx-auto">
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
+            className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16"
+          >
+            <motion.div variants={fadeUp} className="flex-1 min-w-0">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 leading-snug">
+                {t.home.reachTitle}
+              </h2>
+              <p className="text-gray-400 text-base leading-relaxed max-w-lg">
+                {t.home.reachText}
+              </p>
+            </motion.div>
+            <motion.div variants={fadeUp} className="flex flex-row sm:flex-row gap-4 shrink-0 w-full md:w-auto justify-center md:justify-end">
+              {t.home.reachItems.map((item, i) => (
+                <div key={i} className="flex flex-col items-center text-center px-5 py-4 rounded-2xl bg-white/[0.03] border border-white/8 min-w-[110px]">
+                  <p className="text-white font-bold text-sm leading-tight mb-1">{item.label}</p>
+                  <p className="text-gray-600 text-xs leading-tight">{item.sub}</p>
+                </div>
+              ))}
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ─── FINAL CTA ───────────────────────────────────────── */}
       <section className="py-28 px-5 bg-[#0e0e0e] border-t border-white/5">
         <div className="max-w-4xl mx-auto">

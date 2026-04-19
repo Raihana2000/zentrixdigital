@@ -145,7 +145,7 @@ const Contact = () => {
 
               {/* WhatsApp quick action */}
               <a
-                href="https://wa.me/31683284995?text=Hi,%20ik%20wil%20meer%20weten%20over%20een%20website%20of%20analyse"
+                href="https://wa.me/31683284995?text=Goedendag,%20ik%20heb%20interesse%20in%20jullie%20diensten.%20Kunnen%20jullie%20mij%20verder%20helpen%3F"
                 target="_blank"
                 rel="noreferrer"
                 data-testid="btn-whatsapp-contact"

@@ -7,7 +7,7 @@ export const nl = {
   },
   home: {
     heroBadge: "Websites, applicaties en digitale groei",
-    heroTitle: "Wij bouwen websites en digitale oplossingen die bedrijven vooruithelpen",
+    heroTitle: "Professionele websites en digitale oplossingen voor bedrijven in Nederland en wereldwijd",
     heroSubtitle: "Van professionele websites tot maatwerk applicaties en doorlopende optimalisatie: Zentrix Solutions helpt bedrijven sterker online zichtbaar te worden, meer vertrouwen uit te stralen en beter te converteren.",
     primaryCta: "Vraag gratis website analyse",
     secondaryCta: "Bekijk onze diensten",
@@ -19,7 +19,7 @@ export const nl = {
       { title: "Zwakke mobiele ervaring", text: "Als uw website niet strak werkt op mobiel, verliest u direct vertrouwen en leads." },
       { title: "Verouderde uitstraling", text: "Een zwakke eerste indruk kost klanten nog voordat er contact ontstaat." }
     ],
-    servicesTitle: "Wat wij voor bedrijven bouwen",
+    servicesTitle: "Website laten maken & webdesign op maat",
     servicesIntro: "Wij ontwikkelen digitale oplossingen die niet alleen mooi ogen, maar ook duidelijker communiceren, beter presteren en meer resultaat opleveren.",
     services: {
       websites: {
@@ -68,6 +68,13 @@ export const nl = {
       { title: "Case study volgt binnenkort", text: "Een toekomstig voorbeeld van hoe een website of digitaal systeem is verbeterd." },
       { title: "Klantresultaten volgen", text: "Hier tonen we straks concrete verbeteringen in zichtbaarheid, vertrouwen of conversie." },
       { title: "Project in opbouw", text: "Nieuwe samenwerkingen en resultaten worden hier later overzichtelijk toegevoegd." }
+    ],
+    reachTitle: "Actief in Nederland en ver daarbuiten",
+    reachText: "Wij helpen bedrijven in heel Nederland en werken daarnaast samen met internationale klanten in Europa en daarbuiten.",
+    reachItems: [
+      { label: "Heel Nederland", sub: "Amsterdam tot Maastricht" },
+      { label: "Europa", sub: "Belgie, Duitsland, VK en meer" },
+      { label: "Internationaal", sub: "Wereldwijd beschikbaar" }
     ],
     ctaTitle: "Klaar om uw website of digitale systeem te verbeteren?",
     ctaText: "Of u nu een nieuwe website nodig heeft, een maatwerk applicatie wilt laten bouwen of uw huidige digitale omgeving wilt verbeteren: Zentrix Solutions denkt graag met u mee.",

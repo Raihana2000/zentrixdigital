@@ -7,7 +7,7 @@ export const en = {
   },
   home: {
     heroBadge: "Websites, applications and digital growth",
-    heroTitle: "We build websites and digital solutions that move businesses forward",
+    heroTitle: "Professional websites and digital solutions for businesses in the Netherlands and worldwide",
     heroSubtitle: "From professional websites to custom applications and ongoing optimization: Zentrix Solutions helps businesses become more visible online, build greater trust, and convert better.",
     primaryCta: "Request a free website analysis",
     secondaryCta: "View our services",
@@ -19,7 +19,7 @@ export const en = {
       { title: "Poor mobile experience", text: "If your site doesn't work well on mobile, you lose trust and leads instantly." },
       { title: "Outdated appearance", text: "A weak first impression costs you customers before contact is even made." }
     ],
-    servicesTitle: "What we build for businesses",
+    servicesTitle: "Web development & custom web design",
     servicesIntro: "We develop digital solutions that don't just look good — they communicate more clearly, perform better, and deliver more results.",
     services: {
       websites: {
@@ -68,6 +68,13 @@ export const en = {
       { title: "Case study coming soon", text: "A future example of how a website or digital system was improved." },
       { title: "Client results to follow", text: "We'll soon show concrete improvements in visibility, trust, and conversion." },
       { title: "Project in progress", text: "New collaborations and results will be added here as they develop." }
+    ],
+    reachTitle: "Active across the Netherlands and beyond",
+    reachText: "We help businesses throughout the Netherlands and work with international clients across Europe and beyond.",
+    reachItems: [
+      { label: "All of the Netherlands", sub: "Amsterdam to Maastricht" },
+      { label: "Europe", sub: "Belgium, Germany, UK and more" },
+      { label: "International", sub: "Available worldwide" }
     ],
     ctaTitle: "Ready to improve your website or digital system?",
     ctaText: "Whether you need a new website, a custom application, or improvements to your current digital setup — Zentrix Solutions is ready to help.",
