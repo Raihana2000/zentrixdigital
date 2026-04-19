@@ -20,7 +20,7 @@ const About = () => {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-background pt-20">
+    <div className="flex flex-col min-h-screen bg-background pt-24">
       {/* Hero Section */}
       <section className="py-24 md:py-32 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(37,99,235,0.15),transparent_50%)]" />

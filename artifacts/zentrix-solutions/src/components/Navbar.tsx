@@ -23,31 +23,29 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#0B0B0B]/85 backdrop-blur-lg border-b border-white/10 shadow-[0_1px_20px_rgba(0,0,0,0.4)]">
-      <div className="mx-auto px-6 lg:px-10 h-[80px] flex items-center justify-between max-w-7xl">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#0B0B0B] border-b border-white/10 shadow-[0_1px_20px_rgba(0,0,0,0.5)]">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 h-24 flex items-center justify-between">
 
-        {/* Brand — Left anchor */}
-        <Link href="/" className="flex items-center gap-4 group shrink-0" data-testid="nav-logo">
-          {/* Logo container — zooms in to crop the black padding in the PNG */}
-          <div className="relative h-14 w-14 md:h-16 md:w-16 overflow-hidden rounded-md shrink-0 transition-all duration-300 group-hover:drop-shadow-[0_0_16px_rgba(59,130,246,0.8)]">
-            <img
-              src={logoPath}
-              alt="Zentrix Solutions Logo"
-              className="absolute inset-0 w-full h-full object-cover scale-[1.45] object-center"
-            />
-          </div>
-          <div className="flex flex-col leading-tight shrink-0">
-            <span className="text-white font-bold text-2xl md:text-3xl tracking-tight transition-colors duration-200 group-hover:text-blue-400">
+        {/* ── Brand ── */}
+        <Link href="/" className="flex items-center gap-4 shrink-0 group" data-testid="nav-logo">
+          <img
+            src={logoPath}
+            alt="Zentrix Solutions"
+            className="h-16 w-16 md:h-20 md:w-20 object-contain shrink-0 transition-all duration-300 group-hover:drop-shadow-[0_0_16px_rgba(59,130,246,0.75)]"
+            style={{ maxHeight: 'none', maxWidth: 'none' }}
+          />
+          <div className="leading-tight">
+            <div className="text-white font-bold text-3xl md:text-4xl tracking-tight transition-colors duration-200 group-hover:text-blue-400">
               Zentrix
-            </span>
-            <span className="text-gray-400 text-sm md:text-base font-medium tracking-wide">
+            </div>
+            <div className="text-gray-300 text-base md:text-lg font-medium">
               Solutions
-            </span>
+            </div>
           </div>
         </Link>
 
-        {/* Desktop Nav — Center */}
-        <div className="hidden md:flex items-center gap-7 absolute left-1/2 -translate-x-1/2">
+        {/* ── Desktop nav — centered ── */}
+        <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -67,7 +65,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Right side — Lang toggle + CTA */}
+        {/* ── Right: Lang + CTA ── */}
         <div className="hidden md:flex items-center gap-3 shrink-0">
           <button
             onClick={toggleLang}
@@ -89,7 +87,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile right — Lang + Hamburger */}
+        {/* ── Mobile: Lang + Hamburger ── */}
         <div className="md:hidden flex items-center gap-2 shrink-0">
           <button
             onClick={toggleLang}
@@ -109,7 +107,7 @@ const Navbar = () => {
                 <Menu className="w-5 h-5" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-[#0B0B0B]/98 backdrop-blur-xl border-l border-white/10 pt-24 px-8">
+            <SheetContent side="right" className="bg-[#0B0B0B] border-l border-white/10 pt-28 px-8">
               <div className="flex flex-col gap-6">
                 {navLinks.map((link) => (
                   <Link
