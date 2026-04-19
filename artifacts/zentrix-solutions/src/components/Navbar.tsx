@@ -24,20 +24,22 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#0B0B0B]/85 backdrop-blur-lg border-b border-white/10 shadow-[0_1px_20px_rgba(0,0,0,0.4)]">
-      <div className="mx-auto px-6 lg:px-10 h-[72px] flex items-center justify-between max-w-7xl">
+      <div className="mx-auto px-6 lg:px-10 h-[80px] flex items-center justify-between max-w-7xl">
 
         {/* Brand — Left anchor */}
-        <Link href="/" className="flex items-center gap-3 group shrink-0" data-testid="nav-logo">
-          <img
-            src={logoPath}
-            alt="Zentrix Solutions Logo"
-            className="h-8 md:h-10 lg:h-12 w-auto object-contain transition-all duration-300 group-hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.7)]"
-          />
+        <Link href="/" className="flex items-center gap-3.5 group shrink-0" data-testid="nav-logo">
+          <div className="flex items-center justify-center overflow-visible">
+            <img
+              src={logoPath}
+              alt="Zentrix Solutions Logo"
+              className="h-12 md:h-14 lg:h-16 w-auto object-contain block transition-all duration-300 group-hover:drop-shadow-[0_0_16px_rgba(59,130,246,0.8)]"
+            />
+          </div>
           <div className="flex flex-col leading-tight">
-            <span className="text-white font-bold text-lg md:text-xl tracking-tight transition-colors duration-200 group-hover:text-blue-400">
+            <span className="text-white font-bold text-xl md:text-2xl tracking-tight transition-colors duration-200 group-hover:text-blue-400">
               Zentrix
             </span>
-            <span className="text-gray-400 text-xs md:text-sm font-medium tracking-wide">
+            <span className="text-gray-400 text-sm md:text-base font-medium tracking-wide">
               Solutions
             </span>
           </div>

@@ -1,0 +1,106 @@
+Fix the navbar logo on my Zentrix Solutions website properly.
+
+Problem:
+The logo in the top-left still looks too small, even after increasing the img height classes.
+This means the issue is likely caused by:
+1. the image file having too much empty space/margin around the logo
+2. the parent container being too small
+3. max-height / width constraints in surrounding elements
+
+Your task:
+Find the real cause in the code and fix it completely.
+
+==================================================
+1. NAVBAR BRAND AREA
+==================================================
+
+Inspect the full navbar brand block:
+- parent div
+- logo wrapper
+- img tag
+- any max-height, max-width, overflow-hidden, padding, or flex constraints
+
+Remove any classes or CSS that keep the logo visually small.
+
+The brand area should use something like:
+
+<div class="flex items-center gap-3 shrink-0">
+  <div class="flex items-center justify-center">
+    <img src="..." alt="Zentrix Solutions logo" class="h-12 md:h-14 w-auto object-contain block" />
+  </div>
+  <div class="flex flex-col leading-tight">
+    <span class="text-white font-semibold text-xl md:text-2xl">Zentrix</span>
+    <span class="text-gray-400 text-sm md:text-base">Solutions</span>
+  </div>
+</div>
+
+==================================================
+2. REMOVE SIZE LIMITS
+==================================================
+
+Check for and remove any of these issues:
+- max-h-*
+- max-w-*
+- h-8 / h-9 / h-10 still applied somewhere
+- overflow-hidden clipping the logo
+- parent wrapper with fixed width/height too small
+- items-center wrapper with too little vertical padding
+
+Make the navbar height large enough so the logo can breathe:
+- navbar min height should feel premium
+- use py-4 or similar
+
+==================================================
+3. IMAGE FILE ISSUE
+==================================================
+
+If the logo image file itself contains too much empty black space around the actual logo, then visually it will still look tiny.
+
+In that case:
+- crop the logo visually using CSS if possible
+- OR switch to a better cropped version of the logo if already available
+- OR reduce surrounding padding/background around the logo container
+
+If needed, place the logo on a transparent or tighter-fitting display area so the actual symbol appears larger.
+
+==================================================
+4. MAKE THE LOGO VISUALLY BIGGER
+==================================================
+
+The logo should FEEL clearly larger, not just technically have a bigger height class.
+
+Target result:
+- Desktop: clearly prominent, premium, and noticeable
+- Tablet: still strong
+- Mobile: still readable and not tiny
+
+Use:
+- h-12 md:h-14 lg:h-16 if needed
+- w-auto
+- object-contain
+- block
+
+==================================================
+5. BRAND TEXT ALIGNMENT
+==================================================
+
+Make sure:
+- "Zentrix" aligns nicely with the logo
+- "Solutions" stays visible under it
+- spacing between image and text is balanced
+- branding feels like a premium company, not a tiny icon with random text
+
+==================================================
+6. FINAL CHECK
+==================================================
+
+After fixing:
+- logo must be visibly larger in the navbar
+- brand name must read clearly as "Zentrix Solutions"
+- navbar must still look balanced
+- do not let the CTA button overpower the logo
+- do not break mobile layout
+
+IMPORTANT:
+Do not just change classes blindly.
+Actually inspect the parent containers and constraints, identify why the logo still appears small, and fix the real cause in the code.
