@@ -1,0 +1,64 @@
+You are a senior UI/UX designer and frontend developer.
+
+Your task:
+Update the Zentrix Solutions website by adding professional business availability hours in the correct places, with a clean and premium design that matches the existing dark futuristic agency style.
+
+IMPORTANT:
+The business hours must be clearly visible, trustworthy, and neatly integrated — not randomly placed or cluttered.
+
+BUSINESS HOURS TO ADD:
+- Monday to Thursday: 09:00 – 17:00
+- Friday: 09:00 – 12:00
+- Saturday: Closed
+- Sunday: Closed
+
+Use Dutch as the default language and make sure this section is also fully translatable with the existing NL/EN language toggle.
+
+DUTCH TEXT:
+Title:
+"Bereikbaarheid"
+
+Lines:
+"Maandag t/m donderdag: 09:00 – 17:00"
+"Vrijdag: 09:00 – 12:00"
+"Zaterdag: Gesloten"
+"Zondag: Gesloten"
+
+ENGLISH TEXT:
+Title:
+"Availability"
+
+Lines:
+"Monday to Thursday: 09:00 – 17:00"
+"Friday: 09:00 – 12:00"
+"Saturday: Closed"
+"Sunday: Closed"
+
+PLACEMENT RULES:
+1. Add the business hours neatly inside the contact section, near the phone number, email address, and location.
+2. Also include the availability hours in the footer contact/company info area, but in a smaller and more subtle way than in the main contact section.
+3. Do NOT place the opening hours in the hero section.
+4. Do NOT make the opening hours overpower the CTA buttons.
+
+DESIGN RULES:
+- Keep the existing premium dark style
+- Use elegant spacing and alignment
+- Show the hours in a clean vertical block
+- Use smaller supporting text than the main section heading
+- Make it look calm, professional, and easy to scan
+- If suitable, add a small clock icon next to the availability heading
+- Keep the contact section balanced on desktop, mobile, and iPad
+
+RESPONSIVENESS:
+- On desktop: align availability neatly within the left-side contact info block
+- On mobile: stack it naturally under phone/email/location without breaking spacing
+- On iPad: maintain clear spacing and hierarchy
+- No overflow or crowded layout
+
+TRANSLATION REQUIREMENT:
+- Connect the availability title and all lines to the existing NL/EN translation system
+- Do not hardcode only one language
+- Make sure the language toggle updates these business hours too
+
+FINAL RESULT:
+The opening hours must feel like a natural and professional part of the contact area and footer, helping users understand when Zentrix Solutions is reachable.

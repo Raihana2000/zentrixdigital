@@ -140,7 +140,16 @@ export const en = {
     location: "Amsterdam, Netherlands",
     phone: "06-83284995",
     email: "info@zentrixsolutions.nl",
-    infoNote: "We aim to communicate clearly, respond professionally, and keep the process transparent from the start."
+    infoNote: "We aim to communicate clearly, respond professionally, and keep the process transparent from the start.",
+    hours: {
+      title: "Availability",
+      lines: [
+        "Monday to Thursday: 09:00 – 17:00",
+        "Friday: 09:00 – 12:00",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ]
+    }
   },
   footer: {
     tagline: "Professional websites, custom applications, and transparent digital support for businesses that want to grow stronger online.",

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Clock } from 'lucide-react';
 import { Link } from 'wouter';
 import { useTranslation } from '@/context/TranslationContext';
 import logoPath from "@assets/ChatGPT_Image_19_apr_2026,_10_01_14_1776586282902.png";
@@ -50,6 +51,22 @@ const Footer = () => {
                 <a href="mailto:info@zentrixsolutions.nl" className="hover:text-primary transition-colors">info@zentrixsolutions.nl</a>
               </p>
             </address>
+
+            <div className="pt-2 border-t border-white/6 mt-1">
+              <div className="flex items-center gap-2 mb-2">
+                <Clock className="w-3.5 h-3.5 text-blue-400 shrink-0" />
+                <p className="text-xs text-white/50 uppercase tracking-widest font-semibold">
+                  {t.contact.hours.title}
+                </p>
+              </div>
+              <ul className="flex flex-col gap-1.5">
+                {t.contact.hours.lines.map((line, i) => (
+                  <li key={i} className="text-xs text-muted-foreground leading-snug">
+                    {line}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
