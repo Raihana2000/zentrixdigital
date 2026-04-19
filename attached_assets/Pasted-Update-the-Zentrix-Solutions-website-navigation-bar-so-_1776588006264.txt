@@ -1,0 +1,62 @@
+Update the Zentrix Solutions website navigation bar so the logo is larger, cleaner, and clearly visible on desktop, mobile, and iPad.
+
+GOAL:
+The logo must look professional, sharp, and well-balanced across all screen sizes. It should not appear tiny, blurry, cramped, or misaligned. The navbar must feel premium and neat.
+
+REQUIREMENTS:
+
+1. LOGO SIZE
+- Increase the logo size in the navbar so it becomes a strong visible brand element
+- Desktop logo height: around 48px to 56px
+- iPad/tablet logo height: around 42px to 48px
+- Mobile logo height: around 36px to 42px
+- Keep proportions correct so the logo does not stretch or distort
+
+2. SHARPNESS / VISIBILITY
+- Make sure the logo image stays crisp and clear
+- Use object-contain for the image
+- Do not crop the logo
+- Give the logo enough breathing room so it does not feel squeezed
+- If needed, use a slightly larger container around the logo so it displays neatly
+
+3. NAVBAR BRAND AREA
+- Place the logo on the left with the brand text “Zentrix” next to it
+- Brand text should be bold, clean, and slightly larger than the navigation links
+- Keep spacing between logo and brand text balanced and elegant
+- Make the brand section feel like the visual anchor of the navbar
+
+4. RESPONSIVE LAYOUT
+- On desktop: logo + brand text clearly visible and well spaced
+- On iPad/tablet: keep logo large enough and prevent crowding with nav items
+- On mobile: logo must remain clearly visible without becoming too small
+- Ensure the mobile menu/hamburger does not overlap or visually compete with the logo
+- Keep the navbar height balanced on all devices
+
+5. CLEAN SPACING
+- Add proper vertical padding in the navbar
+- Keep logo, text, navigation links, language toggle, and CTA button aligned vertically
+- Make sure the navbar looks neat and premium, not cramped
+
+6. MOBILE / TABLET BEHAVIOR
+- Keep the brand/logo visible at all times
+- If needed, slightly reduce the CTA button width on smaller screens before shrinking the logo
+- Maintain consistent spacing on iPhone and iPad layouts
+- Test for common widths:
+  - 390px mobile
+  - 768px iPad
+  - 1024px tablet landscape
+  - 1440px desktop
+
+7. STYLING
+- Use Tailwind CSS classes only
+- No messy inline styles
+- Keep the navbar elegant, premium, dark, and modern
+- Optional: add a very subtle hover effect to the logo or brand text, but keep it minimal
+
+8. IMPORTANT QUALITY CHECK
+- The logo must feel professionally placed, not like a tiny icon
+- The navbar must look polished on desktop, mobile, and iPad
+- The layout must remain balanced and clean
+- Do not let the logo become blurry, stretched, or too small on smaller screens
+
+If needed, adjust the navbar container, spacing, and CTA button sizing so the logo can stay prominent without breaking the layout.

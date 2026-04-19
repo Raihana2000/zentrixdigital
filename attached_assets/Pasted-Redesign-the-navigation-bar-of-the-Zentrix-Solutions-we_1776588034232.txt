@@ -1,0 +1,135 @@
+Redesign the navigation bar of the Zentrix Solutions website to look more premium, clean, and high-end, similar to modern SaaS companies (Stripe, Vanta).
+
+GOAL:
+The navbar must feel calm, balanced, and professional. The logo should stand out as the main brand element, while the rest of the navigation supports it — not competes with it.
+
+---
+
+1. LAYOUT & HIERARCHY
+
+- Left side:
+  Logo + brand name "Zentrix" (main visual focus)
+
+- Center:
+  Navigation links:
+  Home / Over ons / Diensten / Contact
+
+- Right side:
+  Language toggle (NL / EN)
+  CTA button (subtle, not overpowering)
+
+Make sure the layout is symmetrical and balanced.
+
+---
+
+2. LOGO PRIORITY
+
+- Keep the logo larger than other elements
+- Ensure it is the strongest visual anchor
+- Add enough spacing around it so it feels premium
+
+---
+
+3. NAVIGATION LINKS (IMPORTANT)
+
+- Reduce visual weight of navigation links
+- Use softer white (not pure white, slightly muted like text-gray-300)
+- Font size slightly smaller than brand text
+- Add smooth hover effect:
+  → text becomes brighter or slightly blue
+
+- Add subtle underline or glow on hover (very minimal)
+
+---
+
+4. CTA BUTTON (FIX THIS — VERY IMPORTANT)
+
+Current issue: CTA is too dominant
+
+Update it:
+
+- Reduce size slightly (padding smaller)
+- Use softer blue (not too bright)
+- Add subtle border or glow instead of heavy fill
+- Make it feel premium, not aggressive
+
+Alternative:
+- Use outline button style:
+  border-blue-500 + hover fill
+
+Text:
+"Neem contact op"
+
+---
+
+5. LANGUAGE TOGGLE (NL / EN)
+
+- Make it minimal and clean
+- Use small text or pill style
+- Highlight active language subtly (blue or underline)
+- Do not let it visually compete with CTA
+
+---
+
+6. NAVBAR BACKGROUND
+
+- Use dark background (#0B0B0B or slightly transparent)
+- Add subtle blur effect (backdrop-blur)
+- Add thin bottom border (border-white/10)
+- Optional: slight shadow for depth
+
+---
+
+7. SPACING & PADDING
+
+- Increase horizontal padding (px-6 to px-10 desktop)
+- Increase vertical padding slightly (py-3 to py-4)
+- Ensure equal spacing between elements
+
+---
+
+8. RESPONSIVENESS (VERY IMPORTANT)
+
+DESKTOP:
+- Clean horizontal layout
+- Good spacing between logo, links, CTA
+
+TABLET (iPad):
+- Reduce spacing slightly but keep balance
+- Ensure logo stays prominent
+
+MOBILE:
+- Show logo clearly on left
+- Hamburger menu on right
+- Keep CTA minimal or inside menu if needed
+- Do NOT shrink logo too much
+
+---
+
+9. INTERACTIONS
+
+- Smooth transitions (duration-200 / ease-in-out)
+- Hover effects must be subtle and premium
+- No flashy animations
+
+---
+
+10. FINAL FEEL
+
+The navbar should feel:
+- Calm
+- Premium
+- Controlled
+- High-end tech company
+
+NOT:
+- crowded
+- aggressive
+- cheap
+- oversized
+
+---
+
+IMPORTANT:
+The logo is the hero of the navbar.
+Everything else must support it, not compete with it.
