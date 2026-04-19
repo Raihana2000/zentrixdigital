@@ -1,0 +1,107 @@
+Fix the navbar branding for my Zentrix website.
+
+Problem:
+- The logo is still too small
+- The brand name "Zentrix Solutions" is not clearly visible
+- The navbar does not feel like a strong brand anchor
+
+Goal:
+Make the logo and brand name dominant, premium, and clearly visible.
+
+==================================================
+1. LOGO SIZE FIX
+==================================================
+
+Find the logo <img> inside the navbar and update it:
+
+- Remove small sizing like h-6, h-8, or h-10
+- Replace with:
+
+Desktop:
+h-12 or h-14
+
+Tablet:
+h-10
+
+Mobile:
+h-8
+
+Use Tailwind responsive classes:
+
+class="h-8 md:h-10 lg:h-12 w-auto"
+
+Make sure:
+- The logo keeps correct proportions
+- It does NOT stretch
+- It stays sharp
+
+==================================================
+2. BRAND NAME FIX (ZENTRIX SOLUTIONS)
+==================================================
+
+Right next to the logo, ensure BOTH are visible:
+
+Zentrix Solutions
+
+Fix it like this:
+
+- "Zentrix" = bold, larger, primary text
+- "Solutions" = smaller, lighter, secondary text
+
+Example structure:
+
+<div class="flex items-center gap-3">
+  <img src="/logo.png" class="h-8 md:h-10 lg:h-12 w-auto" />
+  <div class="flex flex-col leading-tight">
+    <span class="text-white font-semibold text-lg md:text-xl">Zentrix</span>
+    <span class="text-gray-400 text-xs md:text-sm">Solutions</span>
+  </div>
+</div>
+
+==================================================
+3. NAVBAR BALANCE FIX
+==================================================
+
+Ensure:
+- Logo + name are LEFT aligned
+- Menu is centered or slightly right
+- CTA button stays on the right
+
+Add spacing:
+
+- gap-3 between logo and text
+- padding left/right navbar: px-6 md:px-10
+
+==================================================
+4. VISUAL PRIORITY RULE
+==================================================
+
+Make sure:
+- Logo + brand name stand out MORE than menu links
+- Menu links slightly dimmer (text-gray-300)
+- Hover = text-white
+
+==================================================
+5. MOBILE FIX
+==================================================
+
+On mobile:
+- Keep logo visible
+- Keep "Zentrix" visible
+- "Solutions" may stay but smaller
+- Do NOT let it wrap weirdly
+
+==================================================
+FINAL RESULT:
+==================================================
+
+Navbar must feel:
+- Premium
+- Clear
+- Strong branding
+- Instantly recognizable
+
+The user must immediately see:
+Zentrix Solutions
+
+Not just a small logo.

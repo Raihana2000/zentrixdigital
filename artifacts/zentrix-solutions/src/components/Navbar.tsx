@@ -31,11 +31,16 @@ const Navbar = () => {
           <img
             src={logoPath}
             alt="Zentrix Solutions Logo"
-            className="h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 object-contain transition-all duration-300 group-hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.7)]"
+            className="h-8 md:h-10 lg:h-12 w-auto object-contain transition-all duration-300 group-hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.7)]"
           />
-          <span className="text-xl md:text-2xl font-bold tracking-tight text-white transition-colors duration-200 group-hover:text-blue-400">
-            Zentrix
-          </span>
+          <div className="flex flex-col leading-tight">
+            <span className="text-white font-bold text-lg md:text-xl tracking-tight transition-colors duration-200 group-hover:text-blue-400">
+              Zentrix
+            </span>
+            <span className="text-gray-400 text-xs md:text-sm font-medium tracking-wide">
+              Solutions
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Nav — Center */}
