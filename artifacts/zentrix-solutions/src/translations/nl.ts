@@ -7,17 +7,18 @@ export const nl = {
   },
   home: {
     heroBadge: "Websites, applicaties en digitale groei",
-    heroTitle: "Professionele websites en digitale oplossingen voor bedrijven in Nederland en wereldwijd",
-    heroSubtitle: "Van professionele websites tot maatwerk applicaties en doorlopende optimalisatie: Zentrix Solutions helpt bedrijven sterker online zichtbaar te worden, meer vertrouwen uit te stralen en beter te converteren.",
-    primaryCta: "Vraag gratis website analyse",
-    secondaryCta: "Bekijk onze diensten",
+    heroTitle: "Meer klanten via een website die wél converteert",
+    heroSubtitle: "Wij bouwen websites en applicaties die vertrouwen opbouwen, beter zichtbaar zijn in Google en bezoekers omzetten in klanten.",
+    primaryCta: "Ontvang gratis analyse",
+    secondaryCta: "Bekijk voorbeelden",
+    trustSignals: ["Binnen korte tijd online", "100% maatwerk", "Gericht op conversie"],
     problemTitle: "Waarom veel websites klanten mislopen",
     problemIntro: "Een website kan er netjes uitzien en toch omzet kosten. Veel bedrijven verliezen online kansen doordat hun website geen vertrouwen opbouwt, onduidelijk is of slecht werkt op mobiel.",
     problems: [
-      { title: "Onduidelijke boodschap", text: "Bezoekers snappen niet direct wat u doet en klikken weer weg." },
-      { title: "Geen sterke call-to-action", text: "Zonder duidelijke volgende stap neemt bijna niemand contact op." },
-      { title: "Zwakke mobiele ervaring", text: "Als uw website niet strak werkt op mobiel, verliest u direct vertrouwen en leads." },
-      { title: "Verouderde uitstraling", text: "Een zwakke eerste indruk kost klanten nog voordat er contact ontstaat." }
+      { title: "Onduidelijke boodschap", text: "Bezoekers snappen niet wat u doet en vertrekken binnen enkele seconden." },
+      { title: "Geen sterke call-to-action", text: "Zonder duidelijke volgende stap nemen bezoekers geen contact op." },
+      { title: "Zwakke mobiele ervaring", text: "Als uw website niet goed werkt op mobiel, verliest u direct vertrouwen en leads." },
+      { title: "Verouderde uitstraling", text: "Een zwakke eerste indruk kost klanten nog vóór het eerste gesprek." }
     ],
     servicesTitle: "Website laten maken & webdesign op maat",
     servicesIntro: "Wij ontwikkelen digitale oplossingen die niet alleen mooi ogen, maar ook duidelijker communiceren, beter presteren en meer resultaat opleveren.",
@@ -42,10 +43,10 @@ export const nl = {
     whoWeHelpTitle: "Voor wie wij werken",
     whoWeHelpIntro: "Zentrix Solutions helpt bedrijven die online sterker zichtbaar willen zijn en hun digitale uitstraling willen verbeteren.",
     whoWeHelp: [
-      { title: "Lokale bedrijven", text: "Voor salons, garages, winkels en andere lokale ondernemingen die professioneler online zichtbaar willen zijn." },
-      { title: "Dienstverleners", text: "Voor bedrijven die online vertrouwen moeten uitstralen om nieuwe klanten aan te trekken." },
-      { title: "Startups", text: "Voor ambitieuze ondernemers die een sterke digitale basis willen neerzetten." },
-      { title: "Groeiende merken", text: "Voor bedrijven die hun website, systemen en klantbeleving naar een hoger niveau willen tillen." }
+      { title: "Lokale bedrijven", text: "Voor salons, garages en winkels die meer klanten willen uit hun regio." },
+      { title: "Dienstverleners", text: "Voor bedrijven die online vertrouwen moeten uitstralen om klanten te winnen." },
+      { title: "Startups", text: "Voor ondernemers die serieus willen groeien met een sterke digitale basis." },
+      { title: "Groeiende merken", text: "Voor bedrijven die willen opschalen en hun online impact willen vergroten." }
     ],
     whyZentrixTitle: "Waarom bedrijven voor Zentrix kiezen",
     whyZentrixIntro: "Wij combineren design, structuur en functionaliteit tot digitale oplossingen die professioneel aanvoelen en klaar zijn om door te groeien.",

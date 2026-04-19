@@ -66,7 +66,7 @@ const Home = () => {
             <Link href="/contact">
               <button
                 data-testid="hero-btn-primary"
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-semibold text-base transition-all duration-200 shadow-[0_0_24px_rgba(37,99,235,0.45)] hover:shadow-[0_0_36px_rgba(37,99,235,0.65)]"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-semibold text-base transition-all duration-200 shadow-[0_0_24px_rgba(37,99,235,0.45)] hover:shadow-[0_0_36px_rgba(37,99,235,0.65)]"
               >
                 {t.home.primaryCta} <ArrowRight className="w-4 h-4" />
               </button>
@@ -74,11 +74,25 @@ const Home = () => {
             <Link href="/services">
               <button
                 data-testid="hero-btn-secondary"
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-7 py-4 rounded-full border border-white/15 text-gray-300 hover:text-white hover:border-white/30 font-medium text-base transition-all duration-200 hover:bg-white/5"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-white/15 text-gray-300 hover:text-white hover:border-white/30 font-medium text-base transition-all duration-200 hover:bg-white/5"
               >
                 {t.home.secondaryCta}
               </button>
             </Link>
+          </motion.div>
+
+          {/* Trust signals */}
+          <motion.div variants={fadeUp} className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mt-2">
+            {t.home.trustSignals.map((signal, i) => (
+              <span key={i} className="flex items-center gap-2 text-sm text-gray-500">
+                <span className="w-4 h-4 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0">
+                  <svg className="w-2.5 h-2.5 text-blue-400" viewBox="0 0 12 12" fill="none">
+                    <path d="M2 6l3 3 5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
+                {signal}
+              </span>
+            ))}
           </motion.div>
         </motion.div>
       </section>

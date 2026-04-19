@@ -7,17 +7,18 @@ export const en = {
   },
   home: {
     heroBadge: "Websites, applications and digital growth",
-    heroTitle: "Professional websites and digital solutions for businesses in the Netherlands and worldwide",
-    heroSubtitle: "From professional websites to custom applications and ongoing optimization: Zentrix Solutions helps businesses become more visible online, build greater trust, and convert better.",
-    primaryCta: "Request a free website analysis",
-    secondaryCta: "View our services",
+    heroTitle: "More customers through a website that actually converts",
+    heroSubtitle: "We build websites and applications that build trust, rank better on Google, and turn visitors into customers.",
+    primaryCta: "Receive free analysis",
+    secondaryCta: "View examples",
+    trustSignals: ["Live within a short timeframe", "100% custom-built", "Built to convert"],
     problemTitle: "Why many websites cost businesses customers",
     problemIntro: "A website can look clean and still cost you revenue. Many businesses lose online opportunities because their website fails to build trust, lacks clarity, or performs poorly on mobile.",
     problems: [
-      { title: "Unclear message", text: "Visitors don't immediately understand what you do — and leave." },
-      { title: "No strong call-to-action", text: "Without a clear next step, almost nobody reaches out." },
+      { title: "Unclear message", text: "Visitors don't understand what you do and leave within seconds." },
+      { title: "No strong call-to-action", text: "Without a clear next step, visitors don't reach out." },
       { title: "Poor mobile experience", text: "If your site doesn't work well on mobile, you lose trust and leads instantly." },
-      { title: "Outdated appearance", text: "A weak first impression costs you customers before contact is even made." }
+      { title: "Outdated appearance", text: "A weak first impression costs you customers before the first conversation." }
     ],
     servicesTitle: "Web development & custom web design",
     servicesIntro: "We develop digital solutions that don't just look good — they communicate more clearly, perform better, and deliver more results.",
@@ -42,10 +43,10 @@ export const en = {
     whoWeHelpTitle: "Who we work with",
     whoWeHelpIntro: "Zentrix Solutions helps businesses that want to become more visible online and strengthen their digital presence.",
     whoWeHelp: [
-      { title: "Local businesses", text: "For salons, garages, shops, and other local companies that want a more professional online presence." },
-      { title: "Service providers", text: "For businesses that need to build trust online in order to attract new clients." },
-      { title: "Startups", text: "For ambitious entrepreneurs who want to establish a strong digital foundation from day one." },
-      { title: "Growing brands", text: "For businesses ready to elevate their website, systems, and customer experience." }
+      { title: "Local businesses", text: "For salons, garages, and shops that want more customers from their region." },
+      { title: "Service providers", text: "For businesses that need to build trust online in order to win clients." },
+      { title: "Startups", text: "For entrepreneurs who want to grow seriously with a strong digital foundation." },
+      { title: "Growing brands", text: "For businesses looking to scale and increase their online impact." }
     ],
     whyZentrixTitle: "Why businesses choose Zentrix",
     whyZentrixIntro: "We combine design, structure, and functionality into digital solutions that feel professional and are built to grow.",
