@@ -1,0 +1,179 @@
+Build a premium, high-converting, futuristic MULTI-PAGE website for a digital agency called "Zentrix Solutions".
+
+GOAL:
+The website must position Zentrix Solutions as a professional, trustworthy, and high-end agency that builds websites, develops custom applications, and provides maintenance and optimization. It must convert visitors into clients.
+
+The design should feel like a modern SaaS/tech company (Stripe / Vanta style).
+
+---
+
+DESIGN STYLE:
+- Dark futuristic design
+- Background: #0B0B0B
+- Text: #FFFFFF
+- Primary color: #2563EB (blue)
+- Accent: #3B82F6 (glow effect)
+- Subtle gradients and glow
+- Clean, minimal, premium
+- Smooth animations and hover effects
+
+---
+
+WEBSITE STRUCTURE (MULTI-PAGE):
+
+Create the following pages:
+
+1. HOME PAGE (index.html)
+2. ABOUT PAGE (about.html)
+3. SERVICES PAGE (services.html)
+4. CONTACT PAGE (contact.html)
+
+---
+
+1. HOME PAGE
+
+Sections:
+
+- HERO
+  Headline: "We Build Digital Systems That Drive Growth"
+  Subheadline: "Websites, applications, and scalable solutions designed to attract customers and grow your business."
+  CTA buttons:
+    - Get a Free Website Check
+    - Start Your Project
+
+- SERVICES PREVIEW (clickable tiles)
+  Show 4 tiles:
+    - Websites
+    - Applications
+    - Optimization
+    - Growth
+  Each tile must link to services.html
+
+- WHO WE HELP
+  Small businesses, local shops, startups, growing companies
+
+- WHY ZENTRIX
+  Bullet points:
+    - Transparent communication
+    - No hidden costs
+    - Fast delivery
+    - Results-driven
+
+- REVIEWS SECTION
+  Placeholder cards (3–4)
+  Text: "More reviews coming soon"
+
+- FINAL CTA
+  "Ready to Grow Your Business?"
+  Button → Contact page
+
+---
+
+2. ABOUT PAGE (about.html)
+
+Sections:
+
+- INTRO
+  Explain who Zentrix Solutions is:
+  A modern digital agency focused on websites, applications, and growth
+
+- MISSION
+  "Helping businesses grow through powerful digital systems"
+
+- CORE VALUES
+  - Transparency
+  - Innovation
+  - Performance
+  - Reliability
+
+- WHAT MAKES US DIFFERENT
+  Focus on results, clarity, no bullshit approach, real business impact
+
+---
+
+3. SERVICES PAGE (services.html)
+
+Detailed services:
+
+- Website Development
+  Modern, fast, SEO-friendly, conversion-focused
+
+- Application Development
+  Custom tools, automation, scalable systems
+
+- Maintenance & Optimization
+  Updates, speed improvements, security
+
+- Growth Support
+  Strategy, conversion improvements, scaling
+
+Each service must have:
+- Title
+- Description
+- Benefits
+- Visual/icon
+
+---
+
+4. CONTACT PAGE (contact.html)
+
+- Contact form:
+  Name
+  Email
+  Message
+
+- Phone:
+  06-83284995
+
+- Location:
+  Amsterdam, Netherlands
+
+- CTA:
+  "Get Your Free Website Check"
+
+---
+
+GLOBAL ELEMENTS (ALL PAGES):
+
+NAVIGATION BAR:
+- Logo: Zentrix Solutions
+- Menu:
+  Home
+  About
+  Services
+  Contact
+- Sticky/fixed navbar
+
+FOOTER:
+- Zentrix Solutions
+- Amsterdam, Netherlands
+- Phone: 06-83284995
+- Email placeholder
+- Links:
+  Home / About / Services / Contact
+
+---
+
+FUNCTIONAL REQUIREMENTS:
+
+- Fully responsive
+- Smooth scrolling
+- Clean transitions
+- Fast loading
+- Tailwind CSS preferred
+- Production-ready code (no fake placeholders)
+
+---
+
+EXTRA:
+
+- Add subtle animations (hover glow, card lift)
+- Use modern icons
+- Keep everything minimal and premium
+- Make it feel like a €1000+ agency
+
+---
+
+IMPORTANT:
+This website must not look like a beginner template.
+It must look like a serious digital agency that clients trust immediately.

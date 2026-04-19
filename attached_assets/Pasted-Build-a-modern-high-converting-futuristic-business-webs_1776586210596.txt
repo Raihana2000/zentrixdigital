@@ -1,0 +1,101 @@
+Build a modern, high-converting, futuristic business website for a digital agency called "Zentrix Solutions".
+
+GOAL:
+The website must look premium, trustworthy, and designed to convert visitors into clients. It should clearly communicate that Zentrix Solutions builds websites, develops custom applications, and provides ongoing maintenance and support. The tone must be confident, professional, and transparent.
+
+DESIGN STYLE:
+- Dark SaaS style (similar to Stripe / Vanta / modern AI startups)
+- Background: deep black / dark navy (#0B0B0B)
+- Text: white with strong contrast
+- Primary color: electric blue (#2563EB)
+- Accent color: lighter blue glow (#3B82F6)
+- Subtle gradients and glow effects for a futuristic feel
+- Clean, minimal, grid-based layout
+- Smooth animations (hover effects, fade-in, subtle motion)
+
+STRUCTURE:
+
+1. HERO SECTION:
+- Strong headline:
+  "We Build Digital Systems That Drive Growth"
+- Subheadline:
+  "Websites, applications, and scalable solutions designed to attract customers and grow your business."
+- CTA buttons:
+  - "Get a Free Website Check"
+  - "Start Your Project"
+- Include a modern abstract tech visual or gradient glow background
+
+2. SERVICES SECTION (CLICKABLE TILES):
+Create 3–4 clickable tiles/cards with hover animations:
+
+- Website Development
+  → "Modern, fast, conversion-focused websites that turn visitors into customers"
+
+- Application Development
+  → "Custom-built applications tailored to your business needs and automation"
+
+- Maintenance & Optimization
+  → "We continuously improve, secure, and optimize your digital systems"
+
+- Growth & Strategy (optional)
+  → "We don’t just build — we help you scale and convert"
+
+Each tile must:
+- Have an icon
+- Be clickable (can link to placeholder pages)
+- Have hover effects (glow / lift)
+
+3. WHY ZENTRIX (TRUST & TRANSPARENCY):
+Section explaining:
+- Transparent communication
+- No hidden costs
+- Fast delivery
+- Focus on real results (clients & growth)
+
+Use bullet points + short strong statements.
+
+4. PROCESS SECTION:
+Show 4 steps:
+1. Analysis
+2. Strategy
+3. Development
+4. Launch & Optimization
+
+Make it visual with icons or timeline style.
+
+5. REVIEWS SECTION (IMPORTANT):
+- Title: "What Our Clients Say"
+- Create a clean layout with 3–4 review placeholders
+- Include name, company, and stars
+- Add note: "More reviews coming soon"
+- Must be easy to expand later
+
+6. CALL TO ACTION SECTION:
+- Strong closing:
+  "Ready to Grow Your Business?"
+- Button: "Contact Us Now"
+
+7. FOOTER:
+Must include:
+- Company name: Zentrix Solutions
+- Location: Amsterdam, Netherlands
+- Phone number: 06-83284995
+- Email placeholder
+- Links: Home / Services / Contact
+- Clean, minimal layout
+
+FUNCTIONAL REQUIREMENTS:
+- Fully responsive (mobile, tablet, desktop)
+- Smooth scrolling
+- Navigation menu fixed at top
+- Buttons should scroll to sections or open contact
+- Use modern fonts (Inter or similar)
+- Fast loading
+
+EXTRA:
+- Use clean, production-ready HTML, CSS (Tailwind preferred), and minimal JavaScript
+- No placeholder nonsense — everything should look real and usable
+- The design must feel like a high-end tech company, not a template
+
+IMPORTANT:
+This website should look like a premium agency that charges €1000+ per project.

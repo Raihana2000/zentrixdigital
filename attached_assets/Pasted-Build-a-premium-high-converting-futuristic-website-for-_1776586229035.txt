@@ -1,0 +1,175 @@
+Build a premium, high-converting, futuristic website for a digital agency called "Zentrix Solutions".
+
+GOAL:
+The website must position Zentrix Solutions as a professional, trustworthy, and results-driven company that builds websites, develops custom applications, and provides ongoing maintenance and optimization. It should clearly communicate transparency, quality, and business growth.
+
+The design must feel like a high-end SaaS/tech company (similar to Stripe, Vanta, modern AI companies).
+
+---
+
+DESIGN STYLE:
+- Dark futuristic SaaS design
+- Background: deep black (#0B0B0B)
+- Text: white (#FFFFFF)
+- Primary color: electric blue (#2563EB)
+- Accent: soft glowing blue (#3B82F6)
+- Subtle gradients and glow effects
+- Clean grid layout
+- Smooth animations (hover, fade-in, transitions)
+- Premium and minimal (no clutter)
+
+---
+
+STRUCTURE:
+
+1. HERO SECTION
+- Headline:
+  "We Build Digital Systems That Drive Growth"
+- Subheadline:
+  "Websites, applications, and scalable solutions designed to attract customers and grow your business."
+- CTA buttons:
+  - "Get a Free Website Check"
+  - "Start Your Project"
+- Background with modern abstract tech visuals or glow
+
+---
+
+2. ABOUT US (OVER ONS)
+Create a strong section explaining:
+- Who Zentrix Solutions is
+- That the company focuses on building modern digital systems
+- That transparency, speed, and results are core values
+
+Example tone:
+"We are a digital agency focused on building powerful websites and applications that help businesses grow. At Zentrix Solutions, we believe in transparency, clear communication, and delivering real results."
+
+Include:
+- short paragraphs
+- 3–4 core values:
+  - Transparency
+  - Performance
+  - Innovation
+  - Reliability
+
+---
+
+3. WHAT WE DO (WAT WIJ DOEN)
+Clear explanation of services:
+
+- Website Development
+  → "Modern, fast, and conversion-focused websites"
+
+- Application Development
+  → "Custom-built applications tailored to your business"
+
+- Maintenance & Optimization
+  → "Continuous improvement, updates, and performance optimization"
+
+- Digital Growth Support
+  → "Helping businesses attract more customers and scale"
+
+Make this section visually structured and easy to scan.
+
+---
+
+4. WHO WE HELP (WIE WIJ HELPEN)
+Create a section targeting:
+
+- Small businesses
+- Local shops (barbers, salons, garages)
+- Entrepreneurs and startups
+- Growing companies that want more customers
+
+Use short descriptions per category.
+
+---
+
+5. SERVICES (CLICKABLE TILES)
+Create modern clickable tiles/cards with hover effects:
+
+- Websites
+- Applications
+- Optimization
+- Growth
+
+Each tile must:
+- Have an icon
+- Have hover animation (lift/glow)
+- Be clickable (link to placeholder pages)
+- Include short descriptions
+
+---
+
+6. WHY ZENTRIX (TRUST & TRANSPARENCY)
+Explain:
+
+- No hidden costs
+- Clear communication
+- Fast delivery
+- Focus on results
+
+Use strong bullet points.
+
+---
+
+7. PROCESS SECTION
+Show 4 steps visually:
+
+1. Analysis
+2. Strategy
+3. Development
+4. Launch & Optimization
+
+Use icons or timeline design.
+
+---
+
+8. REVIEWS SECTION
+- Title: "What Our Clients Say"
+- Create 3–4 review cards (placeholders)
+- Include:
+  - Name
+  - Company
+  - Stars
+- Add text:
+  "More reviews coming soon"
+- Must be clean and expandable
+
+---
+
+9. FINAL CTA
+- Headline:
+  "Ready to Grow Your Business?"
+- Button:
+  "Contact Us Now"
+
+---
+
+10. FOOTER
+Must include:
+
+- Zentrix Solutions
+- Location: Amsterdam, Netherlands
+- Phone: 06-83284995
+- Email placeholder
+- Navigation links (Home / Services / Contact)
+- Clean, minimal layout
+
+---
+
+FUNCTIONAL REQUIREMENTS:
+
+- Fully responsive (mobile, tablet, desktop)
+- Fixed navigation bar
+- Smooth scrolling
+- Fast loading
+- Modern font (Inter or similar)
+- Tailwind CSS preferred
+- Clean, production-ready code
+- No placeholders that look unfinished
+
+---
+
+IMPORTANT:
+The website must feel like a premium agency that charges €1000+ per project.
+It must look trustworthy, futuristic, and conversion-focused.

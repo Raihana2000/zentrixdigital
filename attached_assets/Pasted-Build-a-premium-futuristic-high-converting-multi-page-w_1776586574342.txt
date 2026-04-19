@@ -1,0 +1,507 @@
+Build a premium, futuristic, high-converting multi-page website for a digital agency called "Zentrix Solutions".
+
+IMPORTANT:
+This is a real business website. It must look polished, premium, trustworthy, and modern — not like a beginner template. The design should feel like a high-end digital agency / SaaS company.
+
+CRITICAL LANGUAGE REQUIREMENT:
+The website must support 2 languages:
+- Dutch (default main language)
+- English
+
+There must be a visible language toggle in the navigation bar.
+Default language on first load must be Dutch.
+
+VERY IMPORTANT:
+Every single text element on the website must be translatable with the toggle, including:
+- navigation links
+- hero headlines
+- subheadlines
+- buttons
+- section titles
+- paragraphs
+- service card titles
+- service card descriptions
+- review section text
+- CTA text
+- contact form labels
+- placeholders
+- footer text
+- small labels
+- all page content
+- all repeated/global elements
+
+Do NOT leave any text hardcoded in only one language.
+Use a clean translation object or dictionary in JavaScript so the entire site can switch between Dutch and English consistently.
+The language toggle must update ALL visible text on ALL pages.
+Use reusable keys for translations.
+Store the selected language in localStorage so it stays active when navigating between pages.
+
+BUSINESS POSITIONING:
+Zentrix Solutions helps businesses grow with:
+- Professional websites
+- Custom applications
+- Ongoing maintenance and optimization
+- Transparent communication and reliable support
+
+The site must clearly communicate:
+- What Zentrix Solutions does
+- Who Zentrix Solutions helps
+- Why clients should trust the company
+- That the company is transparent, modern, and results-driven
+
+STYLE / VISUAL DIRECTION:
+- Dark futuristic design
+- Premium SaaS aesthetic
+- Background colors: deep black / dark navy
+- Accent colors: electric blue / soft blue glow
+- White text with strong contrast
+- Smooth hover effects
+- Card-based layout
+- Glassmorphism or subtle glow effects are welcome
+- Clean spacing, elegant typography, minimal but powerful design
+- Fully responsive on desktop, tablet, and mobile
+
+TECH STACK:
+- HTML, Tailwind CSS, and JavaScript
+- Clean code structure
+- Multiple pages
+- Reusable navbar and footer
+- Smooth scroll and polished transitions
+- Use modern icons where relevant
+- Everything must be functional and visually strong
+
+CREATE THESE PAGES:
+1. index.html
+2. about.html
+3. services.html
+4. contact.html
+5. styles.css (if needed)
+6. script.js
+
+If needed, also create a shared translations.js file or include a well-structured translation object inside script.js.
+
+LANGUAGE TOGGLE REQUIREMENTS:
+- Toggle visible in the top navigation bar
+- Options: NL / EN
+- Dutch must be selected by default
+- On click, all text must switch immediately
+- Selected language must persist across page navigation using localStorage
+- All pages must load in the selected language automatically
+- All content must use translation keys, not manually duplicated hardcoded sections
+- Buttons, form labels, placeholders, footer items, cards, headings, and descriptions must all translate
+
+--------------------------------------------------
+PAGE 1: HOME (index.html)
+--------------------------------------------------
+
+Create a premium hero section with this Dutch copy as the default main text:
+
+Headline:
+"Wij bouwen digitale systemen die groei stimuleren"
+
+Subheadline:
+"Websites, applicaties en schaalbare digitale oplossingen die bedrijven helpen klanten aan te trekken, vertrouwen op te bouwen en met zekerheid te groeien."
+
+Primary CTA button:
+"Start jouw project"
+
+Secondary CTA button:
+"Vraag een gratis website check aan"
+
+Below the hero, add these sections:
+
+SECTION: OVERVIEW / INTRO
+Title:
+"Gebouwd voor bedrijven die meer willen dan alleen een website"
+
+Text:
+"Bij Zentrix Solutions creëren we digitale systemen die bedrijven vooruithelpen. Van moderne websites tot maatwerk applicaties en langdurige optimalisatie: wij bouwen met helderheid, prestaties en echte bedrijfsdoelen in gedachten."
+
+SECTION: CLICKABLE SERVICE TILES
+Create 4 premium clickable tiles/cards with hover effects and icons:
+- Websites
+- Applicaties
+- Onderhoud
+- Groei
+
+Use this Dutch copy:
+
+Websites:
+"Moderne, snelle en conversiegerichte websites die bezoekers omzetten in klanten."
+
+Applicaties:
+"Maatwerk applicaties die aansluiten op jouw werkwijze, ideeën en bedrijfsdoelen."
+
+Onderhoud:
+"Doorlopende updates, support, beveiliging en prestatieverbeteringen zodat alles soepel blijft draaien."
+
+Groei:
+"Digitale verbeteringen gericht op meer vertrouwen, betere zichtbaarheid en meer klanten."
+
+SECTION: WHO WE HELP
+Title:
+"Wie wij helpen"
+
+Text intro:
+"Wij ondersteunen ambitieuze bedrijven die online sterker zichtbaar willen zijn en betere resultaten willen behalen."
+
+Add 4 elegant cards or columns for:
+- Lokale bedrijven
+- Startups
+- Dienstverlenende bedrijven
+- Groeiende merken
+
+Use this Dutch copy:
+
+Lokale bedrijven:
+"Voor winkels, salons, garages en lokale ondernemingen die professioneler willen overkomen en meer klanten willen aantrekken."
+
+Startups:
+"Voor ondernemers die vanaf dag één een sterke digitale uitstraling en schaalbare systemen nodig hebben."
+
+Dienstverlenende bedrijven:
+"Voor bedrijven die online afhankelijk zijn van vertrouwen, presentatie en duidelijke communicatie."
+
+Groeiende merken:
+"Voor bedrijven die hun website, systemen en klantbeleving naar een hoger niveau willen tillen."
+
+SECTION: WHY ZENTRIX
+Title:
+"Waarom Zentrix Solutions"
+
+Text:
+"Wij geloven niet in vage beloften of onnodige complexiteit. Wij focussen op heldere communicatie, transparante samenwerking en digitale oplossingen die bedrijven echt vooruithelpen."
+
+Add 4 trust points:
+- Transparante communicatie
+- Geen verborgen kosten
+- Professionele uitvoering
+- Focus op echte bedrijfswaarde
+
+SECTION: REVIEWS PREVIEW
+Title:
+"Wat onze klanten zeggen"
+
+Create 3 clean review cards as placeholders for future testimonials.
+
+Use Dutch placeholder content:
+- "Professioneel, snel en duidelijk van begin tot eind."
+- "Het project voelde gestructureerd, modern en goed doordacht."
+- "Sterke communicatie en veel oog voor detail."
+
+Add a small line:
+"Meer klantreviews volgen binnenkort."
+
+SECTION: FINAL CTA
+Title:
+"Klaar om iets te bouwen dat echt werkt?"
+
+Text:
+"Of je nu een krachtige website, een maatwerk applicatie of langdurige ondersteuning nodig hebt, Zentrix Solutions staat klaar om je te helpen."
+
+Button:
+"Neem contact op"
+
+--------------------------------------------------
+PAGE 2: ABOUT (about.html)
+--------------------------------------------------
+
+Hero title:
+"Over Zentrix Solutions"
+
+Intro text:
+"Zentrix Solutions is een modern digitaal bureau dat zich richt op websites, applicaties en digitale systemen die bedrijven helpen met vertrouwen te groeien."
+
+Add these sections:
+
+SECTION: WHO WE ARE
+Title:
+"Wie wij zijn"
+
+Text:
+"Wij werken met bedrijven die meer willen dan alleen online aanwezigheid. Wij helpen klanten om een digitale basis te bouwen die professioneel oogt, sterk presteert en duurzame groei ondersteunt."
+
+SECTION: OUR MISSION
+Title:
+"Onze missie"
+
+Text:
+"Onze missie is om digitale oplossingen te bouwen die helder, effectief en afgestemd zijn op echte bedrijfsbehoeften. Wij vinden dat moderne websites en applicaties niet alleen sterk moeten ogen, maar ook vertrouwen moeten creëren, gebruiksvriendelijk moeten zijn en groei moeten ondersteunen."
+
+SECTION: OUR VALUES
+Create 4 value cards:
+- Transparantie
+- Innovatie
+- Betrouwbaarheid
+- Prestaties
+
+Use this Dutch copy:
+
+Transparantie:
+"Wij geloven in duidelijke communicatie, eerlijke verwachtingen en geen verborgen verrassingen."
+
+Innovatie:
+"Wij bouwen met een moderne blik en zoeken naar slimmere digitale oplossingen."
+
+Betrouwbaarheid:
+"Wij streven naar consistentie, snelle communicatie en een betrouwbare samenwerking."
+
+Prestaties:
+"Wij letten op snelheid, gebruiksgemak en resultaat — niet alleen op uiterlijk."
+
+SECTION: WHAT MAKES US DIFFERENT
+Title:
+"Wat ons onderscheidt"
+
+Text:
+"Zentrix Solutions combineert design, helderheid en functionaliteit op een manier die bedrijven helpt om zichzelf professioneel te presenteren en met vertrouwen vooruit te gaan. Wij focussen op werk dat modern, strategisch en waardevol aanvoelt."
+
+--------------------------------------------------
+PAGE 3: SERVICES (services.html)
+--------------------------------------------------
+
+Hero title:
+"Onze diensten"
+
+Intro text:
+"Wij bouwen digitale oplossingen die zichtbaarheid, vertrouwen, efficiëntie en duurzame groei ondersteunen."
+
+Add these service sections:
+
+1. Website Development
+Dutch title:
+"Website ontwikkeling"
+
+Dutch text:
+"Wij bouwen moderne, responsieve en conversiegerichte websites die bedrijven helpen een sterke eerste indruk te maken en aandacht om te zetten in actie."
+
+Bullets:
+- Professioneel design
+- Volledig mobielvriendelijk
+- Snelle laadtijd
+- Vertrouwenwekkende opbouw
+- Conversiegerichte structuur
+
+2. Application Development
+Dutch title:
+"Applicatie ontwikkeling"
+
+Dutch text:
+"Wij ontwikkelen maatwerk applicaties die aansluiten op jouw bedrijfsbehoeften — van interne tools tot klantgerichte oplossingen die workflow, functionaliteit en schaalbaarheid verbeteren."
+
+Bullets:
+- Functionaliteiten op maat
+- Oplossingen voor bedrijfsprocessen
+- Schaalbare structuur
+- Gebruiksvriendelijk ontwerp
+
+3. Maintenance & Optimization
+Dutch title:
+"Onderhoud & optimalisatie"
+
+Dutch text:
+"Wij bieden doorlopende ondersteuning om jouw digitale systemen veilig, actueel en optimaal presterend te houden."
+
+Bullets:
+- Updates en verbeteringen
+- Snelheidsoptimalisatie
+- Doorlopende support
+- Stabiliteit en onderhoud
+
+4. Digital Growth Support
+Dutch title:
+"Digitale groeiondersteuning"
+
+Dutch text:
+"Wij helpen bedrijven hun online aanwezigheid te versterken met betere structuur, sterkere presentatie en digitale verbeteringen die groei ondersteunen."
+
+Bullets:
+- Betere online presentatie
+- Sterkere vertrouwenssignalen
+- Verbeterde gebruikerservaring
+- Slimmere digitale positionering
+
+Bottom CTA block:
+Title:
+"Een oplossing nodig die past bij jouw bedrijf?"
+
+Text:
+"Wij denken graag met je mee en bouwen iets dat aansluit op jouw doelen."
+
+Button:
+"Neem contact op"
+
+--------------------------------------------------
+PAGE 4: CONTACT (contact.html)
+--------------------------------------------------
+
+Hero title:
+"Contact opnemen"
+
+Intro text:
+"Wil je jouw project bespreken, je website verbeteren of een maatwerk applicatie laten bouwen? Neem contact op en ontdek wat wij voor je kunnen betekenen."
+
+Add a polished contact section with:
+- Name field
+- Email field
+- Phone field
+- Message field
+- Submit button
+
+Use Dutch labels:
+- Naam
+- E-mailadres
+- Telefoonnummer
+- Bericht
+- Verzenden
+
+Use Dutch placeholders:
+- "Jouw naam"
+- "Jouw e-mailadres"
+- "Jouw telefoonnummer"
+- "Vertel ons kort waar je hulp bij nodig hebt"
+
+Also display this business info clearly:
+- Company: Zentrix Solutions
+- Location: Amsterdam, Netherlands
+- Phone: 06-83284995
+
+Add a short line:
+"Wij streven naar duidelijke communicatie, professionele opvolging en een transparant proces vanaf het eerste contact."
+
+--------------------------------------------------
+GLOBAL NAVIGATION
+--------------------------------------------------
+
+Create a sticky/fixed navigation bar on all pages with:
+- Logo text: Zentrix Solutions
+- Links:
+  Home
+  Over ons
+  Diensten
+  Contact
+- Visible language toggle: NL / EN
+- Responsive mobile menu
+
+The navigation labels must also translate fully to English when the user clicks EN.
+
+--------------------------------------------------
+GLOBAL FOOTER
+--------------------------------------------------
+
+Create a clean professional footer on all pages with:
+- Zentrix Solutions
+- Amsterdam, Netherlands
+- Phone: 06-83284995
+- Email placeholder: info@zentrixsolutions.nl
+- Navigation links: Home / Over ons / Diensten / Contact
+
+Also include this Dutch footer statement:
+"Professionele websites, maatwerk applicaties en transparante digitale ondersteuning."
+
+This entire footer must translate completely to English with the language toggle.
+
+--------------------------------------------------
+ENGLISH TRANSLATIONS
+--------------------------------------------------
+
+Provide complete English translations for every Dutch text above.
+
+Use these English equivalents:
+
+Hero headline:
+"We Build Digital Systems That Drive Growth"
+
+Hero subheadline:
+"Websites, applications, and scalable digital solutions designed to help businesses attract customers, build trust, and grow with confidence."
+
+Primary CTA:
+"Start Your Project"
+
+Secondary CTA:
+"Get a Free Website Check"
+
+Overview title:
+"Built for businesses that want more than just a website"
+
+Overview text:
+"At Zentrix Solutions, we create digital systems that help businesses move forward. From modern websites to custom applications and long-term optimization, we build with clarity, performance, and real business goals in mind."
+
+Who we help:
+"Who We Help"
+
+Why Zentrix:
+"Why Zentrix Solutions"
+
+Reviews title:
+"What Our Clients Say"
+
+Reviews small line:
+"More client reviews coming soon."
+
+Final CTA title:
+"Ready to build something that truly works?"
+
+Final CTA text:
+"Whether you need a powerful website, a custom application, or reliable long-term support, Zentrix Solutions is ready to help."
+
+Final CTA button:
+"Contact Us"
+
+About page hero:
+"About Zentrix Solutions"
+
+Who we are:
+"Who We Are"
+
+Mission:
+"Our Mission"
+
+Values:
+- Transparency
+- Innovation
+- Reliability
+- Performance
+
+What makes us different:
+"What Makes Us Different"
+
+Services hero:
+"Our Services"
+
+Contact hero:
+"Get in Touch"
+
+Contact intro:
+"Want to discuss your project, improve your website, or explore a custom application? Get in touch and discover how we can help."
+
+Form labels:
+- Name
+- Email
+- Phone
+- Message
+- Submit
+
+Placeholders:
+- "Your name"
+- "Your email address"
+- "Your phone number"
+- "Briefly tell us what you need help with"
+
+Footer statement:
+"Professional websites, custom applications, and transparent digital support."
+
+--------------------------------------------------
+EXTRA REQUIREMENTS
+--------------------------------------------------
+
+- Make all cards and tiles interactive
+- Add hover effects and subtle animations
+- Reserve a clear testimonials area for future real reviews
+- Make the site feel calm, futuristic, premium, and trustworthy
+- Strong typography and spacing
+- Avoid clutter
+- Make the business feel premium and credible
+- Ensure code is organized and easy to expand
+- Do not leave any untranslated text behind
+- The toggle must work perfectly across all pages and all visible elements
