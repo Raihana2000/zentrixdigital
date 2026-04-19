@@ -1,0 +1,153 @@
+You are a senior conversion-focused UI/UX designer and copywriter.
+
+Your task:
+Transform my existing website (Zentrix Solutions) into a HIGH-CONVERTING agency website that generates leads.
+
+IMPORTANT:
+- Keep the current dark, premium design style (black/blue, modern, clean)
+- Improve EVERYTHING for conversion, clarity, and professionalism
+- Must be PERFECT on mobile and iPad (responsive first)
+- No generic agency fluff
+
+---
+
+🎯 GOAL:
+Turn visitors into leads.
+
+---
+
+🧠 STRUCTURE (VERY IMPORTANT):
+
+1. HERO SECTION (ABOVE THE FOLD)
+Replace current headline with something stronger and result-driven.
+
+Use this style:
+- Clear outcome
+- Simple language
+- Focus on customer benefit
+
+Example direction:
+“Wij bouwen websites die klanten opleveren — niet alleen mooi zijn.”
+
+Add subheadline:
+Explain WHAT you do + FOR WHO + RESULT
+
+Add 2 CTA buttons:
+- Primary: “Vraag gratis website analyse”
+- Secondary: “Bekijk wat wij verbeteren”
+
+Make CTA buttons large, visible, and thumb-friendly on mobile.
+
+---
+
+2. TRUST / CREDIBILITY SECTION
+Remove fake reviews.
+
+Replace with:
+- Placeholder testimonial cards (clean UI)
+- Label them clearly so they can be replaced later
+
+Example:
+“Case study komt binnenkort”
+“Resultaten van klanten volgen”
+
+Make it EASY to replace later (clean components).
+
+---
+
+3. PROBLEM SECTION (VERY IMPORTANT)
+Add a section:
+“Waarom jouw website klanten misloopt”
+
+Include 3–4 pain points:
+- Slow website
+- No clear call-to-action
+- Not mobile optimized
+- Poor design = no trust
+
+Make it simple and readable.
+
+---
+
+4. SERVICES SECTION (REWRITE)
+Keep cards, but rewrite content:
+
+Each service must include:
+- What it is
+- What result it gives
+
+Example:
+Websites:
+“Websites die bezoekers omzetten in klanten — snel, duidelijk en gericht op conversie.”
+
+---
+
+5. PROCESS SECTION (KEEP BUT IMPROVE)
+Keep 4 steps:
+1. Analyse
+2. Strategie
+3. Ontwikkeling
+4. Lancering
+
+Add 1 line per step explaining value.
+
+---
+
+6. FINAL CTA SECTION (VERY IMPORTANT)
+Rewrite to:
+
+“Klaar om meer uit je website te halen?”
+
+Button:
+“Vraag gratis analyse aan”
+
+Make this section visually strong.
+
+---
+
+🎨 DESIGN IMPROVEMENTS:
+
+- Increase logo size by ~1.8x
+- Improve spacing (more padding = more premium)
+- Buttons must be large on mobile
+- Font sizes must scale properly:
+  - Mobile: readable without zoom
+  - iPad: balanced layout
+- Avoid long text blocks
+
+---
+
+📱 RESPONSIVENESS (CRITICAL):
+
+- Mobile first design
+- Stack sections vertically on small screens
+- No overflow issues
+- Buttons full-width on mobile
+- Proper spacing between elements
+
+---
+
+⚡ EXTRA:
+
+- Keep everything clean, minimal, premium
+- No unnecessary animations
+- Fast loading
+- SEO-friendly structure
+
+---
+
+OUTPUT:
+Rewrite HTML + TailwindCSS structure with improved copy and layout.
+Make sure everything is production-ready.
+No placeholders like “lorem ipsum”.
+Everything must feel real and professional.
+
+---
+
+Tone:
+Confident, modern, premium, direct.
+Not salesy, but persuasive.
+
+---
+
+END.

@@ -1,0 +1,334 @@
+You are a senior conversion copywriter, UI/UX strategist, and frontend designer.
+
+Your task:
+Completely rewrite and improve the HOMEPAGE of my website "Zentrix Solutions" so it feels premium, modern, highly trustworthy, and focused on lead generation.
+
+IMPORTANT:
+- Keep the dark futuristic premium style
+- Keep the black / deep navy / blue look
+- Keep the site modern and minimal
+- The homepage must feel like a serious digital agency
+- It must convert visitors into leads
+- It must be mobile-first and look excellent on desktop, iPad, and mobile
+- Use Dutch as default language
+- Make all homepage text easy to connect to the existing NL/EN translation system
+- Keep the logo clearly larger than before in the navbar
+
+CRITICAL LOGO RULE:
+- Increase logo size clearly
+- Desktop logo height: 42px–48px
+- Tablet logo height: 38px–44px
+- Mobile logo height: 32px–36px
+- Logo + brand name must feel like a strong premium anchor on the left
+- Do not let the logo look tiny, weak, blurry, or squeezed
+
+GOAL OF THE HOMEPAGE:
+When a business owner lands on the homepage, they should immediately understand:
+1. What Zentrix Solutions does
+2. How it helps them get more clients / more trust / better performance
+3. Why Zentrix is different
+4. What action they should take next
+
+HOMEPAGE STRUCTURE:
+
+--------------------------------------------------
+1. HERO SECTION
+--------------------------------------------------
+
+Replace the current hero copy with stronger conversion-focused copy.
+
+Use this Dutch copy:
+
+Small badge above headline:
+"Websites, applicaties en digitale groei"
+
+Main headline:
+"Wij bouwen websites en digitale oplossingen die bedrijven vooruithelpen"
+
+Subheadline:
+"Van professionele websites tot maatwerk applicaties en doorlopende optimalisatie: Zentrix Solutions helpt bedrijven sterker online zichtbaar te worden, meer vertrouwen uit te stralen en beter te converteren."
+
+Primary CTA:
+"Vraag gratis website analyse"
+
+Secondary CTA:
+"Bekijk onze diensten"
+
+Rules:
+- Headline must stay powerful, readable, and not too abstract
+- Use strong spacing
+- CTA buttons must be large and premium
+- On mobile, CTA buttons must stack vertically and be full-width or near full-width
+- Make the hero feel calm, premium, and clear
+- Keep a subtle blue gradient / tech glow in the background
+
+--------------------------------------------------
+2. PROBLEM SECTION
+--------------------------------------------------
+
+Add a new homepage section directly below the hero.
+
+Title:
+"Waarom veel websites klanten mislopen"
+
+Intro text:
+"Een website kan er netjes uitzien en toch omzet kosten. Veel bedrijven verliezen online kansen doordat hun website geen vertrouwen opbouwt, onduidelijk is of slecht werkt op mobiel."
+
+Add 4 premium cards with these points:
+
+Card 1:
+Title: "Onduidelijke boodschap"
+Text: "Bezoekers snappen niet direct wat u doet en klikken weer weg."
+
+Card 2:
+Title: "Geen sterke call-to-action"
+Text: "Zonder duidelijke volgende stap neemt bijna niemand contact op."
+
+Card 3:
+Title: "Zwakke mobiele ervaring"
+Text: "Als uw website niet strak werkt op mobiel, verliest u direct vertrouwen en leads."
+
+Card 4:
+Title: "Verouderde uitstraling"
+Text: "Een zwakke eerste indruk kost klanten nog voordat er contact ontstaat."
+
+Design rules:
+- Keep cards elegant and premium
+- Use icons
+- Keep text short
+- Strong spacing and readability
+
+--------------------------------------------------
+3. WHAT WE DO / SERVICES PREVIEW
+--------------------------------------------------
+
+Rewrite the current services preview section.
+
+Title:
+"Wat wij voor bedrijven bouwen"
+
+Intro text:
+"Wij ontwikkelen digitale oplossingen die niet alleen mooi ogen, maar ook duidelijker communiceren, beter presteren en meer resultaat opleveren."
+
+Use 4 service cards with stronger result-focused copy:
+
+Card 1:
+Title: "Websites"
+Text: "Professionele websites die vertrouwen opbouwen, duidelijk communiceren en bezoekers omzetten in actie."
+
+Card 2:
+Title: "Applicaties"
+Text: "Maatwerk applicaties en slimme systemen die processen verbeteren en bedrijven efficiënter laten werken."
+
+Card 3:
+Title: "Onderhoud & optimalisatie"
+Text: "Doorlopende verbeteringen op het gebied van snelheid, veiligheid, updates en prestaties."
+
+Card 4:
+Title: "Digitale groeiondersteuning"
+Text: "Strategische digitale verbeteringen die helpen om zichtbaarheid, gebruikservaring en conversie te versterken."
+
+Each card must:
+- be clickable
+- link to services page
+- include icon
+- have subtle hover effect
+- remain readable on mobile
+
+--------------------------------------------------
+4. WHO WE HELP
+--------------------------------------------------
+
+Rewrite this section with clearer positioning.
+
+Title:
+"Voor wie wij werken"
+
+Intro text:
+"Zentrix Solutions helpt bedrijven die online sterker zichtbaar willen zijn en hun digitale uitstraling willen verbeteren."
+
+Use 4 audience cards:
+
+Card 1:
+Title: "Lokale bedrijven"
+Text: "Voor salons, garages, winkels en andere lokale ondernemingen die professioneler online zichtbaar willen zijn."
+
+Card 2:
+Title: "Dienstverleners"
+Text: "Voor bedrijven die online vertrouwen moeten uitstralen om nieuwe klanten aan te trekken."
+
+Card 3:
+Title: "Startups"
+Text: "Voor ambitieuze ondernemers die een sterke digitale basis willen neerzetten."
+
+Card 4:
+Title: "Groeiende merken"
+Text: "Voor bedrijven die hun website, systemen en klantbeleving naar een hoger niveau willen tillen."
+
+--------------------------------------------------
+5. WHY ZENTRIX
+--------------------------------------------------
+
+Rewrite the “Waarom Zentrix Solutions” section so it feels sharper and more business-oriented.
+
+Title:
+"Waarom bedrijven voor Zentrix kiezen"
+
+Intro text:
+"Wij combineren design, structuur en functionaliteit tot digitale oplossingen die professioneel aanvoelen en klaar zijn om door te groeien."
+
+Use 4 benefit blocks:
+
+1. Transparante communicatie
+Text: "Duidelijke afspraken, eerlijke communicatie en geen verborgen verrassingen."
+
+2. Professionele uitvoering
+Text: "Een premium uitstraling, sterke structuur en een afwerking die vertrouwen uitstraalt."
+
+3. Praktische focus
+Text: "Geen onnodige complexiteit, maar digitale keuzes die logisch en bruikbaar zijn."
+
+4. Gericht op groei
+Text: "Wij bouwen met het oog op betere zichtbaarheid, sterkere presentatie en meer resultaat."
+
+--------------------------------------------------
+6. PROCESS SECTION
+--------------------------------------------------
+
+Keep a simple 4-step process section, but rewrite it in Dutch and make it clearer.
+
+Title:
+"Hoe wij werken"
+
+Step 1:
+Title: "Analyse"
+Text: "We bekijken uw huidige situatie, doelen en verbeterkansen."
+
+Step 2:
+Title: "Strategie"
+Text: "We bepalen welke aanpak het meeste effect heeft voor uw bedrijf."
+
+Step 3:
+Title: "Ontwikkeling"
+Text: "We bouwen een professionele oplossing die past bij uw merk en doelstellingen."
+
+Step 4:
+Title: "Lancering & optimalisatie"
+Text: "Na livegang blijven we kijken waar prestaties en conversie verder kunnen verbeteren."
+
+IMPORTANT:
+- Replace all English step labels with Dutch
+- Make this section polished and premium
+- Must work neatly on mobile
+
+--------------------------------------------------
+7. PLACEHOLDER CASES / SOCIAL PROOF
+--------------------------------------------------
+
+Remove fake reviews.
+
+Replace with a clean “results / cases” placeholder section that is easy to replace later.
+
+Title:
+"Resultaten en cases"
+
+Intro text:
+"Hier komen binnenkort praktijkvoorbeelden, verbetertrajecten en klantresultaten te staan."
+
+Add 3 placeholder cards:
+
+Card 1:
+Title: "Case study volgt binnenkort"
+Text: "Een toekomstig voorbeeld van hoe een website of digitaal systeem is verbeterd."
+
+Card 2:
+Title: "Klantresultaten volgen"
+Text: "Hier tonen we straks concrete verbeteringen in zichtbaarheid, vertrouwen of conversie."
+
+Card 3:
+Title: "Project in opbouw"
+Text: "Nieuwe samenwerkingen en resultaten worden hier later overzichtelijk toegevoegd."
+
+IMPORTANT:
+- These must look intentional and premium
+- Easy to swap later with real cases
+- No fake stars
+- No fake names
+- No fake companies
+
+--------------------------------------------------
+8. FINAL CTA SECTION
+--------------------------------------------------
+
+Rewrite the final CTA section.
+
+Title:
+"Klaar om uw website of digitale systeem te verbeteren?"
+
+Text:
+"Of u nu een nieuwe website nodig heeft, een maatwerk applicatie wilt laten bouwen of uw huidige digitale omgeving wilt verbeteren: Zentrix Solutions denkt graag met u mee."
+
+Primary CTA:
+"Vraag gratis analyse aan"
+
+Secondary CTA:
+"Neem contact op"
+
+Design:
+- Strong centered section
+- Premium blue glow / dark background block
+- CTA buttons large and clear
+- Mobile-friendly
+
+--------------------------------------------------
+9. FOOTER IMPROVEMENT
+--------------------------------------------------
+
+Keep the footer structure, but improve clarity.
+
+Use:
+- short company description
+- navigation
+- contact block
+
+Dutch company text:
+"Professionele websites, maatwerk applicaties en transparante digitale ondersteuning voor bedrijven die online sterker willen groeien."
+
+Keep:
+- Amsterdam, Netherlands
+- 06-83284995
+- info@zentrixsolutions.nl
+
+Make sure spacing and alignment are neat on all devices.
+
+--------------------------------------------------
+10. RESPONSIVENESS RULES
+--------------------------------------------------
+
+CRITICAL:
+- Mobile first
+- No oversized headings breaking layout
+- No text getting cut off
+- Buttons stack neatly on small screens
+- Cards stack 1 per row on mobile, 2 on tablet, 4 on desktop where appropriate
+- Keep generous spacing
+- Ensure iPad layout looks balanced
+- No horizontal scrolling
+- Navbar stays clean and logo stays visible
+
+--------------------------------------------------
+11. CODE / IMPLEMENTATION RULES
+--------------------------------------------------
+
+- Use clean HTML + Tailwind CSS
+- Keep structure production-ready
+- Keep translation-ready architecture for NL/EN
+- Prefer reusable sections / cards
+- No lorem ipsum
+- No fake testimonials
+- No generic filler agency language
+- All text must feel intentional, realistic, and premium
+
+FINAL INSTRUCTION:
+Do not just slightly edit the homepage.
+Rewrite it properly so Zentrix Solutions feels like a serious premium digital agency focused on clarity, trust, and lead generation.

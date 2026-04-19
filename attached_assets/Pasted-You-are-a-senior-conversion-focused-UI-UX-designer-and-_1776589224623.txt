@@ -1,0 +1,165 @@
+You are a senior conversion-focused UI/UX designer and frontend developer.
+
+Your task:
+Transform my website (Zentrix Solutions) into a HIGH-CONVERTING, PREMIUM agency website that is fully responsive and optimized for mobile and iPad.
+
+You must NOT be generic. Everything must feel like a premium, modern digital agency that converts visitors into leads.
+
+---
+
+🚨 CRITICAL DESIGN RULES (FOLLOW STRICTLY):
+
+1. LOGO FIX (VERY IMPORTANT)
+- Increase logo size by 1.8x to 2x
+- Desktop height: ~40px–48px
+- Mobile height: ~32px–36px
+- Add proper spacing so it doesn’t feel cramped
+- Logo must feel PREMIUM and clearly visible (not small or subtle)
+
+Example:
+class="h-10 md:h-12"
+
+---
+
+2. MOBILE-FIRST DESIGN (MANDATORY)
+- Design for mobile FIRST, then scale up
+- Buttons must be full-width on mobile
+- Text must be readable WITHOUT zoom
+- No overflow or broken layout
+- Proper spacing between sections (min 24px–40px)
+
+---
+
+3. PREMIUM LOOK & FEEL
+- Dark theme (black/blue) stays
+- Clean spacing (more whitespace = more premium)
+- No clutter
+- No unnecessary animations
+
+---
+
+🎯 CONVERSION STRUCTURE (VERY IMPORTANT):
+
+1. HERO SECTION (ABOVE THE FOLD)
+
+Replace headline with something that SELLS:
+
+Example direction:
+“Wij bouwen websites die klanten opleveren — niet alleen mooi zijn.”
+
+Subheadline:
+Explain clearly what you do + for who + result
+
+CTA BUTTONS:
+- Primary: “Vraag gratis website analyse”
+- Secondary: “Bekijk verbeterpunten”
+
+Rules:
+- Large buttons
+- Rounded
+- High contrast
+- Thumb-friendly on mobile
+
+---
+
+2. PROBLEM SECTION (ADD THIS)
+
+Title:
+“Waarom jouw website klanten misloopt”
+
+Include 3–4 points:
+- Trage website
+- Geen duidelijke call-to-action
+- Slechte mobiele ervaring
+- Gebrek aan vertrouwen
+
+Short, clear, impactful.
+
+---
+
+3. SERVICES SECTION (REWRITE)
+
+Each service must include RESULT:
+
+Example:
+Websites:
+“Websites die bezoekers omzetten in klanten — snel, duidelijk en conversiegericht.”
+
+Keep cards, but improve copy.
+
+---
+
+4. PROCESS SECTION
+
+Keep 4 steps:
+1. Analyse
+2. Strategie
+3. Ontwikkeling
+4. Lancering
+
+Add 1 short sentence per step explaining value.
+
+---
+
+5. SOCIAL PROOF (TEMPORARY BUT SMART)
+
+Remove fake reviews.
+
+Replace with CLEAN placeholders:
+- “Case study komt binnenkort”
+- “Resultaten van klanten volgen”
+
+IMPORTANT:
+- Build this as reusable components
+- Easy to replace later with real testimonials
+
+---
+
+6. FINAL CTA (VERY IMPORTANT)
+
+Text:
+“Klaar om meer uit je website te halen?”
+
+Button:
+“Vraag gratis analyse aan”
+
+Make this section visually strong and centered.
+
+---
+
+🎨 UI IMPROVEMENTS:
+
+- Increase section spacing
+- Improve typography hierarchy
+- Use max-width containers (e.g. max-w-6xl)
+- Keep content readable and structured
+- Avoid long paragraphs
+
+---
+
+⚡ PERFORMANCE & STRUCTURE:
+
+- Clean HTML structure
+- TailwindCSS only
+- Fast loading
+- SEO-friendly (proper headings: h1, h2, etc.)
+
+---
+
+OUTPUT REQUIREMENTS:
+
+- Rewrite HTML + TailwindCSS
+- No lorem ipsum
+- No placeholder nonsense
+- Everything must be realistic and production-ready
+- Code must be clean and structured
+
+---
+
+TONE:
+Confident, modern, premium, direct.
+Not pushy, but persuasive.
+
+---
+
+END.
