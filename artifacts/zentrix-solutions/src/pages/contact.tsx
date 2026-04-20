@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#0B0B0B] text-white overflow-x-hidden pt-24">
+    <div className="flex flex-col min-h-screen bg-[#0B0B0B] text-white overflow-x-hidden pt-[118px]">
 
       {/* Hero */}
       <section className="relative py-20 px-5 text-center overflow-hidden">

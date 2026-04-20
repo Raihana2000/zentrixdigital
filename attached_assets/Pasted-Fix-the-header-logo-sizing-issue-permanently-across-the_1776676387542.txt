@@ -1,0 +1,278 @@
+Fix the header logo sizing issue permanently across the entire project.
+
+The logo is still too small. I want a FULL ROOT-CAUSE FIX, not a small style tweak.
+
+IMPORTANT:
+The problem may be inside the navbar itself OR in any parent container outside the navbar, such as:
+
+* layout wrapper
+* page container
+* header wrapper
+* grid/flex parent
+* max-width container
+* overflow-hidden wrapper
+* any element limiting width, height, scaling or shrinking
+
+You must inspect and fix ALL of these if they affect the logo.
+
+GOAL:
+Make the header logo large, prominent, premium-looking, and responsive on desktop, iPad/tablet, and mobile — in one pass.
+
+---
+
+## STEP 1 — FIND THE REAL LOGO RENDER PATH
+
+Locate the exact component and render chain for the header logo:
+
+* header component
+* navbar component
+* logo component
+* parent wrappers above it
+* layout wrappers around the header
+* global containers affecting it
+
+Trace the logo from the <img> element upward until the top-level layout.
+
+---
+
+## STEP 2 — REPLACE THE LOGO BLOCK COMPLETELY
+
+Replace the current header logo markup with this exact structure:
+
+<a href="/" class="site-logo-link">
+  <img
+    src="/logo-zentrixdigital.png"
+    alt="ZentrixDigital"
+    class="site-logo-img"
+    loading="eager"
+    decoding="async"
+  />
+</a>
+
+---
+
+## STEP 3 — ADD A HARD CSS OVERRIDE
+
+Add this to the GLOBAL stylesheet, not only component-local styles:
+
+.site-logo-link {
+display: flex !important;
+align-items: center !important;
+justify-content: flex-start !important;
+flex-shrink: 0 !important;
+min-width: max-content !important;
+text-decoration: none !important;
+}
+
+.site-logo-img {
+display: block !important;
+height: 96px !important;
+width: auto !important;
+min-height: 96px !important;
+max-height: none !important;
+max-width: none !important;
+object-fit: contain !important;
+flex-shrink: 0 !important;
+transform: none !important;
+}
+
+@media (max-width: 1024px) {
+.site-logo-img {
+height: 78px !important;
+min-height: 78px !important;
+}
+}
+
+@media (max-width: 768px) {
+.site-logo-img {
+height: 68px !important;
+min-height: 68px !important;
+}
+}
+
+@media (max-width: 480px) {
+.site-logo-img {
+height: 60px !important;
+min-height: 60px !important;
+}
+}
+
+---
+
+## STEP 4 — FORCE HEADER HEIGHT TO MATCH
+
+Ensure the header/navbar container is tall enough for the bigger logo.
+
+Use or update to something equivalent to:
+
+.site-header {
+width: 100% !important;
+background: #000 !important;
+border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+.site-header-inner {
+max-width: 1280px !important;
+margin: 0 auto !important;
+padding: 0 24px !important;
+min-height: 118px !important;
+display: flex !important;
+align-items: center !important;
+justify-content: space-between !important;
+gap: 24px !important;
+}
+
+@media (max-width: 1024px) {
+.site-header-inner {
+min-height: 100px !important;
+}
+}
+
+@media (max-width: 768px) {
+.site-header-inner {
+min-height: 88px !important;
+padding: 0 16px !important;
+}
+}
+
+@media (max-width: 480px) {
+.site-header-inner {
+min-height: 78px !important;
+padding: 0 12px !important;
+}
+}
+
+---
+
+## STEP 5 — INSPECT AND FIX ALL PARENT CONTAINERS
+
+Inspect every parent wrapper above the logo and remove or override anything that limits it.
+
+Search entire project for all parent containers around the header/logo and fix these issues if found:
+
+* overflow: hidden
+* max-height
+* fixed small height
+* fixed small width
+* scale transforms
+* zoom
+* align-items causing clipping
+* flex-shrink: 1
+* grid column width too small
+* width constraints
+* aspect-ratio forcing compression
+* line-height hacks
+* position/absolute clipping
+* hidden or clipped wrappers
+* container classes with h-10, h-12, h-14, max-h-*, w-10, w-12
+* Tailwind size utilities restricting the image
+* parent wrappers that force the logo into a small square
+
+If any parent container causes clipping or shrinking, override it or refactor it.
+
+---
+
+## STEP 6 — REMOVE ALL OLD LIMITING LOGIC
+
+Search entire codebase and remove or override ALL old logo constraints, including:
+
+* h-6, h-8, h-10, h-12, h-14, h-16
+* w-6, w-8, w-10, w-12, w-16
+* max-h-*
+* max-w-*
+* size-*
+* overflow-hidden on logo/header parents
+* object-contain with fixed tiny box
+* any logo wrapper with square dimensions
+* any inline style restricting logo height
+* any CSS rule targeting img, .logo, header img, nav img with small max-height
+
+---
+
+## STEP 7 — ADD A GLOBAL BACKUP OVERRIDE
+
+Add this as a final safeguard in the global stylesheet:
+
+header img[src*="logo"],
+nav img[src*="logo"],
+img[alt*="ZentrixDigital"],
+img[alt*="logo"] {
+height: 96px !important;
+width: auto !important;
+min-height: 96px !important;
+max-height: none !important;
+max-width: none !important;
+object-fit: contain !important;
+flex-shrink: 0 !important;
+}
+
+@media (max-width: 1024px) {
+header img[src*="logo"],
+nav img[src*="logo"],
+img[alt*="ZentrixDigital"],
+img[alt*="logo"] {
+height: 78px !important;
+min-height: 78px !important;
+}
+}
+
+@media (max-width: 768px) {
+header img[src*="logo"],
+nav img[src*="logo"],
+img[alt*="ZentrixDigital"],
+img[alt*="logo"] {
+height: 68px !important;
+min-height: 68px !important;
+}
+}
+
+@media (max-width: 480px) {
+header img[src*="logo"],
+nav img[src*="logo"],
+img[alt*="ZentrixDigital"],
+img[alt*="logo"] {
+height: 60px !important;
+min-height: 60px !important;
+}
+}
+
+---
+
+## STEP 8 — ENSURE RESPONSIVE LAYOUT STILL WORKS
+
+After enlarging the logo:
+
+* keep nav links vertically centered
+* keep CTA button aligned
+* ensure language switch still fits
+* ensure mobile/iPad layout does not overlap
+* if needed, reduce nav gap slightly, but do NOT shrink the logo
+
+---
+
+## STEP 9 — VISUAL TARGET
+
+Required final result:
+
+* logo is immediately noticeable
+* logo is around 2.5x–3x larger than the current version
+* header height grows correctly
+* no clipping
+* no hidden overflow
+* no compression from any wrapper
+* looks premium on desktop, iPad and mobile
+
+---
+
+## STEP 10 — FINAL VERIFICATION
+
+Before finishing, verify:
+
+1. desktop view
+2. iPad/tablet view
+3. mobile view
+4. no old small-logo class remains
+5. no wrapper still constrains the logo
+6. hard refresh still shows the larger logo
+
+This is a root-cause fix. Do not stop at the navbar if the real problem is in an outer parent or layout wrapper.

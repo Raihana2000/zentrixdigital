@@ -137,3 +137,66 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+/* ── Navbar logo: hard global overrides ──────────────────────────── */
+.site-logo-link {
+  display: flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  min-width: max-content !important;
+  text-decoration: none !important;
+}
+
+.site-logo-img {
+  display: block !important;
+  height: 96px !important;
+  width: auto !important;
+  min-height: 96px !important;
+  max-height: none !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+}
+
+.site-header-inner {
+  min-height: 118px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+@media (max-width: 1024px) {
+  .site-logo-img { height: 78px !important; min-height: 78px !important; }
+  .site-header-inner { min-height: 100px !important; }
+}
+
+@media (max-width: 768px) {
+  .site-logo-img { height: 68px !important; min-height: 68px !important; }
+  .site-header-inner { min-height: 88px !important; }
+}
+
+@media (max-width: 480px) {
+  .site-logo-img { height: 60px !important; min-height: 60px !important; }
+  .site-header-inner { min-height: 78px !important; }
+}
+
+/* ── Backstop: target the element directly ───────────────────────── */
+img[alt="ZentrixDigital"] {
+  height: 96px !important;
+  width: auto !important;
+  min-height: 96px !important;
+  max-height: none !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+}
+
+@media (max-width: 1024px) {
+  img[alt="ZentrixDigital"] { height: 78px !important; min-height: 78px !important; }
+}
+@media (max-width: 768px) {
+  img[alt="ZentrixDigital"] { height: 68px !important; min-height: 68px !important; }
+}
+@media (max-width: 480px) {
+  img[alt="ZentrixDigital"] { height: 60px !important; min-height: 60px !important; }
+}

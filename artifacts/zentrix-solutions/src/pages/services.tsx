@@ -21,7 +21,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-background pt-24">
+    <div className="flex flex-col min-h-screen bg-background pt-[118px]">
       {/* Hero Section */}
       <section className="py-24 md:py-32 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(37,99,235,0.1),transparent_50%)]" />

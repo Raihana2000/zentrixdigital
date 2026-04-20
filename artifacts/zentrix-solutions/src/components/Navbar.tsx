@@ -24,15 +24,16 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#0B0B0B] border-b border-white/10 shadow-[0_1px_20px_rgba(0,0,0,0.5)]">
-      <div className="max-w-7xl mx-auto px-6 md:px-10 h-24 flex items-center justify-between">
+      <div className="site-header-inner max-w-7xl mx-auto px-6 md:px-10 gap-6">
 
         {/* ── Brand ── */}
-        <Link href="/" className="flex items-center shrink-0 group" data-testid="nav-logo">
+        <Link href="/" className="site-logo-link group" data-testid="nav-logo">
           <img
             src={logoPath}
             alt="ZentrixDigital"
-            className="h-[55px] md:h-[70px] w-auto object-contain shrink-0 transition-all duration-300 group-hover:drop-shadow-[0_0_16px_rgba(59,130,246,0.75)]"
-            style={{ maxHeight: 'none', maxWidth: 'none', display: 'block' }}
+            className="site-logo-img transition-all duration-300 group-hover:drop-shadow-[0_0_20px_rgba(59,130,246,0.8)]"
+            loading="eager"
+            decoding="async"
           />
         </Link>
 
