@@ -4,7 +4,7 @@ import { useTranslation } from '@/context/TranslationContext';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import logoPath from "@assets/ChatGPT_Image_19_apr_2026,_10_01_14_1776586282902.png";
+import logoPath from "@assets/ChatGPT_Image_20_apr_2026,_10_49_46_1776675127194.png";
 
 const Navbar = () => {
   const [location] = useLocation();
@@ -27,21 +27,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-10 h-24 flex items-center justify-between">
 
         {/* ── Brand ── */}
-        <Link href="/" className="flex items-center gap-4 shrink-0 group" data-testid="nav-logo">
+        <Link href="/" className="flex items-center shrink-0 group" data-testid="nav-logo">
           <img
             src={logoPath}
-            alt="Zentrix Solutions"
-            className="h-16 w-16 md:h-20 md:w-20 object-contain shrink-0 transition-all duration-300 group-hover:drop-shadow-[0_0_16px_rgba(59,130,246,0.75)]"
+            alt="ZentrixDigital"
+            className="h-10 md:h-12 w-auto object-contain shrink-0 transition-all duration-300 group-hover:drop-shadow-[0_0_16px_rgba(59,130,246,0.75)]"
             style={{ maxHeight: 'none', maxWidth: 'none' }}
           />
-          <div className="leading-tight">
-            <div className="text-white font-bold text-3xl md:text-4xl tracking-tight transition-colors duration-200 group-hover:text-blue-400">
-              Zentrix
-            </div>
-            <div className="text-gray-300 text-base md:text-lg font-medium">
-              Solutions
-            </div>
-          </div>
         </Link>
 
         {/* ── Desktop nav — centered ── */}

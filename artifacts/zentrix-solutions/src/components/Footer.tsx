@@ -2,7 +2,7 @@ import React from 'react';
 import { Clock } from 'lucide-react';
 import { Link } from 'wouter';
 import { useTranslation } from '@/context/TranslationContext';
-import logoPath from "@assets/ChatGPT_Image_19_apr_2026,_10_01_14_1776586282902.png";
+import logoPath from "@assets/ChatGPT_Image_20_apr_2026,_10_49_46_1776675127194.png";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -13,11 +13,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2 flex flex-col gap-6">
-            <Link href="/" className="flex items-center gap-3" data-testid="footer-logo">
-              <img src={logoPath} alt="Zentrix Solutions Logo" className="w-8 h-8 object-contain" />
-              <span className="text-xl font-bold tracking-tight text-white">
-                Zentrix
-              </span>
+            <Link href="/" className="flex items-center" data-testid="footer-logo">
+              <img src={logoPath} alt="ZentrixDigital" className="h-8 w-auto object-contain" />
             </Link>
             <p className="text-muted-foreground max-w-md">
               {t.footer.tagline}
@@ -42,7 +39,7 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <h4 className="text-white font-semibold text-lg">{t.nav.contact}</h4>
             <address className="flex flex-col gap-3 text-muted-foreground not-italic">
-              <p>Zentrix Solutions</p>
+              <p>ZentrixDigital</p>
               <p>Amsterdam, Netherlands</p>
               <p>
                 <a href="tel:0683284995" className="hover:text-primary transition-colors">06-83284995</a>
@@ -72,7 +69,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-border/30 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} Zentrix Solutions. {t.footer.rights}
+            &copy; {currentYear} ZentrixDigital. {t.footer.rights}
           </p>
         </div>
       </div>

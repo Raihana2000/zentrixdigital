@@ -1,0 +1,138 @@
+We are rebranding the entire project from "Zentrix Solutions" to "ZentrixDigital".
+
+Your task is to update EVERYTHING across the full codebase and UI to reflect the new brand consistently.
+
+---
+
+### 1. GLOBAL TEXT REPLACEMENT
+
+Find and replace ALL occurrences of:
+
+* "Zentrix Solutions"
+* "Zentrix Solution"
+* "Zentrix"
+
+Replace with:
+
+* "ZentrixDigital"
+
+Rules:
+
+* Always use exact format: ZentrixDigital (no space, capital D)
+* Do not leave any old references anywhere
+
+---
+
+### 2. NAVBAR & FOOTER
+
+Update:
+
+* Logo text → ZentrixDigital
+* Navbar brand name
+* Footer brand name
+* Any tagline mentioning old name
+
+Make sure it displays clean and modern.
+
+---
+
+### 3. LOGO UPDATE
+
+Replace the old logo everywhere:
+
+* Remove all old logo files
+* Add new logo file: /logo-zentrixdigital.png
+* Use the new "ZD" style logo (modern, tech, blue accent)
+
+Update all references:
+
+* <img src="...">
+* CSS background images
+* favicon
+
+Ensure correct sizing:
+class="h-12 md:h-16 object-contain"
+
+---
+
+### 4. FAVICON & ICONS
+
+* Replace favicon with new ZD icon
+* Update:
+  /favicon.ico
+  /apple-touch-icon.png
+  /icons/
+
+---
+
+### 5. SEO & META DATA
+
+Update ALL:
+
+* <title> → ZentrixDigital
+* meta description
+* Open Graph (og:title, og:description)
+* Twitter cards
+* JSON-LD (Organization name)
+
+Example:
+"name": "ZentrixDigital"
+
+---
+
+### 6. CONTENT UPDATE
+
+Rewrite any text mentioning old brand:
+
+Example:
+"Zentrix Solutions helpt bedrijven..."
+→
+"ZentrixDigital helpt bedrijven..."
+
+Keep tone:
+
+* modern
+* professional
+* tech-focused
+* conversion-oriented
+
+---
+
+### 7. FILES & STRUCTURE
+
+Rename if needed:
+
+* zentrix-solution → zentrix-digital
+* images, folders, assets
+
+---
+
+### 8. FINAL CLEANUP CHECK
+
+Search entire project for:
+
+* "Zentrix"
+* "Solution"
+
+Ensure:
+
+* 0 old references remain
+* everything = ZentrixDigital
+
+---
+
+### 9. TEST
+
+* Check homepage
+* Check navbar
+* Check footer
+* Check mobile view
+* Check logo rendering
+
+---
+
+FINAL GOAL:
+The entire project must look like it was ALWAYS called "ZentrixDigital".
+No traces of the old name should exist.
+
+Make it clean, consistent, modern and professional.

@@ -41,14 +41,14 @@ export const en = {
       }
     },
     whoWeHelpTitle: "Who we work with",
-    whoWeHelpIntro: "Zentrix Solutions helps businesses that want to become more visible online and strengthen their digital presence.",
+    whoWeHelpIntro: "ZentrixDigital helps businesses that want to become more visible online and strengthen their digital presence.",
     whoWeHelp: [
       { title: "Local businesses", text: "For salons, garages, and shops that want more customers from their region." },
       { title: "Service providers", text: "For businesses that need to build trust online in order to win clients." },
       { title: "Startups", text: "For entrepreneurs who want to grow seriously with a strong digital foundation." },
       { title: "Growing brands", text: "For businesses looking to scale and increase their online impact." }
     ],
-    whyZentrixTitle: "Why businesses choose Zentrix",
+    whyZentrixTitle: "Why businesses choose ZentrixDigital",
     whyZentrixIntro: "We combine design, structure, and functionality into digital solutions that feel professional and are built to grow.",
     whyZentrix: [
       { title: "Transparent communication", text: "Clear agreements, honest communication, and no hidden surprises." },
@@ -78,13 +78,13 @@ export const en = {
       { label: "International", sub: "Available worldwide" }
     ],
     ctaTitle: "Ready to improve your website or digital system?",
-    ctaText: "Whether you need a new website, a custom application, or improvements to your current digital setup — Zentrix Solutions is ready to help.",
+    ctaText: "Whether you need a new website, a custom application, or improvements to your current digital setup — ZentrixDigital is ready to help.",
     ctaPrimary: "Request a free analysis",
     ctaSecondary: "Contact us",
     ctaButton: "Contact Us"
   },
   about: {
-    heroTitle: "About Zentrix Solutions",
+    heroTitle: "About ZentrixDigital",
     heroSubtitle: "A modern digital agency from Amsterdam, focused on websites, applications, and digital systems that help businesses grow.",
     whoWeAreTitle: "Who We Are",
     whoWeAreText: "We work with businesses that want more than just an online presence. We help clients build a digital foundation that looks professional, performs well, and supports lasting growth.",
@@ -98,7 +98,7 @@ export const en = {
       performance: { title: "Performance", desc: "We care about speed, usability, and results — not just appearance." }
     },
     differentTitle: "What sets us apart",
-    differentText: "Zentrix Solutions combines design, clarity, and functionality in a way that helps businesses present themselves professionally and move forward with confidence. We focus on work that feels modern, strategic, and genuinely valuable."
+    differentText: "ZentrixDigital combines design, clarity, and functionality in a way that helps businesses present themselves professionally and move forward with confidence. We focus on work that feels modern, strategic, and genuinely valuable."
   },
   services: {
     heroTitle: "Our Services",
@@ -130,7 +130,7 @@ export const en = {
     ctaButton: "Contact Us"
   },
   contact: {
-    heroTitle: "Contact Zentrix Solutions",
+    heroTitle: "Contact ZentrixDigital",
     heroSubtitle: "Want to discuss your project, improve your website, or explore a custom application? Get in touch and let's see how we can help.",
     form: {
       name: "Name",
@@ -144,7 +144,7 @@ export const en = {
       send: "Send"
     },
     infoTitle: "Business Information",
-    company: "Zentrix Solutions",
+    company: "ZentrixDigital",
     location: "Amsterdam, Netherlands",
     phone: "06-83284995",
     email: "info@zentrixsolutions.nl",

@@ -9,7 +9,7 @@ import {
   Building2, Users, TrendingUp, Store,
   ClipboardList
 } from 'lucide-react';
-import logoPath from "@assets/ChatGPT_Image_19_apr_2026,_10_01_14_1776586282902.png";
+import logoPath from "@assets/ChatGPT_Image_20_apr_2026,_10_49_46_1776675127194.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -372,7 +372,7 @@ const Home = () => {
             <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-blue-600/15 blur-[80px] rounded-full" />
 
             <motion.div variants={fadeUp} className="flex justify-center mb-8">
-              <img src={logoPath} alt="Zentrix" className="h-16 w-16 object-contain opacity-90" />
+              <img src={logoPath} alt="ZentrixDigital" className="h-10 w-auto object-contain opacity-90" />
             </motion.div>
 
             <motion.h2 variants={fadeUp} className="relative text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
