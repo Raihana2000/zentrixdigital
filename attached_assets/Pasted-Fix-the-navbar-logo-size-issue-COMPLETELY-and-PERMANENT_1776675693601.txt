@@ -1,0 +1,95 @@
+Fix the navbar logo size issue COMPLETELY and PERMANENTLY.
+
+The current logo is too small. I want it BIG, clearly visible, and professionally scaled across all devices.
+
+DO NOT make small adjustments. OVERRIDE everything that limits the logo size.
+
+---
+
+### STEP 1 — REPLACE LOGO CODE (MANDATORY)
+
+Find the navbar logo section and REPLACE it entirely with this:
+
+<a href="/" class="flex items-center gap-4 shrink-0">
+  <img
+    src="/logo-zentrixdigital.png"
+    alt="ZentrixDigital"
+    class="logo-navbar"
+  />
+</a>
+
+---
+
+### STEP 2 — FORCE SIZE WITH CSS (CRITICAL)
+
+Add or update this CSS globally:
+
+.logo-navbar {
+height: 70px !important;
+width: auto !important;
+max-height: none !important;
+max-width: none !important;
+object-fit: contain !important;
+display: block !important;
+}
+
+@media (max-width: 768px) {
+.logo-navbar {
+height: 55px !important;
+}
+}
+
+---
+
+### STEP 3 — FIX NAVBAR HEIGHT (VERY IMPORTANT)
+
+Update navbar container:
+
+<header class="w-full bg-black border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between" style="height: 90px;">
+    <!-- logo + nav -->
+  </div>
+</header>
+
+---
+
+### STEP 4 — REMOVE ALL SIZE LIMITS (THIS IS WHY IT WAS FAILING)
+
+Search entire project and REMOVE or override:
+
+* h-8, h-10, h-12, h-14
+* w-8, w-10, w-12
+* max-h-*
+* max-w-*
+* overflow-hidden on logo parent
+* any container like: <div class="h-12 w-12">
+
+These MUST NOT exist anymore for the logo.
+
+---
+
+### STEP 5 — PREVENT SHRINKING
+
+Ensure parent container has:
+
+class="flex items-center shrink-0"
+
+---
+
+### STEP 6 — FINAL CHECK
+
+Result MUST be:
+
+* Logo clearly visible and dominant
+* At least 2x larger than before
+* Not squashed
+* Navbar grows with logo
+* Looks clean on desktop and mobile
+
+---
+
+IMPORTANT:
+Do NOT keep any old sizing logic. Completely override everything.
+The logo must be visually strong and noticeable immediately.
+
+END RESULT: BIG, CLEAN, PROFESSIONAL NAVBAR LOGO.

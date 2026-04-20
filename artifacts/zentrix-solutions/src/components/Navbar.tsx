@@ -31,8 +31,8 @@ const Navbar = () => {
           <img
             src={logoPath}
             alt="ZentrixDigital"
-            className="h-10 md:h-12 w-auto object-contain shrink-0 transition-all duration-300 group-hover:drop-shadow-[0_0_16px_rgba(59,130,246,0.75)]"
-            style={{ maxHeight: 'none', maxWidth: 'none' }}
+            className="h-[55px] md:h-[70px] w-auto object-contain shrink-0 transition-all duration-300 group-hover:drop-shadow-[0_0_16px_rgba(59,130,246,0.75)]"
+            style={{ maxHeight: 'none', maxWidth: 'none', display: 'block' }}
           />
         </Link>
 
