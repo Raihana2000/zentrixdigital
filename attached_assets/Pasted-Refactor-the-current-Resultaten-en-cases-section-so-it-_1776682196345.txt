@@ -1,0 +1,80 @@
+Refactor the current “Resultaten en cases” section so it becomes easy to update later without editing the full page layout every time.
+
+GOAL:
+Move all case cards into a separate reusable data file and render them dynamically on the page.
+
+REQUIREMENTS:
+
+1. Create a dedicated data file for cases.
+   Use whichever fits this project best:
+
+* `src/data/cases.js`
+* or `src/data/cases.ts`
+* or equivalent existing data folder structure
+
+2. Put the current cards into an exported array structure like this:
+
+```js
+export const cases = [
+  {
+    title: "Case study volgt binnenkort",
+    description: "Een toekomstig voorbeeld van hoe een website of digitaal systeem is verbeterd.",
+    status: "Binnenkort",
+    icon: "briefcase",
+    visible: true
+  },
+  {
+    title: "Klantresultaten volgen",
+    description: "Hier tonen we straks concrete verbeteringen in zichtbaarheid, vertrouwen of conversie.",
+    status: "In opbouw",
+    icon: "briefcase",
+    visible: true
+  },
+  {
+    title: "Project in opbouw",
+    description: "Nieuwe samenwerkingen en resultaten worden hier later overzichtelijk toegevoegd.",
+    status: "Later beschikbaar",
+    icon: "briefcase",
+    visible: true
+  }
+];
+```
+
+3. Update the current cases section component/page so it imports this cases array and renders the cards with `.map()` instead of hardcoded HTML/JSX.
+
+4. Preserve the current design as closely as possible:
+
+* dark theme
+* same spacing
+* same typography hierarchy
+* same cards style
+* same icon area if present
+
+5. Add support for these fields:
+
+* `title`
+* `description`
+* `status`
+* `icon`
+* `visible`
+
+6. Only render items where:
+
+```js
+visible === true
+```
+
+7. Add a small status label or muted line above or near the title if the design allows it, using the `status` field.
+
+8. Make the code clean and reusable, so later I can add a new case by only adding a new object in the data file.
+
+9. Do NOT redesign the entire page. Only refactor this section into a maintainable dynamic structure.
+
+10. After the refactor, explain briefly:
+
+* which file contains the cases now
+* where I can add a new case later
+* which component/page was updated
+
+FINAL RESULT:
+I should be able to add future client cases by editing only one data file, without touching the whole page layout.

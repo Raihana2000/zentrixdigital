@@ -7,9 +7,18 @@ import {
   MessageSquareOff, Smartphone, MousePointerClick, Clock,
   CheckCircle2, Search, Lightbulb, Hammer, Rocket,
   Building2, Users, TrendingUp, Store,
-  ClipboardList
+  ClipboardList, BarChart2, Star
 } from 'lucide-react';
 import logoPath from "@assets/ChatGPT_Image_20_apr_2026,_10_49_46_1776675127194.png";
+import { cases } from '@/data/cases';
+import type { CaseIcon } from '@/data/cases';
+
+const caseIconMap: Record<CaseIcon, React.ReactNode> = {
+  briefcase: <ClipboardList className="w-5 h-5 text-gray-500" />,
+  chart:     <BarChart2    className="w-5 h-5 text-gray-500" />,
+  rocket:    <Rocket       className="w-5 h-5 text-gray-500" />,
+  star:      <Star         className="w-5 h-5 text-gray-500" />,
+};
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -318,17 +327,20 @@ const Home = () => {
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
             className="grid grid-cols-1 sm:grid-cols-3 gap-5"
           >
-            {t.home.cases.map((c, i) => (
+            {cases.filter(c => c.visible).map((c, i) => (
               <motion.div
                 key={i} variants={fadeUp}
                 data-testid={`case-card-${i}`}
                 className="flex flex-col gap-4 p-8 rounded-2xl border border-dashed border-white/12 bg-white/[0.02] hover:border-blue-500/25 transition-colors duration-300"
               >
                 <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
-                  <ClipboardList className="w-5 h-5 text-gray-500" />
+                  {caseIconMap[c.icon]}
                 </div>
+                <span className="text-blue-500/60 text-xs font-bold uppercase tracking-widest">
+                  {c.status}
+                </span>
                 <h3 className="text-base font-semibold text-gray-300">{c.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{c.text}</p>
+                <p className="text-sm text-gray-600 leading-relaxed">{c.description}</p>
               </motion.div>
             ))}
           </motion.div>

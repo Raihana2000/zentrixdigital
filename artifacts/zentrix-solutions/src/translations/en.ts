@@ -65,11 +65,6 @@ export const en = {
     ],
     casesTitle: "Results and cases",
     casesIntro: "Real-world examples, improvement projects, and client results will be published here soon.",
-    cases: [
-      { title: "Case study coming soon", text: "A future example of how a website or digital system was improved." },
-      { title: "Client results to follow", text: "We'll soon show concrete improvements in visibility, trust, and conversion." },
-      { title: "Project in progress", text: "New collaborations and results will be added here as they develop." }
-    ],
     reachTitle: "Active across the Netherlands and beyond",
     reachText: "We help businesses throughout the Netherlands and work with international clients across Europe and beyond.",
     reachItems: [

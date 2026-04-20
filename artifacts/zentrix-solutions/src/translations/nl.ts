@@ -65,11 +65,6 @@ export const nl = {
     ],
     casesTitle: "Resultaten en cases",
     casesIntro: "Hier komen binnenkort praktijkvoorbeelden, verbetertrajecten en klantresultaten te staan.",
-    cases: [
-      { title: "Case study volgt binnenkort", text: "Een toekomstig voorbeeld van hoe een website of digitaal systeem is verbeterd." },
-      { title: "Klantresultaten volgen", text: "Hier tonen we straks concrete verbeteringen in zichtbaarheid, vertrouwen of conversie." },
-      { title: "Project in opbouw", text: "Nieuwe samenwerkingen en resultaten worden hier later overzichtelijk toegevoegd." }
-    ],
     reachTitle: "Actief in Nederland en ver daarbuiten",
     reachText: "Wij helpen bedrijven in heel Nederland en werken daarnaast samen met internationale klanten in Europa en daarbuiten.",
     reachItems: [
