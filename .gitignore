@@ -1,17 +1,30 @@
-# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-
-# compiled output
-dist
-tmp
-out-tsc
+# ── Build output ─────────────────────────────────────────────
+dist/
+tmp/
+out-tsc/
 *.tsbuildinfo
-.expo
-.expo-shared
+build/
 
-# dependencies
-node_modules
+# ── Dependencies ─────────────────────────────────────────────
+node_modules/
+.pnpm-store/
+.pnpm/
 
-# IDEs and editors
+# ── Vite / cache ─────────────────────────────────────────────
+.vite/
+.cache/
+*.local
+
+# ── Environment & secrets ────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Expo / React Native ──────────────────────────────────────
+.expo/
+.expo-shared/
+
+# ── Editors ──────────────────────────────────────────────────
 /.idea
 .project
 .classpath
@@ -19,31 +32,31 @@ node_modules
 *.launch
 .settings/
 *.sublime-workspace
-
-# IDE - VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
+# ── OS ───────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
 
-.cursor/rules/nx-rules.mdc
-.github/instructions/nx.instructions.md
+# ── Logs ─────────────────────────────────────────────────────
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+testem.log
+libpeerconnection.log
 
-# Replit
+# ── Misc ─────────────────────────────────────────────────────
+/coverage
+/typings
+/.sass-cache
+/connect.lock
+
+# ── Replit internals ─────────────────────────────────────────
 .cache/
 .local/
+.cursor/
+.github/instructions/
