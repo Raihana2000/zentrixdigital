@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useTranslation } from '@/context/TranslationContext';
 import { motion } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, CalendarClock, ArrowRight } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] } }
 };
 
 const Contact = () => {

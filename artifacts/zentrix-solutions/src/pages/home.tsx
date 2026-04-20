@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from '@/context/TranslationContext';
 import { Link } from 'wouter';
 import { motion } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import {
   ArrowRight, Code2, Cpu, Wrench, LineChart,
   MessageSquareOff, Smartphone, MousePointerClick, Clock,
@@ -20,12 +21,12 @@ const caseIconMap: Record<CaseIcon, React.ReactNode> = {
   star:      <Star         className="w-5 h-5 text-gray-500" />,
 };
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 28 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: 'easeOut' } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.16, 1, 0.3, 1] } }
 };
 
-const stagger = {
+const stagger: Variants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.1 } }
 };
