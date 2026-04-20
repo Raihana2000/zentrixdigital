@@ -45,7 +45,7 @@ const Footer = () => {
                 <a href="tel:0683284995" className="hover:text-primary transition-colors">06-83284995</a>
               </p>
               <p>
-                <a href="mailto:info@zentrixsolutions.nl" className="hover:text-primary transition-colors">info@zentrixsolutions.nl</a>
+                <a href="mailto:info@zentrixdigital.eu" className="hover:text-primary transition-colors">info@zentrixdigital.eu</a>
               </p>
             </address>
 

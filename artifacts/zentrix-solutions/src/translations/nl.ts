@@ -147,7 +147,7 @@ export const nl = {
     company: "ZentrixDigital",
     location: "Amsterdam, Netherlands",
     phone: "06-83284995",
-    email: "info@zentrixsolutions.nl",
+    email: "info@zentrixdigital.eu",
     infoNote: "Wij streven naar duidelijke communicatie, professionele opvolging en een transparant proces vanaf het eerste contact.",
     hours: {
       title: "Bereikbaarheid",

@@ -100,7 +100,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="mailto:info@zentrixsolutions.nl"
+                  href="mailto:info@zentrixdigital.eu"
                   className="group flex items-center gap-4 p-5 rounded-2xl bg-white/[0.03] border border-white/8 hover:border-blue-500/30 transition-colors duration-300"
                   data-testid="contact-email"
                 >
