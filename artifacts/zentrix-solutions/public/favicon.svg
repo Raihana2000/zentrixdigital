@@ -1,38 +1,23 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
   <!--
-    ZentrixDigital Favicon — Compact Fusion ZD Monogram
-    Winner: Variant C refined
-    - D drawn first (behind), Z drawn second (on top) → clean hard edges
-    - No gradient — flat #3B82F6 blue for maximum sharpness at 16px
-    - 80px-wide Z diagonal (= ~2.5px at 16×16), 100px wide D stroke
-    - rx=72 rounded-square background, 44px icon padding
-    Works crisp: dark browser tabs, light browser tabs, iOS, Android
+    ZentrixDigital Favicon — ZD Pixel Blockmark
+    16×16 viewBox, rectangles only = zero sub-pixel blur at any browser DPI
+    Z: electric blue #3B82F6, staircase diagonal (5 blocks, gap-free)
+    D: white #FFFFFF, rectangular D with 1px inner hollow
+    1px padding all sides, 1px gap between Z and D
   -->
+  <rect width="16" height="16" fill="#0B0B0B"/>
 
-  <!-- Black rounded-square background -->
-  <rect width="512" height="512" rx="72" fill="#0B0B0B"/>
+  <!-- Z in electric blue -->
+  <rect x="1" y="1"  width="8" height="2" fill="#3B82F6"/>
+  <rect x="6" y="3"  width="3" height="3" fill="#3B82F6"/>
+  <rect x="3" y="6"  width="5" height="3" fill="#3B82F6"/>
+  <rect x="1" y="9"  width="3" height="2" fill="#3B82F6"/>
+  <rect x="1" y="11" width="8" height="2" fill="#3B82F6"/>
 
-  <!--
-    D letterform (drawn first — Z will cover any overlap area)
-    Left stroke: x=232–332 (100px wide), full height y=54–458
-    Bowl arc: (332,54) → (332,458), rx=132, ry=202 → rightmost x=464
-    ry = (458−54)/2 = 202 (perfect semicircle vertically)
-  -->
-  <path
-    d="M 232,54 L 332,54 A 132,202 0 0 1 332,458 L 232,458 Z"
-    fill="white"
-  />
-
-  <!--
-    Z letterform (drawn on top — covers D overlap cleanly)
-    Top bar:    x=44–380, y=54–124   (width=336, height=70)
-    Bottom bar: x=44–468, y=388–458  (width=424, height=70)
-    Diagonal outer: (380,124) → (132,388) | slope = −0.893
-    Diagonal inner: (300,124) → (44,388)  | slope = −0.898 ≈ parallel ✓
-    Horizontal stroke width = 380−300 = 80px (reads as ≈2.5px at 16×16)
-  -->
-  <polygon
-    points="44,54 380,54 380,124 132,388 468,388 468,458 44,458 44,388 300,124 44,124"
-    fill="#3B82F6"
-  />
+  <!-- D in white — left stroke + top bar + bottom bar + right bowl -->
+  <rect x="10" y="1"  width="5" height="2"  fill="#FFFFFF"/>
+  <rect x="10" y="1"  width="2" height="12" fill="#FFFFFF"/>
+  <rect x="13" y="3"  width="2" height="8"  fill="#FFFFFF"/>
+  <rect x="10" y="11" width="5" height="2"  fill="#FFFFFF"/>
 </svg>
