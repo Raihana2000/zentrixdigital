@@ -4,6 +4,7 @@ import { Link } from 'wouter';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import { Code2, Cpu, Wrench, LineChart, ArrowRight, CheckCircle2 } from 'lucide-react';
+import SEOHead from '@/components/SEOHead';
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
@@ -33,7 +34,13 @@ const Services = () => {
   }[];
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#0B0B0B] pt-[118px]">
+    <div className="flex flex-col min-h-screen bg-[#0B0B0B] page-top-pad">
+
+      <SEOHead
+        title={t.meta.servicesTitle}
+        description={t.meta.servicesDesc}
+        canonical="https://www.zentrixdigital.eu/services"
+      />
 
       {/* ─── HERO ──────────────────────────────────────────────── */}
       <section className="relative py-24 md:py-32 px-5 overflow-hidden">

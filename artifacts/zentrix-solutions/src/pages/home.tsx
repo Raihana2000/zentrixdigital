@@ -3,6 +3,7 @@ import { useTranslation } from '@/hooks/useTranslation';
 import { Link } from 'wouter';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
+import SEOHead from '@/components/SEOHead';
 import {
   ArrowRight, Code2, Cpu, Wrench, LineChart,
   MessageSquareOff, Smartphone, MousePointerClick, Clock,
@@ -33,9 +34,14 @@ const Home = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#0B0B0B] text-white overflow-x-hidden">
+      <SEOHead
+        title={t.meta.homeTitle}
+        description={t.meta.homeDesc}
+        canonical="https://www.zentrixdigital.eu/"
+      />
 
       {/* ─── HERO ────────────────────────────────────────────── */}
-      <section className="relative flex flex-col items-center justify-center min-h-screen px-5 pt-[118px] pb-20 text-center overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center min-h-screen px-5 page-top-pad pb-20 text-center overflow-hidden">
         {/* Glow blobs */}
         <div className="pointer-events-none absolute inset-0 z-0">
           <div className="absolute top-[-15%] left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full" />

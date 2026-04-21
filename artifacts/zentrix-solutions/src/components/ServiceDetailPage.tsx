@@ -3,6 +3,7 @@ import { Link } from 'wouter';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import { CheckCircle2, ArrowRight, ArrowLeft } from 'lucide-react';
+import SEOHead from '@/components/SEOHead';
 
 export interface ServicePageData {
   h1: string;
@@ -26,6 +27,8 @@ interface ServiceDetailPageProps {
   backLabel: string;
   servicesLabel: string;
   contactLabel: string;
+  metaDesc?: string;
+  canonical?: string;
 }
 
 const fadeUp: Variants = {
@@ -44,14 +47,18 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   backLabel,
   servicesLabel,
   contactLabel,
+  metaDesc,
+  canonical,
 }) => {
   useEffect(() => {
-    document.title = pageTitle;
     window.scrollTo({ top: 0 });
   }, [pageTitle]);
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#0B0B0B] pt-[118px]">
+    <div className="flex flex-col min-h-screen bg-[#0B0B0B] page-top-pad">
+      {canonical && metaDesc && (
+        <SEOHead title={pageTitle} description={metaDesc} canonical={canonical} />
+      )}
 
       {/* ─── HERO ──────────────────────────────────────────────── */}
       <section className="relative py-24 md:py-32 px-5 overflow-hidden">

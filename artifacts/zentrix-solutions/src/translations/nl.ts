@@ -294,6 +294,20 @@ export const nl = {
   contact: {
     heroTitle: "Contact opnemen",
     heroSubtitle: "Vraag vrijblijvend een gratis analyse aan, bespreek uw project of ontdek wat wij voor uw bedrijf kunnen betekenen. Wij reageren snel en professioneel.",
+    readyTitle: "Klaar om uw website te verbeteren?",
+    readyText: "Wilt u weten waar uw website klanten laat liggen? Vraag een gratis analyse aan of neem direct contact op. Wij reageren doorgaans binnen 24 uur.",
+    formTitle: "Vraag een gratis analyse aan",
+    labelLocation: "Locatie",
+    labelPhone: "Telefoon",
+    labelEmail: "E-mail",
+    labelResponse: "Reactietijd",
+    responseTime: "Meestal binnen 24 uur",
+    whatsappCta: "Direct via WhatsApp",
+    noSpamNotice: "Geen spam. Gewoon een korte analyse en eerlijk advies.",
+    toastTitle: "Bericht verzonden",
+    toastDesc: "We nemen zo snel mogelijk contact met u op.",
+    sendingLabel: "Verzenden...",
+    submitLabel: "Vraag gratis analyse aan",
     form: {
       name: "Naam",
       namePlaceholder: "Uw naam",
@@ -320,6 +334,24 @@ export const nl = {
         "Zondag: Gesloten"
       ]
     }
+  },
+  meta: {
+    homeTitle: "ZentrixDigital | Websites en applicaties die klanten opleveren",
+    homeDesc: "ZentrixDigital bouwt professionele websites en maatwerk applicaties voor ondernemers die beter gevonden willen worden in Google en meer klanten willen aantrekken.",
+    aboutTitle: "Over ZentrixDigital | Modern digitaal webbureau in Amsterdam",
+    aboutDesc: "ZentrixDigital is een modern digitaal bureau uit Amsterdam. Wij bouwen professionele websites, maatwerk applicaties en begeleiden bedrijven bij hun digitale groei.",
+    servicesTitle: "Diensten | ZentrixDigital – Websites, Applicaties & Digitale Groei",
+    servicesDesc: "Ontdek onze diensten: professionele website laten maken, maatwerk applicaties, website onderhoud en digitale groeiondersteuning voor uw bedrijf.",
+    contactTitle: "Contact opnemen | ZentrixDigital – Gratis analyse aanvragen",
+    contactDesc: "Neem contact op met ZentrixDigital voor een gratis websiteanalyse. Wij helpen ondernemers met professionele websites en applicaties. Reactie binnen 24 uur.",
+    websitesTitle: "Website laten maken op maat | ZentrixDigital",
+    websitesDesc: "Professionele website laten maken door ZentrixDigital. Wij bouwen conversiegerichte websites op maat die goed scoren in Google en bezoekers omzetten in klanten.",
+    applicatiesTitle: "Webapplicatie laten ontwikkelen | ZentrixDigital",
+    applicatiesDesc: "Maatwerk webapplicatie laten bouwen? ZentrixDigital ontwikkelt slimme applicaties die processen automatiseren, efficiëntie verhogen en meegroeien met uw bedrijf.",
+    onderhoudTitle: "Website onderhoud en optimalisatie | ZentrixDigital",
+    onderhoudDesc: "Professioneel website onderhoud en technische optimalisatie door ZentrixDigital. Wij zorgen voor snelheid, veiligheid en stabiele prestaties van uw website.",
+    groeiTitle: "Digitale groeiondersteuning | ZentrixDigital",
+    groeiDesc: "Versterk uw online aanwezigheid met digitale groeiondersteuning van ZentrixDigital. Betere zichtbaarheid, sterkere positionering en meer conversie voor uw bedrijf."
   },
   footer: {
     tagline: "Professionele websites, maatwerk applicaties en transparante digitale ondersteuning voor bedrijven die online sterker willen groeien.",

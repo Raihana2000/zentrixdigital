@@ -8,10 +8,12 @@ const ServiceGroei = () => {
   return (
     <ServiceDetailPage
       data={data}
-      pageTitle={`${data.h1} | ZentrixDigital`}
-      backLabel={t.services.heroTitle}
-      servicesLabel={t.services.heroTitle}
+      pageTitle={t.meta.groeiTitle}
+      backLabel={t.nav.services}
+      servicesLabel={t.nav.services}
       contactLabel={t.home.ctaSecondary}
+      metaDesc={t.meta.groeiDesc}
+      canonical="https://www.zentrixdigital.eu/digitale-groeiondersteuning"
     />
   );
 };

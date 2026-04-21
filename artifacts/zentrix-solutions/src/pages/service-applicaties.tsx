@@ -8,10 +8,12 @@ const ServiceApplicaties = () => {
   return (
     <ServiceDetailPage
       data={data}
-      pageTitle={`${data.h1} | ZentrixDigital`}
-      backLabel={t.services.heroTitle}
-      servicesLabel={t.services.heroTitle}
+      pageTitle={t.meta.applicatiesTitle}
+      backLabel={t.nav.services}
+      servicesLabel={t.nav.services}
       contactLabel={t.home.ctaSecondary}
+      metaDesc={t.meta.applicatiesDesc}
+      canonical="https://www.zentrixdigital.eu/applicaties"
     />
   );
 };

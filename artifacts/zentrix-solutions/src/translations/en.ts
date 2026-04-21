@@ -294,6 +294,20 @@ export const en = {
   contact: {
     heroTitle: "Contact ZentrixDigital",
     heroSubtitle: "Request a free no-obligation analysis, discuss your project, or find out what we can do for your business. We respond quickly and professionally.",
+    readyTitle: "Ready to improve your website?",
+    readyText: "Want to find out where your website is losing customers? Request a free analysis or get in touch directly. We typically respond within 24 hours.",
+    formTitle: "Request a free analysis",
+    labelLocation: "Location",
+    labelPhone: "Phone",
+    labelEmail: "Email",
+    labelResponse: "Response time",
+    responseTime: "Usually within 24 hours",
+    whatsappCta: "Message via WhatsApp",
+    noSpamNotice: "No spam. Just a quick analysis and honest advice.",
+    toastTitle: "Message sent",
+    toastDesc: "We will get back to you as soon as possible.",
+    sendingLabel: "Sending...",
+    submitLabel: "Request free analysis",
     form: {
       name: "Name",
       namePlaceholder: "Your name",
@@ -320,6 +334,24 @@ export const en = {
         "Sunday: Closed"
       ]
     }
+  },
+  meta: {
+    homeTitle: "ZentrixDigital | Websites and applications that deliver customers",
+    homeDesc: "ZentrixDigital builds professional websites and custom applications for businesses that want to rank better on Google and attract more customers.",
+    aboutTitle: "About ZentrixDigital | Modern digital agency in Amsterdam",
+    aboutDesc: "ZentrixDigital is a modern digital agency based in Amsterdam. We build professional websites, custom applications, and support businesses with their digital growth.",
+    servicesTitle: "Services | ZentrixDigital – Websites, Applications & Digital Growth",
+    servicesDesc: "Explore our services: custom website development, web applications, website maintenance, and digital growth support for your business.",
+    contactTitle: "Contact ZentrixDigital | Request a Free Analysis",
+    contactDesc: "Contact ZentrixDigital for a free website analysis. We help businesses with professional websites and custom applications. Response within 24 hours.",
+    websitesTitle: "Custom Website Development | ZentrixDigital",
+    websitesDesc: "Need a professional custom website? ZentrixDigital builds conversion-focused websites that rank well on Google and turn visitors into customers.",
+    applicatiesTitle: "Custom Web Application Development | ZentrixDigital",
+    applicatiesDesc: "Need a custom web application? ZentrixDigital develops smart applications that automate processes, improve efficiency, and scale with your business.",
+    onderhoudTitle: "Website Maintenance and Optimization | ZentrixDigital",
+    onderhoudDesc: "Professional website maintenance and technical optimization by ZentrixDigital. We keep your website fast, secure, and performing at its best.",
+    groeiTitle: "Digital Growth Support | ZentrixDigital",
+    groeiDesc: "Strengthen your online presence with digital growth support from ZentrixDigital. Better visibility, stronger positioning, and more conversions for your business."
   },
   footer: {
     tagline: "Professional websites, custom applications, and transparent digital support for businesses that want to grow stronger online.",
