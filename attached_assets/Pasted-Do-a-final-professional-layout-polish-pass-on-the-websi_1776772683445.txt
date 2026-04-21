@@ -1,0 +1,97 @@
+Do a final professional layout polish pass on the website.
+
+The structure and content must remain intact.
+Do NOT remove sections.
+Do NOT change routing.
+Do NOT break the language toggle.
+Do NOT rewrite the whole site again.
+
+Focus only on visual polish, spacing, consistency, and UX.
+
+Main issues to fix:
+
+1. Sticky header overlap
+Some page headings and sections appear too close to the fixed/sticky navbar.
+Add correct top spacing so that no section title or content is hidden behind the header.
+
+Requirements:
+- Every page must have proper top padding below the sticky navigation
+- Section anchors and routed pages must not render underneath the navbar
+- The first visible heading on each page must breathe properly
+
+2. Section spacing consistency
+Make vertical spacing consistent across:
+- homepage
+- services overview page
+- individual service pages
+- about page
+- contact page
+
+Requirements:
+- balanced spacing between heading, paragraph, cards, and CTA
+- no crowded sections
+- no giant awkward empty gaps
+- consistent padding top and bottom per section
+
+3. Services cards polish
+On the services overview page:
+- keep the 4 cards
+- make all card heights equal
+- align icon, title, text, bullet list, and CTA consistently
+- ensure “Meer info” sits at the bottom of each card for a cleaner grid
+- improve readability and spacing inside cards
+
+4. CTA label refinement
+Replace generic CTA text where needed with more natural labels:
+Dutch:
+- “Meer info” may become “Bekijk dienst” or “Lees meer” where visually better
+- keep CTA wording consistent across cards
+
+English:
+- use consistent equivalents like “View service” or “Learn more”
+
+5. Typography polish
+- Keep the strong premium style
+- Ensure large headings do not wrap awkwardly on desktop
+- Improve paragraph max-width for readability
+- Keep line-height comfortable
+- Avoid oversized headings that dominate too aggressively below the navbar
+
+6. Service page hero polish
+For each service detail page:
+- make the hero section cleaner and more premium
+- ensure image/icon block and text block align nicely
+- improve spacing between heading, intro, and bullet points
+- preserve current content
+
+7. Mobile and tablet polish
+Check responsive behavior carefully:
+- headings should not break ugly
+- cards should stack cleanly
+- buttons should not overflow
+- spacing should remain elegant
+- sticky header should not cover content
+- WhatsApp button should not block important CTA/buttons if avoidable
+
+8. Final consistency check
+Make sure these look visually consistent:
+- homepage cards
+- “Voor wie wij websites en applicaties bouwen”
+- “Waarom bedrijven voor ZentrixDigital kiezen”
+- process section
+- services overview
+- 4 service detail pages
+- portfolio/request examples section
+- international section
+
+9. Important
+Do not change brand colors.
+Do not reduce the premium feel.
+Do not make it look generic or template-like.
+Keep it sleek, modern, and conversion-focused.
+
+After finishing, explain:
+- which layout/spacing issues were fixed
+- how the sticky header overlap was solved
+- which CTA labels were adjusted
+- whether desktop, tablet, and mobile spacing are now consistent

@@ -102,7 +102,7 @@ export const nl = {
   services: {
     heroTitle: "Onze diensten",
     heroSubtitle: "Wij bouwen digitale oplossingen die zichtbaarheid, vertrouwen, efficiëntie en duurzame groei ondersteunen.",
-    moreInfoLabel: "Meer info",
+    moreInfoLabel: "Bekijk dienst",
     servicesList: {
       dev: {
         title: "Websites",

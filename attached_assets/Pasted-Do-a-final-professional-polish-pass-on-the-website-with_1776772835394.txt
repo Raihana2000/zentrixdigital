@@ -1,0 +1,264 @@
+Do a final professional polish pass on the website with a strong focus on BOTH conversion and SEO.
+
+Important:
+- Keep the current premium visual style
+- Do NOT remove sections
+- Do NOT break routing
+- Do NOT break the language toggle
+- Do NOT delete the existing content structure unless explicitly replaced with a better SEO version
+- Keep Dutch and English versions fully synchronized
+- Every change in Dutch must also be correctly reflected in English
+- The site must remain modern, clean, premium, and trustworthy
+
+GOALS:
+1. Improve visual polish and spacing
+2. Fix sticky header overlap
+3. Make all services and cards consistent
+4. Improve on-page SEO structure
+5. Improve technical SEO basics
+6. Keep the site conversion-focused
+
+==================================================
+A. LAYOUT / UX FIXES
+==================================================
+
+1. Sticky header overlap
+Some sections and page titles appear too close to or behind the fixed header.
+Fix this globally.
+
+Requirements:
+- Add correct top padding/margin for routed pages and anchor sections
+- No heading may render underneath the sticky navbar
+- Scrolling to sections must land cleanly below the navbar
+- Ensure desktop, tablet, and mobile all behave correctly
+
+2. Section spacing consistency
+Improve spacing between:
+- headings
+- intro paragraphs
+- buttons
+- cards
+- feature lists
+- next sections
+
+Requirements:
+- no cramped sections
+- no oversized empty gaps
+- visually balanced spacing everywhere
+- consistent section padding across homepage, about, services overview, service detail pages, and contact page
+
+3. Card consistency
+For all cards:
+- equal heights where appropriate
+- aligned titles, descriptions, bullets, and CTA buttons
+- CTA pinned to bottom when part of card layouts
+- clean hover behavior
+- premium spacing inside cards
+
+==================================================
+B. SEO CONTENT STRUCTURE
+==================================================
+
+4. Proper heading structure
+Fix heading hierarchy across all pages.
+
+Requirements:
+- exactly 1 H1 per page
+- H2 only for major sections
+- H3 for cards/subsections where useful
+- no skipped hierarchy
+- keep headings keyword-relevant and human-readable
+
+5. SEO-friendly page titles and meta descriptions
+Add or improve unique SEO metadata for all core pages.
+
+Create optimized unique:
+- title tags
+- meta descriptions
+
+Pages:
+- home
+- over ons / about
+- diensten / services overview
+- each individual service page
+- contact
+
+Guidelines:
+- titles should be compelling, clear, not stuffed
+- meta descriptions should increase click-through rate
+- Dutch pages need Dutch metadata
+- English pages need English metadata
+- keep branding consistent with ZentrixDigital
+
+6. Improve homepage keyword relevance
+Without making it spammy, refine homepage copy so it naturally supports search intent around:
+Dutch:
+- website laten maken
+- webdesign op maat
+- professionele website
+- applicatie laten maken
+- website die klanten oplevert
+- website bouwer / webbureau
+- digitale groei
+English:
+- custom web design
+- website development
+- web application development
+- conversion-focused website
+- digital growth
+- custom business website
+
+Requirements:
+- natural language only
+- no keyword stuffing
+- keep it premium and persuasive
+
+7. Improve service page keyword targeting
+Each service page must target its own search intent clearly.
+
+Create keyword-focused but natural content for:
+- Websites
+- Applicaties
+- Onderhoud & optimalisatie
+- Digitale groeiondersteuning
+
+For each service page:
+- clear intro
+- benefits section
+- bullet points
+- trust-oriented copy
+- CTA section
+- language-specific SEO wording in both Dutch and English
+
+8. Add internal linking
+Improve internal linking structure.
+
+Requirements:
+- homepage should link clearly to service pages
+- service overview should link to each service detail page
+- service detail pages should link to contact page and back to services
+- where useful, link between related services
+- use descriptive anchor text, not vague generic links
+
+==================================================
+C. TECHNICAL SEO
+==================================================
+
+9. Canonicals
+Add proper canonical tags for all pages.
+
+Requirements:
+- each page must have a correct self-referencing canonical
+- no duplicate canonical mistakes
+- Dutch and English versions must not conflict
+
+10. Open Graph / social metadata
+Add proper Open Graph and Twitter meta tags.
+
+Include:
+- title
+- description
+- url
+- site name
+- image fallback if available
+
+11. Sitemap and robots
+Check and improve technical indexing basics.
+
+Requirements:
+- ensure sitemap exists and includes all important pages
+- ensure robots.txt is valid
+- do not accidentally block important pages
+- make sure service pages are indexable
+
+12. Performance-conscious SEO
+Keep the site visually premium but avoid unnecessary performance damage.
+
+Requirements:
+- optimize image usage
+- use lazy loading where appropriate
+- avoid huge layout shifts
+- avoid oversized assets
+- maintain good Lighthouse-friendly structure
+- preserve responsive behavior
+
+==================================================
+D. CONVERSION + TRUST
+==================================================
+
+13. CTA refinement
+Standardize CTA wording.
+
+Dutch examples:
+- Bekijk dienst
+- Lees meer
+- Vraag gratis analyse aan
+- Neem contact op
+- Bekijk mogelijkheden
+
+English examples:
+- View service
+- Learn more
+- Request a free analysis
+- Contact us
+- Explore options
+
+Use the most natural one per context and keep consistency.
+
+14. Trust and clarity
+Strengthen trust signals in copy without making fake claims.
+
+Allowed:
+- clear process
+- transparency
+- professional execution
+- practical focus
+- growth-oriented
+- responsive / scalable / secure language where accurate
+
+Not allowed:
+- fake testimonials
+- fake client logos
+- unsupported claims like “#1”
+- made-up case study results
+
+==================================================
+E. LANGUAGE TOGGLE
+==================================================
+
+15. Full bilingual consistency
+The NL/EN toggle must work correctly on:
+- homepage
+- services overview
+- all individual service pages
+- about
+- contact
+
+Requirements:
+- every visible text must translate correctly
+- no mixed Dutch/English sections
+- titles, buttons, cards, bullets, metadata, and service detail pages all need proper translation
+- English must sound natural, not literal or broken
+
+==================================================
+F. FINAL CHECK
+==================================================
+
+16. Audit and fix
+After implementation, do a final pass and confirm:
+- sticky header overlap fixed
+- spacing consistent
+- cards aligned
+- service pages complete
+- internal linking works
+- metadata added
+- heading hierarchy correct
+- Dutch and English both complete
+- site is stronger for SEO and conversion
+
+At the end, give a short report with:
+1. what SEO improvements were added
+2. what layout problems were fixed
+3. which pages now have metadata
+4. whether sitemap/robots/canonicals are set
+5. whether NL and EN are both complete

@@ -180,6 +180,12 @@
   .site-header-inner { min-height: 78px !important; }
 }
 
+/* ── Responsive page top clearance (matches navbar height at each bp) */
+.page-top-pad { padding-top: 78px; }
+@media (min-width: 480px)  { .page-top-pad { padding-top: 88px; } }
+@media (min-width: 768px)  { .page-top-pad { padding-top: 100px; } }
+@media (min-width: 1024px) { .page-top-pad { padding-top: 118px; } }
+
 /* ── Backstop: target the element directly ───────────────────────── */
 img[alt="ZentrixDigital"] {
   height: 96px !important;

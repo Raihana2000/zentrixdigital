@@ -102,7 +102,7 @@ export const en = {
   services: {
     heroTitle: "Our Services",
     heroSubtitle: "We build digital solutions designed to support visibility, trust, efficiency, and long-term growth.",
-    moreInfoLabel: "More info",
+    moreInfoLabel: "View service",
     servicesList: {
       dev: {
         title: "Websites",
