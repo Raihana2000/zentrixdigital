@@ -68,6 +68,7 @@ export const en = {
     casesIntro: "We believe in transparency over filler. We work with businesses that want real results, and we prefer showing our approach rather than talking about it.",
     casesBody: "Concrete examples of websites, applications, and improvement projects are available on request. That way you can judge for yourself whether our approach fits your situation — no marketing fluff.",
     casesCtaLabel: "Request examples",
+    servicesMoreInfo: "More info",
     reachTitle: "Active across the Netherlands and beyond",
     reachText: "We help businesses throughout the Netherlands and work with international clients across Europe and beyond.",
     reachItems: [
@@ -101,31 +102,194 @@ export const en = {
   services: {
     heroTitle: "Our Services",
     heroSubtitle: "We build digital solutions designed to support visibility, trust, efficiency, and long-term growth.",
+    moreInfoLabel: "More info",
     servicesList: {
       dev: {
-        title: "Website Development",
-        desc: "We create modern, responsive, and conversion-focused websites that help businesses make a strong first impression and turn attention into action.",
-        bullets: ["Professional design", "Mobile responsive", "Fast loading", "Trust-building layout", "Conversion-focused structure"]
+        title: "Websites",
+        desc: "Professional custom websites that build trust, rank well on Google, and convert visitors into customers.",
+        bullets: ["Professional design", "Fully mobile-responsive", "Fast load times", "Conversion-focused structure"],
+        href: "/websites"
       },
       app: {
-        title: "Application Development",
-        desc: "We develop custom applications tailored to your business needs — from internal tools to client-facing solutions that improve workflow, functionality, and scalability.",
-        bullets: ["Custom functionality", "Business-focused solutions", "Scalable structure", "User-friendly design"]
+        title: "Applications",
+        desc: "Custom web applications that improve, automate, and scale your business processes.",
+        bullets: ["Custom functionality", "Process improvement", "Scalable architecture", "User-friendly design"],
+        href: "/applicaties"
       },
       maintenance: {
         title: "Maintenance & Optimization",
-        desc: "We provide ongoing support to keep your digital systems secure, updated, and performing at their best.",
-        bullets: ["Updates and improvements", "Speed optimization", "Ongoing support", "Stability and maintenance"]
+        desc: "Ongoing maintenance for speed, security, updates, and technical performance of your website.",
+        bullets: ["Updates and improvements", "Speed optimization", "Ongoing support", "Security and stability"],
+        href: "/onderhoud-optimalisatie"
       },
       growth: {
         title: "Digital Growth Support",
-        desc: "We help businesses strengthen their online presence through better structure, stronger presentation, and digital improvements that support growth.",
-        bullets: ["Better online presentation", "Stronger trust signals", "Improved user experience", "Smarter digital positioning"]
+        desc: "Strategic improvements to your online presence for better visibility, structure, and conversion.",
+        bullets: ["Better online presentation", "Stronger positioning", "Improved user experience", "Digital growth"],
+        href: "/digitale-groeiondersteuning"
       }
     },
     ctaTitle: "Need a solution tailored to your business?",
     ctaText: "We're happy to think along with you and build something that fits your goals.",
     ctaButton: "Contact Us"
+  },
+  servicePages: {
+    websites: {
+      h1: "Professional website development",
+      intro: "A professional website is the digital foundation of your business. We build custom websites that not only look strong, but also build trust, rank well on Google, and turn visitors into customers.",
+      benefitsTitle: "Why choose ZentrixDigital for your website",
+      benefits: [
+        "Professional appearance that instantly builds trust",
+        "Fully mobile-responsive across all screen sizes",
+        "Fast load times for better user experience and SEO",
+        "Conversion-focused structure designed to generate leads",
+        "Clear, compelling design that fits your brand",
+        "Better Google visibility through technically strong foundations"
+      ],
+      includedTitle: "What's included",
+      included: [
+        "Custom design based on your brand and goals",
+        "Fully responsive layout for mobile, tablet, and desktop",
+        "Contact form with email integration",
+        "Speed optimization and basic security setup",
+        "SEO-technical foundations (meta tags, heading structure, load time)",
+        "Handover meeting with explanation and documentation"
+      ],
+      whoForTitle: "Who is this for",
+      whoFor: [
+        { title: "Starting entrepreneurs", text: "Who want to get online quickly and professionally." },
+        { title: "Local businesses", text: "That want to attract more customers through a strong online presence." },
+        { title: "Service providers", text: "Who need to build trust online to win new clients." },
+        { title: "Growing businesses", text: "Looking to refresh their website and prepare for the next phase." }
+      ],
+      processTitle: "How we work",
+      process: [
+        { title: "Intake conversation", text: "We discuss your goals, target audience, and what you want to communicate." },
+        { title: "Strategy and setup", text: "We define the structure, page layout, and design direction." },
+        { title: "Build and delivery", text: "We build the website and refine it based on your feedback." },
+        { title: "Live and beyond", text: "After launch, we monitor and look for ways to improve performance further." }
+      ],
+      ctaTitle: "Ready for a website that actually works?",
+      ctaText: "Request a free no-obligation analysis and discover what a professional website can do for your business.",
+      ctaButton: "Request free analysis"
+    },
+    applicaties: {
+      h1: "Custom application development",
+      intro: "When off-the-shelf software isn't enough, we build custom web applications that fit seamlessly into your business processes — from internal tools to client portals and dashboards.",
+      benefitsTitle: "Benefits of custom application development",
+      benefits: [
+        "Solutions built around your exact way of working",
+        "Automation of repetitive tasks and workflows",
+        "Scalability that grows with your business",
+        "User-friendly interfaces for internal and external use",
+        "Integration with your existing systems",
+        "Full control over functionality and data"
+      ],
+      includedTitle: "What's included",
+      included: [
+        "Analysis of your current processes and requirements",
+        "Custom development based on your specifications",
+        "User-friendly interface design",
+        "Technical documentation and handover",
+        "Testing phase and quality assurance",
+        "Post-launch support and further development"
+      ],
+      whoForTitle: "Who is this for",
+      whoFor: [
+        { title: "Businesses with specific processes", text: "That need tools no standard software can provide." },
+        { title: "Teams looking to automate", text: "Who want to save time through smarter digital systems." },
+        { title: "Businesses with client portals", text: "That want to offer customers their own digital environment." },
+        { title: "Organisations looking to scale", text: "That need a robust digital infrastructure to support growth." }
+      ],
+      processTitle: "How we work",
+      process: [
+        { title: "Requirements analysis", text: "We map your needs, processes, and desired outcomes." },
+        { title: "Architecture and planning", text: "We design the technical structure and define a clear project plan." },
+        { title: "Development and testing", text: "We build iteratively and test thoroughly for functionality and usability." },
+        { title: "Delivery and further development", text: "After launch, we're available for improvements and expansions." }
+      ],
+      ctaTitle: "An application that makes your business smarter?",
+      ctaText: "Tell us what you need and we'll find the best way to build it.",
+      ctaButton: "Contact us"
+    },
+    onderhoud: {
+      h1: "Website maintenance and optimization",
+      intro: "A website that isn't actively maintained gradually loses speed, security, and performance. We keep your digital systems up to date, well-performing, and secure — so you don't have to.",
+      benefitsTitle: "Why active maintenance pays off",
+      benefits: [
+        "Your website stays fast and stable",
+        "Security updates prevent risks before they occur",
+        "Technical improvements enhance user experience",
+        "Better performance leads to higher conversion",
+        "You don't have to think about it",
+        "Issues are detected and resolved early"
+      ],
+      includedTitle: "What's included",
+      included: [
+        "Regular updates to CMS, plugins, and frameworks",
+        "Speed and performance monitoring",
+        "Security scans and patches",
+        "Small adjustments and content changes",
+        "Technical troubleshooting and resolution",
+        "Tailored reporting and consultation"
+      ],
+      whoForTitle: "Who is this for",
+      whoFor: [
+        { title: "Businesses with an existing website", text: "Who don't have time to manage technical maintenance themselves." },
+        { title: "Entrepreneurs who want peace of mind", text: "And rely on a trusted partner for their digital environment." },
+        { title: "Businesses with higher online revenue", text: "Where downtime or slow load times directly cost money." },
+        { title: "Organisations with regular updates", text: "That need quick changes without managing it all themselves." }
+      ],
+      processTitle: "Our approach",
+      process: [
+        { title: "Assessment", text: "We analyse your current digital environment and set up a maintenance plan." },
+        { title: "Ongoing maintenance", text: "We apply updates, monitor performance, and resolve technical issues." },
+        { title: "Optimization", text: "We identify opportunities to improve speed, structure, and conversion." },
+        { title: "Reporting and consultation", text: "We keep you informed through periodic check-ins and clear communication." }
+      ],
+      ctaTitle: "Ready to take maintenance off your plate?",
+      ctaText: "Get in touch and find out how we keep your website stable, fast, and secure.",
+      ctaButton: "Contact us"
+    },
+    groei: {
+      h1: "Digital growth support for businesses",
+      intro: "More than just building a website — we help businesses strengthen their entire digital presence. From better structure and positioning to a foundation that enables lasting online growth.",
+      benefitsTitle: "What digital growth support delivers",
+      benefits: [
+        "Better online visibility and findability",
+        "Stronger positioning relative to competitors",
+        "Improved user experience across all devices",
+        "Clearer communication with your target audience",
+        "More trust with potential customers",
+        "A stronger digital foundation for continued growth"
+      ],
+      includedTitle: "What we address",
+      included: [
+        "Analysis of your current digital presence",
+        "Strategic recommendations for structure and content",
+        "Improvements to user experience and navigation",
+        "Strengthening of trust signals and persuasion structure",
+        "Optimisation of presentation and visual consistency",
+        "Guidance on digital positioning and growth"
+      ],
+      whoForTitle: "Who is this for",
+      whoFor: [
+        { title: "Businesses with an outdated online presence", text: "That know there's more potential in their digital channels." },
+        { title: "Entrepreneurs looking to scale", text: "Who want to prepare their digital foundation for the next phase." },
+        { title: "Businesses falling behind competitors", text: "That want to present themselves more strongly online." },
+        { title: "Growing organisations", text: "Looking for structure and direction in their digital strategy." }
+      ],
+      processTitle: "Our approach",
+      process: [
+        { title: "Digital scan", text: "We thoroughly analyse your website, presentation, and online position." },
+        { title: "Improvement plan", text: "We present a clear plan with priorities and expected impact." },
+        { title: "Implementation", text: "We carry out improvements step by step, with regular check-ins." },
+        { title: "Measure and adjust", text: "We evaluate results and make adjustments where needed for optimal growth." }
+      ],
+      ctaTitle: "Ready to grow stronger online?",
+      ctaText: "Let us take a look at your current situation and discover what's possible with the right digital approach.",
+      ctaButton: "Request free analysis"
+    }
   },
   contact: {
     heroTitle: "Contact ZentrixDigital",

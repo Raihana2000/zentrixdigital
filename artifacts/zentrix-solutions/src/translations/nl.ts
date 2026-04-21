@@ -68,6 +68,7 @@ export const nl = {
     casesIntro: "Wij geloven in transparantie boven opvulling. Wij werken met bedrijven die serieus resultaat willen, en onze aanpak laten we liever zien dan vertellen.",
     casesBody: "Concrete voorbeelden van websites, applicaties en verbetertrajecten delen wij op aanvraag. Zo kunt u zelf beoordelen of onze aanpak bij uw situatie past, zonder marketing-omhaal.",
     casesCtaLabel: "Vraag voorbeelden op",
+    servicesMoreInfo: "Meer info",
     reachTitle: "Actief in Nederland en ver daarbuiten",
     reachText: "Wij helpen bedrijven in heel Nederland en werken daarnaast samen met internationale klanten in Europa en daarbuiten.",
     reachItems: [
@@ -101,31 +102,194 @@ export const nl = {
   services: {
     heroTitle: "Onze diensten",
     heroSubtitle: "Wij bouwen digitale oplossingen die zichtbaarheid, vertrouwen, efficiëntie en duurzame groei ondersteunen.",
+    moreInfoLabel: "Meer info",
     servicesList: {
       dev: {
-        title: "Website ontwikkeling",
-        desc: "Wij bouwen moderne, responsieve en conversiegerichte websites die bedrijven helpen een sterke eerste indruk te maken en aandacht om te zetten in actie.",
-        bullets: ["Professioneel design", "Volledig mobielvriendelijk", "Snelle laadtijd", "Vertrouwenwekkende opbouw", "Conversiegerichte structuur"]
+        title: "Websites",
+        desc: "Professionele websites op maat die vertrouwen uitstralen, goed gevonden worden en bezoekers omzetten in klanten.",
+        bullets: ["Professioneel design", "Volledig mobielvriendelijk", "Snelle laadtijd", "Conversiegerichte structuur"],
+        href: "/websites"
       },
       app: {
-        title: "Applicatie ontwikkeling",
-        desc: "Wij ontwikkelen maatwerk applicaties die aansluiten op uw bedrijfsbehoeften — van interne tools tot klantgerichte oplossingen die workflow, functionaliteit en schaalbaarheid verbeteren.",
-        bullets: ["Functionaliteiten op maat", "Oplossingen voor bedrijfsprocessen", "Schaalbare structuur", "Gebruiksvriendelijk ontwerp"]
+        title: "Applicaties",
+        desc: "Maatwerk webapplicaties die bedrijfsprocessen verbeteren, automatiseren en schaalbaar maken.",
+        bullets: ["Maatwerk functionaliteit", "Bedrijfsprocessen verbeteren", "Schaalbare opbouw", "Gebruiksvriendelijk"],
+        href: "/applicaties"
       },
       maintenance: {
         title: "Onderhoud & optimalisatie",
-        desc: "Wij bieden doorlopende ondersteuning om uw digitale systemen veilig, actueel en optimaal presterend te houden.",
-        bullets: ["Updates en verbeteringen", "Snelheidsoptimalisatie", "Doorlopende support", "Stabiliteit en onderhoud"]
+        desc: "Doorlopend onderhoud voor snelheid, beveiliging, updates en technische prestaties van uw website.",
+        bullets: ["Updates en verbeteringen", "Snelheidsoptimalisatie", "Doorlopende support", "Veiligheid en stabiliteit"],
+        href: "/onderhoud-optimalisatie"
       },
       growth: {
         title: "Digitale groeiondersteuning",
-        desc: "Wij helpen bedrijven hun online aanwezigheid te versterken met betere structuur, sterkere presentatie en digitale verbeteringen die groei ondersteunen.",
-        bullets: ["Betere online presentatie", "Sterkere vertrouwenssignalen", "Verbeterde gebruikerservaring", "Slimmere digitale positionering"]
+        desc: "Strategische verbeteringen aan uw online aanwezigheid voor betere zichtbaarheid, structuur en conversie.",
+        bullets: ["Betere online presentatie", "Sterkere positionering", "Verbeterde gebruikerservaring", "Digitale groei"],
+        href: "/digitale-groeiondersteuning"
       }
     },
     ctaTitle: "Een oplossing nodig die past bij uw bedrijf?",
     ctaText: "Wij denken graag met u mee en bouwen iets dat aansluit op uw doelen.",
     ctaButton: "Neem contact op"
+  },
+  servicePages: {
+    websites: {
+      h1: "Professionele website laten maken",
+      intro: "Een professionele website is het digitale fundament van uw bedrijf. Wij bouwen websites op maat die niet alleen sterk ogen, maar ook vertrouwen uitstralen, goed vindbaar zijn in Google en bezoekers omzetten in klanten.",
+      benefitsTitle: "Waarom kiezen voor een website van ZentrixDigital",
+      benefits: [
+        "Professionele uitstraling die direct vertrouwen wekt",
+        "100% mobielvriendelijk en geoptimaliseerd voor alle schermformaten",
+        "Snelle laadtijden voor betere gebruikerservaring en SEO",
+        "Conversiegerichte opbouw gericht op leads en klantacties",
+        "Helder design dat past bij uw merk en doelgroep",
+        "Betere vindbaarheid in Google door technisch sterke opbouw"
+      ],
+      includedTitle: "Wat is inbegrepen",
+      included: [
+        "Maatwerk design op basis van uw merk en doelstellingen",
+        "Volledig responsieve opbouw voor mobiel, tablet en desktop",
+        "Contactformulier met e-mailkoppeling",
+        "Snelheidsoptimalisatie en basisbeveiliging",
+        "SEO-technische basisopbouw (meta-tags, heading structuur, laadtijd)",
+        "Opleveringsgesprek met uitleg en overdracht"
+      ],
+      whoForTitle: "Voor wie is dit geschikt",
+      whoFor: [
+        { title: "Startende ondernemers", text: "Die snel en professioneel online zichtbaar willen zijn." },
+        { title: "Lokale bedrijven", text: "Die meer klanten willen aantrekken via een sterk online visitekaartje." },
+        { title: "Dienstverleners", text: "Die online vertrouwen moeten uitstralen om klanten te overtuigen." },
+        { title: "Groeiende bedrijven", text: "Die hun website willen vernieuwen en klaarstomen voor de volgende fase." }
+      ],
+      processTitle: "Onze werkwijze",
+      process: [
+        { title: "Intakegesprek", text: "Wij bespreken uw doelen, doelgroep en wat u wilt uitstralen." },
+        { title: "Strategie en opzet", text: "Wij bepalen structuur, pagina-opbouw en designrichting." },
+        { title: "Bouw en oplevering", text: "Wij bouwen de website en passen deze aan op basis van uw feedback." },
+        { title: "Live en verder", text: "Na livegang kijken wij mee waar prestaties verder verbeterd kunnen worden." }
+      ],
+      ctaTitle: "Klaar voor een website die echt werkt?",
+      ctaText: "Vraag vrijblijvend een gratis analyse aan en ontdek wat een professionele website voor uw bedrijf kan betekenen.",
+      ctaButton: "Vraag gratis analyse aan"
+    },
+    applicaties: {
+      h1: "Maatwerk applicaties laten ontwikkelen",
+      intro: "Wanneer een standaardoplossing niet volstaat, bouwen wij maatwerk webapplicaties die naadloos aansluiten op uw bedrijfsprocessen — van interne tools tot klantportalen en dashboards.",
+      benefitsTitle: "Voordelen van maatwerk applicatieontwikkeling",
+      benefits: [
+        "Oplossingen die perfect passen bij uw werkwijze",
+        "Automatisering van repetitieve taken en processen",
+        "Schaalbaarheid die meegroeit met uw bedrijf",
+        "Gebruiksvriendelijke interfaces voor intern en extern gebruik",
+        "Integratiemogelijkheden met bestaande systemen",
+        "Volledige controle over functionaliteit en data"
+      ],
+      includedTitle: "Wat is inbegrepen",
+      included: [
+        "Analyse van uw huidige werkprocessen en vereisten",
+        "Maatwerk ontwikkeling op basis van uw specificaties",
+        "Gebruiksvriendelijk interface-design",
+        "Technische documentatie en overdracht",
+        "Testfase en kwaliteitscontrole",
+        "Support en doorontwikkeling na oplevering"
+      ],
+      whoForTitle: "Voor wie is dit geschikt",
+      whoFor: [
+        { title: "Bedrijven met specifieke processen", text: "Die een tool nodig hebben die standaardsoftware niet biedt." },
+        { title: "Teams die willen automatiseren", text: "Die tijd willen besparen door slimme digitale systemen." },
+        { title: "Bedrijven met klantportalen", text: "Die klanten een eigen digitale omgeving willen bieden." },
+        { title: "Ondernemingen die willen opschalen", text: "En daarvoor een robuuste digitale infrastructuur nodig hebben." }
+      ],
+      processTitle: "Onze werkwijze",
+      process: [
+        { title: "Vereistenanalyse", text: "Wij brengen uw behoeften, processen en gewenste uitkomsten in kaart." },
+        { title: "Architectuur en planning", text: "Wij ontwerpen de technische structuur en stellen een helder projectplan op." },
+        { title: "Ontwikkeling en testen", text: "Wij bouwen iteratief en testen grondig op functionaliteit en gebruiksgemak." },
+        { title: "Oplevering en doorontwikkeling", text: "Na livegang staan wij klaar voor verdere verbeteringen en uitbreidingen." }
+      ],
+      ctaTitle: "Een applicatie die uw bedrijf slimmer maakt?",
+      ctaText: "Vertel ons wat u nodig heeft en wij kijken hoe wij dat het beste kunnen realiseren.",
+      ctaButton: "Neem contact op"
+    },
+    onderhoud: {
+      h1: "Website onderhoud en optimalisatie",
+      intro: "Een website die niet actief wordt onderhouden, verliest langzaam aan snelheid, veiligheid en prestaties. Wij zorgen dat uw digitale systemen up-to-date blijven, goed presteren en altijd veilig zijn.",
+      benefitsTitle: "Waarom actief onderhoud loont",
+      benefits: [
+        "Uw website blijft snel en stabiel",
+        "Beveiligingsupdates voorkomen risico's",
+        "Technische verbeteringen verhogen de gebruikerservaring",
+        "Betere prestaties leiden tot hogere conversie",
+        "U hoeft er zelf niet aan te denken",
+        "Problemen worden vroeg gesignaleerd en opgelost"
+      ],
+      includedTitle: "Wat is inbegrepen",
+      included: [
+        "Regelmatige updates van CMS, plugins en frameworks",
+        "Snelheids- en performancemonitor",
+        "Beveiligingsscans en patches",
+        "Kleine aanpassingen en tekstwijzigingen",
+        "Technische foutopsporing en herstel",
+        "Rapportage en overleg op maat"
+      ],
+      whoForTitle: "Voor wie is dit geschikt",
+      whoFor: [
+        { title: "Bedrijven met een bestaande website", text: "Die geen tijd hebben om technisch onderhoud zelf bij te houden." },
+        { title: "Ondernemers die ontzorgd willen worden", text: "En rekenen op een betrouwbare partner voor hun digitale omgeving." },
+        { title: "Bedrijven met hogere online omzet", text: "Waar stilstand of trage laadtijden direct geld kosten." },
+        { title: "Organisaties met regelmatige updates", text: "Die snel aanpassingen nodig hebben zonder de boel zelf te beheren." }
+      ],
+      processTitle: "Onze aanpak",
+      process: [
+        { title: "Inventarisatie", text: "Wij analyseren uw huidige digitale omgeving en stellen een onderhoudsplan op." },
+        { title: "Doorlopend onderhoud", text: "Wij voeren updates uit, monitoren prestaties en lossen technische problemen op." },
+        { title: "Optimalisatie", text: "Wij signaleren verbeterkansen op het gebied van snelheid, structuur en conversie." },
+        { title: "Overleg en rapportage", text: "U blijft op de hoogte via periodiek overleg en heldere communicatie." }
+      ],
+      ctaTitle: "Ontzorgd worden voor uw website?",
+      ctaText: "Neem contact op en ontdek hoe wij uw website stabiel, snel en veilig houden.",
+      ctaButton: "Neem contact op"
+    },
+    groei: {
+      h1: "Digitale groeiondersteuning voor bedrijven",
+      intro: "Meer dan een website bouwen — wij helpen bedrijven hun volledige digitale aanwezigheid te versterken. Van betere structuur en positionering tot een fundament dat duurzame online groei mogelijk maakt.",
+      benefitsTitle: "Wat digitale groeiondersteuning oplevert",
+      benefits: [
+        "Betere online zichtbaarheid en vindbaarheid",
+        "Sterkere positionering ten opzichte van concurrenten",
+        "Verbeterde gebruikerservaring op alle apparaten",
+        "Duidelijkere communicatie richting uw doelgroep",
+        "Meer vertrouwen bij potentiële klanten",
+        "Een steviger digitaal fundament voor verdere groei"
+      ],
+      includedTitle: "Wat wij aanpakken",
+      included: [
+        "Analyse van uw huidige digitale aanwezigheid",
+        "Strategische aanbevelingen voor structuur en content",
+        "Verbeteringen aan gebruikerservaring en navigatie",
+        "Versterking van vertrouwenssignalen en overtuigingsstructuur",
+        "Optimalisatie van presentatie en visuele consistentie",
+        "Begeleiding bij digitale positionering en doorgroei"
+      ],
+      whoForTitle: "Voor wie is dit geschikt",
+      whoFor: [
+        { title: "Bedrijven met een verouderde online presentatie", text: "Die weten dat er meer uit hun digitale kanalen te halen valt." },
+        { title: "Ondernemers die willen opschalen", text: "En hun digitale fundament klaar willen maken voor de volgende fase." },
+        { title: "Bedrijven die achterlopen op concurrenten", text: "En online sterker voor de dag willen komen." },
+        { title: "Groeiende organisaties", text: "Die structuur willen in hun digitale strategie en aanpak." }
+      ],
+      processTitle: "Onze aanpak",
+      process: [
+        { title: "Digitale scan", text: "Wij analyseren uw website, presentatie en online positie grondig." },
+        { title: "Verbeterplan", text: "Wij presenteren een helder plan met prioriteiten en verwachte impact." },
+        { title: "Implementatie", text: "Wij voeren de verbeteringen stap voor stap door, met regelmatige afstemming." },
+        { title: "Meten en bijsturen", text: "Wij evalueren resultaten en sturen bij waar nodig voor optimale groei." }
+      ],
+      ctaTitle: "Klaar om digitaal sterker te worden?",
+      ctaText: "Laat ons uw huidige situatie bekijken en ontdek wat er mogelijk is met de juiste digitale aanpak.",
+      ctaButton: "Vraag gratis analyse aan"
+    }
   },
   contact: {
     heroTitle: "Contact opnemen",

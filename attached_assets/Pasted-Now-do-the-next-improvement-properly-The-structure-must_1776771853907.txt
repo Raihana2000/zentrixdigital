@@ -1,0 +1,129 @@
+Now do the next improvement properly.
+
+The structure must stay as follows:
+- /services = overview page only
+- /websites = dedicated page
+- /applicaties = dedicated page
+- /onderhoud-optimalisatie = dedicated page
+- /digitale-groeiondersteuning = dedicated page
+
+Important:
+The language toggle must work correctly for BOTH Dutch and English on all these pages.
+
+Current requirement:
+Make the service pages fully bilingual and make sure the NL/EN toggle updates ALL visible text on:
+- homepage
+- services overview page
+- all 4 standalone service pages
+- navigation
+- buttons
+- CTA sections
+- headings
+- paragraphs
+- bullet points
+- process section
+- meta titles and meta descriptions if supported in the project structure
+
+What I need fixed now:
+
+1. Full bilingual support
+For every service page, implement proper Dutch and English content.
+
+Required route behavior:
+Option A (preferred if project already uses one route + translations):
+- Same route, content changes based on language toggle
+
+Option B (acceptable if project architecture requires it):
+- Same visible route structure, but translated content still changes correctly through i18n state
+
+Do NOT create a broken half-English version.
+Do NOT leave Dutch text on English pages.
+Do NOT leave English text on Dutch pages.
+
+2. Required English versions
+Create proper English equivalents for these pages:
+
+- /websites
+  NL title: Professionele website laten maken
+  EN title: Professional website development
+
+- /applicaties
+  NL title: Maatwerk applicaties laten ontwikkelen
+  EN title: Custom application development
+
+- /onderhoud-optimalisatie
+  NL title: Website onderhoud en optimalisatie
+  EN title: Website maintenance and optimization
+
+- /digitale-groeiondersteuning
+  NL title: Digitale groeiondersteuning voor bedrijven
+  EN title: Digital growth support for businesses
+
+3. Content requirements per language
+Each service page in BOTH languages must contain:
+- unique H1
+- strong intro paragraph
+- benefits section
+- what is included section
+- who it is for section
+- process section
+- CTA section
+- internal links to contact and services overview
+
+The English copy must be natural and professional, not literal broken translation.
+The Dutch copy must remain strong, clean and commercially clear.
+
+4. Homepage services cards
+Make sure the homepage service cards:
+- change language correctly when toggle is switched
+- still link to the correct dedicated pages
+- show correct translated titles and descriptions
+
+5. Services overview page
+Make sure the /services overview page:
+- fully translates via the toggle
+- has the correct 4 cards in both languages
+- each card links to the corresponding dedicated page
+- does not contain duplicated long-form service sections that belong on the standalone pages
+
+6. Navigation and CTA consistency
+Ensure these also translate properly:
+- Home
+- Over ons / About
+- Diensten / Services
+- Contact
+- Neem contact op / Contact us
+- Ontvang gratis analyse / Receive free analysis
+- Bekijk voorbeelden / View examples
+- Meer info / More info
+- Any other CTA labels
+
+7. SEO and metadata
+If the project supports metadata per page, add:
+Dutch and English meta titles and meta descriptions for each standalone service page.
+
+Examples:
+- NL: Professionele website laten maken | ZentrixDigital
+- EN: Professional website development | ZentrixDigital
+
+- NL: Maatwerk applicaties laten ontwikkelen | ZentrixDigital
+- EN: Custom application development | ZentrixDigital
+
+Descriptions must match the language version and not be duplicated carelessly.
+
+8. Clean implementation
+- Reuse existing i18n structure if one already exists
+- Do not hardcode random language strings in scattered components
+- Keep code organized and consistent
+- No placeholder text
+- No mixed-language sections
+- No English heading like “The Process” on Dutch pages
+- No Dutch heading on English pages
+
+9. Final verification
+After finishing, tell me:
+- which files were updated
+- how the NL/EN toggle now works on the 4 service pages
+- whether /services is now only an overview page
+- whether all service cards on homepage and /services now link correctly
+- whether all labels, buttons and headings switch correctly between Dutch and English

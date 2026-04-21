@@ -156,14 +156,14 @@ const Home = () => {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
           >
             {[
-              { key: 'websites', icon: serviceIcons[0] },
-              { key: 'apps', icon: serviceIcons[1] },
-              { key: 'maintenance', icon: serviceIcons[2] },
-              { key: 'growth', icon: serviceIcons[3] }
-            ].map(({ key, icon: Icon }, i) => {
+              { key: 'websites', icon: serviceIcons[0], href: '/websites' },
+              { key: 'apps', icon: serviceIcons[1], href: '/applicaties' },
+              { key: 'maintenance', icon: serviceIcons[2], href: '/onderhoud-optimalisatie' },
+              { key: 'growth', icon: serviceIcons[3], href: '/digitale-groeiondersteuning' }
+            ].map(({ key, icon: Icon, href }) => {
               const svc = t.home.services[key as keyof typeof t.home.services] as { title: string; desc: string };
               return (
-                <Link key={key} href="/services">
+                <Link key={key} href={href}>
                   <motion.div
                     variants={fadeUp}
                     data-testid={`service-card-${key}`}
@@ -175,7 +175,7 @@ const Home = () => {
                     <h3 className="text-lg font-semibold text-white">{svc.title}</h3>
                     <p className="text-sm text-gray-500 leading-relaxed flex-1">{svc.desc}</p>
                     <span className="text-blue-500 text-xs font-semibold uppercase tracking-widest flex items-center gap-1 group-hover:gap-2 transition-all duration-200">
-                      Meer info <ArrowRight className="w-3 h-3" />
+                      {t.home.servicesMoreInfo} <ArrowRight className="w-3 h-3" />
                     </span>
                   </motion.div>
                 </Link>

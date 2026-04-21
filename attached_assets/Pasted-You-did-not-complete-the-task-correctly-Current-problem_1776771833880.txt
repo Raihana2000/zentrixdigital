@@ -1,0 +1,112 @@
+You did not complete the task correctly.
+
+Current problem:
+- The 4 service cards do NOT go to 4 separate dedicated pages.
+- Instead, everything is placed inside one generic /services page with extra sections.
+- That is NOT what I asked.
+
+Fix this properly now.
+
+Required structure:
+Create 4 real standalone service pages with unique routes and unique content:
+
+1. /websites
+2. /applicaties
+3. /onderhoud-optimalisatie
+4. /digitale-groeiondersteuning
+
+Important:
+- Do NOT keep all detailed service content only inside /services.
+- The /services page may stay as an overview page, but each service card must link to its own real page.
+- Each page must have its own full content and be independently useful for SEO and visitors.
+
+What to do now:
+
+1. Homepage
+- In the homepage services section, make each service card link to the correct standalone route:
+  - Websites -> /websites
+  - Applicaties -> /applicaties
+  - Onderhoud & optimalisatie -> /onderhoud-optimalisatie
+  - Digitale groeiondersteuning -> /digitale-groeiondersteuning
+
+2. Services overview page
+- Keep /services only as an overview page.
+- On /services, show the 4 service cards as overview cards.
+- Each card must also link to its own dedicated page.
+- Do NOT place all the detailed service content underneath on the same /services page.
+- Remove the large repeated detail sections from /services if they duplicate the standalone pages.
+
+3. Create real standalone pages
+Each standalone page must contain:
+- unique H1
+- intro paragraph
+- benefits section
+- what is included section
+- who it is for section
+- process section
+- CTA section
+- internal links to contact and services overview
+- SEO title and meta description
+- good Dutch copy, no placeholder text
+
+Page requirements:
+
+PAGE: /websites
+H1: Professionele website laten maken
+Include topics:
+- maatwerk website
+- professionele uitstraling
+- mobielvriendelijk
+- snelle laadtijd
+- beter gevonden worden
+- conversiegericht opgebouwd
+
+PAGE: /applicaties
+H1: Maatwerk applicaties laten ontwikkelen
+Include topics:
+- slimme tools
+- bedrijfsprocessen verbeteren
+- dashboards, klantportalen, interne systemen
+- schaalbaarheid
+- efficiëntie
+- gebruiksvriendelijkheid
+
+PAGE: /onderhoud-optimalisatie
+H1: Website onderhoud en optimalisatie
+Include topics:
+- updates
+- beveiliging
+- snelheid
+- technische verbeteringen
+- performance
+- doorlopende support
+
+PAGE: /digitale-groeiondersteuning
+H1: Digitale groeiondersteuning voor bedrijven
+Include topics:
+- online zichtbaarheid
+- betere structuur
+- sterkere presentatie
+- verbeterde gebruikerservaring
+- digitale positionering
+- doorgroeien naar een sterker digitaal fundament
+
+4. Navigation and UX
+- Make sure all routes work correctly.
+- Clicking a service card must open the correct standalone page, not scroll to a section on /services.
+- Keep the current premium dark visual style.
+- Keep responsive layout intact.
+- Keep logo, navbar and WhatsApp button working.
+
+5. Clean up
+- Remove duplicated service-detail sections from /services if they are already on the dedicated service pages.
+- Make sure no page feels empty.
+- Do not use English headings like “The Process” on Dutch pages.
+- Everything in Dutch unless the EN version is actually implemented properly.
+
+6. Final output
+After finishing, tell me:
+- which files you changed
+- which new routes/pages were created
+- which duplicate sections were removed from /services
+- which cards now link to which pages
