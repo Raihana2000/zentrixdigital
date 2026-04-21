@@ -1,0 +1,139 @@
+De styling is nog NIET goed genoeg. Voer nu echte codewijzigingen uit.
+
+HUIDIGE PROBLEMEN DIE NOG BESTAAN
+1. Niet elke tegel/card op elke pagina heeft een duidelijke zichtbare blauwe rand.
+2. Veel gewone tekst en beschrijvende tekst is nog te grijs en daardoor slecht leesbaar.
+3. Op de contactpagina zijn labels, invoervelden, placeholdertekst en contactinformatie nog onvoldoende contrastrijk.
+4. De styling is nog niet volledig consistent tussen Home, Diensten, Websites, Applicaties, Onderhoud, Digitale groeiondersteuning en Contact.
+
+WAT IK NU WIL
+Ik wil dat ALLE tegels/cards, info-boxen, CTA-boxen, feature-cards, step-cards, contact-cards en formulierblokken op ALLE pagina’s:
+- een nette, duidelijk zichtbare blauwe rand krijgen
+- heldere witte titels krijgen
+- lichte, goed leesbare bodytekst krijgen
+- toegankelijker worden voor slechtzienden
+- visueel consistenter en premiumer ogen
+
+BELANGRIJKE REGEL
+Als de blauwe rand niet direct zichtbaar is zonder in te zoomen, dan is hij te zwak. Maak hem dus echt zichtbaar maar nog steeds stijlvol.
+
+VERPLICHT UIT TE VOEREN
+
+1. Zoek alle herbruikbare card/tile/container componenten of shared classes op.
+- Als er meerdere varianten bestaan, harmoniseer ze.
+- Als er nog geen centrale styling is, maak een gedeelde utility of component aan en gebruik die overal.
+
+2. Geef ALLE tegels/cards deze standaardstijl:
+- background: linear-gradient(180deg, rgba(9,14,26,0.98) 0%, rgba(5,9,18,0.98) 100%)
+- border: 1.5px solid rgba(59,130,246,0.72)
+- border-radius: 22px
+- box-shadow: 0 10px 28px rgba(0,0,0,0.34), 0 0 0 1px rgba(59,130,246,0.18), inset 0 0 0 1px rgba(255,255,255,0.02)
+- transition: all 180ms ease
+
+3. Hover/focus op cards:
+- border-color: rgba(96,165,250,0.95)
+- box-shadow: 0 14px 34px rgba(0,0,0,0.42), 0 0 0 1px rgba(96,165,250,0.28), 0 0 28px rgba(37,99,235,0.18)
+- transform: translateY(-2px)
+
+4. Tekstkleuren overal verbeteren:
+- headings op donkere achtergronden: #FFFFFF
+- subheadings: #F3F7FF
+- normale bodytekst: #EAF2FF
+- ondersteunende tekst: #D9E7FF
+- GEEN donkergrijze of low-contrast tekst meer op donkere sections/cards
+- Zorg voor minimaal duidelijke AA-achtige contrastbeleving
+
+5. Specifiek voor paragrafen buiten cards maar op donkere sections:
+- vervang te donkere grijze tekst door lichtere tekst
+- introteksten, uitlegteksten, section descriptions en CTA descriptions moeten direct leesbaar zijn
+
+6. Contactpagina MOET apart worden gefixt:
+- labels duidelijk lichter maken
+- input tekst wit maken
+- placeholdertekst veel beter leesbaar maken
+- borders van inputvelden duidelijk zichtbaar maken
+- focus state helder blauw maken
+- contact info cards ook dezelfde blauwe rand geven
+- openingstijden, e-mail, telefoon en beschrijvende tekst veel contrastrijker maken
+
+Gebruik hiervoor bijvoorbeeld:
+- labels: color #DCE8FF
+- input text: #FFFFFF
+- placeholder: #BFD3FF
+- input background: rgba(6,10,18,0.96)
+- input border: 1.5px solid rgba(59,130,246,0.62)
+- input focus border: rgba(96,165,250,0.96)
+- input focus shadow: 0 0 0 3px rgba(59,130,246,0.18)
+
+7. Pagina’s die je allemaal moet controleren en corrigeren:
+- Home
+- Over ons
+- Diensten
+- Websites
+- Applicaties
+- Onderhoud & optimalisatie
+- Digitale groeiondersteuning
+- Contact
+- footer secties
+- CTA-blokken
+- alle info-boxen
+- alle “voor wie is dit geschikt” kaarten
+- alle uitbreidingskaarten
+- alle contactkaarten
+- alle formulieren
+
+8. Icon vakken binnen kaarten:
+- background: rgba(37,99,235,0.14)
+- border: 1px solid rgba(96,165,250,0.30)
+- icon color: #60A5FA
+
+9. Knoppen:
+- primary buttons mogen blijven zoals ze zijn als ze al goed zichtbaar zijn
+- secondary buttons op donkere achtergrond moeten ook beter leesbaar zijn
+- tekst op secondary buttons mag niet te grijs zijn
+- border van secondary buttons ook iets duidelijker maken
+
+ALS DIT TAILWIND IS
+Gebruik desnoods een centrale class/variant met bijvoorbeeld:
+- border border-blue-500/70
+- rounded-[22px]
+- bg-[linear-gradient(180deg,rgba(9,14,26,0.98)_0%,rgba(5,9,18,0.98)_100%)]
+- shadow-[0_10px_28px_rgba(0,0,0,0.34),0_0_0_1px_rgba(59,130,246,0.18),inset_0_0_0_1px_rgba(255,255,255,0.02)]
+- hover:border-blue-400/95
+- text-white
+- text-blue-50
+- placeholder:text-blue-200/80
+
+ALS DIT GEWONE CSS OF CSS MODULES IS
+Maak gedeelde classes zoals:
+- .premium-card
+- .premium-card-title
+- .premium-card-body
+- .premium-input
+- .premium-label
+en pas die consequent overal toe.
+
+HEEL BELANGRIJK
+- Niet alleen homepage aanpassen
+- Niet alleen sommige tegels aanpassen
+- Niet alleen borders iets subtieler maken
+- Niet alleen tekst “een beetje” lichter maken
+- Het moet overal duidelijk zichtbaar beter zijn
+
+EINDCONTROLE
+Loop na de codewijzigingen alle pagina’s visueel na en fix alles wat nog afwijkt:
+- elke tegel heeft blauwe rand
+- alle kaartteksten zijn helder
+- alle sectieteksten zijn goed leesbaar
+- contactformulier is duidelijk leesbaar
+- contactkaarten zijn helder
+- stijl is consistent
+
+GEEF DAARNA TERUG:
+1. welke bestanden aangepast zijn
+2. welke gedeelde componenten/classes aangepast zijn
+3. waarom de blauwe rand nu op elke tegel zichtbaar is
+4. hoe tekstcontrast verbeterd is
+5. hoe de contactpagina leesbaarder is gemaakt
+
+Voer dit nu echt uit in de code.

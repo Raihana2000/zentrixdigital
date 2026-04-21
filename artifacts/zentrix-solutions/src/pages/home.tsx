@@ -91,7 +91,7 @@ const Home = () => {
           </motion.h1>
 
           {/* Subtitle */}
-          <motion.p variants={fadeUp} className="text-base sm:text-lg md:text-xl text-gray-500 max-w-2xl leading-relaxed">
+          <motion.p variants={fadeUp} className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed">
             {t.home.heroSubtitle}
           </motion.p>
 
@@ -108,7 +108,7 @@ const Home = () => {
             <Link href="/services">
               <button
                 data-testid="hero-btn-secondary"
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-white/10 text-gray-400 hover:text-white hover:border-white/25 font-medium text-base transition-all duration-200 hover:bg-white/[0.04]"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-blue-500/[0.38] text-blue-200 hover:text-white hover:border-blue-400/[0.80] font-medium text-base transition-all duration-200 hover:bg-blue-500/[0.08]"
               >
                 {t.home.secondaryCta}
               </button>
@@ -147,7 +147,7 @@ const Home = () => {
             <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
               {t.home.problemTitle}
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-gray-500 max-w-xl mx-auto text-base leading-relaxed">
+            <motion.p variants={fadeUp} className="text-gray-400 max-w-xl mx-auto text-base leading-relaxed">
               {t.home.problemIntro}
             </motion.p>
           </motion.div>
@@ -161,7 +161,7 @@ const Home = () => {
               return (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="flex flex-col gap-5 p-7 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:border-red-500/20 transition-all duration-300"
+                  className="flex flex-col gap-5 p-7 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:border-red-500/20 transition-all duration-300"
                 >
                   <div className="w-11 h-11 rounded-xl bg-red-500/10 border border-red-500/10 flex items-center justify-center shrink-0">
                     <Icon className="w-5 h-5 text-red-400/80" />
@@ -187,7 +187,7 @@ const Home = () => {
             <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
               {t.home.servicesTitle}
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-gray-500 max-w-xl mx-auto text-base leading-relaxed">
+            <motion.p variants={fadeUp} className="text-gray-400 max-w-xl mx-auto text-base leading-relaxed">
               {t.home.servicesIntro}
             </motion.p>
           </motion.div>
@@ -208,9 +208,9 @@ const Home = () => {
                   <motion.div
                     variants={fadeUp}
                     data-testid={`service-card-${key}`}
-                    className="group h-full flex flex-col gap-5 p-7 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] hover:border-blue-400/[0.65] hover:-translate-y-2 hover:shadow-[0_24px_60px_-16px_rgba(37,99,235,0.2),inset_0_1px_0_rgba(59,130,246,0.1)] transition-all duration-400 cursor-pointer"
+                    className="group h-full flex flex-col gap-5 p-7 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] hover:border-blue-400/[0.90] hover:-translate-y-2 hover:shadow-[0_24px_60px_-16px_rgba(37,99,235,0.2),inset_0_1px_0_rgba(59,130,246,0.1)] transition-all duration-400 cursor-pointer"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 group-hover:border-blue-400/[0.60] transition-all duration-300">
+                    <div className="w-12 h-12 rounded-xl bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center group-hover:bg-blue-500/20 group-hover:border-blue-400/[0.90] transition-all duration-300">
                       <Icon className="w-6 h-6 text-blue-400" />
                     </div>
                     <div className="flex-1 flex flex-col gap-3">
@@ -241,7 +241,7 @@ const Home = () => {
             <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
               {t.home.extensionsTitle}
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-gray-500 max-w-xl mx-auto text-base leading-relaxed">
+            <motion.p variants={fadeUp} className="text-gray-400 max-w-xl mx-auto text-base leading-relaxed">
               {t.home.extensionsSubtitle}
             </motion.p>
           </motion.div>
@@ -255,9 +255,9 @@ const Home = () => {
               return (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="flex items-start gap-4 p-5 rounded-xl bg-white/[0.03] border border-blue-500/[0.22] hover:border-blue-400/[0.60] hover:bg-white/[0.04] transition-all duration-300"
+                  className="flex items-start gap-4 p-5 rounded-xl bg-[rgba(9,14,26,0.98)] border border-blue-500/[0.55] hover:border-blue-400/[0.90] hover:bg-[rgba(9,16,30,0.99)] transition-all duration-300"
                 >
-                  <div className="w-9 h-9 rounded-lg bg-blue-500/10 border border-blue-500/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-9 h-9 rounded-lg bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center shrink-0 mt-0.5">
                     <Icon className="w-4 h-4 text-blue-400" />
                   </div>
                   <div className="flex flex-col gap-1 min-w-0">
@@ -292,7 +292,7 @@ const Home = () => {
             <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
               {t.home.whoWeHelpTitle}
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-gray-500 max-w-xl mx-auto text-base leading-relaxed">
+            <motion.p variants={fadeUp} className="text-gray-400 max-w-xl mx-auto text-base leading-relaxed">
               {t.home.whoWeHelpIntro}
             </motion.p>
           </motion.div>
@@ -306,9 +306,9 @@ const Home = () => {
               return (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="flex flex-col gap-4 p-7 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.60] transition-all duration-300"
+                  className="flex flex-col gap-4 p-7 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.90] transition-all duration-300"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/10 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center">
                     <Icon className="w-5 h-5 text-blue-400" />
                   </div>
                   <div>
@@ -333,7 +333,7 @@ const Home = () => {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
                 {t.home.whyZentrixTitle}
               </h2>
-              <p className="text-gray-500 text-base leading-relaxed max-w-sm">
+              <p className="text-gray-400 text-base leading-relaxed max-w-sm">
                 {t.home.whyZentrixIntro}
               </p>
             </motion.div>
@@ -342,9 +342,9 @@ const Home = () => {
               {t.home.whyZentrix.map((item, i) => (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="flex items-start gap-5 p-6 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.60] transition-all duration-300"
+                  className="flex items-start gap-5 p-6 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.90] transition-all duration-300"
                 >
-                  <div className="w-9 h-9 rounded-full bg-blue-600/15 border border-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-9 h-9 rounded-full bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center shrink-0 mt-0.5">
                     <CheckCircle2 className="w-4 h-4 text-blue-400" />
                   </div>
                   <div>
@@ -382,10 +382,10 @@ const Home = () => {
               return (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="relative flex flex-col gap-5 p-6 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)]"
+                  className="relative flex flex-col gap-5 p-6 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)]"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 rounded-xl bg-blue-600/15 border border-blue-500/20 flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(37,99,235,0.15)]">
+                    <div className="w-11 h-11 rounded-xl bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(37,99,235,0.15)]">
                       <Icon className="w-5 h-5 text-blue-400" />
                     </div>
                     <span className="text-blue-500/40 text-xs font-black uppercase tracking-widest">0{i + 1}</span>
@@ -406,7 +406,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.22] bg-gradient-to-b from-white/[0.04] to-transparent p-12 md:p-16 text-center"
+            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.55] bg-[rgba(9,14,26,0.98)] p-12 md:p-16 text-center"
           >
             <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-blue-700/10 blur-[100px] rounded-full" />
 
@@ -417,14 +417,14 @@ const Home = () => {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight tracking-tight">
                 {t.home.casesTitle}
               </h2>
-              <p className="text-gray-500 text-base leading-relaxed max-w-xl mx-auto mb-3">
+              <p className="text-gray-400 text-base leading-relaxed max-w-xl mx-auto mb-3">
                 {t.home.casesIntro}
               </p>
               <p className="text-gray-300 text-sm leading-relaxed max-w-lg mx-auto mb-10">
                 {t.home.casesBody}
               </p>
               <Link href="/contact">
-                <button className="inline-flex items-center gap-2 bg-white/[0.06] hover:bg-white/[0.09] border border-white/10 hover:border-white/20 text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 text-sm">
+                <button className="inline-flex items-center gap-2 bg-blue-500/[0.08] hover:bg-blue-500/[0.15] border border-blue-500/[0.45] hover:border-blue-400/[0.75] text-blue-200 hover:text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 text-sm">
                   <Mail className="w-4 h-4" />
                   {t.home.casesCtaLabel}
                 </button>
@@ -445,13 +445,13 @@ const Home = () => {
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 leading-snug tracking-tight">
                 {t.home.reachTitle}
               </h2>
-              <p className="text-gray-500 text-sm leading-relaxed max-w-md">
+              <p className="text-gray-400 text-sm leading-relaxed max-w-md">
                 {t.home.reachText}
               </p>
             </motion.div>
             <motion.div variants={fadeUp} className="flex flex-row gap-3 shrink-0 w-full md:w-auto justify-center md:justify-end">
               {t.home.reachItems.map((item, i) => (
-                <div key={i} className="flex flex-col items-center text-center px-5 py-4 rounded-xl bg-white/[0.03] border border-blue-500/[0.22] min-w-[105px]">
+                <div key={i} className="flex flex-col items-center text-center px-5 py-4 rounded-xl bg-[rgba(9,14,26,0.98)] border border-blue-500/[0.55] min-w-[105px]">
                   <p className="text-white font-bold text-xs leading-tight mb-1.5">{item.label}</p>
                   <p className="text-gray-400 text-xs leading-tight">{item.sub}</p>
                 </div>
@@ -466,7 +466,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="relative overflow-hidden rounded-3xl border border-blue-500/15 p-12 md:p-20 text-center"
+            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.38] p-12 md:p-20 text-center"
             style={{ background: 'radial-gradient(ellipse 100% 80% at 50% 0%, rgba(37,99,235,0.12) 0%, rgba(11,11,11,0) 70%), linear-gradient(135deg, rgba(15,25,50,0.8) 0%, rgba(11,11,11,0.95) 100%)' }}
           >
             {/* Glow */}
@@ -481,7 +481,7 @@ const Home = () => {
               {t.home.ctaTitle}
             </motion.h2>
 
-            <motion.p variants={fadeUp} className="relative z-10 text-gray-500 text-base sm:text-lg max-w-xl mx-auto mb-12 leading-relaxed">
+            <motion.p variants={fadeUp} className="relative z-10 text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-12 leading-relaxed">
               {t.home.ctaText}
             </motion.p>
 
@@ -497,7 +497,7 @@ const Home = () => {
               <Link href="/contact">
                 <button
                   data-testid="cta-btn-secondary"
-                  className="w-full sm:w-auto flex items-center justify-center gap-2 px-9 py-4 rounded-full border border-white/10 text-gray-400 hover:text-white hover:border-white/20 font-medium text-base transition-all duration-200 hover:bg-white/[0.04]"
+                  className="w-full sm:w-auto flex items-center justify-center gap-2 px-9 py-4 rounded-full border border-blue-500/[0.38] text-blue-200 hover:text-white hover:border-blue-400/[0.80] font-medium text-base transition-all duration-200 hover:bg-blue-500/[0.08]"
                 >
                   {t.home.ctaSecondary}
                 </button>

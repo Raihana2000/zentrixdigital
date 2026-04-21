@@ -54,7 +54,7 @@ const About = () => {
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="text-gray-500 text-base sm:text-lg leading-relaxed max-w-xl mx-auto"
+              className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-xl mx-auto"
             >
               {t.about.heroSubtitle}
             </motion.p>
@@ -71,7 +71,7 @@ const About = () => {
           >
             <motion.div
               variants={fadeUp}
-              className="flex flex-col gap-5 p-8 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)]"
+              className="flex flex-col gap-5 p-8 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)]"
             >
               <h2 className="text-2xl sm:text-3xl font-bold text-white leading-snug tracking-tight">
                 {t.about.whoWeAreTitle}
@@ -82,7 +82,7 @@ const About = () => {
             </motion.div>
             <motion.div
               variants={fadeUp}
-              className="flex flex-col gap-5 p-8 rounded-2xl bg-gradient-to-br from-blue-950/40 to-transparent border border-blue-500/15 shadow-[inset_0_1px_0_rgba(59,130,246,0.1)]"
+              className="flex flex-col gap-5 p-8 rounded-2xl bg-[rgba(9,14,26,0.98)] border border-blue-500/[0.55] shadow-[0_10px_28px_rgba(0,0,0,0.34),0_0_0_1px_rgba(59,130,246,0.18)] shadow-[0_10px_28px_rgba(0,0,0,0.34),0_0_0_1px_rgba(59,130,246,0.18)]"
             >
               <span className="text-blue-500/60 text-xs font-bold uppercase tracking-widest">
                 ZentrixDigital
@@ -113,9 +113,9 @@ const About = () => {
                 return (
                   <motion.div
                     key={idx} variants={fadeUp}
-                    className="flex items-start gap-5 p-7 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.60] transition-all duration-300"
+                    className="flex items-start gap-5 p-7 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.90] transition-all duration-300"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/10 flex items-center justify-center shrink-0">
+                    <div className="w-12 h-12 rounded-xl bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center shrink-0">
                       <Icon className="w-5 h-5 text-blue-400" />
                     </div>
                     <div className="flex flex-col gap-2">
@@ -135,7 +135,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.22] bg-gradient-to-b from-white/[0.04] to-transparent p-12 md:p-16"
+            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.55] bg-[rgba(9,14,26,0.98)] p-12 md:p-16 shadow-[0_10px_28px_rgba(0,0,0,0.34),0_0_0_1px_rgba(59,130,246,0.18)]"
           >
             <div className="pointer-events-none absolute top-0 left-0 w-[600px] h-[250px] bg-blue-700/8 blur-[120px] rounded-full" />
             <motion.span variants={fadeUp} className="inline-block text-blue-500/60 text-xs font-bold uppercase tracking-[0.2em] mb-5 relative z-10">
@@ -162,7 +162,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="relative overflow-hidden rounded-3xl border border-blue-500/15 p-12 md:p-16 text-center"
+            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.38] p-12 md:p-16 text-center"
             style={{ background: 'radial-gradient(ellipse 100% 80% at 50% 0%, rgba(37,99,235,0.1) 0%, rgba(11,11,11,0) 70%), linear-gradient(135deg, rgba(15,25,50,0.6) 0%, rgba(11,11,11,1) 100%)' }}
           >
             <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-blue-600/10 blur-[90px] rounded-full" />
@@ -174,7 +174,7 @@ const About = () => {
             </motion.h2>
             <motion.p
               variants={fadeUp}
-              className="relative z-10 text-gray-500 text-base leading-relaxed max-w-lg mx-auto mb-10"
+              className="relative z-10 text-gray-400 text-base leading-relaxed max-w-lg mx-auto mb-10"
             >
               {t.home.ctaText}
             </motion.p>
@@ -190,7 +190,7 @@ const About = () => {
               </Link>
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center gap-2 text-gray-500 hover:text-white border border-blue-500/[0.25] hover:border-white/20 px-8 py-4 rounded-full transition-all duration-200 text-sm hover:bg-white/[0.04]"
+                className="inline-flex items-center justify-center gap-2 text-blue-200 hover:text-white border border-blue-500/[0.40] hover:border-blue-400/[0.75] px-8 py-4 rounded-full transition-all duration-200 text-sm hover:bg-blue-500/[0.08]"
               >
                 {t.nav.services}
               </Link>

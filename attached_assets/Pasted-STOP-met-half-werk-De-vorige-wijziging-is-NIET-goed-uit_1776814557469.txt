@@ -1,0 +1,109 @@
+STOP met half werk. De vorige wijziging is NIET goed uitgevoerd.
+
+Probleem:
+- Ik zie nog steeds geen duidelijke blauwe randen om de tegels/cards.
+- Op veel kaarten is tekst nog steeds niet helder genoeg.
+- De site oogt nog steeds te vlak en te saai.
+- De eerdere instructie is dus niet volledig toegepast.
+
+Ik wil dat je dit nu ECHT in de code fixt, niet alleen beschrijft.
+
+HOOFDDOEL
+Alle tegels/cards op de volledige website moeten:
+1. een zichtbare subtiele blauwe rand krijgen
+2. heldere witte tekst krijgen
+3. beter leesbaar zijn voor slechtzienden
+4. visueel premiumer ogen met meer contrast en diepte
+
+VERPLICHT UIT TE VOEREN
+1. Zoek de GECENTRALISEERDE card/tile/panel componenten of gedeelde styles op.
+   - Denk aan alle herbruikbare UI componenten, shared wrappers, card classes, Tailwind utility combinaties, section cards en service cards.
+   - Als er geen gedeelde component bestaat, maak er één of maak gedeelde utility classes zodat alle tegels dezelfde styling krijgen.
+
+2. Geef ALLE tegels/cards exact deze zichtbare styling:
+   - background: linear-gradient(180deg, rgba(10,14,24,0.98) 0%, rgba(6,10,18,0.98) 100%)
+   - border: 1px solid rgba(59,130,246,0.55)
+   - box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 0 0 1px rgba(59,130,246,0.16), 0 0 22px rgba(37,99,235,0.10)
+   - border-radius: 20px
+
+3. Hover state op alle cards:
+   - border-color: rgba(96,165,250,0.85)
+   - box-shadow: 0 14px 36px rgba(0,0,0,0.45), 0 0 0 1px rgba(96,165,250,0.25), 0 0 30px rgba(37,99,235,0.16)
+   - transform: translateY(-2px)
+
+4. Tekst op alle cards:
+   - card titles/headings: #FFFFFF
+   - card body text: #EEF4FF
+   - labels/small text: #DCE8FF
+   - GEEN grijze low-contrast tekst meer op donkere card-achtergronden
+
+5. Icon blocks op cards:
+   - background: rgba(37,99,235,0.16)
+   - border: 1px solid rgba(96,165,250,0.30)
+   - icon color: #60A5FA
+
+6. Pas dit toe op ALLE pagina’s en ALLE tegels:
+   - Home
+   - Over ons
+   - Diensten
+   - Websites
+   - Applicaties
+   - Onderhoud & optimalisatie
+   - Digitale groeiondersteuning
+   - Contact
+   - alle CTA cards
+   - alle info cards
+   - alle “voor wie is dit geschikt” cards
+   - alle stappen/cards
+   - alle service cards
+   - alle contact/info tegels
+
+7. Belangrijk:
+   - Ik wil zichtbaar blauwe randen op alle tegels.
+   - Als ik het niet duidelijk zie, is het niet goed genoeg.
+   - Maak de rand dus subtiel maar echt zichtbaar.
+   - Niet overslaan, niet alleen op enkele componenten toepassen.
+
+8. Controleer na wijziging zelf:
+   - Zijn alle cards voorzien van blauwe border?
+   - Is alle card-tekst wit/licht genoeg?
+   - Is contrast overal sterk genoeg?
+   - Is de stijl consistent op desktop én mobiel?
+
+TAILWIND / CSS UITVOERING
+Als dit Tailwind is, gebruik dan duidelijke classes zoals:
+- border border-blue-500/50
+- rounded-[20px]
+- bg-[linear-gradient(180deg,rgba(10,14,24,0.98)_0%,rgba(6,10,18,0.98)_100%)]
+- shadow-[0_10px_30px_rgba(0,0,0,0.35),0_0_0_1px_rgba(59,130,246,0.16),0_0_22px_rgba(37,99,235,0.10)]
+- hover:border-blue-400/80
+- hover:shadow-[0_14px_36px_rgba(0,0,0,0.45),0_0_0_1px_rgba(96,165,250,0.25),0_0_30px_rgba(37,99,235,0.16)]
+- text-white
+- text-blue-50
+- text-slate-100 alleen als het echt licht genoeg is
+
+Als er gewone CSS modules of globals gebruikt worden, maak dan een gedeelde class zoals:
+.card-premium
+.card-premium-title
+.card-premium-body
+.card-premium-icon
+
+en pas die overal toe.
+
+BELANGRIJK
+Niet zeggen dat het “zou moeten werken”.
+Niet alleen enkele kaarten aanpassen.
+Niet alleen homepage aanpassen.
+Niet alleen tekst iets lichter maken.
+
+Ik wil dat je nu daadwerkelijk de codebestanden opent en alle tegels/cards consequent aanpast.
+
+RAPPORTAGE NA AFLOOP
+Geef daarna exact:
+1. welke bestanden zijn aangepast
+2. welke gedeelde classes/componenten zijn aangepast
+3. hoe de blauwe rand technisch is toegevoegd
+4. hoe card-tekst leesbaar is gemaakt
+5. welke pagina’s gecontroleerd zijn
+
+Voer nu uit.

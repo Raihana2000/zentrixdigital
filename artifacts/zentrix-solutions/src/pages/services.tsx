@@ -61,7 +61,7 @@ const Services = () => {
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="text-gray-500 text-base sm:text-lg leading-relaxed max-w-xl mx-auto"
+              className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-xl mx-auto"
             >
               {t.services.heroSubtitle}
             </motion.p>
@@ -83,10 +83,10 @@ const Services = () => {
                   <Link href={svc.href}>
                     <div
                       data-testid={`service-overview-card-${i}`}
-                      className="group h-full flex flex-col gap-6 p-8 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:border-blue-400/[0.65] hover:-translate-y-2 hover:shadow-[0_24px_60px_-16px_rgba(37,99,235,0.18),inset_0_1px_0_rgba(59,130,246,0.08)] transition-all duration-400 cursor-pointer"
+                      className="group h-full flex flex-col gap-6 p-8 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:border-blue-400/[0.90] hover:-translate-y-2 hover:shadow-[0_24px_60px_-16px_rgba(37,99,235,0.18),inset_0_1px_0_rgba(59,130,246,0.08)] transition-all duration-400 cursor-pointer"
                     >
                       <div className="flex items-start gap-5">
-                        <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/10 flex items-center justify-center shrink-0 group-hover:bg-blue-500/20 group-hover:border-blue-400/[0.60] transition-all duration-300">
+                        <div className="w-12 h-12 rounded-xl bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center shrink-0 group-hover:bg-blue-500/20 group-hover:border-blue-400/[0.90] transition-all duration-300">
                           <Icon className="w-6 h-6 text-blue-400" />
                         </div>
                         <div className="flex-1 min-w-0">
@@ -122,14 +122,14 @@ const Services = () => {
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="relative overflow-hidden rounded-3xl border border-blue-500/15 p-12 md:p-16 text-center"
+            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.50] p-12 md:p-16 text-center"
             style={{ background: 'radial-gradient(ellipse 100% 80% at 50% 0%, rgba(37,99,235,0.1) 0%, rgba(11,11,11,0) 70%), linear-gradient(135deg, rgba(15,25,50,0.6) 0%, rgba(11,11,11,1) 100%)' }}
           >
             <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-blue-600/10 blur-[90px] rounded-full" />
             <motion.h2 variants={fadeUp} className="relative z-10 text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
               {t.services.ctaTitle}
             </motion.h2>
-            <motion.p variants={fadeUp} className="relative z-10 text-gray-500 text-base leading-relaxed max-w-xl mx-auto mb-10">
+            <motion.p variants={fadeUp} className="relative z-10 text-gray-400 text-base leading-relaxed max-w-xl mx-auto mb-10">
               {t.services.ctaText}
             </motion.p>
             <motion.div variants={fadeUp} className="relative z-10">

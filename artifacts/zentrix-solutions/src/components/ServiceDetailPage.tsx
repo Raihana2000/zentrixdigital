@@ -94,7 +94,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="text-gray-500 text-base sm:text-lg leading-relaxed max-w-2xl"
+              className="text-gray-400 text-base sm:text-lg leading-relaxed max-w-2xl"
             >
               {data.intro}
             </motion.p>
@@ -122,7 +122,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               {data.benefits.map((b, i) => (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="flex items-start gap-3.5 p-5 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.60] transition-all duration-300"
+                  className="flex items-start gap-3.5 p-5 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.90] transition-all duration-300"
                 >
                   <div className="w-6 h-6 rounded-full bg-blue-500/15 border border-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-blue-400" />
@@ -145,7 +145,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             <motion.ul variants={stagger} className="flex flex-col gap-3 max-w-2xl">
               {data.included.map((item, i) => (
                 <motion.li key={i} variants={fadeUp} className="flex items-start gap-4">
-                  <div className="w-6 h-6 rounded-full bg-blue-600/15 border border-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-6 h-6 rounded-full bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center shrink-0 mt-0.5">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
                   </div>
                   <span className="text-gray-200 text-sm leading-relaxed">{item}</span>
@@ -168,9 +168,9 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 {extrasList.map((item, i) => (
                   <motion.div
                     key={i} variants={fadeUp}
-                    className="flex items-start gap-3.5 p-5 rounded-xl bg-gradient-to-b from-white/[0.04] to-transparent border border-blue-500/10 hover:border-blue-400/[0.65] transition-all duration-300"
+                    className="flex items-start gap-3.5 p-5 rounded-xl bg-[rgba(9,14,26,0.98)] border border-blue-500/[0.55] hover:border-blue-400/[0.90] shadow-[0_8px_24px_rgba(0,0,0,0.30),0_0_0_1px_rgba(59,130,246,0.16)] transition-all duration-300"
                   >
-                    <div className="w-6 h-6 rounded-full bg-blue-600/15 border border-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-6 h-6 rounded-full bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center shrink-0 mt-0.5">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
                     </div>
                     <span className="text-gray-200 text-sm leading-relaxed">{item}</span>
@@ -193,7 +193,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               {data.whoFor.map((item, i) => (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="p-6 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.60] transition-all duration-300"
+                  className="p-6 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.90] transition-all duration-300"
                 >
                   <h3 className="text-sm font-semibold text-white mb-2">{item.title}</h3>
                   <p className="text-gray-300 text-xs leading-relaxed">{item.text}</p>
@@ -231,14 +231,14 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="relative overflow-hidden rounded-3xl border border-blue-500/15 p-12 md:p-16 text-center"
+            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.50] p-12 md:p-16 text-center"
             style={{ background: 'radial-gradient(ellipse 100% 80% at 50% 0%, rgba(37,99,235,0.1) 0%, rgba(11,11,11,0) 70%), linear-gradient(135deg, rgba(15,25,50,0.6) 0%, rgba(11,11,11,1) 100%)' }}
           >
             <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[180px] bg-blue-600/12 blur-[90px] rounded-full" />
             <motion.h2 variants={fadeUp} className="relative z-10 text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
               {data.ctaTitle}
             </motion.h2>
-            <motion.p variants={fadeUp} className="relative z-10 text-gray-500 text-base leading-relaxed max-w-xl mx-auto mb-10">
+            <motion.p variants={fadeUp} className="relative z-10 text-gray-400 text-base leading-relaxed max-w-xl mx-auto mb-10">
               {data.ctaText}
             </motion.p>
             <motion.div variants={fadeUp} className="relative z-10 flex flex-col sm:flex-row gap-3 justify-center">
@@ -251,7 +251,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               </Link>
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center gap-2 text-gray-500 hover:text-white border border-blue-500/[0.25] hover:border-white/20 px-8 py-4 rounded-full transition-all duration-200 text-sm hover:bg-white/[0.04]"
+                className="inline-flex items-center justify-center gap-2 text-blue-200 hover:text-white border border-blue-500/[0.40] hover:border-blue-400/[0.75] px-8 py-4 rounded-full transition-all duration-200 text-sm hover:bg-blue-500/[0.08]"
               >
                 {servicesLabel}
               </Link>
