@@ -26,12 +26,12 @@ const Footer = () => {
             <Link href="/" className="flex items-center w-fit" data-testid="footer-logo">
               <img src={logoPath} alt="ZentrixDigital" className="h-9 w-auto object-contain opacity-90" />
             </Link>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+            <p className="text-[#BFD3FF] text-sm leading-relaxed max-w-xs">
               {t.footer.tagline}
             </p>
             {/* CTA hint */}
             <Link href="/contact">
-              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-500/80 hover:text-blue-400 uppercase tracking-widest transition-colors duration-200 group">
+              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-400 hover:text-blue-300 uppercase tracking-widest transition-colors duration-200 group">
                 {t.home.primaryCta}
                 <ArrowUpRight className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
               </span>
@@ -40,7 +40,7 @@ const Footer = () => {
 
           {/* Navigation column */}
           <div className="md:col-span-3 flex flex-col gap-5">
-            <h4 className="text-white/90 font-semibold text-sm uppercase tracking-widest">{t.footer.navLabel}</h4>
+            <h4 className="text-white font-semibold text-sm uppercase tracking-widest">{t.footer.navLabel}</h4>
             <nav className="flex flex-col gap-3.5">
               {[
                 { href: '/about', label: t.nav.about, testid: 'footer-link-about' },
@@ -50,7 +50,7 @@ const Footer = () => {
                 <Link
                   key={href}
                   href={href}
-                  className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm w-fit"
+                  className="text-[#BFD3FF] hover:text-white transition-colors duration-200 text-sm w-fit"
                   data-testid={testid}
                 >
                   {label}
@@ -61,35 +61,35 @@ const Footer = () => {
 
           {/* Contact column */}
           <div className="md:col-span-4 flex flex-col gap-5">
-            <h4 className="text-white/90 font-semibold text-sm uppercase tracking-widest">{t.nav.contact}</h4>
+            <h4 className="text-white font-semibold text-sm uppercase tracking-widest">{t.nav.contact}</h4>
             <address className="flex flex-col gap-3 not-italic">
-              <p className="text-gray-400 text-sm">{t.contact.company}</p>
-              <p className="text-gray-400 text-sm">{t.contact.location}</p>
+              <p className="text-[#E6F0FF] text-sm">{t.contact.company}</p>
+              <p className="text-[#E6F0FF] text-sm">{t.contact.location}</p>
               <a
                 href="tel:0683284995"
-                className="text-gray-500 hover:text-blue-400 text-sm transition-colors duration-200 w-fit"
+                className="text-[#BFD3FF] hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
               >
                 {t.contact.phone}
               </a>
               <a
                 href="mailto:info@zentrixdigital.eu"
-                className="text-gray-500 hover:text-blue-400 text-sm transition-colors duration-200 w-fit"
+                className="text-[#BFD3FF] hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
               >
                 {t.contact.email}
               </a>
             </address>
 
             {/* Hours */}
-            <div className="pt-4 border-t border-white/[0.04]">
+            <div className="pt-4 border-t border-blue-500/[0.18]">
               <div className="flex items-center gap-2 mb-3">
-                <Clock className="w-3.5 h-3.5 text-blue-500/70 shrink-0" />
-                <p className="text-xs text-white/30 uppercase tracking-widest font-semibold">
+                <Clock className="w-3.5 h-3.5 text-blue-400 shrink-0" />
+                <p className="text-xs text-[#DCE8FF] uppercase tracking-widest font-semibold">
                   {t.contact.hours.title}
                 </p>
               </div>
               <ul className="flex flex-col gap-1.5">
                 {t.contact.hours.lines.map((line, i) => (
-                  <li key={i} className="text-xs text-gray-700 leading-snug">
+                  <li key={i} className="text-xs text-[#E6F0FF] leading-snug">
                     {line}
                   </li>
                 ))}
@@ -99,11 +99,11 @@ const Footer = () => {
         </div>
 
         {/* ── Bottom bar ── */}
-        <div className="pt-8 border-t border-white/[0.04] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-gray-700">
+        <div className="pt-8 border-t border-blue-500/[0.12] flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-[#8AACCC]">
             &copy; {currentYear} ZentrixDigital. {t.footer.rights}
           </p>
-          <p className="text-xs text-gray-800">
+          <p className="text-xs text-[#8AACCC]">
             www.zentrixdigital.eu
           </p>
         </div>

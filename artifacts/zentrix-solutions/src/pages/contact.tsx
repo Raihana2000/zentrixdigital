@@ -126,7 +126,7 @@ const Contact = () => {
                       <Icon className="w-4.5 h-4.5 text-blue-400" size={18} />
                     </div>
                     <div>
-                      <p className="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-0.5">{label}</p>
+                      <p className="text-xs text-[#DCE8FF] uppercase tracking-widest font-semibold mb-0.5">{label}</p>
                       <p className="text-white text-sm font-medium">{value}</p>
                     </div>
                   </a>
@@ -134,11 +134,11 @@ const Contact = () => {
 
                 {/* Response time */}
                 <div className="flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)]">
-                  <div className="w-10 h-10 rounded-xl bg-green-500/10 border border-green-500/10 flex items-center justify-center shrink-0">
-                    <Clock className="w-[18px] h-[18px] text-green-400/80" />
+                  <div className="w-10 h-10 rounded-xl bg-green-500/[0.14] border border-green-400/[0.30] flex items-center justify-center shrink-0">
+                    <Clock className="w-[18px] h-[18px] text-green-400" />
                   </div>
                   <div>
-                    <p className="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-0.5">{t.contact.labelResponse}</p>
+                    <p className="text-xs text-[#DCE8FF] uppercase tracking-widest font-semibold mb-0.5">{t.contact.labelResponse}</p>
                     <p className="text-white text-sm font-medium">{t.contact.responseTime}</p>
                   </div>
                 </div>
@@ -149,13 +149,13 @@ const Contact = () => {
                     <div className="w-10 h-10 rounded-xl bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center shrink-0">
                       <CalendarClock className="w-[18px] h-[18px] text-blue-400" />
                     </div>
-                    <p className="text-xs text-gray-400 uppercase tracking-widest font-semibold">
+                    <p className="text-xs text-[#DCE8FF] uppercase tracking-widest font-semibold">
                       {t.contact.hours.title}
                     </p>
                   </div>
                   <ul className="flex flex-col gap-2 pl-[52px]">
                     {t.contact.hours.lines.map((line, i) => (
-                      <li key={i} className="text-xs text-blue-100/90 leading-snug">
+                      <li key={i} className="text-xs text-[#F3F7FF] leading-snug">
                         {line}
                       </li>
                     ))}
