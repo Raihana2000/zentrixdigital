@@ -1,7 +1,7 @@
 import React from 'react';
 import { Clock } from 'lucide-react';
 import { Link } from 'wouter';
-import { useTranslation } from '@/context/TranslationContext';
+import { useTranslation } from '@/hooks/useTranslation';
 import logoPath from "@assets/ChatGPT_Image_20_apr_2026,_10_49_46_1776675127194.png";
 
 const Footer = () => {

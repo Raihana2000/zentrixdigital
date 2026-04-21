@@ -1,17 +1,17 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 import { nl } from '../translations/nl';
 import { en } from '../translations/en';
 
 type Language = 'nl' | 'en';
 type Translations = typeof nl;
 
-interface TranslationContextType {
+export interface TranslationContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: Translations;
 }
 
-const TranslationContext = createContext<TranslationContextType | undefined>(undefined);
+export const TranslationContext = createContext<TranslationContextType | undefined>(undefined);
 
 export const TranslationProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>('nl');
@@ -39,12 +39,4 @@ export const TranslationProvider: React.FC<{ children: React.ReactNode }> = ({ c
       {children}
     </TranslationContext.Provider>
   );
-};
-
-export const useTranslation = () => {
-  const context = useContext(TranslationContext);
-  if (context === undefined) {
-    throw new Error('useTranslation must be used within a TranslationProvider');
-  }
-  return context;
 };

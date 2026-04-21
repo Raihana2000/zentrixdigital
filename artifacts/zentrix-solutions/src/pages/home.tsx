@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from '@/context/TranslationContext';
+import { useTranslation } from '@/hooks/useTranslation';
 import { Link } from 'wouter';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';

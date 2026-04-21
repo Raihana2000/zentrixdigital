@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from '@/context/TranslationContext';
+import { useTranslation } from '@/hooks/useTranslation';
 import { motion } from 'framer-motion';
 import { Shield, Lightbulb, CheckCircle2, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';

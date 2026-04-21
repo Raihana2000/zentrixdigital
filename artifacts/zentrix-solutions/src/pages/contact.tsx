@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useTranslation } from '@/context/TranslationContext';
+import { useTranslation } from '@/hooks/useTranslation';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, CalendarClock, ArrowRight } from 'lucide-react';
