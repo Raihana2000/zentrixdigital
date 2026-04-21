@@ -93,7 +93,7 @@ const Home = () => {
             {t.home.trustSignals.map((signal, i) => (
               <span key={i} className="flex items-center gap-2 text-sm text-gray-500">
                 <span className="w-4 h-4 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0">
-                  <svg className="w-2.5 h-2.5 text-blue-400" viewBox="0 0 12 12" fill="none">
+                  <svg className="w-2.5 h-2.5 text-blue-400" viewBox="0 0 12 12" fill="none" aria-hidden="true">
                     <path d="M2 6l3 3 5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </span>
@@ -377,7 +377,7 @@ const Home = () => {
             <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-blue-600/15 blur-[80px] rounded-full" />
 
             <motion.div variants={fadeUp} className="flex justify-center mb-8">
-              <img src={logoPath} alt="ZentrixDigital" className="h-10 w-auto object-contain opacity-90" />
+              <img src={logoPath} alt="ZentrixDigital" className="h-10 w-auto object-contain opacity-90" loading="lazy" decoding="async" />
             </motion.div>
 
             <motion.h2 variants={fadeUp} className="relative text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">

@@ -22,9 +22,8 @@ const Services = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    document.title = `${t.services.heroTitle} | ZentrixDigital`;
     window.scrollTo({ top: 0 });
-  }, [t.services.heroTitle]);
+  }, []);
 
   const services = Object.values(t.services.servicesList) as {
     title: string;

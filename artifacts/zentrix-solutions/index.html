@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="theme-color" content="#0B0B0B" />
 
     <!-- Primary SEO -->
     <title>ZentrixDigital | Websites en applicaties die klanten opleveren</title>
@@ -12,6 +13,17 @@
     <meta name="author" content="ZentrixDigital" />
     <link rel="canonical" href="https://www.zentrixdigital.eu/" />
 
+    <!-- Geo / Local SEO -->
+    <meta name="geo.region" content="NL-NH" />
+    <meta name="geo.placename" content="Amsterdam" />
+    <meta name="geo.position" content="52.3676;4.9041" />
+    <meta name="ICBM" content="52.3676, 4.9041" />
+
+    <!-- Hreflang (updated dynamically per page by SEOHead) -->
+    <link rel="alternate" hreflang="nl" href="https://www.zentrixdigital.eu/" />
+    <link rel="alternate" hreflang="en" href="https://www.zentrixdigital.eu/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.zentrixdigital.eu/" />
+
     <!-- Open Graph -->
     <meta property="og:title" content="ZentrixDigital | Websites en applicaties die klanten opleveren" />
     <meta property="og:description" content="ZentrixDigital bouwt professionele websites en applicaties voor ondernemers die beter gevonden willen worden in Google en meer klanten willen aantrekken." />
@@ -20,6 +32,7 @@
     <meta property="og:image" content="https://www.zentrixdigital.eu/opengraph.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ZentrixDigital – Professionele websites en applicaties die klanten opleveren" />
     <meta property="og:locale" content="nl_NL" />
     <meta property="og:locale:alternate" content="en_GB" />
     <meta property="og:site_name" content="ZentrixDigital" />
@@ -29,35 +42,49 @@
     <meta name="twitter:title" content="ZentrixDigital | Websites en applicaties die klanten opleveren" />
     <meta name="twitter:description" content="ZentrixDigital bouwt professionele websites en applicaties voor ondernemers die beter gevonden willen worden in Google en meer klanten willen aantrekken." />
     <meta name="twitter:image" content="https://www.zentrixdigital.eu/opengraph.jpg" />
+    <meta name="twitter:image:alt" content="ZentrixDigital – Professionele websites en applicaties die klanten opleveren" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-    <!-- Structured Data: ProfessionalService -->
+    <!-- Structured Data: LocalBusiness + ProfessionalService -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
+      "@type": ["LocalBusiness", "ProfessionalService"],
       "name": "ZentrixDigital",
       "description": "Professionele websites en applicaties voor bedrijven die beter gevonden willen worden in Google en meer klanten willen aantrekken.",
       "url": "https://www.zentrixdigital.eu",
+      "logo": "https://www.zentrixdigital.eu/opengraph.jpg",
+      "image": "https://www.zentrixdigital.eu/opengraph.jpg",
       "telephone": "+31683284995",
       "email": "info@zentrixdigital.eu",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Amsterdam",
+        "addressRegion": "Noord-Holland",
         "addressCountry": "NL"
       },
-      "areaServed": ["NL", "BE", "DE", "GB"],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 52.3676,
+        "longitude": 4.9041
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "Netherlands" },
+        { "@type": "Country", "name": "Belgium" },
+        { "@type": "Country", "name": "Germany" },
+        { "@type": "Country", "name": "United Kingdom" }
+      ],
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
           "opens": "09:00",
           "closes": "17:00"
         },
@@ -69,7 +96,50 @@
         }
       ],
       "priceRange": "€€€",
-      "serviceType": ["Website Development", "Web Design", "Application Development", "Digital Growth"]
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Invoice",
+      "knowsLanguage": ["nl", "en"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Digitale diensten",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Professionele website laten maken",
+              "url": "https://www.zentrixdigital.eu/websites"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Maatwerk applicaties laten ontwikkelen",
+              "url": "https://www.zentrixdigital.eu/applicaties"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Website onderhoud en optimalisatie",
+              "url": "https://www.zentrixdigital.eu/onderhoud-optimalisatie"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digitale groeiondersteuning",
+              "url": "https://www.zentrixdigital.eu/digitale-groeiondersteuning"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.zentrixdigital.eu"
+      ]
     }
     </script>
   </head>
