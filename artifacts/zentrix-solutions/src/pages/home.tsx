@@ -9,7 +9,8 @@ import {
   MessageSquareOff, Smartphone, MousePointerClick, Clock,
   CheckCircle2, Search, Lightbulb, Hammer, Rocket,
   Building2, Users, TrendingUp, Store,
-  Mail
+  Mail,
+  MessageCircle, CalendarCheck, FileText, Globe, MapPin, Star, Lock, BarChart3, CreditCard, Plug, Zap
 } from 'lucide-react';
 import logoPath from "@assets/ChatGPT_Image_20_apr_2026,_10_49_46_1776675127194.png";
 
@@ -31,6 +32,7 @@ const Home = () => {
   const whoWeHelpIcons = [Store, Users, Rocket, TrendingUp];
   const processIcons = [Search, Lightbulb, Hammer, Rocket];
   const whyIcons = [CheckCircle2, CheckCircle2, CheckCircle2, CheckCircle2];
+  const extensionIcons = [MessageCircle, CalendarCheck, FileText, Globe, MapPin, Star, Lock, BarChart3, Mail, CreditCard, Plug, Zap];
 
   return (
     <div className="flex flex-col min-h-screen bg-[#0B0B0B] text-white overflow-x-hidden">
@@ -187,6 +189,60 @@ const Home = () => {
                 </Link>
               );
             })}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ─── EXTENSIONS ──────────────────────────────────────── */}
+      <section className="py-28 px-5 bg-[#0e0e0e] border-y border-white/5">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
+            className="text-center mb-14"
+          >
+            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-semibold tracking-widest uppercase mb-6">
+              {t.home.heroBadge.split(' · ')[2]}
+            </motion.div>
+            <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5">
+              {t.home.extensionsTitle}
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-gray-400 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
+              {t.home.extensionsSubtitle}
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+          >
+            {t.home.extensions.map((ext, i) => {
+              const Icon = extensionIcons[i];
+              return (
+                <motion.div
+                  key={i} variants={fadeUp}
+                  className="flex items-start gap-4 p-6 rounded-2xl bg-white/[0.03] border border-white/8 hover:border-blue-500/30 hover:-translate-y-0.5 transition-all duration-300"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0 mt-0.5">
+                    <Icon className="w-5 h-5 text-blue-400" />
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <h3 className="text-sm font-semibold text-white">{ext.title}</h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">{ext.text}</p>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </motion.div>
+
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
+            className="text-center mt-10"
+          >
+            <Link href="/contact">
+              <button className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 hover:border-blue-500/50 font-semibold text-sm transition-all duration-200">
+                {t.home.extensionsCta} <ArrowRight className="w-4 h-4" />
+              </button>
+            </Link>
           </motion.div>
         </div>
       </section>

@@ -12,6 +12,10 @@ export interface ServicePageData {
   benefits: string[];
   includedTitle: string;
   included: string[];
+  extrasTitle?: string;
+  extras?: string[];
+  examplesTitle?: string;
+  examples?: string[];
   whoForTitle: string;
   whoFor: { title: string; text: string }[];
   processTitle: string;
@@ -141,6 +145,32 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           </motion.div>
         </div>
       </section>
+
+      {/* ─── EXTRAS / EXAMPLES ─────────────────────────────────── */}
+      {((data.extrasTitle && data.extras && data.extras.length > 0) || (data.examplesTitle && data.examples && data.examples.length > 0)) && (
+        <section className="py-20 px-5 bg-[#0e0e0e] border-t border-white/5">
+          <div className="max-w-5xl mx-auto">
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+              <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl font-bold text-white mb-10">
+                {data.extrasTitle || data.examplesTitle}
+              </motion.h2>
+              <motion.div variants={stagger} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {(data.extras || data.examples || []).map((item, i) => (
+                  <motion.div
+                    key={i} variants={fadeUp}
+                    className="flex items-start gap-3 p-5 rounded-2xl bg-white/[0.03] border border-blue-500/15 hover:border-blue-500/30 transition-colors duration-300"
+                  >
+                    <div className="w-5 h-5 shrink-0 mt-0.5 rounded-full bg-blue-600/20 border border-blue-500/30 flex items-center justify-center">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+                    </div>
+                    <span className="text-gray-300 text-sm leading-relaxed">{item}</span>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       {/* ─── WHO FOR ───────────────────────────────────────────── */}
       <section className="py-20 px-5 bg-[#0e0e0e] border-t border-white/5">

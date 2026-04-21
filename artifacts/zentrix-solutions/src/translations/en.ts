@@ -6,12 +6,12 @@ export const en = {
     contact: "Contact"
   },
   home: {
-    heroBadge: "WEBSITES · APPLICATIONS · DIGITAL GROWTH",
+    heroBadge: "WEBSITES · APPLICATIONS · SMART SYSTEMS",
     heroTitle: "Your business deserves a website that actually brings in customers",
-    heroSubtitle: "We build professional websites and smart applications for businesses that want to be taken seriously online — and attract more customers without the hassle.",
+    heroSubtitle: "We build professional websites and custom applications for businesses that want to be taken seriously online. Expandable with smart features like WhatsApp integrations, booking systems, and client portals.",
     primaryCta: "Request free analysis",
     secondaryCta: "View our services",
-    trustSignals: ["Professional and custom-built", "Built to convert", "Clear communication"],
+    trustSignals: ["Professional and custom-built", "Expandable with smart features", "Clear communication"],
     problemTitle: "Many businesses are losing customers online without realising it",
     problemIntro: "A website that looks good is not the same as a website that works. Visitors decide in seconds — and at the first sign of doubt, they click away to your competitor.",
     problems: [
@@ -21,15 +21,15 @@ export const en = {
       { title: "Outdated appearance", text: "Your website is your digital business card. A weak first impression costs you customers before the first conversation." }
     ],
     servicesTitle: "What we do for your business",
-    servicesIntro: "From professional websites to smart applications and digital growth support — we help businesses become stronger online.",
+    servicesIntro: "From professional websites to custom applications and smart systems — we build solutions that work and grow alongside your business.",
     services: {
       websites: {
         title: "Websites",
-        desc: "Professional business websites that build trust, rank well on Google, and turn visitors into customers."
+        desc: "Professional custom business websites that build trust, rank well on Google, and turn visitors into customers. Expandable with smart features as your business grows."
       },
       apps: {
         title: "Applications",
-        desc: "Custom web applications and smart systems that automate processes and help your business work more efficiently."
+        desc: "Custom web applications and smart systems that automate processes, provide client portals, and help your business work more efficiently."
       },
       maintenance: {
         title: "Maintenance & optimization",
@@ -40,6 +40,23 @@ export const en = {
         desc: "Strategic improvements to your online presence for better visibility, stronger trust, and higher conversion."
       }
     },
+    extensionsTitle: "Possible add-ons and smart extras",
+    extensionsSubtitle: "Your website doesn't have to stay a static brochure. Depending on your business, we can add features and systems that make your website work for you — now or later.",
+    extensions: [
+      { title: "WhatsApp integration", text: "A direct contact button so visitors can reach you via WhatsApp with a single click." },
+      { title: "Online booking system", text: "Customers book an appointment directly through your website — 24/7, no phone calls needed." },
+      { title: "Quote or intake form", text: "Collect lead information automatically and receive an instant notification in your inbox." },
+      { title: "Multilingual website", text: "Reach an international audience with your website available in multiple languages." },
+      { title: "Google Maps integration", text: "Show your location directly on your website so visitors can find you easily." },
+      { title: "Review display", text: "Show customer reviews on your website and build trust with new visitors immediately." },
+      { title: "Client portal", text: "A secure environment where your clients log in, view documents, or manage their orders." },
+      { title: "Dashboard or admin panel", text: "An overview of your clients, data, or processes in one clear, organised place." },
+      { title: "Newsletter or mailing list", text: "Visitors sign up for your updates, offers, or latest content directly from your website." },
+      { title: "Payment links or integrations", text: "Accept online payments via credit card, iDEAL, or other methods directly through your website." },
+      { title: "Connections with external tools", text: "Connect your website to the software you already use — from CRM to accounting." },
+      { title: "Custom automation", text: "Automate repetitive tasks so you save time and your business runs smarter." }
+    ],
+    extensionsCta: "Ask which add-ons suit your business",
     whoWeHelpTitle: "Who we work with",
     whoWeHelpIntro: "We work with entrepreneurs who understand that a strong online presence isn't a luxury — it's essential for growth.",
     whoWeHelp: [
@@ -49,19 +66,19 @@ export const en = {
       { title: "Growing businesses", text: "Companies that want to scale and take their digital presence to the next level." }
     ],
     whyZentrixTitle: "Why businesses choose ZentrixDigital",
-    whyZentrixIntro: "We're not a standard web agency. We work as a partner — focused on your results, not just your website.",
+    whyZentrixIntro: "We're not a standard web agency. We work as a partner — focused on your results, expandability, and the long term.",
     whyZentrix: [
       { title: "Transparent approach", text: "No vague quotes or hidden costs. You know exactly what we do, when, and what it's for." },
-      { title: "Results-driven", text: "Beautiful websites are a means, not a goal. We build with contact requests, trust, and growth in mind." },
+      { title: "Expandable and future-proof", text: "We build websites and applications that can easily be expanded with extra features and systems as your business grows." },
       { title: "Simple and direct", text: "We communicate clearly, work efficiently, and deliver what we promise — no detours." },
-      { title: "Built to grow", text: "Our solutions are scalable and built to grow as your business grows." }
+      { title: "Results-driven", text: "Not just good-looking, but functional. We build with contact requests, trust, and growth in mind." }
     ],
     processTitle: "How we work",
     processSteps: [
       { title: "Getting to know you", text: "We learn about your business, understand your goals, and identify opportunities for improvement." },
       { title: "Tailored plan", text: "Based on your situation, we propose an approach that fits your objectives and budget." },
       { title: "Build and refine", text: "We develop your solution and refine it step by step based on your feedback." },
-      { title: "Live and growing", text: "After launch, we monitor and look for further improvements that deliver even more results." }
+      { title: "Live and growing", text: "After launch, we look for further expansions and improvements that deliver even more results." }
     ],
     casesLabel: "Portfolio",
     casesTitle: "Our work speaks for itself",
@@ -77,73 +94,73 @@ export const en = {
       { label: "International", sub: "Available worldwide" }
     ],
     ctaTitle: "Ready to get more from your online presence?",
-    ctaText: "Whether you need a new website, a custom application, or improvements to your current digital setup — we're happy to think along with you, no obligation.",
+    ctaText: "Whether you need a new website, a custom application, or want to expand your site with smart features — we're happy to think along with you, no obligation.",
     ctaPrimary: "Request free analysis",
     ctaSecondary: "Contact us",
     ctaButton: "Contact us"
   },
   about: {
     heroTitle: "We help businesses become stronger online",
-    heroSubtitle: "ZentrixDigital is a modern digital agency based in Amsterdam. We build professional websites, smart applications, and support businesses in their digital growth.",
+    heroSubtitle: "ZentrixDigital is a modern digital agency based in Amsterdam. We build professional websites, custom applications, and smart systems that grow alongside your business.",
     whoWeAreTitle: "Who we are",
-    whoWeAreText: "We are a compact, dedicated team with an honest approach. No grand promises or vague stories — just concrete solutions that fit your business. We work with entrepreneurs who want more than just an online presence and understand that a strong digital foundation can make the difference.",
+    whoWeAreText: "We are a compact, dedicated team with an honest approach. No grand promises or vague stories — just concrete solutions that fit your business. We don't just build websites; we also build the smart features and systems around them: from WhatsApp integrations and booking systems to client portals and dashboards. That way, your digital presence grows with your business.",
     missionTitle: "Our mission",
-    missionText: "Every business owner deserves a digital presence that works: clear, professional, and focused on results. That's what we deliver — not inflated projects, but smart solutions that genuinely contribute to the growth of your business.",
+    missionText: "Every business owner deserves a digital presence that works: clear, professional, and built to grow. We don't deliver inflated projects — we deliver smart solutions that genuinely contribute to your growth, now and in the future.",
     valuesTitle: "What we stand for",
     values: {
       transparency: { title: "Transparency", desc: "Clear agreements, honest expectations, and no hidden costs. You always know where you stand." },
-      innovation: { title: "Smart approach", desc: "We build with modern technology and always look for the most logical digital solution for your situation." },
+      innovation: { title: "Smart approach", desc: "We build with modern technology and always consider which smart features can add extra value for your business." },
       reliability: { title: "Reliability", desc: "We do what we promise. Consistent, responsive, and committed — from the first conversation to after delivery." },
       performance: { title: "Results-driven", desc: "Not just good-looking, but functional. We focus on speed, usability, and real business outcomes." }
     },
     differentTitle: "What makes us different",
-    differentText: "We're not a large anonymous agency and not a budget website factory. We operate as a professional partner: personal, clear, and always focused on your results. You'll notice that from the very first conversation."
+    differentText: "We're not a large anonymous agency and not a budget website factory. We work as a professional partner focused on the long term. Whether you need a simple website or a full system with a booking module, client portal, and automations — we build it so it can always be expanded and improved."
   },
   services: {
     heroTitle: "Our services",
-    heroSubtitle: "From professional websites to custom applications and digital growth support — we help businesses become stronger online.",
+    heroSubtitle: "From professional websites to custom applications and smart systems — we build solutions that work and grow alongside your business.",
     moreInfoLabel: "View service",
     servicesList: {
       dev: {
         title: "Websites",
-        desc: "Professional custom business websites that build trust, rank well on Google, and convert visitors into customers.",
-        bullets: ["Custom professional design", "Fully mobile-responsive", "Fast load times", "Conversion-focused structure"],
+        desc: "Professional custom business websites that build trust, rank well on Google, and convert visitors into customers. Expandable with features like WhatsApp, booking systems, forms, and multilingual support.",
+        bullets: ["Custom professional design", "Fully mobile-responsive", "Expandable with smart features", "Conversion-focused structure"],
         href: "/websites"
       },
       app: {
         title: "Applications",
-        desc: "Custom web applications that improve business processes, automate repetitive tasks, and scale with your business.",
-        bullets: ["Custom functionality", "Process automation", "Scalable architecture", "User-friendly interface"],
+        desc: "Custom web applications that improve and automate business processes. Think client portals, dashboards, booking systems, and integrations with tools you already use.",
+        bullets: ["Client portals and dashboards", "Process automation", "Connections with external tools", "Scalable and user-friendly"],
         href: "/applicaties"
       },
       maintenance: {
         title: "Maintenance & Optimization",
-        desc: "Ongoing maintenance for speed, security, updates, and technical performance — so your website always performs at its best.",
-        bullets: ["Regular updates", "Speed optimization", "Security monitoring", "Stability and uptime"],
+        desc: "Ongoing maintenance for speed, security, and technical performance — so your website always runs well and stays ready for future expansions.",
+        bullets: ["Regular updates", "Speed and SEO optimization", "Security monitoring", "Small changes on request"],
         href: "/onderhoud-optimalisatie"
       },
       growth: {
         title: "Digital Growth Support",
-        desc: "Strategic improvements to your online presence for better visibility, stronger positioning, and higher conversion.",
-        bullets: ["Better Google visibility", "Stronger online positioning", "Improved user experience", "More conversions"],
+        desc: "Strategic improvements to your online presence. We analyse your digital situation and implement improvements for better visibility, conversion, and presentation.",
+        bullets: ["Better Google visibility", "Stronger online positioning", "Improved user experience", "Concrete steps for more conversions"],
         href: "/digitale-groeiondersteuning"
       }
     },
     ctaTitle: "Need a solution tailored to your business?",
-    ctaText: "We're happy to think along with you and build something that fits your goals and situation.",
+    ctaText: "We're happy to think along with you — whether it's a simple website or a full system with smart add-ons and integrations.",
     ctaButton: "Contact us"
   },
   servicePages: {
     websites: {
       h1: "Professional website development for your business",
-      intro: "A strong website is more than a digital brochure. It's the first thing a potential customer sees — and that single moment determines whether they look further or click away. We build professional custom websites that build trust, rank well on Google, and turn visitors into real customers.",
+      intro: "A strong website is more than a digital brochure. It's the first thing a potential customer sees — and that single moment determines whether they look further or click away. We build professional custom websites that build trust, rank well on Google, and turn visitors into real customers. And the best part: your website can easily be expanded later with smart features and systems that fit your business.",
       benefitsTitle: "What you get with a ZentrixDigital website",
       benefits: [
         "A professional appearance that instantly builds trust with new visitors",
         "Fully mobile-responsive — perfect on smartphone, tablet, and desktop",
         "Fast load times for a better user experience and higher Google ranking",
         "Conversion-focused structure that encourages visitors to get in touch",
-        "Clear, compelling design that represents your brand with your target audience",
+        "Expandable with features like WhatsApp, booking systems, forms, or multilingual support",
         "A technically strong SEO foundation for better visibility in search engines"
       ],
       includedTitle: "What's included as standard",
@@ -154,6 +171,15 @@ export const en = {
         "Speed optimization and basic security setup",
         "SEO technical foundation: meta tags, correct heading structure, and load time",
         "Personal handover meeting with explanation and documentation"
+      ],
+      extrasTitle: "Possible add-ons for your website",
+      extras: [
+        "WhatsApp integration or direct chat button",
+        "Online booking system or appointments page",
+        "Quote or intake form with automatic follow-up",
+        "Multilingual version for international visitors",
+        "Payment links or integrations via iDEAL or credit card",
+        "Client portal, dashboard, or secure login environment"
       ],
       whoForTitle: "Who is this for",
       whoFor: [
@@ -167,22 +193,22 @@ export const en = {
         { title: "Intake", text: "We learn about your business. Goals, target audience, competitors, and style — all covered." },
         { title: "Structure and setup", text: "We define the page structure, navigation, and design direction that suits you best." },
         { title: "Build and align", text: "We build the website and refine it based on your feedback — quickly and efficiently." },
-        { title: "Live and beyond", text: "After launch, we check whether there are immediate improvements to act on." }
+        { title: "Live and beyond", text: "After launch, we look at which add-ons or improvements can deliver even more results." }
       ],
       ctaTitle: "Ready for a website that actually works?",
-      ctaText: "Request a free no-obligation analysis and discover what a professional website can concretely do for your business.",
+      ctaText: "Request a free no-obligation analysis and discover what a professional website — and which smart add-ons — can concretely do for your business.",
       ctaButton: "Request free analysis"
     },
     applicaties: {
       h1: "Custom application development for your business",
-      intro: "Off-the-shelf software doesn't always solve everything. We build custom web applications that fit seamlessly into your workflows — whether it's internal tools, client portals, dashboards, or automated systems.",
+      intro: "Off-the-shelf software doesn't always solve everything. We build custom web applications that fit seamlessly into your workflows. Think client portals where your customers log in and find documents, dashboards for data oversight, booking systems, automated forms, WhatsApp integrations, or fully bespoke applications — precisely what your business needs.",
       benefitsTitle: "Benefits of a custom application",
       benefits: [
         "A solution that fits exactly the way you work — no compromises",
         "Automate time-consuming tasks and get back time for what truly matters",
         "Scalability: the application grows as your business grows",
         "User-friendly for everyone — internally and for your customers",
-        "Integration with your existing systems and tools where needed",
+        "Connections with the tools you already use — from CRM to accounting",
         "Full control over your own data and functionality"
       ],
       includedTitle: "What's included as standard",
@@ -193,6 +219,15 @@ export const en = {
         "Thorough testing phase and quality assurance before delivery",
         "Technical documentation and personal handover",
         "Post-launch support and further development"
+      ],
+      examplesTitle: "Examples of what we build",
+      examples: [
+        "Client portals with secure login and document management",
+        "Booking systems for appointments, services, or products",
+        "Dashboards for an overview of data, clients, or processes",
+        "Intake forms with automatic processing and follow-up",
+        "WhatsApp integrations and automated messaging systems",
+        "Connections with external tools like CRM, accounting software, or email"
       ],
       whoForTitle: "Who is this for",
       whoFor: [
@@ -206,22 +241,22 @@ export const en = {
         { title: "Analysis", text: "We map out your processes, requirements, and desired outcomes in detail." },
         { title: "Plan and architecture", text: "We design the technical structure and set out a clear project plan." },
         { title: "Build and test", text: "We work iteratively and test thoroughly for functionality and usability." },
-        { title: "Delivery and growth", text: "After launch, we're available for further improvements and expansions." }
+        { title: "Delivery and growth", text: "After launch, we're available for further improvements, integrations, and expansions." }
       ],
       ctaTitle: "An application that makes your business smarter?",
-      ctaText: "Tell us what you need. We'll work out the best and most efficient way to build it.",
+      ctaText: "Tell us what you need — whether it's a client portal, booking system, dashboard, or something fully bespoke. We'll work out the best and most efficient way to build it.",
       ctaButton: "Contact us"
     },
     onderhoud: {
       h1: "Professional website maintenance and optimization",
-      intro: "A website you don't actively maintain gradually loses speed, security, and performance. We keep your digital environment up to date, running smoothly, and free from risk — so you can focus on your business.",
+      intro: "A website you don't actively maintain gradually loses speed, security, and performance. We keep your digital environment up to date, running smoothly, and ready for expansions whenever you want them — so you can focus on your business.",
       benefitsTitle: "Why ongoing maintenance pays off",
       benefits: [
         "Your website stays fast, stable, and secure — always and automatically",
         "Security updates are applied immediately, before problems arise",
         "Technical improvements keep the user experience consistently high",
         "Better performance leads directly to more trust and higher conversion",
-        "You don't have to think about it — we take care of it for you",
+        "Your website stays ready for add-ons and new features when you need them",
         "Issues are detected early and resolved quickly"
       ],
       includedTitle: "What's included in maintenance",
@@ -244,23 +279,23 @@ export const en = {
       process: [
         { title: "Assessment", text: "We analyse your current setup and create a tailored maintenance plan." },
         { title: "Ongoing maintenance", text: "We apply updates, monitor performance, and resolve technical issues." },
-        { title: "Active optimization", text: "We spot improvement opportunities in speed, structure, and conversion." },
+        { title: "Active optimization", text: "We spot improvement opportunities in speed, structure, conversion, and expansion possibilities." },
         { title: "Check-ins and reporting", text: "We keep you informed through regular updates and clear communication." }
       ],
       ctaTitle: "No more worrying about your website?",
-      ctaText: "Get in touch and find out how we keep your website stable, fast, and secure — month after month.",
+      ctaText: "Get in touch and find out how we keep your website stable, fast, and secure — and ready for the next step.",
       ctaButton: "Contact us"
     },
     groei: {
       h1: "Digital growth support for businesses",
-      intro: "More customers, more trust, a stronger online position. We help businesses strengthen their entire digital presence — from structure and Google visibility to presentation and conversion.",
+      intro: "More customers, more trust, a stronger online position. We help businesses strengthen their entire digital presence — from Google visibility and presentation to smart add-ons that let your website grow with your business.",
       benefitsTitle: "What digital growth support delivers",
       benefits: [
         "Better visibility on Google and other search engines",
         "A stronger position relative to your competitors online",
         "Improved user experience across all devices",
         "Clearer communication aimed at your ideal customer",
-        "More trust from visitors who don't know your business yet",
+        "Smarter features that generate more leads and increase conversion",
         "A stronger digital foundation for lasting online growth"
       ],
       includedTitle: "What we address",
@@ -268,8 +303,8 @@ export const en = {
         "A thorough analysis of your current digital position and presence",
         "Strategic recommendations for structure, content, and visibility",
         "Improvements to user experience, navigation, and page layout",
+        "Adding smart features that generate leads and improve conversion",
         "Strengthening of trust signals and persuasion structure",
-        "Optimisation of presentation and visual consistency",
         "Guidance on digital positioning and continued growth"
       ],
       whoForTitle: "Who is this for",
@@ -282,12 +317,12 @@ export const en = {
       processTitle: "Our approach",
       process: [
         { title: "Digital scan", text: "We analyse your website, presentation, and online position from A to Z." },
-        { title: "Improvement plan", text: "We present a clear plan with concrete priorities and expected impact." },
+        { title: "Improvement plan", text: "We present a clear plan with concrete priorities, add-ons, and expected impact." },
         { title: "Implementation", text: "We carry out improvements step by step, with regular check-ins." },
         { title: "Measure and improve", text: "We evaluate results and adjust for optimal and lasting growth." }
       ],
       ctaTitle: "Ready to grow stronger online?",
-      ctaText: "Let us review your current situation and discover what the right digital approach can do for your business.",
+      ctaText: "Let us review your current situation and discover what the right digital approach — including smart add-ons — can do for your business.",
       ctaButton: "Request free analysis"
     }
   },
@@ -295,7 +330,7 @@ export const en = {
     heroTitle: "Get in touch",
     heroSubtitle: "Request a free analysis, ask a question, or discuss your project. We respond quickly and with no obligation.",
     readyTitle: "Want more customers through your website?",
-    readyText: "Request a free analysis and find out specifically what can be improved. We give honest advice — no strings attached and no sales pitch.",
+    readyText: "Request a free analysis and find out specifically what can be improved — whether it's presentation, visibility, or smart add-ons. We give honest advice, no strings attached.",
     formTitle: "Request a free analysis",
     labelLocation: "Location",
     labelPhone: "Phone",
@@ -337,25 +372,25 @@ export const en = {
   },
   meta: {
     homeTitle: "ZentrixDigital — Professional Website Development for Businesses",
-    homeDesc: "ZentrixDigital builds professional websites and custom applications for businesses across the Netherlands. Better Google ranking. More customers. Request a free analysis.",
+    homeDesc: "ZentrixDigital builds professional websites and custom applications for businesses across the Netherlands. Expandable with smart features. Request a free analysis.",
     aboutTitle: "About ZentrixDigital — Modern Digital Agency in Amsterdam",
-    aboutDesc: "ZentrixDigital is a modern digital agency based in Amsterdam. Professional websites, custom applications, and digital growth support for businesses that want to grow online.",
+    aboutDesc: "ZentrixDigital is a modern digital agency based in Amsterdam. Professional websites, custom applications, and smart digital systems for businesses that want to grow online.",
     servicesTitle: "Services — ZentrixDigital | Websites, Applications & Digital Growth",
     servicesDesc: "Explore our services: professional website development, custom web application development, website maintenance, and digital growth support for your business.",
     contactTitle: "Contact ZentrixDigital — Request a Free Website Analysis",
     contactDesc: "Contact ZentrixDigital for a free website analysis. We respond within 24 hours. Call +31 6 83284995 or email info@zentrixdigital.eu.",
     websitesTitle: "Professional Business Website Development — ZentrixDigital",
-    websitesDesc: "Need a professional custom website? ZentrixDigital builds conversion-focused business websites that rank on Google and turn visitors into customers. Free analysis.",
+    websitesDesc: "Need a professional custom website? ZentrixDigital builds conversion-focused websites expandable with WhatsApp, booking systems, forms, and more. Free analysis.",
     applicatiesTitle: "Custom Web Application Development — ZentrixDigital",
-    applicatiesDesc: "Need a custom web application built? ZentrixDigital develops smart digital solutions that automate processes, improve efficiency, and grow with your business.",
+    applicatiesDesc: "Need a custom web application built? ZentrixDigital develops client portals, dashboards, booking systems, and smart integrations that grow with your business.",
     onderhoudTitle: "Website Maintenance and Optimization — ZentrixDigital",
     onderhoudDesc: "Professional website maintenance by ZentrixDigital. We keep your website fast, secure, and performing at its best — so you can focus on your business.",
     groeiTitle: "Digital Growth Support for Businesses — ZentrixDigital",
-    groeiDesc: "Strengthen your online visibility and conversion with digital growth support from ZentrixDigital. Better positioning and more results from your digital presence."
+    groeiDesc: "Strengthen your online visibility and conversion with digital growth support from ZentrixDigital. Smart add-ons, better positioning, and more results from your presence."
   },
   footer: {
     navLabel: "Navigation",
-    tagline: "Professional websites, custom applications, and personal digital support for businesses that want real results online.",
+    tagline: "Professional websites, custom applications, and smart digital systems for businesses that want real results online.",
     rights: "All rights reserved."
   }
 };

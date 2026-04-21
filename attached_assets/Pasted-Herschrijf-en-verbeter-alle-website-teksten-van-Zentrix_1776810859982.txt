@@ -1,0 +1,118 @@
+Herschrijf en verbeter alle website-teksten van ZentrixDigital zodat het bedrijf duidelijk als premium, slim en uitbreidbaar wordt gepositioneerd — niet alleen als “websitebouwer”, maar als partij die websites kan uitbreiden met slimme systemen, koppelingen en digitale functies.
+
+BELANGRIJK:
+- Houd de taal simpel, helder en overtuigend.
+- Schrijf voor ondernemers die weinig technische kennis hebben.
+- Teksten moeten direct duidelijk maken wat het oplevert.
+- Geen moeilijke jargonwoorden zonder uitleg.
+- Wel professioneel, modern en betrouwbaar.
+- Gebruik SEO-vriendelijke taal in natuurlijk Nederlands en Engels.
+- Geen overdreven marketingpraat of lege kreten.
+- Geen generieke agency-tekst.
+
+DOEL:
+De bezoeker moet meteen begrijpen:
+1. ZentrixDigital bouwt professionele websites
+2. ZentrixDigital maakt ook applicaties en slimme systemen
+3. websites kunnen later uitgebreid worden met extra functies
+4. ZentrixDigital helpt bedrijven groeien met digitale oplossingen
+5. alles is gericht op meer klanten, duidelijkheid, gebruiksgemak en schaalbaarheid
+
+VERWERK DIT EXPLICIET IN DE COPY:
+- websites op maat
+- applicaties op maat
+- systemen en extra functies mogelijk
+- WhatsApp-koppelingen
+- boekingssystemen
+- formulieren en leadsystemen
+- meertalige websites
+- klantportalen
+- dashboards
+- automatiseringen
+- onderhoud en optimalisatie
+- digitale groeiondersteuning
+
+PAS DE CONTENT AAN OP:
+1. Homepage
+2. Diensten overzicht
+3. Pagina Websites
+4. Pagina Applicaties
+5. Pagina Onderhoud & optimalisatie
+6. Pagina Digitale groeiondersteuning
+7. CTA-secties
+8. Kaarten met voordelen / voor wie / wat is inbegrepen / werkwijze
+
+VOEG OP DE HOMEPAGE EEN NIEUWE SECTIE TOE:
+Titel: “Mogelijke uitbreidingen en slimme extra’s”
+Subtitel: leg uit dat een website later uitgebreid kan worden met handige functies en systemen, afhankelijk van het bedrijf.
+
+Gebruik bijvoorbeeld kaarten of bullets met:
+- WhatsApp chatknop of directe contactkoppeling
+- online boekingssysteem
+- offerte- of intakeformulier
+- meertaligheid
+- Google Maps integratie
+- reviewweergave
+- klantportaal
+- dashboard of beheeromgeving
+- nieuwsbriefinschrijving
+- betaallinks of betaalintegraties
+- koppelingen met externe tools
+- maatwerk automatiseringen
+
+SCHRIJF ZO DAT HET VOOR EEN ONDERNEMER LOGISCH KLINKT:
+Dus niet alleen “API-integraties” maar eerder:
+“Koppelingen met de tools die u al gebruikt”
+of
+“Extra functies zoals WhatsApp, boekingen, formulieren of klantomgevingen”
+
+SEO-EISEN:
+- Verwerk natuurlijke zoekwoorden zoals:
+  - professionele website laten maken
+  - website laten bouwen
+  - maatwerk website
+  - webapplicatie laten maken
+  - applicatie op maat
+  - website onderhoud
+  - website optimalisatie
+  - digitale groei
+  - website voor bedrijf
+  - website met boekingssysteem
+  - website met WhatsApp koppeling
+- Doe dit natuurlijk, zonder keyword stuffing
+- Zorg dat headings en subheadings SEO-logisch zijn
+
+TAALVERSIES:
+- Pas zowel de Nederlandse als Engelse teksten aan
+- Zorg dat beide talen inhoudelijk gelijkwaardig zijn
+- Geen halve vertalingen of losse Engelse restjes in Nederlandse pagina’s
+- Engels moet professioneel en natuurlijk klinken, niet letterlijk vertaald
+
+CONVERSIE:
+Elke pagina moet duidelijk antwoord geven op:
+- wat is het?
+- voor wie is het?
+- wat levert het op?
+- wat kan er extra bij?
+- waarom is dit slim voor mijn bedrijf?
+- wat is de volgende stap?
+
+VOEG OOK ZINNEN TOE ZOALS:
+- “Uw website kan later worden uitgebreid met slimme functies en systemen.”
+- “Denk aan WhatsApp-koppelingen, boekingsmodules, formulieren, dashboards of klantomgevingen.”
+- “Zo groeit uw website mee met uw bedrijf.”
+- “Niet alleen mooi, maar ook praktisch en uitbreidbaar.”
+
+TECHNISCH:
+- Pas alleen de teksten en sectiecontent aan
+- Behoud het huidige design en de bestaande stijl
+- Voeg alleen nette, goed passende secties toe waar nodig
+- Zorg dat alles ook mobiel mooi blijft
+- Controleer dat NL/EN toggle overal werkt
+- Lever complete, direct bruikbare content in de bestaande componenten/pagina’s
+
+Laat na afloop exact zien:
+1. welke teksten zijn aangepast
+2. welke nieuwe secties zijn toegevoegd
+3. welke NL en EN content is toegevoegd
+4. op welke pagina de uitbreidbaarheid en slimme extra’s zichtbaar zijn gemaakt
