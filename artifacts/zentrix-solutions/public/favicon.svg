@@ -1,23 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <!--
-    ZentrixDigital Favicon — ZD Pixel Blockmark
-    16×16 viewBox, rectangles only = zero sub-pixel blur at any browser DPI
-    Z: electric blue #3B82F6, staircase diagonal (5 blocks, gap-free)
-    D: white #FFFFFF, rectangular D with 1px inner hollow
-    1px padding all sides, 1px gap between Z and D
+    ZentrixDigital Favicon — ZD Blockmark (flat, simplified)
+    Same geometry as the favicon PNGs.
+    Not used as browser-tab favicon (PNGs are used instead for reliability).
+    Used only for social sharing / open-graph contexts.
   -->
-  <rect width="16" height="16" fill="#0B0B0B"/>
+  <rect width="512" height="512" fill="#0B0B0B"/>
 
-  <!-- Z in electric blue -->
-  <rect x="1" y="1"  width="8" height="2" fill="#3B82F6"/>
-  <rect x="6" y="3"  width="3" height="3" fill="#3B82F6"/>
-  <rect x="3" y="6"  width="5" height="3" fill="#3B82F6"/>
-  <rect x="1" y="9"  width="3" height="2" fill="#3B82F6"/>
-  <rect x="1" y="11" width="8" height="2" fill="#3B82F6"/>
+  <!-- Z in electric blue: top bar + diagonal polygon + bottom bar -->
+  <rect x="14"  y="14"  width="234" height="76" fill="#3B82F6"/>
+  <polygon points="248,90 148,90 14,422 114,422"  fill="#3B82F6"/>
+  <rect x="14"  y="422" width="234" height="76" fill="#3B82F6"/>
 
-  <!-- D in white — left stroke + top bar + bottom bar + right bowl -->
-  <rect x="10" y="1"  width="5" height="2"  fill="#FFFFFF"/>
-  <rect x="10" y="1"  width="2" height="12" fill="#FFFFFF"/>
-  <rect x="13" y="3"  width="2" height="8"  fill="#FFFFFF"/>
-  <rect x="10" y="11" width="5" height="2"  fill="#FFFFFF"/>
+  <!-- D in white: full rect minus inner hollow -->
+  <rect x="264" y="14"  width="234" height="484" fill="#FFFFFF"/>
+  <rect x="314" y="90"  width="134" height="332" fill="#0B0B0B"/>
 </svg>
