@@ -1,0 +1,168 @@
+You are now acting as a senior conversion copywriter, SEO strategist, UX writer, and Dutch/English local-business marketer.
+
+Task:
+Rewrite the full website copy of ZentrixDigital in BOTH DUTCH AND ENGLISH.
+
+IMPORTANT:
+- Every text block must be created in 2 versions: Dutch and English.
+- The Dutch version must sound natural for entrepreneurs in the Netherlands.
+- The English version must sound natural for international business owners.
+- Both versions must have the same meaning, same structure, and same quality.
+- Do not make English a literal awkward translation of Dutch.
+- Do not leave mixed-language sections.
+- Make sure the language toggle can display the full site correctly in both languages.
+
+MAIN GOAL:
+Position ZentrixDigital as a blue-ocean company, not a generic web agency.
+
+ZentrixDigital should feel like:
+- a company that helps businesses become stronger online
+- through professional websites
+- smart applications
+- maintenance and optimization
+- digital growth support
+
+The text must be:
+- simple
+- persuasive
+- trustworthy
+- easy to understand
+- SEO-friendly
+- written for non-technical entrepreneurs
+- modern and clean
+- free of vague agency jargon
+
+TARGET AUDIENCE:
+- local businesses
+- service providers
+- salons
+- garages
+- offices
+- consultants
+- small and growing businesses
+- entrepreneurs who are not technical
+
+IMPORTANT WRITING RULES:
+1. Write in simple language.
+2. Focus on business value first, service second.
+3. Avoid fluffy terms and vague marketing talk.
+4. Use SEO naturally, not spammy.
+5. Every section should answer:
+   - what it is
+   - why it matters
+   - what it solves
+   - what the visitor gets
+   - why ZentrixDigital is a strong choice
+6. Make the copy sound stronger, clearer, and more distinctive than a standard web agency.
+
+SEO KEYWORDS TO USE NATURALLY:
+
+DUTCH:
+- website laten maken
+- professionele website
+- bedrijfswebsite
+- maatwerk applicatie
+- applicatie laten bouwen
+- website onderhoud
+- website optimalisatie
+- online zichtbaarheid
+- beter vindbaar in Google
+- digitale groei
+
+ENGLISH:
+- professional website
+- business website
+- custom application
+- web application development
+- website maintenance
+- website optimization
+- online visibility
+- better visibility on Google
+- digital growth
+
+REWRITE ALL TEXT FOR:
+- Homepage
+- Websites page
+- Applications page
+- Maintenance & optimization page
+- Digital growth support page
+
+FOR EACH PAGE PROVIDE:
+- Hero title
+- Hero subtitle
+- Primary CTA
+- Secondary CTA
+- Section headings
+- Section texts
+- Suitable for section
+- How we work section
+- Closing CTA
+
+OUTPUT FORMAT:
+For every page, provide:
+
+PAGE NAME
+
+DUTCH VERSION
+Hero title:
+Hero subtitle:
+Primary CTA:
+Secondary CTA:
+
+Section 1 title:
+Section 1 text:
+
+Section 2 title:
+Section 2 text:
+
+Suitable for:
+- ...
+- ...
+- ...
+- ...
+
+How we work:
+1. ...
+2. ...
+3. ...
+4. ...
+
+Closing CTA title:
+Closing CTA text:
+Closing CTA button:
+
+ENGLISH VERSION
+Hero title:
+Hero subtitle:
+Primary CTA:
+Secondary CTA:
+
+Section 1 title:
+Section 1 text:
+
+Section 2 title:
+Section 2 text:
+
+Suitable for:
+- ...
+- ...
+- ...
+- ...
+
+How we work:
+1. ...
+2. ...
+3. ...
+4. ...
+
+Closing CTA title:
+Closing CTA text:
+Closing CTA button:
+
+FINAL IMPLEMENTATION INSTRUCTION:
+After generating the final Dutch and English copy, immediately replace the existing text in the correct files/components/pages of the project.
+Keep the current layout, design, styling, buttons, routing, and structure intact.
+Do not break the language toggle.
+Make sure all visible text is translated properly in both languages.
+Do not leave placeholder text.
+Only write final publish-ready content.

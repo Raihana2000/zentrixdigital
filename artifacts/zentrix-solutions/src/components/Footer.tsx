@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
           
           <div className="flex flex-col gap-4">
-            <h4 className="text-white font-semibold text-lg">{t.nav.home}</h4>
+            <h4 className="text-white font-semibold text-lg">{t.footer.navLabel}</h4>
             <nav className="flex flex-col gap-3">
               <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors w-fit" data-testid="footer-link-about">
                 {t.nav.about}
@@ -39,13 +39,13 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <h4 className="text-white font-semibold text-lg">{t.nav.contact}</h4>
             <address className="flex flex-col gap-3 text-muted-foreground not-italic">
-              <p>ZentrixDigital</p>
-              <p>Amsterdam, Netherlands</p>
+              <p>{t.contact.company}</p>
+              <p>{t.contact.location}</p>
               <p>
-                <a href="tel:0683284995" className="hover:text-primary transition-colors">06-83284995</a>
+                <a href="tel:0683284995" className="hover:text-primary transition-colors">{t.contact.phone}</a>
               </p>
               <p>
-                <a href="mailto:info@zentrixdigital.eu" className="hover:text-primary transition-colors">info@zentrixdigital.eu</a>
+                <a href="mailto:info@zentrixdigital.eu" className="hover:text-primary transition-colors">{t.contact.email}</a>
               </p>
             </address>
 

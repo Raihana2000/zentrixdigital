@@ -1,0 +1,212 @@
+You are now acting as a senior conversion copywriter, SEO strategist, UX writer, and Dutch local-business marketer.
+
+Task:
+Rewrite the full website copy of ZentrixDigital so it feels like a strong blue-ocean digital company instead of a generic web agency.
+
+IMPORTANT GOAL:
+The website must immediately feel clear, valuable, and trustworthy to small business owners, local entrepreneurs, service providers, and non-technical people.
+The language must be simple, sharp, modern, persuasive, and easy to understand — even for entrepreneurs who are not smart with websites, apps, SEO, or technology.
+
+MAIN POSITIONING:
+ZentrixDigital does NOT just make websites or apps.
+ZentrixDigital helps businesses become stronger online through:
+- websites that build trust and generate contact
+- smart applications that improve work processes
+- maintenance that keeps websites fast, safe, and reliable
+- digital growth support that improves online visibility, positioning, and conversion
+
+CORE MESSAGE:
+We help businesses look more professional, be easier to trust, and get more out of their digital presence.
+
+TONE OF VOICE:
+- clear
+- calm
+- professional
+- modern
+- direct
+- no fluff
+- no hype
+- no jargon overload
+- easy Dutch for normal entrepreneurs
+- persuasive without sounding fake
+- no childish wording
+- no corporate nonsense
+- no vague “innovative digital solutions” language unless it is made concrete
+
+WRITING RULES:
+1. Write in simple Dutch that small business owners immediately understand.
+2. Every section must answer one of these questions:
+   - What is this?
+   - Why does this matter to me?
+   - What problem does it solve?
+   - What do I get from it?
+   - Why should I trust this company?
+   - What is the next step?
+3. Replace generic agency text with business-result language.
+4. Focus on benefits first, services second.
+5. Avoid empty buzzwords such as:
+   - innovatieve oplossingen
+   - digitale transformatie
+   - maatwerkoplossingen
+   - hoogwaardige kwaliteit
+   - toekomstbestendig
+   unless followed by something concrete and understandable.
+6. SEO text must still sound natural for humans.
+7. Use headings that are useful for both humans and SEO.
+8. Mention important keywords naturally, such as:
+   - website laten maken
+   - professionele website
+   - maatwerk applicatie
+   - webapplicatie
+   - website onderhoud
+   - website optimalisatie
+   - online zichtbaarheid
+   - beter vindbaar in Google
+   - conversie
+   - digitale groei
+   - bedrijf website
+   - applicatie laten bouwen
+9. Do not keyword-stuff.
+10. Write copy that makes a visitor feel:
+   “This company understands what my business needs.”
+
+WEBSITE STRUCTURE TO REWRITE:
+Rewrite all visible copy for:
+- Homepage
+- Websites service page
+- Applications service page
+- Maintenance & optimization page
+- Digital growth support page
+
+FOR EACH PAGE:
+Create:
+1. Hero title
+2. Hero subtitle
+3. Primary CTA
+4. Secondary CTA
+5. 3 to 6 supporting sections
+6. Section headings
+7. Short persuasive paragraph text
+8. Bullet points where useful
+9. “For who is this suitable” section
+10. “How we work” section
+11. Strong closing CTA
+
+SEO REQUIREMENTS:
+For every page, make the text naturally rank better by including clear search intent language.
+Each page should target one main topic:
+
+Homepage:
+- webdesign bureau
+- website laten maken
+- applicatie laten maken
+- professionele website voor bedrijven
+
+Websites page:
+- website laten maken
+- professionele website laten maken
+- bedrijfswebsite laten maken
+- website voor ondernemers
+
+Applications page:
+- applicatie laten bouwen
+- maatwerk applicatie
+- webapplicatie laten ontwikkelen
+- bedrijfsproces automatiseren
+
+Maintenance page:
+- website onderhoud
+- website optimalisatie
+- website sneller maken
+- website veilig houden
+
+Digital growth support page:
+- online zichtbaarheid verbeteren
+- beter vindbaar in Google
+- website verbeteren
+- digitale groei voor bedrijven
+
+VERY IMPORTANT:
+The copy must be written for real entrepreneurs in the Netherlands.
+Think of:
+- salons
+- garages
+- local shops
+- coaches
+- consultants
+- real estate professionals
+- legal service providers
+- small offices
+- growing businesses
+
+So the copy should feel understandable for those people.
+
+AVOID:
+- sounding like a software company talking to developers
+- sounding too expensive or too enterprise-only
+- sounding too vague
+- sounding like fake marketing
+- impossible claims like “double your revenue”
+- English phrases where Dutch is better
+
+CONVERSION REQUIREMENTS:
+The website should increase trust and action.
+So include persuasion based on:
+- clarity
+- professionalism
+- logic
+- outcomes
+- reliability
+- simplicity
+- transparency
+
+The visitor must quickly understand:
+- what ZentrixDigital does
+- for whom
+- why it matters
+- what results it can bring
+- how to take the next step
+
+OUTPUT FORMAT:
+Give the final result page by page in this structure:
+
+PAGE NAME
+
+Hero title:
+Hero subtitle:
+Primary CTA:
+Secondary CTA:
+
+Section 1 title:
+Section 1 text:
+
+Section 2 title:
+Section 2 text:
+- bullet
+- bullet
+- bullet
+
+Section 3 title:
+Section 3 text:
+
+Suitable for:
+- type of customer
+- type of customer
+- type of customer
+- type of customer
+
+How we work:
+1. step
+2. step
+3. step
+4. step
+
+Closing CTA title:
+Closing CTA text:
+Closing CTA button:
+
+Make the copy polished, realistic, SEO-friendly, conversion-focused, and easy to understand.
+
+FINAL INSTRUCTION:
+Do not just slightly improve the current text.
+Rewrite it properly so ZentrixDigital sounds more unique, clearer, stronger, and more blue-ocean than a normal web agency.

@@ -1,0 +1,145 @@
+You are now acting as a senior SEO strategist, conversion copywriter, local SEO specialist, and UX writer for ZentrixDigital.
+
+GOAL:
+Rewrite the full visible copy of the ZentrixDigital website in BOTH DUTCH AND ENGLISH so it:
+1. sounds simple and clear for non-technical entrepreneurs
+2. is SEO-friendly for Google
+3. positions ZentrixDigital as a stronger, more distinctive business
+4. improves conversion
+5. keeps the current design and layout intact
+6. works correctly with the language toggle in both Dutch and English
+
+IMPORTANT:
+- Write for real business owners, not for marketers.
+- Use simple language that even a less technical or “basic” entrepreneur understands immediately.
+- No fluffy agency jargon.
+- No generic empty claims.
+- Make the copy sound practical, trustworthy, and result-oriented.
+- Keep all sections easy to scan.
+- Every page must clearly explain:
+  - what the service is
+  - who it is for
+  - what business problem it solves
+  - why it matters
+  - what result the client gets
+  - why ZentrixDigital is a smart choice
+
+SEO FOCUS:
+Use keywords naturally, not spammy.
+
+DUTCH keywords to integrate naturally:
+- website laten maken
+- professionele website laten maken
+- bedrijfswebsite laten maken
+- website voor bedrijf
+- maatwerk applicatie laten bouwen
+- applicatie laten ontwikkelen
+- website onderhoud
+- website optimalisatie
+- online zichtbaarheid verbeteren
+- beter vindbaar in Google
+- digitale groei
+- website voor mkb
+- website voor lokale bedrijven
+- website laten maken Amsterdam
+- maatwerk oplossing voor bedrijven
+
+ENGLISH keywords to integrate naturally:
+- professional website
+- business website
+- custom website
+- custom application
+- web application development
+- website maintenance
+- website optimization
+- improve online visibility
+- better visibility on Google
+- digital growth
+- website for small businesses
+- custom digital solutions
+
+PAGES TO REWRITE:
+- Homepage
+- Websites page
+- Applications page
+- Maintenance & Optimization page
+- Digital Growth Support page
+
+FOR EACH PAGE:
+Rewrite:
+- Hero title
+- Hero subtitle
+- Primary CTA
+- Secondary CTA
+- Main section titles
+- Main body text
+- Benefit blocks
+- “Suitable for” section
+- “How we work” section
+- Closing CTA
+
+SEO RULES:
+- Create one clear main keyword focus per page.
+- Make page titles and headings reflect search intent.
+- Use service + outcome language.
+- Add local and business relevance where suitable.
+- Make text more likely to rank for searches from Dutch businesses.
+- Keep text readable and natural.
+- No keyword stuffing.
+
+CONVERSION RULES:
+- The visitor should quickly understand:
+  - what ZentrixDigital does
+  - why this matters for their business
+  - why not acting costs them customers
+  - what next step they should take
+- The tone should feel confident, modern, clear, and practical.
+- CTA text must be stronger and more action-oriented.
+
+OUTPUT FORMAT:
+For every page, give:
+
+PAGE NAME
+
+DUTCH VERSION
+- SEO page title
+- Meta description
+- Hero title
+- Hero subtitle
+- Primary CTA
+- Secondary CTA
+- Section 1 title + text
+- Section 2 title + text
+- Benefits
+- Suitable for
+- How we work
+- Closing CTA title
+- Closing CTA text
+- Closing CTA button
+
+ENGLISH VERSION
+- SEO page title
+- Meta description
+- Hero title
+- Hero subtitle
+- Primary CTA
+- Secondary CTA
+- Section 1 title + text
+- Section 2 title + text
+- Benefits
+- Suitable for
+- How we work
+- Closing CTA title
+- Closing CTA text
+- Closing CTA button
+
+TECHNICAL IMPLEMENTATION:
+After writing the final Dutch and English copy:
+- replace the existing text in the correct files/components
+- keep the design, layout, animations, buttons, and routing intact
+- do not break the language toggle
+- move hardcoded text into the translation system if needed
+- ensure every visible text element is translated in both languages
+- update SEO-related metadata where applicable
+- do not leave placeholder text
+- only use final publish-ready content
