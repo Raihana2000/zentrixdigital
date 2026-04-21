@@ -63,8 +63,11 @@ export const en = {
       { title: "Development", text: "We build a professional solution that fits your brand and objectives." },
       { title: "Launch & optimization", text: "After going live, we continue monitoring where performance and conversion can improve." }
     ],
-    casesTitle: "Results and cases",
-    casesIntro: "Real-world examples, improvement projects, and client results will be published here soon.",
+    casesLabel: "Portfolio",
+    casesTitle: "Our work speaks for itself",
+    casesIntro: "We believe in transparency over filler. We work with businesses that want real results, and we prefer showing our approach rather than talking about it.",
+    casesBody: "Concrete examples of websites, applications, and improvement projects are available on request. That way you can judge for yourself whether our approach fits your situation — no marketing fluff.",
+    casesCtaLabel: "Request examples",
     reachTitle: "Active across the Netherlands and beyond",
     reachText: "We help businesses throughout the Netherlands and work with international clients across Europe and beyond.",
     reachItems: [

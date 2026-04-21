@@ -1,0 +1,97 @@
+Fix the Services section and turn all service cards into real clickable service pages with proper Dutch content.
+
+Project goals:
+- Keep the current premium dark design, spacing, logo size, navbar, buttons, and mobile responsiveness.
+- Do NOT redesign the whole site.
+- Do NOT break the homepage.
+- Improve structure, usability, and SEO.
+
+What to fix:
+1. In the homepage Services section:
+   - Make all service cards fully clickable.
+   - Each card must link to its own dedicated page.
+   - The cards should feel interactive on hover, but keep the same premium style.
+
+2. Create these separate pages/routes:
+   - /websites
+   - /applicaties
+   - /onderhoud-optimalisatie
+   - /digitale-groeiondersteuning
+
+3. Fill every page with real Dutch content, not placeholders.
+   Each page must include:
+   - strong H1
+   - short intro paragraph
+   - benefits section
+   - what is included section
+   - who it is for section
+   - process/werkwijze section
+   - CTA section linking to contact
+   - SEO-friendly title and meta description
+   - clean structure with multiple headings
+   - internal links back to homepage and contact
+
+4. Use these page directions:
+
+PAGE 1: /websites
+H1: Professionele website laten maken
+Content focus:
+- websites op maat
+- vertrouwen uitstralen
+- beter gevonden worden
+- bezoekers omzetten in klanten
+- mobielvriendelijk en snel
+- geschikt voor bedrijven die professioneel online zichtbaar willen zijn
+
+PAGE 2: /applicaties
+H1: Webapplicaties laten ontwikkelen op maat
+Content focus:
+- slimme digitale tools
+- processen automatiseren
+- efficiënter werken
+- maatwerk oplossingen
+- interne systemen, klantportalen, dashboards of aanvraagomgevingen
+- geschikt voor bedrijven die verder willen dan alleen een website
+
+PAGE 3: /onderhoud-optimalisatie
+H1: Website onderhoud en optimalisatie
+Content focus:
+- updates
+- snelheid
+- veiligheid
+- technische verbeteringen
+- doorlopende optimalisatie
+- conversie en gebruikerservaring verbeteren
+- geschikt voor bedrijven met een bestaande site die beter moet presteren
+
+PAGE 4: /digitale-groeiondersteuning
+H1: Digitale groeiondersteuning voor bedrijven
+Content focus:
+- online presentatie verbeteren
+- structuur aanscherpen
+- betere zichtbaarheid
+- strategische verbeteringen
+- hulp bij doorgroeien van website naar sterk digitaal fundament
+- suitable for businesses that want to scale professionally
+
+5. Homepage Services section:
+- Keep the section title strong and clean.
+- Improve the text so it sounds premium and clear.
+- The 4 cards on the homepage must match the new pages exactly:
+  - Websites
+  - Applicaties
+  - Onderhoud & optimalisatie
+  - Digitale groeiondersteuning
+
+6. Important:
+- Use natural professional Dutch.
+- No fluff, no filler, no “coming soon” text.
+- Remove weak placeholder service text.
+- Make sure the pages are indexable and not broken.
+- Preserve the current language switcher functionality if it already exists.
+- Keep typography balanced on mobile and desktop.
+
+7. At the end, tell me:
+- which files were changed
+- which new routes/pages were created
+- what the clickable cards now link to

@@ -8,18 +8,9 @@ import {
   MessageSquareOff, Smartphone, MousePointerClick, Clock,
   CheckCircle2, Search, Lightbulb, Hammer, Rocket,
   Building2, Users, TrendingUp, Store,
-  ClipboardList, BarChart2, Star
+  Mail
 } from 'lucide-react';
 import logoPath from "@assets/ChatGPT_Image_20_apr_2026,_10_49_46_1776675127194.png";
-import { cases } from '@/data/cases';
-import type { CaseIcon } from '@/data/cases';
-
-const caseIconMap: Record<CaseIcon, React.ReactNode> = {
-  briefcase: <ClipboardList className="w-5 h-5 text-gray-500" />,
-  chart:     <BarChart2    className="w-5 h-5 text-gray-500" />,
-  rocket:    <Rocket       className="w-5 h-5 text-gray-500" />,
-  star:      <Star         className="w-5 h-5 text-gray-500" />,
-};
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 28 },
@@ -309,41 +300,36 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ─── CASES / SOCIAL PROOF ────────────────────────────── */}
+      {/* ─── PORTFOLIO / ON REQUEST ───────────────────────────── */}
       <section className="py-28 px-5">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="text-center mb-14"
+            className="relative overflow-hidden rounded-3xl border border-white/8 bg-white/[0.02] p-12 md:p-16 text-center"
           >
-            <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5">
-              {t.home.casesTitle}
-            </motion.h2>
-            <motion.p variants={fadeUp} className="text-gray-400 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
-              {t.home.casesIntro}
-            </motion.p>
-          </motion.div>
+            <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[180px] bg-blue-600/10 blur-[80px] rounded-full" />
 
-          <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-5"
-          >
-            {cases.filter(c => c.visible).map((c, i) => (
-              <motion.div
-                key={i} variants={fadeUp}
-                data-testid={`case-card-${i}`}
-                className="flex flex-col gap-4 p-8 rounded-2xl border border-dashed border-white/12 bg-white/[0.02] hover:border-blue-500/25 transition-colors duration-300"
+            <motion.div variants={fadeUp} className="relative z-10">
+              <span className="inline-block text-blue-500 text-xs font-bold uppercase tracking-widest mb-6">
+                {t.home.casesLabel}
+              </span>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                {t.home.casesTitle}
+              </h2>
+              <p className="text-gray-400 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-4">
+                {t.home.casesIntro}
+              </p>
+              <p className="text-gray-500 text-sm sm:text-base leading-relaxed max-w-xl mx-auto mb-10">
+                {t.home.casesBody}
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-7 py-3.5 rounded-full transition-colors duration-200 text-sm sm:text-base"
               >
-                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
-                  {caseIconMap[c.icon]}
-                </div>
-                <span className="text-blue-500/60 text-xs font-bold uppercase tracking-widest">
-                  {c.status}
-                </span>
-                <h3 className="text-base font-semibold text-gray-300">{c.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{c.description}</p>
-              </motion.div>
-            ))}
+                <Mail className="w-4 h-4" />
+                {t.home.casesCtaLabel}
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
       </section>

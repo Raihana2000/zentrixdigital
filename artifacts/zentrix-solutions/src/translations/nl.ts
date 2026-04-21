@@ -63,8 +63,11 @@ export const nl = {
       { title: "Ontwikkeling", text: "We bouwen een professionele oplossing die past bij uw merk en doelstellingen." },
       { title: "Lancering & optimalisatie", text: "Na livegang blijven we kijken waar prestaties en conversie verder kunnen verbeteren." }
     ],
-    casesTitle: "Resultaten en cases",
-    casesIntro: "Hier komen binnenkort praktijkvoorbeelden, verbetertrajecten en klantresultaten te staan.",
+    casesLabel: "Portfolio",
+    casesTitle: "Ons werk spreekt voor zich",
+    casesIntro: "Wij geloven in transparantie boven opvulling. Wij werken met bedrijven die serieus resultaat willen, en onze aanpak laten we liever zien dan vertellen.",
+    casesBody: "Concrete voorbeelden van websites, applicaties en verbetertrajecten delen wij op aanvraag. Zo kunt u zelf beoordelen of onze aanpak bij uw situatie past, zonder marketing-omhaal.",
+    casesCtaLabel: "Vraag voorbeelden op",
     reachTitle: "Actief in Nederland en ver daarbuiten",
     reachText: "Wij helpen bedrijven in heel Nederland en werken daarnaast samen met internationale klanten in Europa en daarbuiten.",
     reachItems: [
