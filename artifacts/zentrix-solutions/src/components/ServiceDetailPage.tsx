@@ -80,7 +80,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             <motion.div variants={fadeUp} className="mb-8">
               <Link
                 href="/services"
-                className="inline-flex items-center gap-1.5 text-xs text-gray-600 hover:text-blue-400 transition-colors uppercase tracking-widest font-semibold"
+                className="inline-flex items-center gap-1.5 text-xs text-gray-400 hover:text-blue-400 transition-colors uppercase tracking-widest font-semibold"
               >
                 <ArrowLeft className="w-3 h-3" />
                 {backLabel}
@@ -122,12 +122,12 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               {data.benefits.map((b, i) => (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="flex items-start gap-3.5 p-5 rounded-2xl bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06] hover:border-blue-500/20 transition-all duration-300"
+                  className="flex items-start gap-3.5 p-5 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.60] transition-all duration-300"
                 >
                   <div className="w-6 h-6 rounded-full bg-blue-500/15 border border-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-blue-400" />
                   </div>
-                  <span className="text-gray-400 text-sm leading-relaxed">{b}</span>
+                  <span className="text-gray-200 text-sm leading-relaxed">{b}</span>
                 </motion.div>
               ))}
             </motion.div>
@@ -148,7 +148,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   <div className="w-6 h-6 rounded-full bg-blue-600/15 border border-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
                   </div>
-                  <span className="text-gray-400 text-sm leading-relaxed">{item}</span>
+                  <span className="text-gray-200 text-sm leading-relaxed">{item}</span>
                 </motion.li>
               ))}
             </motion.ul>
@@ -168,12 +168,12 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 {extrasList.map((item, i) => (
                   <motion.div
                     key={i} variants={fadeUp}
-                    className="flex items-start gap-3.5 p-5 rounded-xl bg-gradient-to-b from-white/[0.04] to-transparent border border-blue-500/10 hover:border-blue-500/25 transition-all duration-300"
+                    className="flex items-start gap-3.5 p-5 rounded-xl bg-gradient-to-b from-white/[0.04] to-transparent border border-blue-500/10 hover:border-blue-400/[0.65] transition-all duration-300"
                   >
                     <div className="w-6 h-6 rounded-full bg-blue-600/15 border border-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
                     </div>
-                    <span className="text-gray-400 text-sm leading-relaxed">{item}</span>
+                    <span className="text-gray-200 text-sm leading-relaxed">{item}</span>
                   </motion.div>
                 ))}
               </motion.div>
@@ -193,10 +193,10 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               {data.whoFor.map((item, i) => (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="p-6 rounded-2xl bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06] hover:border-blue-500/20 transition-all duration-300"
+                  className="p-6 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.60] transition-all duration-300"
                 >
                   <h3 className="text-sm font-semibold text-white mb-2">{item.title}</h3>
-                  <p className="text-gray-600 text-xs leading-relaxed">{item.text}</p>
+                  <p className="text-gray-300 text-xs leading-relaxed">{item.text}</p>
                 </motion.div>
               ))}
             </motion.div>
@@ -218,7 +218,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                     {String(i + 1).padStart(2, '0')}
                   </div>
                   <h3 className="text-sm font-semibold text-white">{step.title}</h3>
-                  <p className="text-gray-600 text-xs leading-relaxed">{step.text}</p>
+                  <p className="text-gray-300 text-xs leading-relaxed">{step.text}</p>
                 </motion.div>
               ))}
             </motion.div>
@@ -251,7 +251,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               </Link>
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center gap-2 text-gray-500 hover:text-white border border-white/[0.08] hover:border-white/20 px-8 py-4 rounded-full transition-all duration-200 text-sm hover:bg-white/[0.04]"
+                className="inline-flex items-center justify-center gap-2 text-gray-500 hover:text-white border border-blue-500/[0.25] hover:border-white/20 px-8 py-4 rounded-full transition-all duration-200 text-sm hover:bg-white/[0.04]"
               >
                 {servicesLabel}
               </Link>

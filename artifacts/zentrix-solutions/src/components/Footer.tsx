@@ -26,7 +26,7 @@ const Footer = () => {
             <Link href="/" className="flex items-center w-fit" data-testid="footer-logo">
               <img src={logoPath} alt="ZentrixDigital" className="h-9 w-auto object-contain opacity-90" />
             </Link>
-            <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
+            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               {t.footer.tagline}
             </p>
             {/* CTA hint */}
@@ -50,7 +50,7 @@ const Footer = () => {
                 <Link
                   key={href}
                   href={href}
-                  className="text-gray-600 hover:text-gray-300 transition-colors duration-200 text-sm w-fit"
+                  className="text-gray-400 hover:text-gray-200 transition-colors duration-200 text-sm w-fit"
                   data-testid={testid}
                 >
                   {label}
@@ -63,8 +63,8 @@ const Footer = () => {
           <div className="md:col-span-4 flex flex-col gap-5">
             <h4 className="text-white/90 font-semibold text-sm uppercase tracking-widest">{t.nav.contact}</h4>
             <address className="flex flex-col gap-3 not-italic">
-              <p className="text-gray-600 text-sm">{t.contact.company}</p>
-              <p className="text-gray-600 text-sm">{t.contact.location}</p>
+              <p className="text-gray-400 text-sm">{t.contact.company}</p>
+              <p className="text-gray-400 text-sm">{t.contact.location}</p>
               <a
                 href="tel:0683284995"
                 className="text-gray-500 hover:text-blue-400 text-sm transition-colors duration-200 w-fit"

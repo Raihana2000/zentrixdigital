@@ -29,8 +29,8 @@ const Contact = () => {
     }, 900);
   };
 
-  const inputCls = "w-full h-12 px-4 rounded-xl bg-[#111] border border-white/[0.08] text-white placeholder-gray-700 text-sm focus:outline-none focus:border-blue-500/40 focus:ring-1 focus:ring-blue-500/20 transition-all duration-200";
-  const textareaCls = "w-full px-4 py-3.5 rounded-xl bg-[#111] border border-white/[0.08] text-white placeholder-gray-700 text-sm focus:outline-none focus:border-blue-500/40 focus:ring-1 focus:ring-blue-500/20 transition-all duration-200 resize-none";
+  const inputCls = "w-full h-12 px-4 rounded-xl bg-[#111] border border-blue-500/[0.25] text-white placeholder-gray-600 text-sm focus:outline-none focus:border-blue-500/40 focus:ring-1 focus:ring-blue-500/20 transition-all duration-200";
+  const textareaCls = "w-full px-4 py-3.5 rounded-xl bg-[#111] border border-blue-500/[0.25] text-white placeholder-gray-600 text-sm focus:outline-none focus:border-blue-500/40 focus:ring-1 focus:ring-blue-500/20 transition-all duration-200 resize-none";
 
   return (
     <div className="flex flex-col min-h-screen bg-[#0B0B0B] text-white overflow-x-hidden page-top-pad">
@@ -119,43 +119,43 @@ const Contact = () => {
                     href={href}
                     target={external ? "_blank" : undefined}
                     rel={external ? "noreferrer" : undefined}
-                    className="group flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06] hover:border-blue-500/20 transition-all duration-300"
+                    className="group flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.60] transition-all duration-300"
                     data-testid={testid}
                   >
-                    <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/10 flex items-center justify-center shrink-0 group-hover:bg-blue-500/20 group-hover:border-blue-500/20 transition-all duration-300">
+                    <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/10 flex items-center justify-center shrink-0 group-hover:bg-blue-500/20 group-hover:border-blue-400/[0.60] transition-all duration-300">
                       <Icon className="w-4.5 h-4.5 text-blue-400" size={18} />
                     </div>
                     <div>
-                      <p className="text-xs text-gray-600 uppercase tracking-widest font-semibold mb-0.5">{label}</p>
+                      <p className="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-0.5">{label}</p>
                       <p className="text-white text-sm font-medium">{value}</p>
                     </div>
                   </a>
                 ))}
 
                 {/* Response time */}
-                <div className="flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06]">
+                <div className="flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)]">
                   <div className="w-10 h-10 rounded-xl bg-green-500/10 border border-green-500/10 flex items-center justify-center shrink-0">
                     <Clock className="w-[18px] h-[18px] text-green-400/80" />
                   </div>
                   <div>
-                    <p className="text-xs text-gray-600 uppercase tracking-widest font-semibold mb-0.5">{t.contact.labelResponse}</p>
+                    <p className="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-0.5">{t.contact.labelResponse}</p>
                     <p className="text-white text-sm font-medium">{t.contact.responseTime}</p>
                   </div>
                 </div>
 
                 {/* Business hours */}
-                <div className="p-5 rounded-2xl bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06]">
+                <div className="p-5 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)]">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/10 flex items-center justify-center shrink-0">
                       <CalendarClock className="w-[18px] h-[18px] text-blue-400" />
                     </div>
-                    <p className="text-xs text-gray-600 uppercase tracking-widest font-semibold">
+                    <p className="text-xs text-gray-400 uppercase tracking-widest font-semibold">
                       {t.contact.hours.title}
                     </p>
                   </div>
                   <ul className="flex flex-col gap-2 pl-[52px]">
                     {t.contact.hours.lines.map((line, i) => (
-                      <li key={i} className="text-xs text-gray-500 leading-snug">
+                      <li key={i} className="text-xs text-gray-300 leading-snug">
                         {line}
                       </li>
                     ))}
@@ -181,13 +181,13 @@ const Contact = () => {
             {/* RIGHT — Form */}
             <motion.div
               initial={{ opacity: 0, x: 28 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2, ease: [0.16,1,0.3,1] }}
-              className="rounded-2xl border border-white/[0.07] bg-gradient-to-b from-white/[0.04] to-transparent p-7 sm:p-9 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]"
+              className="rounded-2xl border border-blue-500/[0.28] bg-gradient-to-b from-white/[0.04] to-transparent p-7 sm:p-9 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]"
             >
               <h3 className="text-xl font-bold text-white mb-8 tracking-tight">{t.contact.formTitle}</h3>
 
               <form onSubmit={handleSubmit} className="flex flex-col gap-5">
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="name" className="text-xs font-semibold text-gray-500 uppercase tracking-widest">
+                  <label htmlFor="name" className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
                     {t.contact.form.name}
                   </label>
                   <input
@@ -200,7 +200,7 @@ const Contact = () => {
 
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="email" className="text-xs font-semibold text-gray-500 uppercase tracking-widest">
+                    <label htmlFor="email" className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
                       {t.contact.form.email}
                     </label>
                     <input
@@ -211,7 +211,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="phone" className="text-xs font-semibold text-gray-500 uppercase tracking-widest">
+                    <label htmlFor="phone" className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
                       {t.contact.form.phone}
                     </label>
                     <input
@@ -224,7 +224,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="message" className="text-xs font-semibold text-gray-500 uppercase tracking-widest">
+                  <label htmlFor="message" className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
                     {t.contact.form.message}
                   </label>
                   <textarea
@@ -254,7 +254,7 @@ const Contact = () => {
                   )}
                 </button>
 
-                <p className="text-center text-xs text-gray-700 mt-1">
+                <p className="text-center text-xs text-gray-500 mt-1">
                   {t.contact.noSpamNotice}
                 </p>
               </form>

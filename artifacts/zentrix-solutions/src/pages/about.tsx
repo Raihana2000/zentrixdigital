@@ -71,12 +71,12 @@ const About = () => {
           >
             <motion.div
               variants={fadeUp}
-              className="flex flex-col gap-5 p-8 rounded-2xl bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06]"
+              className="flex flex-col gap-5 p-8 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)]"
             >
               <h2 className="text-2xl sm:text-3xl font-bold text-white leading-snug tracking-tight">
                 {t.about.whoWeAreTitle}
               </h2>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <p className="text-gray-300 text-sm leading-relaxed">
                 {t.about.whoWeAreText}
               </p>
             </motion.div>
@@ -90,7 +90,7 @@ const About = () => {
               <h2 className="text-2xl sm:text-3xl font-bold text-white leading-snug tracking-tight">
                 {t.about.missionTitle}
               </h2>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-200 text-sm leading-relaxed">
                 {t.about.missionText}
               </p>
             </motion.div>
@@ -113,14 +113,14 @@ const About = () => {
                 return (
                   <motion.div
                     key={idx} variants={fadeUp}
-                    className="flex items-start gap-5 p-7 rounded-2xl bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06] hover:border-blue-500/20 transition-all duration-300"
+                    className="flex items-start gap-5 p-7 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.60] transition-all duration-300"
                   >
                     <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/10 flex items-center justify-center shrink-0">
                       <Icon className="w-5 h-5 text-blue-400" />
                     </div>
                     <div className="flex flex-col gap-2">
                       <h3 className="text-sm font-semibold text-white">{value.title}</h3>
-                      <p className="text-xs text-gray-600 leading-relaxed">{value.desc}</p>
+                      <p className="text-xs text-gray-300 leading-relaxed">{value.desc}</p>
                     </div>
                   </motion.div>
                 );
@@ -135,7 +135,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="relative overflow-hidden rounded-3xl border border-white/[0.07] bg-gradient-to-b from-white/[0.04] to-transparent p-12 md:p-16"
+            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.22] bg-gradient-to-b from-white/[0.04] to-transparent p-12 md:p-16"
           >
             <div className="pointer-events-none absolute top-0 left-0 w-[600px] h-[250px] bg-blue-700/8 blur-[120px] rounded-full" />
             <motion.span variants={fadeUp} className="inline-block text-blue-500/60 text-xs font-bold uppercase tracking-[0.2em] mb-5 relative z-10">
@@ -149,7 +149,7 @@ const About = () => {
             </motion.h2>
             <motion.p
               variants={fadeUp}
-              className="relative z-10 text-gray-500 text-base leading-relaxed max-w-xl"
+              className="relative z-10 text-gray-300 text-base leading-relaxed max-w-xl"
             >
               {t.about.differentText}
             </motion.p>
@@ -190,7 +190,7 @@ const About = () => {
               </Link>
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center gap-2 text-gray-500 hover:text-white border border-white/[0.08] hover:border-white/20 px-8 py-4 rounded-full transition-all duration-200 text-sm hover:bg-white/[0.04]"
+                className="inline-flex items-center justify-center gap-2 text-gray-500 hover:text-white border border-blue-500/[0.25] hover:border-white/20 px-8 py-4 rounded-full transition-all duration-200 text-sm hover:bg-white/[0.04]"
               >
                 {t.nav.services}
               </Link>

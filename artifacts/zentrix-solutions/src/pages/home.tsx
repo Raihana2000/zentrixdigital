@@ -118,7 +118,7 @@ const Home = () => {
           {/* Trust signals */}
           <motion.div variants={fadeUp} className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mt-2">
             {t.home.trustSignals.map((signal, i) => (
-              <span key={i} className="flex items-center gap-2 text-sm text-gray-600">
+              <span key={i} className="flex items-center gap-2 text-sm text-gray-400">
                 <CheckCircle2 className="w-3.5 h-3.5 text-blue-500/70 shrink-0" />
                 {signal}
               </span>
@@ -161,14 +161,14 @@ const Home = () => {
               return (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="flex flex-col gap-5 p-7 rounded-2xl bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06] shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:border-red-500/20 transition-all duration-300"
+                  className="flex flex-col gap-5 p-7 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:border-red-500/20 transition-all duration-300"
                 >
                   <div className="w-11 h-11 rounded-xl bg-red-500/10 border border-red-500/10 flex items-center justify-center shrink-0">
                     <Icon className="w-5 h-5 text-red-400/80" />
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold text-white mb-2">{p.title}</h3>
-                    <p className="text-xs text-gray-600 leading-relaxed">{p.text}</p>
+                    <p className="text-xs text-gray-300 leading-relaxed">{p.text}</p>
                   </div>
                 </motion.div>
               );
@@ -208,14 +208,14 @@ const Home = () => {
                   <motion.div
                     variants={fadeUp}
                     data-testid={`service-card-${key}`}
-                    className="group h-full flex flex-col gap-5 p-7 rounded-2xl bg-gradient-to-b from-white/[0.05] to-white/[0.01] border border-white/[0.07] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] hover:border-blue-500/25 hover:-translate-y-2 hover:shadow-[0_24px_60px_-16px_rgba(37,99,235,0.2),inset_0_1px_0_rgba(59,130,246,0.1)] transition-all duration-400 cursor-pointer"
+                    className="group h-full flex flex-col gap-5 p-7 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] hover:border-blue-400/[0.65] hover:-translate-y-2 hover:shadow-[0_24px_60px_-16px_rgba(37,99,235,0.2),inset_0_1px_0_rgba(59,130,246,0.1)] transition-all duration-400 cursor-pointer"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 group-hover:border-blue-500/20 transition-all duration-300">
+                    <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 group-hover:border-blue-400/[0.60] transition-all duration-300">
                       <Icon className="w-6 h-6 text-blue-400" />
                     </div>
                     <div className="flex-1 flex flex-col gap-3">
                       <h3 className="text-base font-semibold text-white tracking-tight">{svc.title}</h3>
-                      <p className="text-xs text-gray-600 leading-relaxed flex-1">{svc.desc}</p>
+                      <p className="text-xs text-gray-300 leading-relaxed flex-1">{svc.desc}</p>
                     </div>
                     <span className="text-blue-500/70 text-xs font-bold uppercase tracking-widest flex items-center gap-1 group-hover:gap-2 group-hover:text-blue-400 transition-all duration-200">
                       {t.home.servicesMoreInfo} <ArrowRight className="w-3 h-3" />
@@ -255,14 +255,14 @@ const Home = () => {
               return (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="flex items-start gap-4 p-5 rounded-xl bg-white/[0.03] border border-white/[0.06] hover:border-blue-500/20 hover:bg-white/[0.04] transition-all duration-300"
+                  className="flex items-start gap-4 p-5 rounded-xl bg-white/[0.03] border border-blue-500/[0.22] hover:border-blue-400/[0.60] hover:bg-white/[0.04] transition-all duration-300"
                 >
                   <div className="w-9 h-9 rounded-lg bg-blue-500/10 border border-blue-500/10 flex items-center justify-center shrink-0 mt-0.5">
                     <Icon className="w-4 h-4 text-blue-400" />
                   </div>
                   <div className="flex flex-col gap-1 min-w-0">
                     <h3 className="text-sm font-semibold text-white/90">{ext.title}</h3>
-                    <p className="text-xs text-gray-600 leading-relaxed">{ext.text}</p>
+                    <p className="text-xs text-gray-300 leading-relaxed">{ext.text}</p>
                   </div>
                 </motion.div>
               );
@@ -306,14 +306,14 @@ const Home = () => {
               return (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="flex flex-col gap-4 p-7 rounded-2xl bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06] hover:border-blue-500/20 transition-all duration-300"
+                  className="flex flex-col gap-4 p-7 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.60] transition-all duration-300"
                 >
                   <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/10 flex items-center justify-center">
                     <Icon className="w-5 h-5 text-blue-400" />
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold text-white mb-2">{item.title}</h3>
-                    <p className="text-xs text-gray-600 leading-relaxed">{item.text}</p>
+                    <p className="text-xs text-gray-300 leading-relaxed">{item.text}</p>
                   </div>
                 </motion.div>
               );
@@ -342,14 +342,14 @@ const Home = () => {
               {t.home.whyZentrix.map((item, i) => (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="flex items-start gap-5 p-6 rounded-2xl bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06] hover:border-blue-500/20 transition-all duration-300"
+                  className="flex items-start gap-5 p-6 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.60] transition-all duration-300"
                 >
                   <div className="w-9 h-9 rounded-full bg-blue-600/15 border border-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
                     <CheckCircle2 className="w-4 h-4 text-blue-400" />
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold text-white mb-1.5">{item.title}</h3>
-                    <p className="text-xs text-gray-600 leading-relaxed">{item.text}</p>
+                    <p className="text-xs text-gray-300 leading-relaxed">{item.text}</p>
                   </div>
                 </motion.div>
               ))}
@@ -382,7 +382,7 @@ const Home = () => {
               return (
                 <motion.div
                   key={i} variants={fadeUp}
-                  className="relative flex flex-col gap-5 p-6 rounded-2xl bg-gradient-to-b from-white/[0.04] to-transparent border border-white/[0.06]"
+                  className="relative flex flex-col gap-5 p-6 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)]"
                 >
                   <div className="flex items-center gap-3">
                     <div className="w-11 h-11 rounded-xl bg-blue-600/15 border border-blue-500/20 flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(37,99,235,0.15)]">
@@ -392,7 +392,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold text-white mb-2">{step.title}</h3>
-                    <p className="text-xs text-gray-600 leading-relaxed">{step.text}</p>
+                    <p className="text-xs text-gray-300 leading-relaxed">{step.text}</p>
                   </div>
                 </motion.div>
               );
@@ -406,7 +406,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="relative overflow-hidden rounded-3xl border border-white/[0.07] bg-gradient-to-b from-white/[0.04] to-transparent p-12 md:p-16 text-center"
+            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.22] bg-gradient-to-b from-white/[0.04] to-transparent p-12 md:p-16 text-center"
           >
             <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-blue-700/10 blur-[100px] rounded-full" />
 
@@ -420,7 +420,7 @@ const Home = () => {
               <p className="text-gray-500 text-base leading-relaxed max-w-xl mx-auto mb-3">
                 {t.home.casesIntro}
               </p>
-              <p className="text-gray-600 text-sm leading-relaxed max-w-lg mx-auto mb-10">
+              <p className="text-gray-300 text-sm leading-relaxed max-w-lg mx-auto mb-10">
                 {t.home.casesBody}
               </p>
               <Link href="/contact">
@@ -451,9 +451,9 @@ const Home = () => {
             </motion.div>
             <motion.div variants={fadeUp} className="flex flex-row gap-3 shrink-0 w-full md:w-auto justify-center md:justify-end">
               {t.home.reachItems.map((item, i) => (
-                <div key={i} className="flex flex-col items-center text-center px-5 py-4 rounded-xl bg-white/[0.03] border border-white/[0.06] min-w-[105px]">
+                <div key={i} className="flex flex-col items-center text-center px-5 py-4 rounded-xl bg-white/[0.03] border border-blue-500/[0.22] min-w-[105px]">
                   <p className="text-white font-bold text-xs leading-tight mb-1.5">{item.label}</p>
-                  <p className="text-gray-700 text-xs leading-tight">{item.sub}</p>
+                  <p className="text-gray-400 text-xs leading-tight">{item.sub}</p>
                 </div>
               ))}
             </motion.div>

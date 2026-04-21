@@ -83,20 +83,20 @@ const Services = () => {
                   <Link href={svc.href}>
                     <div
                       data-testid={`service-overview-card-${i}`}
-                      className="group h-full flex flex-col gap-6 p-8 rounded-2xl bg-gradient-to-b from-white/[0.05] to-white/[0.01] border border-white/[0.07] shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:border-blue-500/25 hover:-translate-y-2 hover:shadow-[0_24px_60px_-16px_rgba(37,99,235,0.18),inset_0_1px_0_rgba(59,130,246,0.08)] transition-all duration-400 cursor-pointer"
+                      className="group h-full flex flex-col gap-6 p-8 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.28] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:border-blue-400/[0.65] hover:-translate-y-2 hover:shadow-[0_24px_60px_-16px_rgba(37,99,235,0.18),inset_0_1px_0_rgba(59,130,246,0.08)] transition-all duration-400 cursor-pointer"
                     >
                       <div className="flex items-start gap-5">
-                        <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/10 flex items-center justify-center shrink-0 group-hover:bg-blue-500/20 group-hover:border-blue-500/20 transition-all duration-300">
+                        <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/10 flex items-center justify-center shrink-0 group-hover:bg-blue-500/20 group-hover:border-blue-400/[0.60] transition-all duration-300">
                           <Icon className="w-6 h-6 text-blue-400" />
                         </div>
                         <div className="flex-1 min-w-0">
                           <h2 className="text-lg font-bold text-white tracking-tight mb-2">{svc.title}</h2>
-                          <p className="text-sm text-gray-500 leading-relaxed">{svc.desc}</p>
+                          <p className="text-sm text-gray-200 leading-relaxed">{svc.desc}</p>
                         </div>
                       </div>
                       <ul className="flex flex-col gap-2 pl-[68px]">
                         {svc.bullets.map((b, bi) => (
-                          <li key={bi} className="flex items-center gap-2.5 text-gray-500 text-xs">
+                          <li key={bi} className="flex items-center gap-2.5 text-gray-300 text-xs">
                             <CheckCircle2 className="w-3.5 h-3.5 text-blue-500/50 shrink-0" />
                             {b}
                           </li>

@@ -1,0 +1,113 @@
+Werk mijn volledige ZentrixDigital website professioneel bij en voer de onderstaande UI/UX- en toegankelijkheidsverbeteringen direct in de code door. Niet alleen designvoorstellen geven, maar echt de bestaande componenten, styles en pagina’s aanpassen. Alles moet direct zichtbaar zijn in de app. Behoud de huidige zwart/blauw branding, maar maak het premium, helderder, moderner en beter leesbaar.
+
+DOEL
+De website oogt nog te saai en op veel plekken is tekst op tegels/cards te grijs en daardoor minder goed leesbaar. Dat moet volledig opgelost worden. De site moet luxer, duidelijker, scherper en toegankelijker worden, ook voor slechtziende bezoekers.
+
+BELANGRIJKE EISEN
+1. Alle tekst op tegels/cards moet wit of bijna wit zijn.
+   - Hoofdteksten op cards: #FFFFFF
+   - Beschrijvende card-tekst: minimaal #F3F7FF of #EAF2FF
+   - Geen grijze card-tekst meer zoals low-contrast grijs op donkere achtergrond.
+   - Controleer ALLE pagina’s en ALLE cards/tiles/boxes/sections.
+
+2. Verbeter toegankelijkheid en contrast.
+   - Zorg dat tekst op donkere achtergronden voldoet aan sterke contrastverhouding.
+   - Kleine teksten mogen niet vervagen in de achtergrond.
+   - Voor bodytekst op donkere vlakken alleen lichte kleuren gebruiken.
+   - Buttons, labels, iconen en stappenblokken moeten duidelijk zichtbaar zijn.
+
+3. Maak elke tegel/card visueel mooier.
+   - Geef cards een nette subtiele blauwe rand.
+   - Gebruik bijvoorbeeld:
+     border: 1px solid rgba(59,130,246,0.45)
+   - Voeg subtiele glow toe:
+     box-shadow: 0 0 0 1px rgba(59,130,246,0.15), 0 10px 30px rgba(0,0,0,0.35), 0 0 24px rgba(37,99,235,0.10)
+   - Hover state nog iets sterker en premium maken.
+
+4. Premium dark-tech uitstraling behouden.
+   - Achtergrond zwart/donkerblauw houden.
+   - Blauwe accenten behouden.
+   - Meer diepte, rust, luxe en structuur toevoegen.
+   - Geen drukke kleuren toevoegen behalve verfijnde blauwtinten.
+
+5. Typografie verbeteren.
+   - Alle headings helder wit.
+   - Card headings iets zwaarder maken.
+   - Bodytekst iets groter waar nodig.
+   - Regelhoogte verbeteren voor leesbaarheid.
+   - Zorg dat tekst op alle schermen goed leesbaar blijft.
+
+6. Secties moeten duidelijker gescheiden zijn.
+   - Betere spacing tussen secties.
+   - Cards moeten meer lucht krijgen.
+   - Minder “vlak” gevoel, meer premium compositie.
+
+7. Pas dit consistent toe op ALLE relevante pagina’s:
+   - Home
+   - Over ons
+   - Diensten
+   - Websites
+   - Applicaties
+   - Onderhoud & optimalisatie
+   - Digitale groeiondersteuning
+   - Contact
+   - Alle CTA-blokken
+   - Alle “Voor wie is dit geschikt”-kaarten
+   - Alle “Onze aanpak”-stappen
+   - Alle voordelen/opsommingskaarten
+   - Alle informatievakken/contactkaarten
+
+8. Controleer specifiek dat deze problemen opgelost worden:
+   - Grijze tekst op donkere tegels
+   - Zwakke leesbaarheid op card-achtergronden
+   - Saai uiterlijk van de cards
+   - Onvoldoende visueel onderscheid tussen cards en achtergrond
+   - Te weinig premium uitstraling
+
+TECHNISCHE UITVOERING
+- Zoek de gedeelde card-, tile-, panel- en section-componenten op en pas die centraal aan waar mogelijk.
+- Als er design tokens, CSS variables, Tailwind classes of theme files bestaan, werk die ook bij.
+- Maak herbruikbare utility classes voor cards zodat de stijl consistent blijft.
+- Zorg dat bestaande content behouden blijft.
+- Breek geen layout, routes of functionaliteit.
+- Laat alle wijzigingen direct renderen in de app.
+
+GEWENSTE STIJL
+Gebruik een premium stijl zoals:
+- donkere navy/black basis
+- witte duidelijke teksten
+- subtiele elektrische blauwe borders
+- zachte inner glow / outer glow
+- afgeronde hoeken
+- luxe hover-effect
+- rustige high-end SaaS uitstraling
+
+VOORBEELD VAN GEWENSTE CARD-STIJL
+Pas een consistente stijl toe die hierop lijkt:
+- background: linear-gradient(180deg, rgba(10,14,24,0.98) 0%, rgba(8,12,20,0.98) 100%)
+- border: 1px solid rgba(59,130,246,0.40)
+- border-radius: 20px
+- box-shadow: 0 8px 32px rgba(0,0,0,0.35), 0 0 0 1px rgba(59,130,246,0.12)
+- title color: #FFFFFF
+- body color: #EAF2FF
+- icon background: rgba(37,99,235,0.16)
+- icon color: #60A5FA
+- hover border: rgba(96,165,250,0.75)
+- hover shadow: 0 0 0 1px rgba(96,165,250,0.20), 0 16px 40px rgba(0,0,0,0.45), 0 0 30px rgba(37,99,235,0.18)
+- transition: all 0.25s ease
+
+EXTRA
+- Verbeter ook de CTA-secties zodat ze luxer ogen.
+- Maak formulieren en contactvakken scherper en beter leesbaar.
+- Laat knoppen krachtiger opvallen zonder schreeuwerig te worden.
+- Houd het zakelijk, modern en professioneel.
+
+BELANGRIJK
+Voer de wijzigingen nu echt in de code door, bestand voor bestand waar nodig.
+Geef na afloop kort aan:
+1. welke bestanden zijn aangepast
+2. welke centrale style classes/components zijn verbeterd
+3. welke contrast/readability fixes zijn toegepast
+4. wat er visueel premiumer is gemaakt
+
+Geen uitleg vooraf. Eerst uitvoeren.
