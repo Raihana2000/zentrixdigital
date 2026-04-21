@@ -1,0 +1,58 @@
+Improve this website for SEO and Google visibility without changing the current premium design, layout, logo size, or mobile responsiveness.
+
+Important context:
+- This brand is not focused on one city like Amsterdam.
+- The long-term goal is international growth.
+- Do not over-optimize for local SEO.
+- Focus on service-based and problem-based SEO.
+
+Goals:
+1. Keep the current visual design and mobile-friendly layout.
+2. Improve on-page SEO for a digital agency that offers websites, web applications, and digital growth services.
+3. Make the homepage cleaner, stronger, and more search-friendly in Dutch, while keeping it premium and conversion-focused.
+4. Prepare the structure so the site can scale internationally later.
+
+Tasks:
+- Add a proper homepage <title>.
+- Add a strong meta description.
+- Add canonical URL support.
+- Add Open Graph and Twitter meta tags.
+- Ensure the homepage has exactly one clear H1.
+- Add logical H2 sections below the hero.
+- Improve the homepage text with natural Dutch keywords, without keyword stuffing.
+
+Use keyword themes like:
+- professionele websites
+- website laten maken
+- webapplicatie laten maken
+- slimme applicaties
+- digitale groei
+- beter gevonden worden in Google
+- conversiegerichte website
+- professionele online uitstraling
+- bezoekers omzetten in klanten
+
+Do NOT focus on city keywords like Amsterdam unless already needed somewhere else.
+
+Content requirements:
+- Keep copy clear, premium, modern, and persuasive.
+- Make it understandable for business owners.
+- Add a short intro section explaining what Zentrix Digital does.
+- Add stronger service explanations.
+- Add a trust-building section.
+- Add a stronger CTA section.
+
+Technical requirements:
+- Keep the production canonical domain as:
+  https://www.zentrixdigital.eu
+- Generate or verify:
+  - /sitemap.xml
+  - /robots.txt
+- Make sure metadata is clean and production-ready.
+- Do not break the current language toggle.
+- Keep the structure compatible with future multilingual expansion.
+
+Also tell me exactly:
+- which files were changed
+- what title and meta description were added
+- whether sitemap and robots.txt are working

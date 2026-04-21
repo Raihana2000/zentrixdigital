@@ -40,8 +40,8 @@ export const en = {
         desc: "Strategic digital improvements that strengthen visibility, user experience, and conversion."
       }
     },
-    whoWeHelpTitle: "Who we work with",
-    whoWeHelpIntro: "ZentrixDigital helps businesses that want to become more visible online and strengthen their digital presence.",
+    whoWeHelpTitle: "Who we build websites and applications for",
+    whoWeHelpIntro: "We build professional websites and web applications for businesses that want to be taken seriously online and attract more customers.",
     whoWeHelp: [
       { title: "Local businesses", text: "For salons, garages, and shops that want more customers from their region." },
       { title: "Service providers", text: "For businesses that need to build trust online in order to win clients." },
@@ -49,14 +49,14 @@ export const en = {
       { title: "Growing brands", text: "For businesses looking to scale and increase their online impact." }
     ],
     whyZentrixTitle: "Why businesses choose ZentrixDigital",
-    whyZentrixIntro: "We combine design, structure, and functionality into digital solutions that feel professional and are built to grow.",
+    whyZentrixIntro: "We combine design, structure, and functionality into conversion-focused websites and applications that feel professional, rank better, and are built to grow.",
     whyZentrix: [
       { title: "Transparent communication", text: "Clear agreements, honest communication, and no hidden surprises." },
       { title: "Professional execution", text: "A premium look, strong structure, and delivery that inspires trust." },
       { title: "Practical focus", text: "No unnecessary complexity — digital choices that are logical and usable." },
       { title: "Growth-oriented", text: "We build with better visibility, stronger presentation, and real results in mind." }
     ],
-    processTitle: "How we work",
+    processTitle: "How we build your website or application",
     processSteps: [
       { title: "Analysis", text: "We assess your current situation, goals, and opportunities for improvement." },
       { title: "Strategy", text: "We determine the approach that will have the most impact for your business." },

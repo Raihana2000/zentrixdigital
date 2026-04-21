@@ -40,8 +40,8 @@ export const nl = {
         desc: "Strategische digitale verbeteringen die helpen om zichtbaarheid, gebruikservaring en conversie te versterken."
       }
     },
-    whoWeHelpTitle: "Voor wie wij werken",
-    whoWeHelpIntro: "ZentrixDigital helpt bedrijven die online sterker zichtbaar willen zijn en hun digitale uitstraling willen verbeteren.",
+    whoWeHelpTitle: "Voor wie wij websites en applicaties bouwen",
+    whoWeHelpIntro: "Wij bouwen professionele websites en webapplicaties voor bedrijven die online serieus genomen willen worden en meer klanten willen aantrekken.",
     whoWeHelp: [
       { title: "Lokale bedrijven", text: "Voor salons, garages en winkels die meer klanten willen uit hun regio." },
       { title: "Dienstverleners", text: "Voor bedrijven die online vertrouwen moeten uitstralen om klanten te winnen." },
@@ -49,14 +49,14 @@ export const nl = {
       { title: "Groeiende merken", text: "Voor bedrijven die willen opschalen en hun online impact willen vergroten." }
     ],
     whyZentrixTitle: "Waarom bedrijven voor ZentrixDigital kiezen",
-    whyZentrixIntro: "Wij combineren design, structuur en functionaliteit tot digitale oplossingen die professioneel aanvoelen en klaar zijn om door te groeien.",
+    whyZentrixIntro: "Wij combineren design, structuur en functionaliteit tot conversiegerichte websites en applicaties die professioneel aanvoelen, beter gevonden worden en klaar zijn om door te groeien.",
     whyZentrix: [
       { title: "Transparante communicatie", text: "Duidelijke afspraken, eerlijke communicatie en geen verborgen verrassingen." },
       { title: "Professionele uitvoering", text: "Een premium uitstraling, sterke structuur en een afwerking die vertrouwen uitstraalt." },
       { title: "Praktische focus", text: "Geen onnodige complexiteit, maar digitale keuzes die logisch en bruikbaar zijn." },
       { title: "Gericht op groei", text: "Wij bouwen met het oog op betere zichtbaarheid, sterkere presentatie en meer resultaat." }
     ],
-    processTitle: "Hoe wij werken",
+    processTitle: "Zo bouwen wij uw website of applicatie",
     processSteps: [
       { title: "Analyse", text: "We bekijken uw huidige situatie, doelen en verbeterkansen." },
       { title: "Strategie", text: "We bepalen welke aanpak het meeste effect heeft voor uw bedrijf." },
