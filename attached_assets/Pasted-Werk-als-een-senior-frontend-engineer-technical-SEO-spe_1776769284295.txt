@@ -1,0 +1,154 @@
+Werk als een senior frontend engineer, technical SEO specialist en conversion copywriter. Pas mijn bestaande websiteproject volledig aan zonder iets kapot te maken. Werk direct in de juiste bestanden van dit project en zorg dat alles production-ready is. Verander alleen wat nodig is en behoud design, routing, deploy-compatibiliteit met GitHub en Vercel.
+
+DOEL
+Ik wil dat deze website professioneler oogt, beter gevonden kan worden in Google en sterker converteert voor klanten die websites of apps willen laten bouwen.
+
+BELANGRIJKE REGELS
+
+* Breek geen bestaande layout, componenten, routes of deploy-configuratie.
+* Gebruik geen placeholders.
+* Houd de bestaande zwart/blauwe premium stijl.
+* Zorg dat alles responsive blijft op desktop, tablet en mobiel.
+* Wijzig teksten in correct, natuurlijk Nederlands en goed Engels.
+* Gebruik duidelijke, zakelijke taal die vertrouwen wekt.
+* Controleer of na de wijziging de build nog werkt.
+* Als er al SEO-bestanden bestaan, verbeter ze in plaats van dubbele versies te maken.
+
+WAT JE MOET AANPASSEN
+
+1. HOMEPAGE COPY VERBETEREN
+   Maak de homepage overtuigender en duidelijker voor ondernemers.
+   Gebruik deze richting:
+
+Nederlandse hero:
+Badge: WEBSITES, APPLICATIES EN DIGITALE GROEI
+H1: Meer klanten via een website die wél converteert
+Subtekst: Wij bouwen professionele websites en slimme applicaties die vertrouwen opbouwen, beter gevonden worden in Google en bezoekers omzetten in klanten.
+CTA 1: Ontvang gratis analyse
+CTA 2: Bekijk voorbeelden
+
+Engelse hero:
+Badge: WEBSITES, APPLICATIONS AND DIGITAL GROWTH
+H1: More customers through a website that actually converts
+Subtekst: We build professional websites and smart applications that build trust, rank better on Google, and turn visitors into customers.
+CTA 1: Receive free analysis
+CTA 2: View examples
+
+Controleer ook navigatie en knopteksten:
+NL: Home, Over ons, Diensten, Contact, Neem contact op
+EN: Home, About, Services, Contact, Contact Us
+
+2. SEO BASIS GOED ZETTEN
+   Voeg of verbeter:
+
+* title tag
+* meta description
+* canonical URL
+* Open Graph tags
+* Twitter tags
+* favicon verwijzingen indien nodig
+
+Gebruik als hoofddomein:
+https://www.zentrixdigital.eu
+
+SEO-teksten:
+Titel NL:
+ZentrixDigital | Websites en applicaties die klanten opleveren
+
+Meta description NL:
+ZentrixDigital bouwt professionele websites en applicaties voor ondernemers die beter gevonden willen worden in Google en meer klanten willen aantrekken.
+
+Titel EN:
+ZentrixDigital | Websites and applications that bring in customers
+
+Meta description EN:
+ZentrixDigital builds professional websites and applications for businesses that want to rank better on Google and attract more customers.
+
+Open Graph / social:
+og:title
+og:description
+og:url
+og:image
+og:site_name
+twitter:card
+twitter:title
+twitter:description
+twitter:image
+
+Gebruik bestaande afbeelding alleen als og:image als die publiek toegankelijk is. Als er al een geschikte social preview image bestaat, gebruik die. Anders maak een nette verwijzing naar een bestaande publieke afbeelding in /public.
+
+3. TECHNISCHE SEO TOEVOEGEN
+   Maak of verbeter:
+
+* /public/robots.txt
+* /public/sitemap.xml
+
+Robots.txt inhoud:
+User-agent: *
+Allow: /
+Sitemap: https://www.zentrixdigital.eu/sitemap.xml
+
+Sitemap.xml moet minimaal bevatten:
+
+* https://www.zentrixdigital.eu/
+* belangrijke pagina’s zoals /about, /services, /contact als die routes bestaan
+  Gebruik alleen routes die echt bestaan.
+
+4. CANONICAL EN INDEXERING
+   Zorg dat:
+
+* canonical verwijst naar https://www.zentrixdigital.eu/
+* de site indexeerbaar is
+* geen noindex tags aanwezig zijn
+* de juiste taal/meta informatie staat ingesteld
+
+5. STRUCTURED DATA TOEVOEGEN
+   Voeg JSON-LD structured data toe voor een LocalBusiness of Organization, afhankelijk van wat het beste past bij de website.
+   Gebruik:
+   Naam: ZentrixDigital
+   URL: https://www.zentrixdigital.eu
+   Type: ProfessionalService of Organization als dat beter bij de code past
+   Beschrijving: Professionele websites en applicaties voor bedrijven
+   Zelfde domein gebruiken in structured data
+
+Voeg geen nep-adres, nep-reviews of verzonnen data toe.
+
+6. MEERTALIGHEID NETJES MAKEN
+   Controleer of de taalwissel goed werkt voor:
+
+* hero
+* navigatie
+* knoppen
+* meta title/description indien de app dat ondersteunt
+  Als volledige dynamische SEO per taal te complex is in deze setup, zorg dan minstens dat de zichtbare content correct wisselt tussen NL en EN.
+
+7. PERFORMANCE EN KWALITEIT
+
+* Verklein risico op SEO-problemen
+* Laat de build slagen
+* Verwijder onnodige fouten/warnings waar veilig mogelijk
+* Houd code schoon en semantisch
+* Gebruik correcte heading-structuur
+* Zorg dat er maar één duidelijke H1 op de homepage staat
+
+8. FORMULIER / CONTACTVERTROUWEN
+   Als er een contactsectie of contactpagina is, verbeter subtiel de tekst zodat deze betrouwbaarder converteert. Bijvoorbeeld:
+   NL: Vraag vrijblijvend een gratis analyse aan
+   EN: Request a free no-obligation analysis
+
+9. OPLEVERING
+   Voer alle wijzigingen direct door in de juiste bestanden.
+   Geef daarna een korte samenvatting van:
+
+* welke bestanden zijn aangepast
+* welke SEO-onderdelen zijn toegevoegd of verbeterd
+* of de build succesvol is
+* welke vervolgstap ik moet doen voor GitHub/Vercel
+
+BELANGRIJK
+
+* Geen uitleg vooraf
+* Geen dummy code
+* Geen halve aanpassingen
+* Werk volledig en zorgvuldig in het bestaande project
+* Beschadig geen styling of functionaliteit

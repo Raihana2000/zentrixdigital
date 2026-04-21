@@ -6,9 +6,9 @@ export const en = {
     contact: "Contact"
   },
   home: {
-    heroBadge: "Websites, applications and digital growth",
+    heroBadge: "WEBSITES, APPLICATIONS AND DIGITAL GROWTH",
     heroTitle: "More customers through a website that actually converts",
-    heroSubtitle: "We build websites and applications that build trust, rank better on Google, and turn visitors into customers.",
+    heroSubtitle: "We build professional websites and smart applications that build trust, rank better on Google, and turn visitors into customers.",
     primaryCta: "Receive free analysis",
     secondaryCta: "View examples",
     trustSignals: ["Live within a short timeframe", "100% custom-built", "Built to convert"],
@@ -73,8 +73,8 @@ export const en = {
       { label: "International", sub: "Available worldwide" }
     ],
     ctaTitle: "Ready to improve your website or digital system?",
-    ctaText: "Whether you need a new website, a custom application, or improvements to your current digital setup — ZentrixDigital is ready to help.",
-    ctaPrimary: "Request a free analysis",
+    ctaText: "Whether you need a new website, a custom application, or improvements to your current digital setup — ZentrixDigital is happy to help, with no obligation.",
+    ctaPrimary: "Request a free no-obligation analysis",
     ctaSecondary: "Contact us",
     ctaButton: "Contact Us"
   },
@@ -126,7 +126,7 @@ export const en = {
   },
   contact: {
     heroTitle: "Contact ZentrixDigital",
-    heroSubtitle: "Want to discuss your project, improve your website, or explore a custom application? Get in touch and let's see how we can help.",
+    heroSubtitle: "Request a free no-obligation analysis, discuss your project, or find out what we can do for your business. We respond quickly and professionally.",
     form: {
       name: "Name",
       namePlaceholder: "Your name",

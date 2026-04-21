@@ -6,9 +6,9 @@ export const nl = {
     contact: "Contact"
   },
   home: {
-    heroBadge: "Websites, applicaties en digitale groei",
+    heroBadge: "WEBSITES, APPLICATIES EN DIGITALE GROEI",
     heroTitle: "Meer klanten via een website die wél converteert",
-    heroSubtitle: "Wij bouwen websites en applicaties die vertrouwen opbouwen, beter zichtbaar zijn in Google en bezoekers omzetten in klanten.",
+    heroSubtitle: "Wij bouwen professionele websites en slimme applicaties die vertrouwen opbouwen, beter gevonden worden in Google en bezoekers omzetten in klanten.",
     primaryCta: "Ontvang gratis analyse",
     secondaryCta: "Bekijk voorbeelden",
     trustSignals: ["Binnen korte tijd online", "100% maatwerk", "Gericht op conversie"],
@@ -73,8 +73,8 @@ export const nl = {
       { label: "Internationaal", sub: "Wereldwijd beschikbaar" }
     ],
     ctaTitle: "Klaar om uw website of digitale systeem te verbeteren?",
-    ctaText: "Of u nu een nieuwe website nodig heeft, een maatwerk applicatie wilt laten bouwen of uw huidige digitale omgeving wilt verbeteren: ZentrixDigital denkt graag met u mee.",
-    ctaPrimary: "Vraag gratis analyse aan",
+    ctaText: "Of u nu een nieuwe website nodig heeft, een maatwerk applicatie wilt laten bouwen of uw huidige digitale omgeving wilt verbeteren: ZentrixDigital denkt graag vrijblijvend met u mee.",
+    ctaPrimary: "Vraag vrijblijvend een gratis analyse aan",
     ctaSecondary: "Neem contact op",
     ctaButton: "Neem contact op"
   },
@@ -126,7 +126,7 @@ export const nl = {
   },
   contact: {
     heroTitle: "Contact opnemen",
-    heroSubtitle: "Wil je uw project bespreken, uw website verbeteren of een maatwerk applicatie laten bouwen? Neem contact op en ontdek wat wij voor u kunnen betekenen.",
+    heroSubtitle: "Vraag vrijblijvend een gratis analyse aan, bespreek uw project of ontdek wat wij voor uw bedrijf kunnen betekenen. Wij reageren snel en professioneel.",
     form: {
       name: "Naam",
       namePlaceholder: "Uw naam",
