@@ -1,0 +1,61 @@
+Fix the remaining footer/contact text color inconsistency across the entire website, especially on mobile.
+
+Problem:
+On mobile, several texts in the footer and contact area are still not true white. Some text looks light blue, muted, gray, or semi-transparent. This creates inconsistency and weaker readability.
+
+What must be fixed:
+- All footer/contact text that should be normal readable text must become true solid white.
+- This includes:
+  - company name
+  - address
+  - phone number
+  - email
+  - opening hours / bereikbaarheid
+  - navigation links in footer
+  - copyright text
+  - website URL in footer
+  - all normal paragraph text in footer/contact sections
+- Keep blue only for intentional accent elements such as icons, borders, active highlights, or buttons.
+- Do NOT leave any footer/contact text using muted, slate, zinc, gray, blue-gray, reduced opacity, or inherited dimmed color classes.
+
+Technical instructions:
+1. Search the full codebase for footer/contact components and all related text styles.
+2. Find all classes, variables, and inherited styles causing dim or blue-ish text, including:
+   - text-slate-*
+   - text-zinc-*
+   - text-gray-*
+   - text-blue-*
+   - text-white/70
+   - text-white/80
+   - opacity values
+   - inherited muted foreground variables
+   - secondary paragraph color tokens
+3. Replace them where needed so footer/contact readable text uses:
+   - pure white or near-pure white only
+   - no opacity reduction for important text
+4. Make sure headings can stay stronger, but normal text must remain clearly readable on mobile.
+5. Keep visual hierarchy:
+   - headings: bright white
+   - body text: white or very near-white
+   - accent elements: blue allowed
+6. Check both desktop and mobile so the footer does not become ugly or overbright.
+7. Verify specifically on:
+   - Home footer
+   - Contact page
+   - mobile menu/footer area if reused
+   - all pages where footer is shared
+
+Important:
+- Do not make a partial fix.
+- If the footer uses shared components, fix it globally at component level.
+- If a theme token is causing this, fix the token at root level.
+- Ensure the same color rendering on iPhone-sized screens.
+
+After fixing:
+- confirm exactly which files were changed
+- confirm what root cause created the blue/gray text mismatch
+- commit everything
+- push directly to GitHub main
+
+Use this exact commit message:
+Fix footer and contact text colors for consistent white readability on mobile

@@ -61,7 +61,7 @@ const Contact = () => {
           <motion.h1 variants={fadeUp} className="text-5xl sm:text-6xl md:text-7xl font-black tracking-[-0.03em] leading-[1.03] mb-7">
             {t.contact.heroTitle}
           </motion.h1>
-          <motion.p variants={fadeUp} className="text-[#F5F7FF] text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
+          <motion.p variants={fadeUp} className="text-white text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
             {t.contact.heroSubtitle}
           </motion.p>
         </motion.div>
@@ -81,7 +81,7 @@ const Contact = () => {
                 <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 leading-snug tracking-tight">
                   {t.contact.readyTitle}
                 </h2>
-                <p className="text-[#F5F7FF] text-sm leading-relaxed">
+                <p className="text-white text-sm leading-relaxed">
                   {t.contact.readyText}
                 </p>
               </div>
@@ -155,7 +155,7 @@ const Contact = () => {
                   </div>
                   <ul className="flex flex-col gap-2 pl-4 sm:pl-[52px]">
                     {t.contact.hours.lines.map((line, i) => (
-                      <li key={i} className="text-xs text-[#F5F7FF] leading-snug">
+                      <li key={i} className="text-xs text-white leading-snug">
                         {line}
                       </li>
                     ))}
@@ -254,7 +254,7 @@ const Contact = () => {
                   )}
                 </button>
 
-                <p className="text-center text-xs text-[#D9E1F2] mt-1">
+                <p className="text-center text-xs text-white/70 mt-1">
                   {t.contact.noSpamNotice}
                 </p>
               </form>
