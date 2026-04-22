@@ -7,7 +7,7 @@ export const nl = {
   },
   home: {
     heroBadge: "WEBSITES · APPLICATIES · SLIMME SYSTEMEN",
-    heroTitle: "Uw bedrijf verdient een website die klanten oplevert",
+    heroTitle: "Professionele website laten maken die klanten oplevert",
     heroSubtitle: "Wij bouwen professionele websites en maatwerk applicaties voor ondernemers die online serieus genomen willen worden. Uitbreidbaar met slimme functies zoals WhatsApp-koppelingen, boekingssystemen en klantportalen.",
     primaryCta: "Vraag gratis analyse aan",
     secondaryCta: "Bekijk onze diensten",

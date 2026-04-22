@@ -7,7 +7,7 @@ export const en = {
   },
   home: {
     heroBadge: "WEBSITES · APPLICATIONS · SMART SYSTEMS",
-    heroTitle: "Your business deserves a website that actually brings in customers",
+    heroTitle: "Professional website design that brings in customers",
     heroSubtitle: "We build professional websites and custom applications for businesses that want to be taken seriously online. Expandable with smart features like WhatsApp integrations, booking systems, and client portals.",
     primaryCta: "Request free analysis",
     secondaryCta: "View our services",
