@@ -71,10 +71,10 @@ function serveStaticFilesPlugin() {
 export default defineConfig({
   base: basePath,
   plugins: [
+    serveStaticFilesPlugin(),
     react(),
     tailwindcss(),
     runtimeErrorOverlay(),
-    serveStaticFilesPlugin(),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
