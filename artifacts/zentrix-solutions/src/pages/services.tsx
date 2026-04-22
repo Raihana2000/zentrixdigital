@@ -61,7 +61,7 @@ const Services = () => {
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-xl mx-auto"
+              className="text-[#F5F7FF] text-sm sm:text-base leading-relaxed max-w-xl mx-auto"
             >
               {t.services.heroSubtitle}
             </motion.p>
@@ -91,12 +91,12 @@ const Services = () => {
                         </div>
                         <div className="flex-1 min-w-0">
                           <h2 className="text-lg font-bold text-white tracking-tight mb-2">{svc.title}</h2>
-                          <p className="text-sm text-gray-200 leading-relaxed">{svc.desc}</p>
+                          <p className="text-sm text-[#F5F7FF] leading-relaxed">{svc.desc}</p>
                         </div>
                       </div>
                       <ul className="flex flex-col gap-2 pl-[68px]">
                         {svc.bullets.map((b, bi) => (
-                          <li key={bi} className="flex items-center gap-2.5 text-gray-300 text-xs">
+                          <li key={bi} className="flex items-center gap-2.5 text-[#F5F7FF] text-xs">
                             <CheckCircle2 className="w-3.5 h-3.5 text-blue-500/50 shrink-0" />
                             {b}
                           </li>
@@ -129,7 +129,7 @@ const Services = () => {
             <motion.h2 variants={fadeUp} className="relative z-10 text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
               {t.services.ctaTitle}
             </motion.h2>
-            <motion.p variants={fadeUp} className="relative z-10 text-gray-400 text-base leading-relaxed max-w-xl mx-auto mb-10">
+            <motion.p variants={fadeUp} className="relative z-10 text-[#F5F7FF] text-base leading-relaxed max-w-xl mx-auto mb-10">
               {t.services.ctaText}
             </motion.p>
             <motion.div variants={fadeUp} className="relative z-10">

@@ -91,7 +91,7 @@ const Home = () => {
           </motion.h1>
 
           {/* Subtitle */}
-          <motion.p variants={fadeUp} className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed">
+          <motion.p variants={fadeUp} className="text-base sm:text-lg md:text-xl text-[#F5F7FF] max-w-2xl leading-relaxed">
             {t.home.heroSubtitle}
           </motion.p>
 
@@ -118,7 +118,7 @@ const Home = () => {
           {/* Trust signals */}
           <motion.div variants={fadeUp} className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mt-2">
             {t.home.trustSignals.map((signal, i) => (
-              <span key={i} className="flex items-center gap-2 text-sm text-gray-400">
+              <span key={i} className="flex items-center gap-2 text-sm text-[#D9E1F2]">
                 <CheckCircle2 className="w-3.5 h-3.5 text-blue-500/70 shrink-0" />
                 {signal}
               </span>
@@ -147,7 +147,7 @@ const Home = () => {
             <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
               {t.home.problemTitle}
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-gray-400 max-w-xl mx-auto text-base leading-relaxed">
+            <motion.p variants={fadeUp} className="text-[#F5F7FF] max-w-xl mx-auto text-base leading-relaxed">
               {t.home.problemIntro}
             </motion.p>
           </motion.div>
@@ -168,7 +168,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold text-white mb-2">{p.title}</h3>
-                    <p className="text-xs text-gray-300 leading-relaxed">{p.text}</p>
+                    <p className="text-xs text-[#F5F7FF] leading-relaxed">{p.text}</p>
                   </div>
                 </motion.div>
               );
@@ -187,7 +187,7 @@ const Home = () => {
             <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
               {t.home.servicesTitle}
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-gray-400 max-w-xl mx-auto text-base leading-relaxed">
+            <motion.p variants={fadeUp} className="text-[#F5F7FF] max-w-xl mx-auto text-base leading-relaxed">
               {t.home.servicesIntro}
             </motion.p>
           </motion.div>
@@ -215,7 +215,7 @@ const Home = () => {
                     </div>
                     <div className="flex-1 flex flex-col gap-3">
                       <h3 className="text-base font-semibold text-white tracking-tight">{svc.title}</h3>
-                      <p className="text-xs text-gray-300 leading-relaxed flex-1">{svc.desc}</p>
+                      <p className="text-xs text-[#F5F7FF] leading-relaxed flex-1">{svc.desc}</p>
                     </div>
                     <span className="text-blue-500/70 text-xs font-bold uppercase tracking-widest flex items-center gap-1 group-hover:gap-2 group-hover:text-blue-400 transition-all duration-200">
                       {t.home.servicesMoreInfo} <ArrowRight className="w-3 h-3" />
@@ -241,7 +241,7 @@ const Home = () => {
             <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
               {t.home.extensionsTitle}
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-gray-400 max-w-xl mx-auto text-base leading-relaxed">
+            <motion.p variants={fadeUp} className="text-[#F5F7FF] max-w-xl mx-auto text-base leading-relaxed">
               {t.home.extensionsSubtitle}
             </motion.p>
           </motion.div>
@@ -261,8 +261,8 @@ const Home = () => {
                     <Icon className="w-4 h-4 text-blue-400" />
                   </div>
                   <div className="flex flex-col gap-1 min-w-0">
-                    <h3 className="text-sm font-semibold text-white/90">{ext.title}</h3>
-                    <p className="text-xs text-gray-300 leading-relaxed">{ext.text}</p>
+                    <h3 className="text-sm font-semibold text-white">{ext.title}</h3>
+                    <p className="text-xs text-[#F5F7FF] leading-relaxed">{ext.text}</p>
                   </div>
                 </motion.div>
               );
@@ -292,7 +292,7 @@ const Home = () => {
             <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">
               {t.home.whoWeHelpTitle}
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-gray-400 max-w-xl mx-auto text-base leading-relaxed">
+            <motion.p variants={fadeUp} className="text-[#F5F7FF] max-w-xl mx-auto text-base leading-relaxed">
               {t.home.whoWeHelpIntro}
             </motion.p>
           </motion.div>
@@ -313,7 +313,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold text-white mb-2">{item.title}</h3>
-                    <p className="text-xs text-gray-300 leading-relaxed">{item.text}</p>
+                    <p className="text-xs text-[#F5F7FF] leading-relaxed">{item.text}</p>
                   </div>
                 </motion.div>
               );
@@ -333,7 +333,7 @@ const Home = () => {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
                 {t.home.whyZentrixTitle}
               </h2>
-              <p className="text-gray-400 text-base leading-relaxed max-w-sm">
+              <p className="text-[#F5F7FF] text-base leading-relaxed max-w-sm">
                 {t.home.whyZentrixIntro}
               </p>
             </motion.div>
@@ -349,7 +349,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold text-white mb-1.5">{item.title}</h3>
-                    <p className="text-xs text-gray-300 leading-relaxed">{item.text}</p>
+                    <p className="text-xs text-[#F5F7FF] leading-relaxed">{item.text}</p>
                   </div>
                 </motion.div>
               ))}
@@ -392,7 +392,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold text-white mb-2">{step.title}</h3>
-                    <p className="text-xs text-gray-300 leading-relaxed">{step.text}</p>
+                    <p className="text-xs text-[#F5F7FF] leading-relaxed">{step.text}</p>
                   </div>
                 </motion.div>
               );
@@ -417,10 +417,10 @@ const Home = () => {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight tracking-tight">
                 {t.home.casesTitle}
               </h2>
-              <p className="text-gray-400 text-base leading-relaxed max-w-xl mx-auto mb-3">
+              <p className="text-[#F5F7FF] text-base leading-relaxed max-w-xl mx-auto mb-3">
                 {t.home.casesIntro}
               </p>
-              <p className="text-gray-300 text-sm leading-relaxed max-w-lg mx-auto mb-10">
+              <p className="text-[#F5F7FF] text-sm leading-relaxed max-w-lg mx-auto mb-10">
                 {t.home.casesBody}
               </p>
               <Link href="/contact">
@@ -445,7 +445,7 @@ const Home = () => {
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 leading-snug tracking-tight">
                 {t.home.reachTitle}
               </h2>
-              <p className="text-gray-400 text-sm leading-relaxed max-w-md">
+              <p className="text-[#F5F7FF] text-sm leading-relaxed max-w-md">
                 {t.home.reachText}
               </p>
             </motion.div>
@@ -453,7 +453,7 @@ const Home = () => {
               {t.home.reachItems.map((item, i) => (
                 <div key={i} className="flex flex-col items-center text-center px-5 py-4 rounded-xl bg-[rgba(9,14,26,0.98)] border border-blue-500/[0.55] min-w-[105px]">
                   <p className="text-white font-bold text-xs leading-tight mb-1.5">{item.label}</p>
-                  <p className="text-gray-400 text-xs leading-tight">{item.sub}</p>
+                  <p className="text-[#D9E1F2] text-xs leading-tight">{item.sub}</p>
                 </div>
               ))}
             </motion.div>
@@ -481,7 +481,7 @@ const Home = () => {
               {t.home.ctaTitle}
             </motion.h2>
 
-            <motion.p variants={fadeUp} className="relative z-10 text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-12 leading-relaxed">
+            <motion.p variants={fadeUp} className="relative z-10 text-[#F5F7FF] text-base sm:text-lg max-w-xl mx-auto mb-12 leading-relaxed">
               {t.home.ctaText}
             </motion.p>
 

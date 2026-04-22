@@ -94,7 +94,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="text-gray-400 text-base sm:text-lg leading-relaxed max-w-2xl"
+              className="text-[#F5F7FF] text-base sm:text-lg leading-relaxed max-w-2xl"
             >
               {data.intro}
             </motion.p>
@@ -127,7 +127,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   <div className="w-6 h-6 rounded-full bg-blue-500/15 border border-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-blue-400" />
                   </div>
-                  <span className="text-gray-200 text-sm leading-relaxed">{b}</span>
+                  <span className="text-[#F5F7FF] text-sm leading-relaxed">{b}</span>
                 </motion.div>
               ))}
             </motion.div>
@@ -148,7 +148,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   <div className="w-6 h-6 rounded-full bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center shrink-0 mt-0.5">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
                   </div>
-                  <span className="text-gray-200 text-sm leading-relaxed">{item}</span>
+                  <span className="text-[#F5F7FF] text-sm leading-relaxed">{item}</span>
                 </motion.li>
               ))}
             </motion.ul>
@@ -173,7 +173,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                     <div className="w-6 h-6 rounded-full bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center shrink-0 mt-0.5">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
                     </div>
-                    <span className="text-gray-200 text-sm leading-relaxed">{item}</span>
+                    <span className="text-[#F5F7FF] text-sm leading-relaxed">{item}</span>
                   </motion.div>
                 ))}
               </motion.div>
@@ -196,7 +196,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   className="p-6 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.90] transition-all duration-300"
                 >
                   <h3 className="text-sm font-semibold text-white mb-2">{item.title}</h3>
-                  <p className="text-gray-300 text-xs leading-relaxed">{item.text}</p>
+                  <p className="text-[#F5F7FF] text-xs leading-relaxed">{item.text}</p>
                 </motion.div>
               ))}
             </motion.div>
@@ -218,7 +218,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                     {String(i + 1).padStart(2, '0')}
                   </div>
                   <h3 className="text-sm font-semibold text-white">{step.title}</h3>
-                  <p className="text-gray-300 text-xs leading-relaxed">{step.text}</p>
+                  <p className="text-[#F5F7FF] text-xs leading-relaxed">{step.text}</p>
                 </motion.div>
               ))}
             </motion.div>
@@ -238,7 +238,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             <motion.h2 variants={fadeUp} className="relative z-10 text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
               {data.ctaTitle}
             </motion.h2>
-            <motion.p variants={fadeUp} className="relative z-10 text-gray-400 text-base leading-relaxed max-w-xl mx-auto mb-10">
+            <motion.p variants={fadeUp} className="relative z-10 text-[#F5F7FF] text-base leading-relaxed max-w-xl mx-auto mb-10">
               {data.ctaText}
             </motion.p>
             <motion.div variants={fadeUp} className="relative z-10 flex flex-col sm:flex-row gap-3 justify-center">

@@ -26,7 +26,7 @@ const Footer = () => {
             <Link href="/" className="flex items-center w-fit" data-testid="footer-logo">
               <img src={logoPath} alt="ZentrixDigital" className="h-9 w-auto object-contain opacity-90" />
             </Link>
-            <p className="text-[#BFD3FF] text-sm leading-relaxed max-w-xs">
+            <p className="text-[#F5F7FF] text-sm leading-relaxed max-w-xs">
               {t.footer.tagline}
             </p>
             {/* CTA hint */}
@@ -50,7 +50,7 @@ const Footer = () => {
                 <Link
                   key={href}
                   href={href}
-                  className="text-[#BFD3FF] hover:text-white transition-colors duration-200 text-sm w-fit"
+                  className="text-[#F5F7FF] hover:text-white transition-colors duration-200 text-sm w-fit"
                   data-testid={testid}
                 >
                   {label}
@@ -63,17 +63,17 @@ const Footer = () => {
           <div className="md:col-span-4 flex flex-col gap-5">
             <h4 className="text-white font-semibold text-sm uppercase tracking-widest">{t.nav.contact}</h4>
             <address className="flex flex-col gap-3 not-italic">
-              <p className="text-[#E6F0FF] text-sm">{t.contact.company}</p>
-              <p className="text-[#E6F0FF] text-sm">{t.contact.location}</p>
+              <p className="text-[#F5F7FF] text-sm">{t.contact.company}</p>
+              <p className="text-[#F5F7FF] text-sm">{t.contact.location}</p>
               <a
                 href="tel:0683284995"
-                className="text-[#BFD3FF] hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
+                className="text-[#F5F7FF] hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
               >
                 {t.contact.phone}
               </a>
               <a
                 href="mailto:info@zentrixdigital.eu"
-                className="text-[#BFD3FF] hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
+                className="text-[#F5F7FF] hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
               >
                 {t.contact.email}
               </a>
@@ -83,13 +83,13 @@ const Footer = () => {
             <div className="pt-4 border-t border-blue-500/[0.18]">
               <div className="flex items-center gap-2 mb-3">
                 <Clock className="w-3.5 h-3.5 text-blue-400 shrink-0" />
-                <p className="text-xs text-[#DCE8FF] uppercase tracking-widest font-semibold">
+                <p className="text-xs text-[#D9E1F2] uppercase tracking-widest font-semibold">
                   {t.contact.hours.title}
                 </p>
               </div>
               <ul className="flex flex-col gap-1.5">
                 {t.contact.hours.lines.map((line, i) => (
-                  <li key={i} className="text-xs text-[#E6F0FF] leading-snug">
+                  <li key={i} className="text-xs text-[#F5F7FF] leading-snug">
                     {line}
                   </li>
                 ))}
@@ -100,10 +100,10 @@ const Footer = () => {
 
         {/* ── Bottom bar ── */}
         <div className="pt-8 border-t border-blue-500/[0.12] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-[#8AACCC]">
+          <p className="text-xs text-[#D9E1F2]">
             &copy; {currentYear} ZentrixDigital. {t.footer.rights}
           </p>
-          <p className="text-xs text-[#8AACCC]">
+          <p className="text-xs text-[#D9E1F2]">
             www.zentrixdigital.eu
           </p>
         </div>

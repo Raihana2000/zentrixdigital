@@ -54,7 +54,7 @@ const About = () => {
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-xl mx-auto"
+              className="text-[#F5F7FF] text-sm sm:text-base leading-relaxed max-w-xl mx-auto"
             >
               {t.about.heroSubtitle}
             </motion.p>
@@ -76,7 +76,7 @@ const About = () => {
               <h2 className="text-2xl sm:text-3xl font-bold text-white leading-snug tracking-tight">
                 {t.about.whoWeAreTitle}
               </h2>
-              <p className="text-gray-300 text-sm leading-relaxed">
+              <p className="text-[#F5F7FF] text-sm leading-relaxed">
                 {t.about.whoWeAreText}
               </p>
             </motion.div>
@@ -90,7 +90,7 @@ const About = () => {
               <h2 className="text-2xl sm:text-3xl font-bold text-white leading-snug tracking-tight">
                 {t.about.missionTitle}
               </h2>
-              <p className="text-gray-200 text-sm leading-relaxed">
+              <p className="text-[#F5F7FF] text-sm leading-relaxed">
                 {t.about.missionText}
               </p>
             </motion.div>
@@ -120,7 +120,7 @@ const About = () => {
                     </div>
                     <div className="flex flex-col gap-2">
                       <h3 className="text-sm font-semibold text-white">{value.title}</h3>
-                      <p className="text-xs text-gray-300 leading-relaxed">{value.desc}</p>
+                      <p className="text-xs text-[#F5F7FF] leading-relaxed">{value.desc}</p>
                     </div>
                   </motion.div>
                 );
@@ -149,7 +149,7 @@ const About = () => {
             </motion.h2>
             <motion.p
               variants={fadeUp}
-              className="relative z-10 text-gray-300 text-base leading-relaxed max-w-xl"
+              className="relative z-10 text-[#F5F7FF] text-base leading-relaxed max-w-xl"
             >
               {t.about.differentText}
             </motion.p>
@@ -174,7 +174,7 @@ const About = () => {
             </motion.h2>
             <motion.p
               variants={fadeUp}
-              className="relative z-10 text-gray-400 text-base leading-relaxed max-w-lg mx-auto mb-10"
+              className="relative z-10 text-[#F5F7FF] text-base leading-relaxed max-w-lg mx-auto mb-10"
             >
               {t.home.ctaText}
             </motion.p>

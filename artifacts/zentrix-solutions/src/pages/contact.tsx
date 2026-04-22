@@ -61,7 +61,7 @@ const Contact = () => {
           <motion.h1 variants={fadeUp} className="text-5xl sm:text-6xl md:text-7xl font-black tracking-[-0.03em] leading-[1.03] mb-7">
             {t.contact.heroTitle}
           </motion.h1>
-          <motion.p variants={fadeUp} className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
+          <motion.p variants={fadeUp} className="text-[#F5F7FF] text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
             {t.contact.heroSubtitle}
           </motion.p>
         </motion.div>
@@ -81,7 +81,7 @@ const Contact = () => {
                 <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 leading-snug tracking-tight">
                   {t.contact.readyTitle}
                 </h2>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-[#F5F7FF] text-sm leading-relaxed">
                   {t.contact.readyText}
                 </p>
               </div>
@@ -126,7 +126,7 @@ const Contact = () => {
                       <Icon className="w-4.5 h-4.5 text-blue-400" size={18} />
                     </div>
                     <div>
-                      <p className="text-xs text-[#DCE8FF] uppercase tracking-widest font-semibold mb-0.5">{label}</p>
+                      <p className="text-xs text-[#D9E1F2] uppercase tracking-widest font-semibold mb-0.5">{label}</p>
                       <p className="text-white text-sm font-medium">{value}</p>
                     </div>
                   </a>
@@ -138,7 +138,7 @@ const Contact = () => {
                     <Clock className="w-[18px] h-[18px] text-green-400" />
                   </div>
                   <div>
-                    <p className="text-xs text-[#DCE8FF] uppercase tracking-widest font-semibold mb-0.5">{t.contact.labelResponse}</p>
+                    <p className="text-xs text-[#D9E1F2] uppercase tracking-widest font-semibold mb-0.5">{t.contact.labelResponse}</p>
                     <p className="text-white text-sm font-medium">{t.contact.responseTime}</p>
                   </div>
                 </div>
@@ -149,13 +149,13 @@ const Contact = () => {
                     <div className="w-10 h-10 rounded-xl bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center shrink-0">
                       <CalendarClock className="w-[18px] h-[18px] text-blue-400" />
                     </div>
-                    <p className="text-xs text-[#DCE8FF] uppercase tracking-widest font-semibold">
+                    <p className="text-xs text-[#D9E1F2] uppercase tracking-widest font-semibold">
                       {t.contact.hours.title}
                     </p>
                   </div>
                   <ul className="flex flex-col gap-2 pl-[52px]">
                     {t.contact.hours.lines.map((line, i) => (
-                      <li key={i} className="text-xs text-[#F3F7FF] leading-snug">
+                      <li key={i} className="text-xs text-[#F5F7FF] leading-snug">
                         {line}
                       </li>
                     ))}
@@ -254,7 +254,7 @@ const Contact = () => {
                   )}
                 </button>
 
-                <p className="text-center text-xs text-blue-200/70 mt-1">
+                <p className="text-center text-xs text-[#D9E1F2] mt-1">
                   {t.contact.noSpamNotice}
                 </p>
               </form>
