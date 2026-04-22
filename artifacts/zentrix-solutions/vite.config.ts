@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
+import fs from "fs";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 const rawPort = process.env.PORT;
@@ -26,24 +27,43 @@ if (!basePath) {
   );
 }
 
-function xmlContentTypePlugin() {
+const STATIC_FILES: Record<string, { contentType: string; file: string }> = {
+  "/sitemap.xml": {
+    contentType: "application/xml; charset=utf-8",
+    file: path.resolve(import.meta.dirname, "public", "sitemap.xml"),
+  },
+  "/robots.txt": {
+    contentType: "text/plain; charset=utf-8",
+    file: path.resolve(import.meta.dirname, "public", "robots.txt"),
+  },
+};
+
+function serveStaticFilesPlugin() {
+  function handler(
+    req: import("http").IncomingMessage,
+    res: import("http").ServerResponse,
+    next: () => void,
+  ) {
+    const url = req.url?.split("?")[0] ?? "";
+    const match = STATIC_FILES[url];
+    if (match && fs.existsSync(match.file)) {
+      const content = fs.readFileSync(match.file, "utf-8");
+      res.setHeader("Content-Type", match.contentType);
+      res.setHeader("Cache-Control", "public, max-age=3600");
+      res.statusCode = 200;
+      res.end(content);
+      return;
+    }
+    next();
+  }
+
   return {
-    name: "xml-content-type",
+    name: "serve-static-files",
     configureServer(server: import("vite").ViteDevServer) {
-      server.middlewares.use((req, res, next) => {
-        if (req.url && req.url.endsWith(".xml")) {
-          res.setHeader("Content-Type", "application/xml; charset=utf-8");
-        }
-        next();
-      });
+      server.middlewares.use(handler);
     },
     configurePreviewServer(server: import("vite").PreviewServer) {
-      server.middlewares.use((req, res, next) => {
-        if (req.url && req.url.endsWith(".xml")) {
-          res.setHeader("Content-Type", "application/xml; charset=utf-8");
-        }
-        next();
-      });
+      server.middlewares.use(handler);
     },
   };
 }
@@ -54,7 +74,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     runtimeErrorOverlay(),
-    xmlContentTypePlugin(),
+    serveStaticFilesPlugin(),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
