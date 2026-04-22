@@ -26,12 +26,35 @@ if (!basePath) {
   );
 }
 
+function xmlContentTypePlugin() {
+  return {
+    name: "xml-content-type",
+    configureServer(server: import("vite").ViteDevServer) {
+      server.middlewares.use((req, res, next) => {
+        if (req.url && req.url.endsWith(".xml")) {
+          res.setHeader("Content-Type", "application/xml; charset=utf-8");
+        }
+        next();
+      });
+    },
+    configurePreviewServer(server: import("vite").PreviewServer) {
+      server.middlewares.use((req, res, next) => {
+        if (req.url && req.url.endsWith(".xml")) {
+          res.setHeader("Content-Type", "application/xml; charset=utf-8");
+        }
+        next();
+      });
+    },
+  };
+}
+
 export default defineConfig({
   base: basePath,
   plugins: [
     react(),
     tailwindcss(),
     runtimeErrorOverlay(),
+    xmlContentTypePlugin(),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
