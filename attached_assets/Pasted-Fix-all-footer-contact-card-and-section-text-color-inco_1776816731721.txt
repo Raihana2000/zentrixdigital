@@ -1,0 +1,54 @@
+Fix all footer, contact, card, and section text color inconsistencies across the entire ZentrixDigital website, and then commit and push the changes to GitHub.
+
+Main goal:
+Make all readable text on dark backgrounds clearly visible, consistent, and accessible, especially for users with weaker eyesight.
+
+Design rules:
+1. All normal readable text on dark backgrounds must be bright white or near-white.
+2. Main headings:
+   - color: #FFFFFF
+3. Normal paragraph text, footer text, contact text, opening hours text, list text, card descriptions:
+   - color: #F5F7FF
+   - opacity: 1
+4. Secondary muted text only if really needed:
+   - color: #D9E1F2
+   - never darker than this on dark backgrounds
+5. Accent blue may only be used for:
+   - buttons
+   - icons
+   - active nav underline
+   - small labels/badges
+   - intentional links
+6. Remove any blue-ish tint from normal text.
+7. Remove low-opacity classes from readable text.
+8. Ensure all footer text, contact info, “Bereikbaarheid” text, card text, and descriptive text blocks are equally readable.
+9. Every tile/card on every page must keep a neat visible blue border.
+10. Keep the site premium, clean, futuristic, and highly readable.
+
+Technical instructions:
+- Inspect reusable components and global styles first.
+- Find and replace problematic classes such as:
+  - text-blue-*
+  - text-primary
+  - text-slate-*
+  - text-zinc-*
+  - text-white/60
+  - text-white/70
+  - opacity-*
+  - any inherited muted text color causing weak contrast
+- Standardize all card text, footer text, contact section text, and service page text.
+- Preserve layout, spacing, responsiveness, and branding.
+- Verify desktop and mobile rendering.
+
+After making the fixes:
+1. Show me exactly which files were changed.
+2. Stage all changes.
+3. Create a git commit with this exact message:
+   Update text readability, footer/contact contrast, and blue card borders
+4. Push the changes to the main branch on GitHub.
+5. Confirm whether the push succeeded.
+
+Important:
+- Do not stop after editing files.
+- Actually perform the git add, git commit, and git push steps.
+- If GitHub authentication is requested, tell me clearly what I need to click.
