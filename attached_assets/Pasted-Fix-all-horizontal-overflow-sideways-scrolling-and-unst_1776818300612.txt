@@ -1,0 +1,89 @@
+Fix all horizontal overflow, sideways scrolling, and unstable scroll behavior across the entire website for mobile AND tablet/iPad, then commit and push everything to GitHub main.
+
+Critical requirements:
+- There must be ZERO horizontal scrolling on phone and tablet.
+- The site must feel stable while scrolling vertically.
+- This must be fixed across the whole project, not just one page.
+- Preserve the premium dark/blue design.
+- Do not break desktop layout.
+- All text must remain readable and clean.
+
+Devices to optimize for:
+- 320px
+- 360px
+- 375px
+- 390px
+- 412px
+- 768px iPad portrait
+- 820px tablet portrait
+- 1024px iPad landscape
+
+Tasks:
+1. Audit the full codebase for every overflow source.
+2. Fix every element that becomes wider than the viewport on mobile or tablet.
+3. Specifically inspect and fix:
+   - sections using width: 100vw
+   - wrappers with too much left/right padding
+   - grid layouts that don’t collapse properly
+   - flex rows that do not wrap
+   - cards with fixed widths or min-width
+   - CTA rows with large buttons
+   - headings and long text blocks
+   - forms and contact sections
+   - footer columns
+   - sticky header / navigation
+   - language toggle
+   - WhatsApp floating button
+   - glow layers, blur layers, gradients, pseudo-elements
+   - absolute positioned decorations
+   - negative margins and translateX values
+4. Replace unsafe sizing patterns:
+   - change width: 100vw to width: 100% where appropriate
+   - add max-width: 100%
+   - remove unnecessary min-width values
+   - ensure buttons, cards, images, forms, and wrappers never exceed viewport width
+5. Add global responsive safety:
+   - html, body {
+       width: 100%;
+       max-width: 100%;
+       overflow-x: hidden;
+     }
+   - *, *::before, *::after {
+       box-sizing: border-box;
+     }
+6. Improve tablet/iPad layout:
+   - no awkward sideways movement
+   - grids should become 1 or 2 columns only when they fit naturally
+   - card spacing must remain elegant
+   - CTA blocks must stay centered and contained
+   - text must wrap correctly without overflow
+7. Validate all pages:
+   - home
+   - over ons
+   - diensten
+   - websites
+   - applicaties
+   - onderhoud-optimalisatie
+   - digitale-groeiondersteuning
+   - contact
+8. After all fixes:
+   - run final checks for 320, 360, 375, 390, 412, 768, 820, 1024 widths
+   - confirm no horizontal scroll exists anywhere
+   - confirm no section shifts sideways during scroll
+   - confirm no content is clipped
+   - confirm desktop remains visually strong
+
+Important:
+- Do not stop after changing one file.
+- Search the full project and fix all overflow sources globally.
+- If any page still scrolls horizontally, continue until completely resolved.
+
+Git requirements:
+- Commit all changes with this exact commit message:
+  Fix mobile and tablet overflow, stabilize scrolling, and improve responsive layout
+- Push directly to GitHub main after successful validation
+
+Output required:
+- List the files changed
+- Explain the exact root causes found
+- Confirm commit and push were successful

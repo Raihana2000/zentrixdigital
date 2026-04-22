@@ -231,7 +231,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.50] p-12 md:p-16 text-center"
+            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.50] p-7 sm:p-12 md:p-16 text-center"
             style={{ background: 'radial-gradient(ellipse 100% 80% at 50% 0%, rgba(37,99,235,0.1) 0%, rgba(11,11,11,0) 70%), linear-gradient(135deg, rgba(15,25,50,0.6) 0%, rgba(11,11,11,1) 100%)' }}
           >
             <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[180px] bg-blue-600/12 blur-[90px] rounded-full" />

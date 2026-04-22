@@ -9,7 +9,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-[#060606] mt-24">
+    <footer className="relative bg-[#060606] mt-24 overflow-hidden">
       {/* Top glow line */}
       <div className="glow-line" />
 

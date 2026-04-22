@@ -51,12 +51,12 @@ const Navbar = () => {
         </Link>
 
         {/* ── Desktop nav — centered ── */}
-        <div className="hidden md:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
+        <div className="hidden md:flex items-center gap-5 lg:gap-10 flex-1 justify-center">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium tracking-wide transition-all duration-200 hover:text-white relative group/link ${
+              className={`text-sm font-medium tracking-wide transition-all duration-200 hover:text-white relative group/link whitespace-nowrap ${
                 location === link.href ? 'text-white' : 'text-gray-500 hover:text-gray-200'
               }`}
               data-testid={`nav-link-${link.label}`}

@@ -406,7 +406,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.55] bg-[rgba(9,14,26,0.98)] p-12 md:p-16 text-center"
+            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.55] bg-[rgba(9,14,26,0.98)] p-7 sm:p-12 md:p-16 text-center"
           >
             <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-blue-700/10 blur-[100px] rounded-full" />
 
@@ -449,9 +449,9 @@ const Home = () => {
                 {t.home.reachText}
               </p>
             </motion.div>
-            <motion.div variants={fadeUp} className="flex flex-row gap-3 shrink-0 w-full md:w-auto justify-center md:justify-end">
+            <motion.div variants={fadeUp} className="flex flex-wrap gap-2.5 w-full md:w-auto justify-center md:justify-end">
               {t.home.reachItems.map((item, i) => (
-                <div key={i} className="flex flex-col items-center text-center px-5 py-4 rounded-xl bg-[rgba(9,14,26,0.98)] border border-blue-500/[0.55] min-w-[105px]">
+                <div key={i} className="flex flex-col items-center text-center px-4 py-4 rounded-xl bg-[rgba(9,14,26,0.98)] border border-blue-500/[0.55] min-w-[84px]">
                   <p className="text-white font-bold text-xs leading-tight mb-1.5">{item.label}</p>
                   <p className="text-[#D9E1F2] text-xs leading-tight">{item.sub}</p>
                 </div>
@@ -466,7 +466,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.38] p-12 md:p-20 text-center"
+            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.38] p-7 sm:p-12 md:p-20 text-center"
             style={{ background: 'radial-gradient(ellipse 100% 80% at 50% 0%, rgba(37,99,235,0.12) 0%, rgba(11,11,11,0) 70%), linear-gradient(135deg, rgba(15,25,50,0.8) 0%, rgba(11,11,11,0.95) 100%)' }}
           >
             {/* Glow */}

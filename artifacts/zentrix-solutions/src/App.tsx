@@ -23,7 +23,7 @@ const queryClient = new QueryClient();
 
 function Router() {
   return (
-    <div className="min-h-screen flex flex-col w-full bg-background text-foreground">
+    <div className="min-h-screen flex flex-col w-full max-w-full bg-background text-foreground overflow-x-hidden">
       <Navbar />
       <main className="flex-1 flex flex-col">
         <Switch>

@@ -135,7 +135,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.55] bg-[rgba(9,14,26,0.98)] p-12 md:p-16 shadow-[0_10px_28px_rgba(0,0,0,0.34),0_0_0_1px_rgba(59,130,246,0.18)]"
+            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.55] bg-[rgba(9,14,26,0.98)] p-7 sm:p-12 md:p-16 shadow-[0_10px_28px_rgba(0,0,0,0.34),0_0_0_1px_rgba(59,130,246,0.18)]"
           >
             <div className="pointer-events-none absolute top-0 left-0 w-[600px] h-[250px] bg-blue-700/8 blur-[120px] rounded-full" />
             <motion.span variants={fadeUp} className="inline-block text-blue-500/60 text-xs font-bold uppercase tracking-[0.2em] mb-5 relative z-10">
@@ -162,7 +162,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.38] p-12 md:p-16 text-center"
+            className="relative overflow-hidden rounded-3xl border border-blue-500/[0.38] p-7 sm:p-12 md:p-16 text-center"
             style={{ background: 'radial-gradient(ellipse 100% 80% at 50% 0%, rgba(37,99,235,0.1) 0%, rgba(11,11,11,0) 70%), linear-gradient(135deg, rgba(15,25,50,0.6) 0%, rgba(11,11,11,1) 100%)' }}
           >
             <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-blue-600/10 blur-[90px] rounded-full" />

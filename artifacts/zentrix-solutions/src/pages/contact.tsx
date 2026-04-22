@@ -153,7 +153,7 @@ const Contact = () => {
                       {t.contact.hours.title}
                     </p>
                   </div>
-                  <ul className="flex flex-col gap-2 pl-[52px]">
+                  <ul className="flex flex-col gap-2 pl-4 sm:pl-[52px]">
                     {t.contact.hours.lines.map((line, i) => (
                       <li key={i} className="text-xs text-[#F5F7FF] leading-snug">
                         {line}
