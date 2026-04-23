@@ -357,7 +357,7 @@ export const en = {
     infoTitle: "Business Information",
     company: "ZentrixDigital",
     location: "Amsterdam, Netherlands",
-    phone: "06-83284995",
+    phone: "+31 (0) 6 83 28 49 95",
     email: "info@zentrixdigital.eu",
     infoNote: "We aim to communicate clearly, respond professionally, and keep the process transparent from the very first contact.",
     hours: {
@@ -365,7 +365,7 @@ export const en = {
       lines: [
         "Monday to Thursday: 09:00 – 17:00",
         "Friday: 09:00 – 12:00",
-        "Saturday: Closed",
+        "Saturday: 09:00 – 17:00",
         "Sunday: Closed"
       ]
     }
@@ -378,7 +378,7 @@ export const en = {
     servicesTitle: "Services — ZentrixDigital | Websites, Applications & Digital Growth",
     servicesDesc: "Explore our services: professional website development, custom web application development, website maintenance, and digital growth support for your business.",
     contactTitle: "Contact ZentrixDigital — Request a Free Website Analysis",
-    contactDesc: "Contact ZentrixDigital for a free website analysis. We respond within 24 hours. Call +31 6 83284995 or email info@zentrixdigital.eu.",
+    contactDesc: "Contact ZentrixDigital for a free website analysis. We respond within 24 hours. Call +31 (0) 6 83 28 49 95 or email info@zentrixdigital.eu.",
     websitesTitle: "Professional Business Website Development — ZentrixDigital",
     websitesDesc: "Need a professional custom website? ZentrixDigital builds conversion-focused websites expandable with WhatsApp, booking systems, forms, and more. Free analysis.",
     applicatiesTitle: "Custom Web Application Development — ZentrixDigital",

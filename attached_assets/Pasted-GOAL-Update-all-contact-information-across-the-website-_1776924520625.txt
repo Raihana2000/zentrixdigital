@@ -1,0 +1,165 @@
+GOAL:
+Update all contact information across the website to a more professional international format, improve the contact and footer sections, and correct the business hours in both Dutch and English. After all changes, commit and push to GitHub.
+
+PRIMARY PHONE NUMBER:
+Visible format:
++31 (0) 6 83 28 49 95
+
+Clickable tel link:
+tel:+31683284995
+
+WhatsApp link:
+https://wa.me/31683284995
+
+CORRECT BUSINESS HOURS:
+Use these exact opening hours everywhere on the site, in both the contact section and footer, for both Dutch and English.
+
+Dutch:
+Maandag t/m donderdag: 09:00 – 17:00
+Vrijdag: 09:00 – 12:00
+Zaterdag: 09:00 – 17:00
+Zondag: Gesloten
+
+English:
+Monday to Thursday: 09:00 – 17:00
+Friday: 09:00 – 12:00
+Saturday: 09:00 – 17:00
+Sunday: Closed
+
+TASKS:
+
+1. FIND AND REPLACE ALL PHONE NUMBER VARIATIONS
+- Search the entire codebase for all existing phone number variations such as:
+  0683284995
+  06-83284995
+  06 83284995
+  +31683284995
+  +31 6 83284995
+  and any other old phone number strings
+- Replace every visible phone number with:
+  +31 (0) 6 83 28 49 95
+- Replace every clickable tel link with:
+  tel:+31683284995
+- Replace every WhatsApp link with:
+  https://wa.me/31683284995
+
+2. UPDATE CONTACT INFORMATION EVERYWHERE
+Ensure the updated phone number appears consistently in:
+- contact page
+- footer
+- header / top navigation if present
+- CTA sections
+- mobile menu
+- floating WhatsApp/contact buttons
+- config/constants/content files
+- any structured contact cards or info blocks
+
+3. UPDATE CONTACT PAGE CONTENT IN DUTCH AND ENGLISH
+Check both language versions and make the contact section look professional and internationally trustworthy.
+
+Dutch contact section:
+- show the phone number as:
+  +31 (0) 6 83 28 49 95
+- keep email visible and clean
+- keep location professional
+- make sure all labels and supporting text are polished
+
+English contact section:
+- show the phone number as:
+  +31 (0) 6 83 28 49 95
+- rewrite labels and supporting text so they sound natural in English
+- make sure layout and spacing remain clean
+
+4. REWRITE BUSINESS HOURS IN BOTH LANGUAGES
+Replace all old opening hours text including any mentions of incorrect hours.
+
+Dutch:
+Use exactly:
+Maandag t/m donderdag: 09:00 – 17:00
+Vrijdag: 09:00 – 12:00
+Zaterdag: 09:00 – 17:00
+Zondag: Gesloten
+
+English:
+Use exactly:
+Monday to Thursday: 09:00 – 17:00
+Friday: 09:00 – 12:00
+Saturday: 09:00 – 17:00
+Sunday: Closed
+
+Make sure this is updated in:
+- contact page
+- footer
+- any contact cards
+- any translated content files
+- any reusable components used in both languages
+
+5. IMPROVE CONTACT MICROCOPY
+Improve surrounding contact text to sound more premium and professional for both languages.
+
+Dutch suggestions:
+- Neem direct contact met ons op voor uw website, applicatie of digitale groei.
+- Beschikbaar voor klanten in Nederland en internationaal.
+- Meestal reactie binnen 24 uur.
+
+English suggestions:
+- Contact us directly about your website, platform, or digital growth.
+- Available for clients in the Netherlands and internationally.
+- Usually a response within 24 hours.
+
+Only apply where appropriate. Keep the tone clean, premium, and business-focused.
+
+6. IMPROVE FOOTER CONTACT BLOCK
+Update the footer contact block in both languages so it looks more polished and consistent.
+Requirements:
+- phone number must use the new international format
+- business hours must use the exact new values above
+- spacing and typography must remain aligned
+- no outdated local-only formatting
+- keep it minimal and professional
+
+7. KEEP DESIGN AND RESPONSIVENESS INTACT
+Do not break layout or styling.
+Check the updated contact section and footer on:
+- desktop
+- tablet
+- mobile
+
+Validate:
+- no text overflow
+- no broken alignment
+- no wrapping issues with the phone number
+- no layout shifts
+- no duplicate formats
+
+8. LANGUAGE CONSISTENCY
+Make sure the Dutch version stays fully Dutch and the English version stays fully English.
+Do not mix labels between languages.
+Update any translation files, locale JSON, constants, or CMS-driven strings if used in the project.
+
+9. FINAL VALIDATION
+After all edits:
+- verify no old phone number format remains anywhere
+- verify all tel links use tel:+31683284995
+- verify all WhatsApp links use https://wa.me/31683284995
+- verify all old business hours are removed
+- verify both Dutch and English versions show the correct new hours
+- verify Sunday shows “Gesloten” in Dutch and “Closed” in English
+- verify the site builds successfully
+- verify the contact page and footer still look polished and premium
+
+10. COMMIT AND PUSH TO GITHUB
+Create a git commit with this exact message:
+Update international contact details and correct business hours in NL and EN
+
+Then push the changes to the connected GitHub repository.
+
+IMPORTANT:
+Only make clean, production-safe changes related to:
+- phone number formatting
+- contact details
+- footer contact block
+- business hours
+- Dutch and English contact microcopy
+
+Do not modify unrelated pages or branding.

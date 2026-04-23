@@ -66,7 +66,7 @@ const Footer = () => {
               <p className="text-white text-sm">{t.contact.company}</p>
               <p className="text-white text-sm">{t.contact.location}</p>
               <a
-                href="tel:0683284995"
+                href="tel:+31683284995"
                 className="text-white hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
               >
                 {t.contact.phone}

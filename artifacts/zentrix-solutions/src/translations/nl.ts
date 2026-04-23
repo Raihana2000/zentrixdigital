@@ -357,7 +357,7 @@ export const nl = {
     infoTitle: "Bedrijfsinformatie",
     company: "ZentrixDigital",
     location: "Amsterdam, Nederland",
-    phone: "06-83284995",
+    phone: "+31 (0) 6 83 28 49 95",
     email: "info@zentrixdigital.eu",
     infoNote: "Wij streven naar duidelijke communicatie, professionele opvolging en een transparant proces vanaf het eerste contact.",
     hours: {
@@ -365,7 +365,7 @@ export const nl = {
       lines: [
         "Maandag t/m donderdag: 09:00 – 17:00",
         "Vrijdag: 09:00 – 12:00",
-        "Zaterdag: Gesloten",
+        "Zaterdag: 09:00 – 17:00",
         "Zondag: Gesloten"
       ]
     }
@@ -378,7 +378,7 @@ export const nl = {
     servicesTitle: "Diensten — ZentrixDigital | Websites, Applicaties & Digitale Groei",
     servicesDesc: "Ontdek onze diensten: professionele website laten maken, maatwerk applicatie laten bouwen, website onderhoud en digitale groeiondersteuning voor uw bedrijf.",
     contactTitle: "Contact — ZentrixDigital | Gratis websiteanalyse aanvragen",
-    contactDesc: "Neem contact op met ZentrixDigital voor een gratis websiteanalyse. Reactie binnen 24 uur. Bel 06-83284995 of mail naar info@zentrixdigital.eu.",
+    contactDesc: "Neem contact op met ZentrixDigital voor een gratis websiteanalyse. Reactie binnen 24 uur. Bel +31 (0) 6 83 28 49 95 of mail naar info@zentrixdigital.eu.",
     websitesTitle: "Professionele website laten maken op maat — ZentrixDigital Amsterdam",
     websitesDesc: "Website laten maken door ZentrixDigital? Wij bouwen conversiegerichte bedrijfswebsites uitbreidbaar met WhatsApp, boekingen, formulieren en meer. Gratis analyse.",
     applicatiesTitle: "Maatwerk applicatie laten bouwen — ZentrixDigital",
