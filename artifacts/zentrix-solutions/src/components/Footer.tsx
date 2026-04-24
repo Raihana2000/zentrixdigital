@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, ArrowUpRight } from 'lucide-react';
+import { Clock, ArrowUpRight, Mail, Phone } from 'lucide-react';
 import { Link } from 'wouter';
 import { useTranslation } from '@/hooks/useTranslation';
 import logoPath from "@assets/ChatGPT_Image_20_apr_2026,_10_49_46_1776675127194.png";
@@ -89,14 +89,16 @@ const Footer = () => {
               <p className="text-white text-sm">{t.contact.location}</p>
               <a
                 href="tel:+31683284995"
-                className="text-white hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
+                className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
               >
+                <Phone className="w-3.5 h-3.5 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
                 {t.contact.phone}
               </a>
               <a
                 href="mailto:info@zentrixdigital.eu"
-                className="text-white hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
+                className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
               >
+                <Mail className="w-3.5 h-3.5 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
                 {t.contact.email}
               </a>
             </address>
