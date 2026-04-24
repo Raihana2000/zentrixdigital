@@ -113,17 +113,31 @@ const Contact = () => {
                     value: t.contact.email,
                     testid: "contact-email"
                   },
+                  {
+                    href: "https://www.linkedin.com/in/karim-hizi-95663b405/",
+                    external: true,
+                    icon: null,
+                    label: t.contact.labelLinkedIn,
+                    value: t.contact.linkedinCta,
+                    testid: "contact-linkedin"
+                  },
                 ].map(({ href, external, icon: Icon, label, value, testid }) => (
                   <a
                     key={testid}
                     href={href}
                     target={external ? "_blank" : undefined}
-                    rel={external ? "noreferrer" : undefined}
+                    rel={external ? "noopener noreferrer" : undefined}
                     className="group flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.90] transition-all duration-300"
                     data-testid={testid}
                   >
                     <div className="w-10 h-10 rounded-xl bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center shrink-0 group-hover:bg-blue-500/20 group-hover:border-blue-400/[0.90] transition-all duration-300">
-                      <Icon className="w-4.5 h-4.5 text-blue-400" size={18} />
+                      {Icon ? (
+                        <Icon className="w-4.5 h-4.5 text-blue-400" size={18} />
+                      ) : (
+                        <svg viewBox="0 0 24 24" className="w-[18px] h-[18px] fill-blue-400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                      )}
                     </div>
                     <div>
                       <p className="text-xs text-[#D9E1F2] uppercase tracking-widest font-semibold mb-0.5">{label}</p>

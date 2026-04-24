@@ -335,6 +335,8 @@ export const nl = {
     labelLocation: "Locatie",
     labelPhone: "Telefoon",
     labelEmail: "E-mail",
+    labelLinkedIn: "LinkedIn",
+    linkedinCta: "Volg ons op LinkedIn",
     labelResponse: "Reactietijd",
     responseTime: "Meestal binnen 24 uur",
     whatsappCta: "Direct via WhatsApp",

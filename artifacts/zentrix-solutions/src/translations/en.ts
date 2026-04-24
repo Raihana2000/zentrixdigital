@@ -335,6 +335,8 @@ export const en = {
     labelLocation: "Location",
     labelPhone: "Phone",
     labelEmail: "Email",
+    labelLinkedIn: "LinkedIn",
+    linkedinCta: "Follow us on LinkedIn",
     labelResponse: "Response time",
     responseTime: "Usually within 24 hours",
     whatsappCta: "Message via WhatsApp",
