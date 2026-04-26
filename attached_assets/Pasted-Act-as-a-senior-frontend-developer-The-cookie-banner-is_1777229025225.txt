@@ -1,0 +1,65 @@
+Act as a senior frontend developer. The cookie banner is still not appearing on desktop or mobile, so do not just add a new component blindly. First inspect the project structure and find why the cookie banner is not rendering.
+
+Check:
+1. Where the main app layout is defined:
+   - App.tsx
+   - main.tsx
+   - Layout.tsx
+   - RootLayout
+   - Header/Footer components
+
+2. Find any existing cookie banner component, cookie consent component, localStorage logic, or privacy/cookie settings code.
+
+3. Verify whether the cookie banner component is actually imported and rendered globally.
+   It must be mounted in the main layout so it appears on every page.
+
+4. Check if localStorage already stores a value that hides the banner.
+   Use a key like:
+   zentrix_cookie_consent
+   If the value exists, add a footer “Cookie settings” button that clears/reopens preferences.
+
+5. If no working banner exists, create a new global CookieBanner component and render it inside the main app/layout, outside individual pages.
+
+Functional requirements:
+- Banner appears on first visit on desktop, tablet, and mobile.
+- Banner appears when no localStorage consent value exists.
+- Accept button saves:
+  localStorage.setItem("zentrix_cookie_consent", "accepted")
+- Reject button saves:
+  localStorage.setItem("zentrix_cookie_consent", "rejected")
+- Footer link/button:
+  NL: Cookie-instellingen
+  EN: Cookie settings
+  must reopen the banner by clearing the consent state or setting preferences open.
+
+Language:
+Dutch:
+"Wij gebruiken cookies om onze website goed te laten werken en om de gebruikerservaring te verbeteren. Je kunt cookies accepteren of weigeren."
+Buttons: "Accepteren" / "Weigeren"
+
+English:
+"We use cookies to keep our website working properly and to improve the user experience. You can accept or reject cookies."
+Buttons: "Accept" / "Reject"
+
+Important:
+- Do not rely on hover.
+- Do not hide the banner behind z-index issues.
+- Use fixed positioning:
+  bottom: 20px;
+  left/right responsive;
+  z-index: 99999;
+- Make sure it works on mobile width 390px, 430px, iPad 768px, 1024px and desktop.
+
+Debugging:
+- Add temporary console.log messages:
+  "CookieBanner mounted"
+  "Cookie consent value:"
+- Test in browser devtools by clearing localStorage.
+- Confirm in the final response which files were changed and why.
+
+After fixing:
+- Run build/test.
+- Commit and push:
+  git add .
+  git commit -m "Fix global cookie banner rendering"
+  git push origin main
