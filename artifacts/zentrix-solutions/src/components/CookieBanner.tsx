@@ -4,7 +4,43 @@ import { useTranslation } from '@/hooks/useTranslation';
 
 const KEY = 'zentrix_cookie_consent';
 
-// ── Register global reset helper ──────────────────────────────────────────────
+interface ConsentObject {
+  necessary: true;
+  analytics: boolean;
+  timestamp: number;
+  version: 1;
+}
+
+function hasValidConsent(): boolean {
+  try {
+    const raw = localStorage.getItem(KEY);
+    if (!raw) return false;
+    const parsed: ConsentObject = JSON.parse(raw);
+    return (
+      parsed !== null &&
+      parsed.version === 1 &&
+      parsed.necessary === true &&
+      typeof parsed.analytics === 'boolean'
+    );
+  } catch {
+    return false;
+  }
+}
+
+function saveConsent(analytics: boolean): void {
+  try {
+    const obj: ConsentObject = {
+      necessary: true,
+      analytics,
+      timestamp: Date.now(),
+      version: 1,
+    };
+    localStorage.setItem(KEY, JSON.stringify(obj));
+  } catch {
+    // ignore storage errors
+  }
+}
+
 if (typeof window !== 'undefined') {
   (window as any).resetCookieConsent = () => {
     localStorage.removeItem(KEY);
@@ -12,16 +48,6 @@ if (typeof window !== 'undefined') {
   };
 }
 
-// ── Lazy initializer: read localStorage synchronously on first render ─────────
-function getInitialVisibility(): boolean {
-  try {
-    return localStorage.getItem(KEY) === null;
-  } catch {
-    return true;
-  }
-}
-
-// ── Text ─────────────────────────────────────────────────────────────────────
 const T = {
   nl: {
     text: 'Wij gebruiken cookies om onze website goed te laten werken en om de gebruikerservaring te verbeteren. Je kunt cookies accepteren of weigeren.',
@@ -43,18 +69,12 @@ const T = {
   },
 };
 
-// ── Component ─────────────────────────────────────────────────────────────────
 const CookieBanner: React.FC = () => {
   const { language } = useTranslation();
   const c = language === 'nl' ? T.nl : T.en;
 
-  // Synchronous lazy init — no flash, no timing issues
-  const [visible, setVisible] = useState<boolean>(getInitialVisibility);
+  const [visible, setVisible] = useState<boolean>(() => !hasValidConsent());
 
-  console.log('CookieBanner mounted');
-  console.log('Cookie consent value:', localStorage.getItem(KEY));
-
-  // Footer "Cookie-instellingen" button reopens banner
   useEffect(() => {
     const handler = () => {
       localStorage.removeItem(KEY);
@@ -65,12 +85,12 @@ const CookieBanner: React.FC = () => {
   }, []);
 
   const accept = useCallback(() => {
-    try { localStorage.setItem(KEY, 'accepted'); } catch { /* ignore */ }
+    saveConsent(true);
     setVisible(false);
   }, []);
 
   const reject = useCallback(() => {
-    try { localStorage.setItem(KEY, 'rejected'); } catch { /* ignore */ }
+    saveConsent(false);
     setVisible(false);
   }, []);
 
@@ -101,7 +121,6 @@ const CookieBanner: React.FC = () => {
           padding: '22px 22px 20px',
         }}
       >
-        {/* Text */}
         <p
           style={{
             color: 'rgba(255,255,255,0.85)',
@@ -113,7 +132,6 @@ const CookieBanner: React.FC = () => {
           {c.text}
         </p>
 
-        {/* Policy links */}
         <div style={{ display: 'flex', gap: '10px', marginBottom: '18px', flexWrap: 'wrap' }}>
           <Link
             href={c.privacyHref}
@@ -140,7 +158,6 @@ const CookieBanner: React.FC = () => {
           </Link>
         </div>
 
-        {/* Buttons */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', alignItems: 'center' }}>
           <button
             onClick={reject}
