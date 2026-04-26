@@ -461,6 +461,49 @@ const Home = () => {
         </div>
       </section>
 
+      {/* ─── OPLOSSINGEN ─────────────────────────────────────── */}
+      <section className="py-24 px-5 bg-[#080d16]">
+        <div className="max-w-6xl mx-auto">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+            <motion.div variants={fadeUp} className="text-center mb-12">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-500/20 bg-blue-950/40 text-blue-400/80 text-xs font-bold tracking-[0.18em] uppercase mb-5">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-400/70 shrink-0" />
+                Oplossingen
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-black tracking-[-0.02em] text-white leading-tight">
+                {t.home.heroTitle.includes('digitale') ? 'Op maat gemaakte oplossingen' : 'Tailored solutions for growth'}
+              </h2>
+              <p className="mt-4 text-white text-base max-w-xl mx-auto leading-relaxed">
+                Van websites tot systemen — wij bouwen wat uw bedrijf nodig heeft om te groeien.
+              </p>
+            </motion.div>
+            <motion.div variants={stagger} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { href: '/website-laten-maken-zzp', label: 'Website voor ZZP', desc: 'Professionele online aanwezigheid voor zelfstandigen' },
+                { href: '/website-laten-maken-bedrijven', label: 'Website voor bedrijven', desc: 'Converterende bedrijfswebsite die klanten aantrekt' },
+                { href: '/crm-systeem-laten-maken', label: 'CRM systeem', desc: 'Klantenbeheer op maat voor meer omzet en structuur' },
+                { href: '/boekingssysteem-laten-maken', label: 'Boekingssysteem', desc: 'Automatisch afspraken plannen en beheren' },
+                { href: '/bedrijfsprocessen-automatiseren', label: 'Procesautomatisering', desc: 'Workflows automatiseren en tijd besparen' },
+                { href: '/en/website-for-businesses', label: 'Website for Businesses', desc: 'Professional business websites for international growth' },
+              ].map(({ href, label, desc }) => (
+                <motion.div key={href} variants={fadeUp}>
+                  <Link
+                    href={href}
+                    className="group flex flex-col gap-2.5 p-5 rounded-2xl border border-blue-500/[0.55] bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.90] transition-all duration-300 h-full"
+                  >
+                    <span className="text-sm font-semibold text-white group-hover:text-blue-300 transition-colors duration-200 flex items-center gap-1.5">
+                      {label}
+                      <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                    </span>
+                    <span className="text-xs text-white leading-relaxed">{desc}</span>
+                  </Link>
+                </motion.div>
+              ))}
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ─── FINAL CTA ───────────────────────────────────────── */}
       <section className="py-32 px-5 bg-[#060b13]">
         <div className="max-w-4xl mx-auto">

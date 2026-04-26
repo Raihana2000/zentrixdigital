@@ -8,6 +8,22 @@ const Footer = () => {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
+  const solutionsNL = [
+    { href: '/website-laten-maken-zzp', label: 'Website voor ZZP' },
+    { href: '/website-laten-maken-bedrijven', label: 'Website voor bedrijven' },
+    { href: '/crm-systeem-laten-maken', label: 'CRM systeem laten maken' },
+    { href: '/boekingssysteem-laten-maken', label: 'Boekingssysteem laten maken' },
+    { href: '/bedrijfsprocessen-automatiseren', label: 'Procesautomatisering' },
+  ];
+
+  const solutionsEN = [
+    { href: '/en/website-for-freelancers', label: 'Website for Freelancers' },
+    { href: '/en/website-for-businesses', label: 'Website for Businesses' },
+    { href: '/en/crm-system-development', label: 'CRM System Development' },
+    { href: '/en/booking-system-development', label: 'Booking System Development' },
+    { href: '/en/business-automation', label: 'Business Automation' },
+  ];
+
   return (
     <footer className="relative bg-[#060606] mt-24 overflow-hidden">
       {/* Top glow line */}
@@ -19,10 +35,10 @@ const Footer = () => {
       <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-16 pb-10">
 
         {/* ── Main grid ── */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-16">
 
           {/* Brand column */}
-          <div className="md:col-span-5 flex flex-col gap-6">
+          <div className="md:col-span-4 flex flex-col gap-6">
             <Link href="/" className="flex items-center w-fit" data-testid="footer-logo">
               <img src={logoPath} alt="ZentrixDigital" className="h-9 w-auto object-contain opacity-90" />
             </Link>
@@ -61,7 +77,7 @@ const Footer = () => {
           </div>
 
           {/* Navigation column */}
-          <div className="md:col-span-3 flex flex-col gap-5">
+          <div className="md:col-span-2 flex flex-col gap-5">
             <h4 className="text-white font-semibold text-sm uppercase tracking-widest">{t.footer.navLabel}</h4>
             <nav className="flex flex-col gap-3.5">
               {[
@@ -81,45 +97,60 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Contact column */}
-          <div className="md:col-span-4 flex flex-col gap-5">
-            <h4 className="text-white font-semibold text-sm uppercase tracking-widest">{t.nav.contact}</h4>
-            <address className="flex flex-col gap-3 not-italic">
-              <p className="text-white text-sm">{t.contact.company}</p>
-              <p className="text-white text-sm">{t.contact.location}</p>
+          {/* Oplossingen / Solutions column */}
+          <div className="md:col-span-3 flex flex-col gap-5">
+            <h4 className="text-white font-semibold text-sm uppercase tracking-widest">Oplossingen</h4>
+            <nav className="flex flex-col gap-3">
+              {solutionsNL.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="text-white hover:text-blue-300 transition-colors duration-200 text-sm w-fit"
+                >
+                  {label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          {/* Solutions EN column */}
+          <div className="md:col-span-3 flex flex-col gap-5">
+            <h4 className="text-white font-semibold text-sm uppercase tracking-widest">Solutions</h4>
+            <nav className="flex flex-col gap-3">
+              {solutionsEN.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="text-white hover:text-blue-300 transition-colors duration-200 text-sm w-fit"
+                >
+                  {label}
+                </Link>
+              ))}
+            </nav>
+
+            {/* Contact info — compact */}
+            <div className="mt-4 pt-4 border-t border-blue-500/[0.15] flex flex-col gap-2.5">
               <a
                 href="tel:+31683284995"
-                className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
+                className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-xs transition-colors duration-200 w-fit"
               >
-                <Phone className="w-3.5 h-3.5 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
+                <Phone className="w-3 h-3 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
                 {t.contact.phone}
               </a>
               <a
                 href="mailto:info@zentrixdigital.eu"
-                className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
+                className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-xs transition-colors duration-200 w-fit"
               >
-                <Mail className="w-3.5 h-3.5 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
+                <Mail className="w-3 h-3 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
                 {t.contact.email}
               </a>
-            </address>
-
-            {/* Hours */}
-            <div className="pt-4 border-t border-blue-500/[0.18]">
-              <div className="flex items-center gap-2 mb-3">
-                <Clock className="w-3.5 h-3.5 text-blue-400 shrink-0" />
-                <p className="text-xs text-[#D9E1F2] uppercase tracking-widest font-semibold">
-                  {t.contact.hours.title}
-                </p>
+              <div className="flex items-center gap-2 mt-1">
+                <Clock className="w-3 h-3 text-blue-400 shrink-0" />
+                <span className="text-xs text-white">{t.contact.hours.lines[0]}</span>
               </div>
-              <ul className="flex flex-col gap-1.5">
-                {t.contact.hours.lines.map((line, i) => (
-                  <li key={i} className="text-xs text-white leading-snug">
-                    {line}
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
+
         </div>
 
         {/* ── Bottom bar ── */}

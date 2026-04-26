@@ -1,0 +1,152 @@
+Upgrade my ZentrixDigital website by adding 3 high-converting SEO landing pages focused on systems and applications, in BOTH Dutch and English.
+
+Goal:
+Increase SEO rankings and attract higher-value clients for custom systems, automation, and applications.
+
+Create the following pages:
+
+========================
+1. CRM SYSTEM PAGE
+========================
+
+Dutch:
+URL: /crm-systeem-laten-maken
+H1: CRM systeem laten maken voor bedrijven
+
+English:
+URL: /en/crm-system-development
+H1: CRM System Development for Businesses
+
+Content:
+- Explain how businesses lose leads without proper client management
+- Show how a custom CRM improves structure, sales, and efficiency
+- Include benefits:
+  - Klanten overzicht
+  - Meer omzet
+  - Efficiënt werken
+- Add CTA: “Vraag een demo aan” / “Request a consultation”
+
+SEO:
+NL keywords:
+- crm systeem laten maken
+- klantenbeheer systeem
+- crm voor bedrijven
+
+EN keywords:
+- crm system development
+- custom crm software
+- crm for small business
+
+========================
+2. BOOKING SYSTEM PAGE
+========================
+
+Dutch:
+URL: /boekingssysteem-laten-maken
+H1: Boekingssysteem laten maken
+
+English:
+URL: /en/booking-system-development
+H1: Booking System Development
+
+Content:
+- Explain missed bookings without automation
+- Show how booking systems increase efficiency
+- Benefits:
+  - Automatische afspraken
+  - Minder fouten
+  - Tijd besparen
+- CTA: “Start met automatiseren”
+
+SEO:
+NL keywords:
+- boekingssysteem laten maken
+- online afspraken systeem
+- reserveringssysteem
+
+EN keywords:
+- booking system development
+- appointment booking software
+- online booking system
+
+========================
+3. BUSINESS AUTOMATION PAGE
+========================
+
+Dutch:
+URL: /bedrijfsprocessen-automatiseren
+H1: Bedrijfsprocessen automatiseren
+
+English:
+URL: /en/business-automation
+H1: Business Automation Solutions
+
+Content:
+- Explain wasted time in manual processes
+- Show how automation saves time and money
+- Benefits:
+  - Minder handmatig werk
+  - Snellere processen
+  - Schaalbaarheid
+- CTA: “Ontdek automatisering”
+
+SEO:
+NL keywords:
+- bedrijfsprocessen automatiseren
+- automatisering bedrijf
+- workflow automatisering
+
+EN keywords:
+- business automation software
+- workflow automation
+- automate business processes
+
+========================
+DESIGN REQUIREMENTS
+========================
+
+- Keep existing ZentrixDigital design system
+- Premium, clean, conversion-focused
+- Mobile responsive
+- Do NOT break existing layout
+- Use clear sections, spacing, and strong CTAs
+
+========================
+INTERNAL LINKING (VERY IMPORTANT FOR SEO)
+========================
+
+- Link ALL new pages to each other (NL ↔ NL, EN ↔ EN)
+- Add links from:
+  - Homepage → all 3 Dutch pages
+  - Services page → all 3 Dutch pages
+- Add language switch links:
+  - NL ↔ EN versions of each page
+- Add footer section:
+  “Oplossingen / Solutions”
+- Use normal anchor links (crawlable)
+
+========================
+TECHNICAL SEO
+========================
+
+- Add proper title tags + meta descriptions
+- Clean URL structure
+- Use H1, H2 hierarchy correctly
+- Add to sitemap.xml if present
+- Keep robots.txt intact
+- Ensure pages are indexable
+- Optimize for performance (no heavy unused code)
+
+========================
+FINAL STEPS
+========================
+
+1. Run build / check for errors
+2. Ensure pages load correctly
+3. Show which files were created/updated
+4. Commit with message:
+   "Add system & automation SEO pages (NL/EN)"
+5. Push to GitHub:
+   origin main
+
+Make everything production-ready and consistent with ZentrixDigital branding.

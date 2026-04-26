@@ -1,0 +1,105 @@
+Update my ZentrixDigital website with 2 new SEO landing pages in BOTH Dutch and English.
+
+Goal:
+Create SEO pages that generate leads from ZZP/freelancers and businesses, while supporting international growth.
+
+Create these pages:
+
+1. Dutch ZZP page:
+URL: /website-laten-maken-zzp
+H1: Website laten maken voor ZZP
+
+2. English freelancer page:
+URL: /en/website-for-freelancers
+H1: Website for Freelancers
+
+3. Dutch business page:
+URL: /website-laten-maken-bedrijven
+H1: Website laten maken voor bedrijven
+
+4. English business page:
+URL: /en/website-for-businesses
+H1: Website for Businesses
+
+Design requirements:
+- Keep the current ZentrixDigital branding and layout style
+- Premium, modern, clean and conversion-focused
+- Fully responsive for mobile, tablet and desktop
+- Do NOT break or redesign the existing website
+- Use strong CTAs and clean sections
+
+Each page must include:
+- Hero section with strong H1 and CTA
+- Problem section
+- Solution section
+- Benefits section
+- 3-step process section
+- Trust/conversion section
+- Final CTA section
+- Internal links to relevant pages
+
+Dutch ZZP SEO:
+Title: Website laten maken ZZP | ZentrixDigital
+Meta description: Professionele website laten maken voor zzp’ers. Meer klanten, betere uitstraling en een website die vertrouwen opbouwt.
+Use keywords naturally:
+- website laten maken zzp
+- professionele website voor zzp
+- website voor zelfstandigen
+
+English freelancer SEO:
+Title: Website for Freelancers | ZentrixDigital
+Meta description: Professional websites for freelancers that build trust, attract clients and support business growth.
+Use keywords naturally:
+- website for freelancers
+- professional website for freelancer
+- freelance website design
+
+Dutch business SEO:
+Title: Website laten maken voor bedrijven | ZentrixDigital
+Meta description: Laat een professionele website maken voor je bedrijf. ZentrixDigital bouwt moderne websites die vertrouwen, leads en groei ondersteunen.
+Use keywords naturally:
+- website laten maken voor bedrijven
+- professionele website voor bedrijven
+- website voor kleine bedrijven
+
+English business SEO:
+Title: Website for Businesses | ZentrixDigital
+Meta description: Professional websites for businesses that improve trust, conversion and online growth.
+Use keywords naturally:
+- website for businesses
+- professional business website
+- business website design
+
+Internal linking strategy:
+- Add links from the homepage to both Dutch pages
+- Add links from the services page to both Dutch pages
+- Add links between:
+  /website-laten-maken-zzp and /website-laten-maken-bedrijven
+- Add links between:
+  /en/website-for-freelancers and /en/website-for-businesses
+- Add language switch links between matching pages:
+  /website-laten-maken-zzp ↔ /en/website-for-freelancers
+  /website-laten-maken-bedrijven ↔ /en/website-for-businesses
+- Add footer links under a logical heading like “Oplossingen” / “Solutions”
+- Make sure all internal links are crawlable normal anchor links, not only buttons
+
+Technical requirements:
+- Reuse existing components where possible
+- Keep code clean and maintainable
+- Add routes correctly
+- Ensure navigation does not break
+- Ensure build passes
+- Run lint/build if available
+- If sitemap.xml exists, add these new URLs
+- If robots.txt exists, make sure sitemap is still referenced
+- Do not remove existing pages, content or styling
+
+After completing everything:
+1. Run the project build/check command.
+2. Show me which files were changed.
+3. Commit changes with message:
+   "Add bilingual SEO landing pages"
+4. Push directly to GitHub:
+   origin main
+
+Make this production-ready and consistent with the current ZentrixDigital website.

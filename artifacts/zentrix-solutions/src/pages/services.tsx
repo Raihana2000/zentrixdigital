@@ -117,6 +117,43 @@ const Services = () => {
         </div>
       </section>
 
+      {/* ─── OPLOSSINGEN ───────────────────────────────────────── */}
+      <section className="py-20 px-5 bg-[#080d16]">
+        <div className="max-w-5xl mx-auto">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+            <motion.p variants={fadeUp} className="text-xs text-blue-400/70 uppercase tracking-widest font-semibold mb-3">
+              Oplossingen op maat
+            </motion.p>
+            <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl font-bold text-white mb-8 tracking-tight">
+              Specifieke oplossingen voor uw situatie
+            </motion.h2>
+            <motion.div variants={stagger} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { href: '/website-laten-maken-zzp', label: 'Website laten maken voor ZZP', desc: 'Professionele website voor zelfstandige ondernemers' },
+                { href: '/website-laten-maken-bedrijven', label: 'Website laten maken voor bedrijven', desc: 'Bedrijfswebsite die leads genereert en vertrouwen opbouwt' },
+                { href: '/crm-systeem-laten-maken', label: 'CRM systeem laten maken', desc: 'Maatwerk klantbeheersysteem voor meer omzet' },
+                { href: '/boekingssysteem-laten-maken', label: 'Boekingssysteem laten maken', desc: 'Online afspraken automatisch inplannen en beheren' },
+                { href: '/bedrijfsprocessen-automatiseren', label: 'Bedrijfsprocessen automatiseren', desc: 'Workflows stroomlijnen en handmatig werk reduceren' },
+                { href: '/en/website-for-businesses', label: 'Website for Businesses (EN)', desc: 'Professional websites for international businesses' },
+              ].map(({ href, label, desc }) => (
+                <motion.div key={href} variants={fadeUp}>
+                  <Link
+                    href={href}
+                    className="group flex flex-col gap-2 p-5 rounded-2xl border border-blue-500/[0.35] bg-gradient-to-b from-[#0d1525]/80 to-[#080d18]/60 hover:border-blue-400/[0.75] transition-all duration-300 h-full"
+                  >
+                    <span className="text-sm font-semibold text-white group-hover:text-blue-300 transition-colors duration-200 flex items-center gap-1.5">
+                      {label}
+                      <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                    </span>
+                    <span className="text-xs text-white leading-relaxed">{desc}</span>
+                  </Link>
+                </motion.div>
+              ))}
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ─── CTA ───────────────────────────────────────────────── */}
       <section className="py-32 px-5 bg-[#0B0B0B]">
         <div className="max-w-4xl mx-auto">

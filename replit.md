@@ -25,3 +25,25 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+
+## ZentrixDigital Website (artifacts/zentrix-solutions)
+
+React + Vite + Wouter + Tailwind + Framer Motion, bilingual NL/EN.
+
+### SEO Landing Pages (added 2026-04-26)
+10 new pages using the `ServiceDetailPage` component:
+- `/website-laten-maken-zzp` — NL ZZP page
+- `/en/website-for-freelancers` — EN freelancers
+- `/website-laten-maken-bedrijven` — NL businesses
+- `/en/website-for-businesses` — EN businesses
+- `/crm-systeem-laten-maken` — NL CRM
+- `/en/crm-system-development` — EN CRM
+- `/boekingssysteem-laten-maken` — NL booking
+- `/en/booking-system-development` — EN booking
+- `/bedrijfsprocessen-automatiseren` — NL automation
+- `/en/business-automation` — EN automation
+
+Each page: language toggle, related links section, SEO meta, sitemap entry.
+`ServiceDetailPage` extended with `relatedLinks` and `langToggle` props.
+Footer: added "Oplossingen" (NL) and "Solutions" (EN) link columns.
+Homepage + Services page: "Oplossingen" section added with internal links.
