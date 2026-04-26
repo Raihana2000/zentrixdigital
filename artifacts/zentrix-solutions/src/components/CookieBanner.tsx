@@ -20,7 +20,7 @@ const content = {
     save: 'Voorkeuren opslaan',
     privacyLink: 'Privacybeleid',
     cookieLink: 'Cookiebeleid',
-    privacyHref: '/privacybeleid',
+    privacyHref: '/privacy',
     cookieHref: '/cookies',
   },
   en: {
@@ -38,7 +38,7 @@ const content = {
     save: 'Save preferences',
     privacyLink: 'Privacy policy',
     cookieLink: 'Cookie policy',
-    privacyHref: '/en/privacy-policy',
+    privacyHref: '/en/privacy',
     cookieHref: '/en/cookies',
   },
 };

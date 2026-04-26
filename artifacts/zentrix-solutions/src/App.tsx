@@ -73,12 +73,18 @@ function Router() {
           <Route path="/bedrijfsprocessen-automatiseren" component={SeoAutomatisering} />
           <Route path="/en/business-automation" component={SeoAutomationEN} />
 
-          {/* Legal pages */}
+          {/* Legal pages — canonical paths */}
+          <Route path="/privacy" component={PrivacyNL} />
           <Route path="/cookies" component={CookiesNL} />
+          <Route path="/terms" component={TermsNL} />
+          <Route path="/en/privacy" component={PrivacyEN} />
           <Route path="/en/cookies" component={CookiesEN} />
+          <Route path="/en/terms" component={TermsEN} />
+
+          {/* Legal pages — legacy aliases (keep for backward compat) */}
           <Route path="/privacybeleid" component={PrivacyNL} />
-          <Route path="/en/privacy-policy" component={PrivacyEN} />
           <Route path="/algemene-voorwaarden" component={TermsNL} />
+          <Route path="/en/privacy-policy" component={PrivacyEN} />
           <Route path="/en/terms-and-conditions" component={TermsEN} />
 
           <Route component={NotFound} />

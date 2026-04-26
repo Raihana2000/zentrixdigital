@@ -41,11 +41,12 @@ const Navbar = () => {
   const toggleLang = () => {
     const nextLang = language === 'nl' ? 'en' : 'nl';
     setLanguage(nextLang);
+    const loc = location.replace(/\/$/, '');
     if (nextLang === 'en') {
-      const mapped = ROUTE_MAP_NL_TO_EN[location];
+      const mapped = ROUTE_MAP_NL_TO_EN[loc];
       navigate(mapped ?? '/');
     } else {
-      const mapped = ROUTE_MAP_EN_TO_NL[location];
+      const mapped = ROUTE_MAP_EN_TO_NL[loc];
       navigate(mapped ?? '/');
     }
   };

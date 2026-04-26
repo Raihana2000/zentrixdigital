@@ -1,0 +1,204 @@
+Perform a final production cleanup for ZentrixDigital.
+
+Goal:
+Make the website fast, smooth, professional, SEO-ready, bilingual, and production-stable.
+
+IMPORTANT:
+- Do NOT redesign the website.
+- Keep the current premium ZentrixDigital look.
+- Do NOT remove existing pages or content.
+- Do NOT break navigation, footer, language toggle, WhatsApp button, cookie banner, SEO pages, or sitemap.
+
+Fix and optimize everything below:
+
+1. Mobile and iPad performance
+- Improve loading speed on mobile/tablet.
+- Improve scroll smoothness.
+- Remove unused imports, unused code and unnecessary components.
+- Avoid unnecessary re-renders.
+- Reduce heavy animations on mobile.
+- Reduce or disable expensive blur, glow, backdrop-filter and large shadows on mobile.
+- Add prefers-reduced-motion support where relevant.
+- Make fixed elements lightweight:
+  - header
+  - WhatsApp button
+  - cookie banner
+- Ensure no horizontal overflow.
+- Ensure buttons, text and cards stay readable on mobile/tablet.
+
+2. Cookie banner
+- Must appear correctly on desktop, mobile and iPad on first visit.
+- Must not block or slow the page unnecessarily.
+- Use high z-index but do not cover important navigation permanently.
+- Store consent correctly in localStorage.
+- Necessary cookies always enabled.
+- Analytics optional.
+- Only render settings modal when opened.
+- Add footer link:
+  NL: Cookie-instellingen
+  EN: Cookie settings
+- Footer link must reopen preferences.
+- Do not load analytics/tracking before consent.
+
+3. Language switch
+- NL/EN toggle must work instantly without manual refresh.
+- On mapped pages, switch to matching translated route.
+
+Mappings:
+NL to EN:
+  /website-laten-maken-zzp/ -> /en/website-for-freelancers/
+  /website-laten-maken-bedrijven/ -> /en/website-for-businesses/
+  /crm-systeem-laten-maken/ -> /en/crm-system-development/
+  /boekingssysteem-laten-maken/ -> /en/booking-system-development/
+  /bedrijfsprocessen-automatiseren/ -> /en/business-automation/
+
+EN to NL:
+  /en/website-for-freelancers/ -> /website-laten-maken-zzp/
+  /en/website-for-businesses/ -> /website-laten-maken-bedrijven/
+  /en/crm-system-development/ -> /crm-systeem-laten-maken/
+  /en/booking-system-development/ -> /boekingssysteem-laten-maken/
+  /en/business-automation/ -> /bedrijfsprocessen-automatiseren/
+
+Fallback:
+- NL fallback: /
+- EN fallback: /en/
+
+4. Header navigation
+Add/keep Oplossingen / Solutions in desktop, tablet and mobile navigation.
+
+NL links:
+- Website voor ZZP -> /website-laten-maken-zzp/
+- Website voor bedrijven -> /website-laten-maken-bedrijven/
+- CRM systeem laten maken -> /crm-systeem-laten-maken/
+- Boekingssysteem laten maken -> /boekingssysteem-laten-maken/
+- Procesautomatisering -> /bedrijfsprocessen-automatiseren/
+
+EN links:
+- Website for Freelancers -> /en/website-for-freelancers/
+- Website for Businesses -> /en/website-for-businesses/
+- CRM System Development -> /en/crm-system-development/
+- Booking System Development -> /en/booking-system-development/
+- Business Automation -> /en/business-automation/
+
+5. Footer cleanup
+Footer must be clean and language-specific.
+
+NL headings:
+- Navigatie
+- Oplossingen
+- Contact
+- Juridisch
+
+EN headings:
+- Navigation
+- Solutions
+- Contact
+- Legal
+
+Do NOT show Dutch and English links at the same time.
+
+Add legal links:
+NL:
+- Privacybeleid -> /privacy/
+- Cookiebeleid -> /cookies/
+- Algemene voorwaarden -> /terms/
+
+EN:
+- Privacy Policy -> /en/privacy/
+- Cookie Policy -> /en/cookies/
+- Terms and Conditions -> /en/terms/
+
+6. Opening hours
+Restore and show opening hours in footer/contact where relevant.
+
+NL:
+Maandag t/m donderdag: 09:00 – 17:00
+Vrijdag: 09:00 – 12:00
+Zaterdag: 09:00 – 17:00
+Zondag: Gesloten
+
+EN:
+Monday to Thursday: 09:00 – 17:00
+Friday: 09:00 – 12:00
+Saturday: 09:00 – 17:00
+Sunday: Closed
+
+7. Legal pages
+Ensure these pages exist and are reachable:
+- /privacy/
+- /cookies/
+- /terms/
+- /en/privacy/
+- /en/cookies/
+- /en/terms/
+
+They must be:
+- bilingual
+- cleanly styled
+- mobile responsive
+- linked in footer
+- not duplicated in the wrong language
+
+8. Services page
+Ensure /services/ is conversion-focused and bilingual:
+- strong hero
+- problem section
+- solution section
+- services cards
+- result benefits
+- example scenarios, not fake real testimonials
+- final CTA
+- internal links to SEO pages
+- mobile optimized
+
+9. SEO pages
+Ensure these pages exist, work, and are internally linked:
+- /website-laten-maken-zzp/
+- /website-laten-maken-bedrijven/
+- /crm-systeem-laten-maken/
+- /boekingssysteem-laten-maken/
+- /bedrijfsprocessen-automatiseren/
+- /en/website-for-freelancers/
+- /en/website-for-businesses/
+- /en/crm-system-development/
+- /en/booking-system-development/
+- /en/business-automation/
+
+10. Sitemap
+Ensure public/sitemap.xml is clean valid XML.
+It must include all important URLs.
+Only use:
+- urlset
+- url
+- loc
+- lastmod
+
+Do NOT include:
+- div
+- script
+- html
+- changefreq
+- priority
+
+Use consistent trailing slashes.
+
+11. Robots
+Ensure robots.txt exists and references:
+Sitemap: https://www.zentrixdigital.eu/sitemap.xml
+
+12. Build and production check
+- Run install only if needed.
+- Run build/check/lint if available.
+- Fix all errors.
+- Check for TypeScript errors.
+- Check for broken routes.
+- Check mobile layout.
+- Check sitemap loads as XML.
+
+13. Git
+After everything is complete:
+- Show changed files.
+- Commit with message:
+  "Final production cleanup SEO performance legal"
+- Push to GitHub:
+  origin main
