@@ -6,8 +6,24 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import logoPath from "@assets/ChatGPT_Image_20_apr_2026,_10_49_46_1776675127194.png";
 
+const ROUTE_MAP_NL_TO_EN: Record<string, string> = {
+  '/website-laten-maken-zzp': '/en/website-for-freelancers',
+  '/website-laten-maken-bedrijven': '/en/website-for-businesses',
+  '/crm-systeem-laten-maken': '/en/crm-system-development',
+  '/boekingssysteem-laten-maken': '/en/booking-system-development',
+  '/bedrijfsprocessen-automatiseren': '/en/business-automation',
+};
+
+const ROUTE_MAP_EN_TO_NL: Record<string, string> = {
+  '/en/website-for-freelancers': '/website-laten-maken-zzp',
+  '/en/website-for-businesses': '/website-laten-maken-bedrijven',
+  '/en/crm-system-development': '/crm-systeem-laten-maken',
+  '/en/booking-system-development': '/boekingssysteem-laten-maken',
+  '/en/business-automation': '/bedrijfsprocessen-automatiseren',
+};
+
 const Navbar = () => {
-  const [location] = useLocation();
+  const [location, navigate] = useLocation();
   const { t, language, setLanguage } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -23,7 +39,15 @@ const Navbar = () => {
   }, []);
 
   const toggleLang = () => {
-    setLanguage(language === 'nl' ? 'en' : 'nl');
+    const nextLang = language === 'nl' ? 'en' : 'nl';
+    setLanguage(nextLang);
+    if (nextLang === 'en') {
+      const mapped = ROUTE_MAP_NL_TO_EN[location];
+      navigate(mapped ?? '/');
+    } else {
+      const mapped = ROUTE_MAP_EN_TO_NL[location];
+      navigate(mapped ?? '/');
+    }
   };
 
   const solutionsNL = [

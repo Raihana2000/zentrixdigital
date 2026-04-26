@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import { Link } from 'wouter';
+import { Link, useLocation } from 'wouter';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import { CheckCircle2, ArrowRight, ArrowLeft, ExternalLink } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export interface ServicePageData {
   h1: string;
@@ -66,9 +67,19 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   langToggle,
   relatedTitle,
 }) => {
+  const [, navigate] = useLocation();
+  const { setLanguage } = useTranslation();
+
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [pageTitle]);
+
+  const handleLangToggle = () => {
+    if (!langToggle) return;
+    const targetLang = langToggle.href.startsWith('/en/') ? 'en' : 'nl';
+    setLanguage(targetLang);
+    navigate(langToggle.href);
+  };
 
   const hasExtras = (data.extrasTitle && data.extras && data.extras.length > 0) || (data.examplesTitle && data.examples && data.examples.length > 0);
   const extrasList = data.extras || data.examples || [];
@@ -98,13 +109,13 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 {backLabel}
               </Link>
               {langToggle && (
-                <Link
-                  href={langToggle.href}
-                  className="inline-flex items-center gap-1.5 text-xs text-blue-400/70 hover:text-blue-300 transition-colors uppercase tracking-widest font-semibold border border-blue-500/20 rounded-full px-3 py-1 hover:border-blue-400/40"
+                <button
+                  onClick={handleLangToggle}
+                  className="inline-flex items-center gap-1.5 text-xs text-blue-400/70 hover:text-blue-300 transition-colors uppercase tracking-widest font-semibold border border-blue-500/20 rounded-full px-3 py-1 hover:border-blue-400/40 cursor-pointer"
                 >
                   {langToggle.label}
                   <ExternalLink className="w-2.5 h-2.5" />
-                </Link>
+                </button>
               )}
             </motion.div>
             <motion.h1
