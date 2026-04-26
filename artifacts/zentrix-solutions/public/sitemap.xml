@@ -48,8 +48,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- SEO landing pages: websites -->
   <url>
     <loc>https://www.zentrixdigital.eu/website-laten-maken-zzp</loc>
     <lastmod>2026-04-26</lastmod>
@@ -74,8 +72,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- SEO landing pages: systemen & automatisering -->
   <url>
     <loc>https://www.zentrixdigital.eu/crm-systeem-laten-maken</loc>
     <lastmod>2026-04-26</lastmod>
