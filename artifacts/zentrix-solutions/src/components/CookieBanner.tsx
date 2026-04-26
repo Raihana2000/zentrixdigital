@@ -2,7 +2,36 @@ import React, { useEffect, useState, useCallback } from 'react';
 import { X, Shield, BarChart3, ChevronRight } from 'lucide-react';
 import { useTranslation } from '@/hooks/useTranslation';
 import { Link } from 'wouter';
-import { getCookieConsent, saveCookieConsent } from '@/lib/cookieConsent';
+
+const CONSENT_KEY = 'zentrix_cookie_consent';
+
+function hasConsent(): boolean {
+  try {
+    return localStorage.getItem(CONSENT_KEY) !== null;
+  } catch {
+    return false;
+  }
+}
+
+function writeConsent(analytics: boolean): void {
+  try {
+    localStorage.setItem(CONSENT_KEY, JSON.stringify({
+      necessary: true,
+      analytics,
+      timestamp: Date.now(),
+      version: 1,
+    }));
+  } catch {
+    // silently fail
+  }
+}
+
+if (typeof window !== 'undefined') {
+  window.resetCookieConsent = function () {
+    localStorage.removeItem(CONSENT_KEY);
+    location.reload();
+  };
+}
 
 const TEXT = {
   nl: {
@@ -43,118 +72,157 @@ const TEXT = {
   },
 };
 
+const BTN_GHOST: React.CSSProperties = {
+  padding: '12px 20px',
+  borderRadius: '999px',
+  fontSize: '13px',
+  fontWeight: 600,
+  color: 'rgba(255,255,255,0.72)',
+  border: '1px solid rgba(255,255,255,0.15)',
+  background: 'rgba(255,255,255,0.05)',
+  cursor: 'pointer',
+  minHeight: '48px',
+  WebkitTapHighlightColor: 'transparent',
+  touchAction: 'manipulation',
+};
+
+const BTN_PRIMARY: React.CSSProperties = {
+  padding: '12px 24px',
+  borderRadius: '999px',
+  fontSize: '13px',
+  fontWeight: 700,
+  color: '#fff',
+  background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
+  border: 'none',
+  boxShadow: '0 0 20px rgba(37,99,235,0.45)',
+  cursor: 'pointer',
+  minHeight: '48px',
+  WebkitTapHighlightColor: 'transparent',
+  touchAction: 'manipulation',
+};
+
 const CookieBanner: React.FC = () => {
   const { language } = useTranslation();
   const c = language === 'nl' ? TEXT.nl : TEXT.en;
 
-  const [bannerVisible, setBannerVisible] = useState(false);
-  const [modalVisible, setModalVisible] = useState(false);
-  const [analyticsEnabled, setAnalyticsEnabled] = useState(false);
+  const [showBanner, setShowBanner] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [analytics, setAnalytics] = useState(false);
 
   useEffect(() => {
-    const existing = getCookieConsent();
-    if (existing !== null) return;
-    const id = setTimeout(() => setBannerVisible(true), 350);
-    return () => clearTimeout(id);
+    console.log('CookieBanner mounted');
+    console.log('Cookie consent:', localStorage.getItem(CONSENT_KEY));
+
+    if (!hasConsent()) {
+      const t = setTimeout(() => setShowBanner(true), 300);
+      return () => clearTimeout(t);
+    }
+    return undefined;
   }, []);
 
   useEffect(() => {
     const handler = () => {
-      const existing = getCookieConsent();
-      setAnalyticsEnabled(existing ? existing.analytics : false);
-      setBannerVisible(false);
-      setModalVisible(true);
+      console.log('Opening cookie settings modal');
+      try {
+        const raw = localStorage.getItem(CONSENT_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          setAnalytics(!!parsed.analytics);
+        } else {
+          setAnalytics(false);
+        }
+      } catch {
+        setAnalytics(false);
+      }
+      setShowBanner(false);
+      setShowModal(true);
     };
     window.addEventListener('zentrix-open-cookie-settings', handler);
     return () => window.removeEventListener('zentrix-open-cookie-settings', handler);
   }, []);
 
   const acceptAll = useCallback(() => {
-    saveCookieConsent(true);
-    setBannerVisible(false);
+    writeConsent(true);
+    setShowBanner(false);
   }, []);
 
   const rejectAll = useCallback(() => {
-    saveCookieConsent(false);
-    setBannerVisible(false);
+    writeConsent(false);
+    setShowBanner(false);
   }, []);
 
   const openSettings = useCallback(() => {
-    const existing = getCookieConsent();
-    setAnalyticsEnabled(existing ? existing.analytics : false);
-    setBannerVisible(false);
-    setModalVisible(true);
+    try {
+      const raw = localStorage.getItem(CONSENT_KEY);
+      setAnalytics(raw ? !!JSON.parse(raw).analytics : false);
+    } catch {
+      setAnalytics(false);
+    }
+    setShowBanner(false);
+    setShowModal(true);
   }, []);
 
   const savePreferences = useCallback(() => {
-    saveCookieConsent(analyticsEnabled);
-    setModalVisible(false);
-  }, [analyticsEnabled]);
+    writeConsent(analytics);
+    setShowModal(false);
+  }, [analytics]);
 
   const closeModal = useCallback(() => {
-    setModalVisible(false);
-    if (getCookieConsent() === null) setBannerVisible(true);
+    setShowModal(false);
+    if (!hasConsent()) setShowBanner(true);
   }, []);
-
-  if (!bannerVisible && !modalVisible) return null;
 
   return (
     <>
-      {bannerVisible && (
+      {/* ── Banner ── */}
+      {showBanner && (
         <div
           data-testid="cookie-banner"
           role="dialog"
           aria-label={c.modalTitle}
           style={{
             position: 'fixed',
-            bottom: 0,
-            left: 0,
-            right: 0,
-            zIndex: 9990,
-            padding: '0 16px 20px',
+            bottom: '16px',
+            left: '16px',
+            right: '16px',
+            zIndex: 999999,
+            display: 'block',
+            visibility: 'visible',
+            opacity: 1,
+            pointerEvents: 'auto',
+            maxHeight: '80vh',
+            overflowY: 'auto',
           }}
         >
           <div style={{
             maxWidth: '800px',
             margin: '0 auto',
             borderRadius: '18px',
-            border: '1px solid rgba(59,130,246,0.38)',
+            border: '1px solid rgba(59,130,246,0.40)',
             background: '#0a0f1e',
-            boxShadow: '0 -2px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(59,130,246,0.06)',
+            boxShadow: '0 8px 60px rgba(0,0,0,0.70), 0 0 0 1px rgba(59,130,246,0.08)',
             padding: '22px 20px 20px',
           }}>
-            <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '14px', lineHeight: '1.6', marginBottom: '10px' }}>
+            <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '14px', lineHeight: '1.65', marginBottom: '10px' }}>
               {c.bannerText}
             </p>
-            <div style={{ display: 'flex', gap: '10px', marginBottom: '18px' }}>
-              <Link href={c.privacyHref} style={{ color: 'rgba(96,165,250,0.75)', fontSize: '12px', textDecoration: 'underline', textUnderlineOffset: '2px' }}>
+            <div style={{ display: 'flex', gap: '10px', marginBottom: '18px', flexWrap: 'wrap' }}>
+              <Link href={c.privacyHref} style={{ color: 'rgba(96,165,250,0.80)', fontSize: '12px', textDecoration: 'underline', textUnderlineOffset: '2px' }}>
                 {c.privacyLabel}
               </Link>
               <span style={{ color: 'rgba(255,255,255,0.18)', fontSize: '12px' }}>·</span>
-              <Link href={c.cookieHref} style={{ color: 'rgba(96,165,250,0.75)', fontSize: '12px', textDecoration: 'underline', textUnderlineOffset: '2px' }}>
+              <Link href={c.cookieHref} style={{ color: 'rgba(96,165,250,0.80)', fontSize: '12px', textDecoration: 'underline', textUnderlineOffset: '2px' }}>
                 {c.cookieLabel}
               </Link>
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
-              <button
-                onClick={openSettings}
-                data-testid="cookie-settings-btn"
-                style={{ padding: '11px 18px', borderRadius: '999px', fontSize: '13px', fontWeight: 600, color: 'rgba(255,255,255,0.70)', border: '1px solid rgba(255,255,255,0.14)', background: 'rgba(255,255,255,0.05)', cursor: 'pointer', minHeight: '44px', WebkitTapHighlightColor: 'transparent' }}
-              >
+              <button onClick={openSettings} data-testid="cookie-settings-btn" style={BTN_GHOST}>
                 {c.settings}
               </button>
-              <button
-                onClick={rejectAll}
-                data-testid="cookie-reject-btn"
-                style={{ padding: '11px 18px', borderRadius: '999px', fontSize: '13px', fontWeight: 600, color: 'rgba(255,255,255,0.70)', border: '1px solid rgba(255,255,255,0.14)', background: 'rgba(255,255,255,0.05)', cursor: 'pointer', minHeight: '44px', WebkitTapHighlightColor: 'transparent' }}
-              >
+              <button onClick={rejectAll} data-testid="cookie-reject-btn" style={BTN_GHOST}>
                 {c.reject}
               </button>
-              <button
-                onClick={acceptAll}
-                data-testid="cookie-accept-btn"
-                style={{ padding: '11px 22px', borderRadius: '999px', fontSize: '13px', fontWeight: 700, color: '#fff', background: 'linear-gradient(135deg,#2563eb,#3b82f6)', border: 'none', boxShadow: '0 0 18px rgba(37,99,235,0.40)', cursor: 'pointer', minHeight: '44px', WebkitTapHighlightColor: 'transparent' }}
-              >
+              <button onClick={acceptAll} data-testid="cookie-accept-btn" style={BTN_PRIMARY}>
                 {c.acceptAll}
               </button>
             </div>
@@ -162,7 +230,8 @@ const CookieBanner: React.FC = () => {
         </div>
       )}
 
-      {modalVisible && (
+      {/* ── Modal ── */}
+      {showModal && (
         <div
           data-testid="cookie-modal"
           role="dialog"
@@ -171,13 +240,17 @@ const CookieBanner: React.FC = () => {
           onClick={(e) => { if (e.target === e.currentTarget) closeModal(); }}
           style={{
             position: 'fixed',
-            inset: 0,
-            zIndex: 9995,
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: 999999,
             display: 'flex',
             alignItems: 'flex-end',
             justifyContent: 'center',
             padding: '16px',
-            background: 'rgba(0,0,0,0.74)',
+            background: 'rgba(0,0,0,0.76)',
+            pointerEvents: 'auto',
           }}
         >
           <div style={{
@@ -186,21 +259,26 @@ const CookieBanner: React.FC = () => {
             borderRadius: '18px',
             border: '1px solid rgba(59,130,246,0.32)',
             background: '#0d1120',
-            boxShadow: '0 20px 80px rgba(0,0,0,0.7)',
+            boxShadow: '0 24px 80px rgba(0,0,0,0.75)',
             overflow: 'hidden',
+            maxHeight: '90vh',
+            overflowY: 'auto',
           }}>
+            {/* header */}
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 24px 16px', borderBottom: '1px solid rgba(59,130,246,0.10)' }}>
-              <h2 style={{ color: '#fff', fontSize: '15px', fontWeight: 700, margin: 0, letterSpacing: '-0.01em' }}>{c.modalTitle}</h2>
-              <button onClick={closeModal} aria-label="Sluiten" style={{ width: '44px', height: '44px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'none', border: 'none', color: 'rgba(255,255,255,0.4)', cursor: 'pointer' }}>
+              <h2 style={{ color: '#fff', fontSize: '15px', fontWeight: 700, margin: 0 }}>{c.modalTitle}</h2>
+              <button onClick={closeModal} aria-label="Sluiten" style={{ width: '44px', height: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'none', border: 'none', color: 'rgba(255,255,255,0.4)', cursor: 'pointer', borderRadius: '50%', flexShrink: 0 }}>
                 <X size={16} />
               </button>
             </div>
 
+            {/* body */}
             <div style={{ padding: '20px 24px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
               <p style={{ color: 'rgba(255,255,255,0.48)', fontSize: '12px', lineHeight: '1.6', margin: 0 }}>{c.modalSubtitle}</p>
 
+              {/* Necessary */}
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px', padding: '14px', borderRadius: '12px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
-                <Shield size={18} style={{ color: 'rgba(96,165,250,0.8)', flexShrink: 0, marginTop: '1px' }} />
+                <Shield size={18} style={{ color: 'rgba(96,165,250,0.8)', flexShrink: 0, marginTop: '2px' }} />
                 <div style={{ flex: 1 }}>
                   <p style={{ color: '#fff', fontSize: '13px', fontWeight: 600, margin: '0 0 3px' }}>{c.necessary}</p>
                   <p style={{ color: 'rgba(255,255,255,0.48)', fontSize: '11px', lineHeight: '1.55', margin: 0 }}>{c.necessaryDesc}</p>
@@ -208,67 +286,35 @@ const CookieBanner: React.FC = () => {
                 <span style={{ color: 'rgba(96,165,250,0.65)', fontSize: '10px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', flexShrink: 0, marginTop: '2px' }}>{c.alwaysOn}</span>
               </div>
 
+              {/* Analytics */}
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px', padding: '14px', borderRadius: '12px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
-                <BarChart3 size={18} style={{ color: 'rgba(96,165,250,0.8)', flexShrink: 0, marginTop: '1px' }} />
+                <BarChart3 size={18} style={{ color: 'rgba(96,165,250,0.8)', flexShrink: 0, marginTop: '2px' }} />
                 <div style={{ flex: 1 }}>
                   <p style={{ color: '#fff', fontSize: '13px', fontWeight: 600, margin: '0 0 3px' }}>{c.analytics}</p>
                   <p style={{ color: 'rgba(255,255,255,0.48)', fontSize: '11px', lineHeight: '1.55', margin: 0 }}>{c.analyticsDesc}</p>
                 </div>
                 <button
                   role="switch"
-                  aria-checked={analyticsEnabled}
+                  aria-checked={analytics}
                   data-testid="analytics-toggle"
-                  onClick={() => setAnalyticsEnabled(v => !v)}
-                  style={{
-                    flexShrink: 0,
-                    width: '44px',
-                    height: '44px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    background: 'none',
-                    border: 'none',
-                    cursor: 'pointer',
-                    padding: 0,
-                  }}
+                  onClick={() => setAnalytics(v => !v)}
+                  style={{ flexShrink: 0, width: '44px', height: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
                 >
-                  <span style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    width: '40px',
-                    height: '22px',
-                    borderRadius: '999px',
-                    background: analyticsEnabled ? '#2563eb' : 'rgba(255,255,255,0.12)',
-                    padding: '0 2px',
-                    transition: 'background 0.2s',
-                    boxShadow: analyticsEnabled ? '0 0 10px rgba(37,99,235,0.4)' : 'none',
-                  }}>
-                    <span style={{
-                      display: 'block',
-                      width: '18px',
-                      height: '18px',
-                      borderRadius: '50%',
-                      background: '#fff',
-                      boxShadow: '0 1px 4px rgba(0,0,0,0.3)',
-                      transform: analyticsEnabled ? 'translateX(18px)' : 'translateX(0)',
-                      transition: 'transform 0.2s',
-                    }} />
+                  <span style={{ display: 'flex', alignItems: 'center', width: '40px', height: '22px', borderRadius: '999px', background: analytics ? '#2563eb' : 'rgba(255,255,255,0.14)', padding: '0 2px', transition: 'background 0.2s', boxShadow: analytics ? '0 0 10px rgba(37,99,235,0.45)' : 'none' }}>
+                    <span style={{ display: 'block', width: '18px', height: '18px', borderRadius: '50%', background: '#fff', boxShadow: '0 1px 4px rgba(0,0,0,0.3)', transform: analytics ? 'translateX(18px)' : 'translateX(0)', transition: 'transform 0.2s' }} />
                   </span>
                 </button>
               </div>
             </div>
 
+            {/* footer */}
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 24px 20px', borderTop: '1px solid rgba(59,130,246,0.10)', gap: '12px', flexWrap: 'wrap' }}>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                <Link href={c.privacyHref} onClick={closeModal} style={{ color: 'rgba(96,165,250,0.6)', fontSize: '11px', textDecoration: 'underline', textUnderlineOffset: '2px' }}>{c.privacyLabel}</Link>
+                <Link href={c.privacyHref} onClick={closeModal} style={{ color: 'rgba(96,165,250,0.60)', fontSize: '11px', textDecoration: 'underline', textUnderlineOffset: '2px' }}>{c.privacyLabel}</Link>
                 <span style={{ color: 'rgba(255,255,255,0.18)', fontSize: '11px' }}>·</span>
-                <Link href={c.cookieHref} onClick={closeModal} style={{ color: 'rgba(96,165,250,0.6)', fontSize: '11px', textDecoration: 'underline', textUnderlineOffset: '2px' }}>{c.cookieLabel}</Link>
+                <Link href={c.cookieHref} onClick={closeModal} style={{ color: 'rgba(96,165,250,0.60)', fontSize: '11px', textDecoration: 'underline', textUnderlineOffset: '2px' }}>{c.cookieLabel}</Link>
               </div>
-              <button
-                onClick={savePreferences}
-                data-testid="cookie-save-btn"
-                style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '11px 22px', borderRadius: '999px', fontSize: '13px', fontWeight: 700, color: '#fff', background: 'linear-gradient(135deg,#2563eb,#3b82f6)', border: 'none', boxShadow: '0 0 14px rgba(37,99,235,0.35)', cursor: 'pointer', minHeight: '44px', WebkitTapHighlightColor: 'transparent' }}
-              >
+              <button onClick={savePreferences} data-testid="cookie-save-btn" style={{ ...BTN_PRIMARY, display: 'flex', alignItems: 'center', gap: '6px', padding: '11px 22px' }}>
                 {c.save}
                 <ChevronRight size={13} />
               </button>

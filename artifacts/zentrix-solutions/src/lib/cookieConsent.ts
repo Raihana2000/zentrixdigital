@@ -4,14 +4,14 @@ declare global {
   }
 }
 
+export const CONSENT_KEY = 'zentrix_cookie_consent';
+
 export interface CookieConsent {
   necessary: true;
   analytics: boolean;
   timestamp: number;
   version: 1;
 }
-
-export const CONSENT_KEY = 'zentrix_cookie_consent';
 
 export function getCookieConsent(): CookieConsent | null {
   try {
@@ -27,23 +27,29 @@ export function getCookieConsent(): CookieConsent | null {
   }
 }
 
-export function saveCookieConsent(analytics: boolean): CookieConsent {
-  const consent: CookieConsent = {
-    necessary: true,
-    analytics,
-    timestamp: Date.now(),
-    version: 1,
-  };
-  localStorage.setItem(CONSENT_KEY, JSON.stringify(consent));
-  return consent;
+export function saveCookieConsent(analytics: boolean): void {
+  try {
+    localStorage.setItem(CONSENT_KEY, JSON.stringify({
+      necessary: true,
+      analytics,
+      timestamp: Date.now(),
+      version: 1,
+    }));
+  } catch {
+    // ignore
+  }
 }
 
 export function clearCookieConsent(): void {
-  localStorage.removeItem(CONSENT_KEY);
+  try {
+    localStorage.removeItem(CONSENT_KEY);
+  } catch {
+    // ignore
+  }
 }
 
 if (typeof window !== 'undefined') {
-  window.resetCookieConsent = () => {
+  window.resetCookieConsent = function () {
     localStorage.removeItem(CONSENT_KEY);
     location.reload();
   };
