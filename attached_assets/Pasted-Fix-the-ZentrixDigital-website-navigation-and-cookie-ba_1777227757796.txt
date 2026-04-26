@@ -1,0 +1,70 @@
+Fix the ZentrixDigital website navigation and cookie banner.
+
+Tasks:
+
+1. Cookie banner
+- Add a GDPR/AVG-friendly cookie banner that appears on first visit on both desktop and mobile.
+- It must support Dutch and English based on the current language toggle.
+- Dutch text:
+  "Wij gebruiken cookies om onze website goed te laten werken en om de gebruikerservaring te verbeteren. Je kunt cookies accepteren of weigeren."
+  Buttons:
+  "Accepteren"
+  "Weigeren"
+- English text:
+  "We use cookies to keep our website working properly and to improve the user experience. You can accept or reject cookies."
+  Buttons:
+  "Accept"
+  "Reject"
+- Save the choice in localStorage so the banner does not keep appearing after a choice.
+- Add a small link/button in the footer called:
+  NL: "Cookie-instellingen"
+  EN: "Cookie settings"
+  When clicked, it should reopen the cookie banner/preferences.
+- Make the banner responsive and visible on mobile, tablet, and desktop.
+- Design: clean, premium, dark style matching ZentrixDigital, with blue accent buttons.
+
+2. Mobile navigation issue
+- On mobile, the "Oplossingen" menu is currently missing.
+- Add it to the mobile menu.
+- It must work in both Dutch and English.
+
+Dutch mobile menu items:
+Home
+Over ons
+Diensten
+Oplossingen
+Contact
+
+English mobile menu items:
+Home
+About us
+Services
+Solutions
+Contact
+
+3. Oplossingen dropdown translations
+Desktop:
+- Dutch: "Oplossingen"
+- English: "Solutions"
+
+Dropdown Dutch:
+Website voor ZZP
+Website voor bedrijven
+CRM systeem laten maken
+Boekingssysteem laten maken
+Procesautomatisering
+
+Dropdown English:
+Website for freelancers
+Website for businesses
+CRM system development
+Booking system development
+Process automation
+
+4. Make sure the language toggle updates all navigation labels, dropdown items, mobile menu items, footer cookie settings link, and cookie banner text.
+
+5. Do not change the visual design of the website except what is needed for the cookie banner and mobile menu fix.
+
+6. Test the site locally after changes.
+Then commit and push everything to GitHub with a clear commit message:
+"Fix mobile solutions menu and cookie banner"
