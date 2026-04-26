@@ -20,7 +20,6 @@ const content = {
     save: 'Voorkeuren opslaan',
     privacyLink: 'Privacybeleid',
     cookieLink: 'Cookiebeleid',
-    cookieSettingsLabel: 'Cookie-instellingen',
     privacyHref: '/privacybeleid',
     cookieHref: '/cookies',
   },
@@ -39,7 +38,6 @@ const content = {
     save: 'Save preferences',
     privacyLink: 'Privacy policy',
     cookieLink: 'Cookie policy',
-    cookieSettingsLabel: 'Cookie settings',
     privacyHref: '/en/privacy-policy',
     cookieHref: '/en/cookies',
   },
@@ -52,11 +50,13 @@ const CookieBanner: React.FC = () => {
   const [bannerVisible, setBannerVisible] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [analyticsEnabled, setAnalyticsEnabled] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const consent = getCookieConsent();
     if (!consent) {
-      const timer = setTimeout(() => setBannerVisible(true), 400);
+      const timer = setTimeout(() => setBannerVisible(true), 500);
       return () => clearTimeout(timer);
     }
     return undefined;
@@ -64,10 +64,10 @@ const CookieBanner: React.FC = () => {
 
   useEffect(() => {
     const handler = () => {
+      const consent = getCookieConsent();
+      setAnalyticsEnabled(consent ? consent.analytics : false);
       setModalVisible(true);
       setBannerVisible(false);
-      const consent = getCookieConsent();
-      if (consent) setAnalyticsEnabled(consent.analytics);
     };
     window.addEventListener('zentrix-open-cookie-settings', handler);
     return () => window.removeEventListener('zentrix-open-cookie-settings', handler);
@@ -86,8 +86,8 @@ const CookieBanner: React.FC = () => {
   const openSettings = useCallback(() => {
     const consent = getCookieConsent();
     setAnalyticsEnabled(consent ? consent.analytics : false);
-    setModalVisible(true);
     setBannerVisible(false);
+    setModalVisible(true);
   }, []);
 
   const savePreferences = useCallback(() => {
@@ -96,147 +96,289 @@ const CookieBanner: React.FC = () => {
   }, [analyticsEnabled]);
 
   const closeModal = useCallback(() => {
-    if (getCookieConsent()) {
-      setModalVisible(false);
-    } else {
-      setModalVisible(false);
+    setModalVisible(false);
+    if (!getCookieConsent()) {
       setBannerVisible(true);
     }
   }, []);
 
+  if (!mounted) return null;
+
   return (
     <>
-      {/* ── Cookie Banner ── */}
+      {/* ── Cookie Banner ─────────────────────────────────────────── */}
       {bannerVisible && (
         <div
           data-testid="cookie-banner"
-          className="fixed bottom-0 left-0 right-0 z-[9000] px-4 pb-4 pointer-events-none"
-          style={{ paddingBottom: 'env(safe-area-inset-bottom, 1rem)' }}
+          role="dialog"
+          aria-label={c.modalTitle}
+          style={{
+            position: 'fixed',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            zIndex: 9000,
+            padding: '0 16px 16px',
+          }}
         >
-          <div className="pointer-events-auto max-w-3xl mx-auto rounded-2xl border border-blue-500/[0.45] bg-[#0b0f1a]/95 backdrop-blur-md shadow-[0_-4px_60px_rgba(0,0,0,0.6),0_0_0_1px_rgba(59,130,246,0.10)] p-5 sm:p-6">
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-              <div className="flex-1 min-w-0">
-                <p className="text-white/80 text-sm leading-relaxed">{c.bannerText}</p>
-                <div className="flex items-center gap-3 mt-2">
-                  <Link href={c.privacyHref} className="text-xs text-blue-400/70 hover:text-blue-300 underline underline-offset-2 transition-colors duration-200">
-                    {c.privacyLink}
-                  </Link>
-                  <span className="text-white/20 text-xs">·</span>
-                  <Link href={c.cookieHref} className="text-xs text-blue-400/70 hover:text-blue-300 underline underline-offset-2 transition-colors duration-200">
-                    {c.cookieLink}
-                  </Link>
-                </div>
-              </div>
-              <div className="flex flex-wrap items-center gap-2 shrink-0">
-                <button
-                  onClick={openSettings}
-                  data-testid="cookie-settings-btn"
-                  className="px-4 py-2 rounded-full text-xs font-semibold text-white/70 border border-white/[0.12] bg-white/[0.05] hover:bg-white/[0.10] hover:text-white transition-all duration-200"
-                >
-                  {c.settings}
-                </button>
-                <button
-                  onClick={rejectAll}
-                  data-testid="cookie-reject-btn"
-                  className="px-4 py-2 rounded-full text-xs font-semibold text-white/70 border border-white/[0.12] bg-white/[0.05] hover:bg-white/[0.10] hover:text-white transition-all duration-200"
-                >
-                  {c.reject}
-                </button>
-                <button
-                  onClick={acceptAll}
-                  data-testid="cookie-accept-btn"
-                  className="px-4 py-2 rounded-full text-xs font-bold text-white bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 shadow-[0_0_16px_rgba(37,99,235,0.35)] hover:shadow-[0_0_24px_rgba(37,99,235,0.5)] transition-all duration-200"
-                >
-                  {c.acceptAll}
-                </button>
-              </div>
+          {/* inner card */}
+          <div
+            style={{
+              maxWidth: '760px',
+              margin: '0 auto',
+              borderRadius: '16px',
+              border: '1px solid rgba(59,130,246,0.40)',
+              background: 'rgba(11,15,26,0.98)',
+              boxShadow: '0 -4px 40px rgba(0,0,0,0.55), 0 0 0 1px rgba(59,130,246,0.08)',
+              padding: '20px',
+            }}
+          >
+            {/* text + links row */}
+            <p
+              style={{
+                color: 'rgba(255,255,255,0.82)',
+                fontSize: '14px',
+                lineHeight: '1.6',
+                marginBottom: '10px',
+              }}
+            >
+              {c.bannerText}
+            </p>
+
+            <div style={{ display: 'flex', gap: '12px', marginBottom: '16px' }}>
+              <Link href={c.privacyHref} style={{ color: 'rgba(96,165,250,0.75)', fontSize: '12px', textDecoration: 'underline', textUnderlineOffset: '2px' }}>
+                {c.privacyLink}
+              </Link>
+              <span style={{ color: 'rgba(255,255,255,0.2)', fontSize: '12px' }}>·</span>
+              <Link href={c.cookieHref} style={{ color: 'rgba(96,165,250,0.75)', fontSize: '12px', textDecoration: 'underline', textUnderlineOffset: '2px' }}>
+                {c.cookieLink}
+              </Link>
+            </div>
+
+            {/* buttons row — wraps on mobile */}
+            <div
+              style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '8px',
+                alignItems: 'center',
+              }}
+            >
+              <button
+                onClick={openSettings}
+                data-testid="cookie-settings-btn"
+                style={{
+                  padding: '10px 18px',
+                  borderRadius: '999px',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  color: 'rgba(255,255,255,0.65)',
+                  border: '1px solid rgba(255,255,255,0.14)',
+                  background: 'rgba(255,255,255,0.05)',
+                  cursor: 'pointer',
+                  minHeight: '44px',
+                  WebkitTapHighlightColor: 'transparent',
+                }}
+              >
+                {c.settings}
+              </button>
+              <button
+                onClick={rejectAll}
+                data-testid="cookie-reject-btn"
+                style={{
+                  padding: '10px 18px',
+                  borderRadius: '999px',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  color: 'rgba(255,255,255,0.65)',
+                  border: '1px solid rgba(255,255,255,0.14)',
+                  background: 'rgba(255,255,255,0.05)',
+                  cursor: 'pointer',
+                  minHeight: '44px',
+                  WebkitTapHighlightColor: 'transparent',
+                }}
+              >
+                {c.reject}
+              </button>
+              <button
+                onClick={acceptAll}
+                data-testid="cookie-accept-btn"
+                style={{
+                  padding: '10px 22px',
+                  borderRadius: '999px',
+                  fontSize: '13px',
+                  fontWeight: 700,
+                  color: '#fff',
+                  background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
+                  border: 'none',
+                  boxShadow: '0 0 18px rgba(37,99,235,0.40)',
+                  cursor: 'pointer',
+                  minHeight: '44px',
+                  WebkitTapHighlightColor: 'transparent',
+                }}
+              >
+                {c.acceptAll}
+              </button>
             </div>
           </div>
         </div>
       )}
 
-      {/* ── Preferences Modal ── */}
+      {/* ── Preferences Modal ─────────────────────────────────────── */}
       {modalVisible && (
         <div
           data-testid="cookie-modal"
-          className="fixed inset-0 z-[9100] flex items-end sm:items-center justify-center p-4"
-          style={{ background: 'rgba(0,0,0,0.70)', backdropFilter: 'blur(4px)' }}
+          role="dialog"
+          aria-modal="true"
+          aria-label={c.modalTitle}
           onClick={(e) => { if (e.target === e.currentTarget) closeModal(); }}
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 9100,
+            display: 'flex',
+            alignItems: 'flex-end',
+            justifyContent: 'center',
+            padding: '16px',
+            background: 'rgba(0,0,0,0.72)',
+          }}
         >
-          <div className="w-full max-w-md rounded-2xl border border-blue-500/[0.40] bg-[#0d1120] shadow-[0_20px_80px_rgba(0,0,0,0.7)] overflow-hidden">
-            {/* Modal header */}
-            <div className="flex items-center justify-between px-6 py-5 border-b border-blue-500/[0.15]">
-              <h2 className="text-base font-bold text-white tracking-tight">{c.modalTitle}</h2>
+          {/* card — anchored bottom on mobile, centered on larger screens */}
+          <div
+            style={{
+              width: '100%',
+              maxWidth: '440px',
+              borderRadius: '18px',
+              border: '1px solid rgba(59,130,246,0.35)',
+              background: '#0d1120',
+              boxShadow: '0 20px 80px rgba(0,0,0,0.7)',
+              overflow: 'hidden',
+              marginBottom: 'env(safe-area-inset-bottom, 0px)',
+            }}
+          >
+            {/* header */}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 24px 16px', borderBottom: '1px solid rgba(59,130,246,0.12)' }}>
+              <h2 style={{ color: '#fff', fontSize: '15px', fontWeight: 700, letterSpacing: '-0.01em', margin: 0 }}>{c.modalTitle}</h2>
               <button
                 onClick={closeModal}
-                className="w-8 h-8 rounded-full flex items-center justify-center text-white/40 hover:text-white hover:bg-white/[0.08] transition-all duration-200"
                 aria-label="Sluiten"
+                style={{
+                  width: '32px',
+                  height: '32px',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  background: 'none',
+                  border: 'none',
+                  color: 'rgba(255,255,255,0.4)',
+                  cursor: 'pointer',
+                  padding: 0,
+                  minHeight: '44px',
+                  minWidth: '44px',
+                }}
               >
-                <X className="w-4 h-4" />
+                <X size={16} />
               </button>
             </div>
 
-            {/* Modal body */}
-            <div className="px-6 py-5 flex flex-col gap-4">
-              <p className="text-xs text-white/50 leading-relaxed">{c.modalSubtitle}</p>
+            {/* body */}
+            <div style={{ padding: '20px 24px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              <p style={{ color: 'rgba(255,255,255,0.48)', fontSize: '12px', lineHeight: '1.6', margin: 0 }}>{c.modalSubtitle}</p>
 
-              {/* Necessary cookies */}
-              <div className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/[0.07]">
-                <Shield className="w-5 h-5 text-blue-400/80 shrink-0 mt-0.5" />
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-semibold text-white mb-1">{c.necessary}</p>
-                  <p className="text-xs text-white/50 leading-relaxed">{c.necessaryDesc}</p>
+              {/* Necessary */}
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px', padding: '14px', borderRadius: '12px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
+                <Shield size={18} style={{ color: 'rgba(96,165,250,0.8)', flexShrink: 0, marginTop: '1px' }} />
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <p style={{ color: '#fff', fontSize: '13px', fontWeight: 600, margin: '0 0 3px' }}>{c.necessary}</p>
+                  <p style={{ color: 'rgba(255,255,255,0.48)', fontSize: '11px', lineHeight: '1.55', margin: 0 }}>{c.necessaryDesc}</p>
                 </div>
-                <span className="text-[10px] font-bold text-blue-400/70 uppercase tracking-wider mt-0.5 shrink-0">
+                <span style={{ color: 'rgba(96,165,250,0.65)', fontSize: '10px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', flexShrink: 0, marginTop: '2px' }}>
                   {c.alwaysOn}
                 </span>
               </div>
 
-              {/* Analytics cookies */}
-              <div className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/[0.07]">
-                <BarChart3 className="w-5 h-5 text-blue-400/80 shrink-0 mt-0.5" />
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-semibold text-white mb-1">{c.analytics}</p>
-                  <p className="text-xs text-white/50 leading-relaxed">{c.analyticsDesc}</p>
+              {/* Analytics */}
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px', padding: '14px', borderRadius: '12px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
+                <BarChart3 size={18} style={{ color: 'rgba(96,165,250,0.8)', flexShrink: 0, marginTop: '1px' }} />
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <p style={{ color: '#fff', fontSize: '13px', fontWeight: 600, margin: '0 0 3px' }}>{c.analytics}</p>
+                  <p style={{ color: 'rgba(255,255,255,0.48)', fontSize: '11px', lineHeight: '1.55', margin: 0 }}>{c.analyticsDesc}</p>
                 </div>
+                {/* toggle */}
                 <button
                   role="switch"
                   aria-checked={analyticsEnabled}
                   data-testid="analytics-toggle"
                   onClick={() => setAnalyticsEnabled(v => !v)}
-                  className={`relative shrink-0 mt-0.5 w-10 h-5 rounded-full transition-all duration-200 focus:outline-none ${
-                    analyticsEnabled
-                      ? 'bg-blue-600 shadow-[0_0_10px_rgba(37,99,235,0.45)]'
-                      : 'bg-white/[0.12]'
-                  }`}
+                  style={{
+                    flexShrink: 0,
+                    marginTop: '2px',
+                    width: '40px',
+                    height: '22px',
+                    borderRadius: '999px',
+                    background: analyticsEnabled ? '#2563eb' : 'rgba(255,255,255,0.12)',
+                    border: 'none',
+                    cursor: 'pointer',
+                    position: 'relative',
+                    transition: 'background 0.2s',
+                    minWidth: '44px',
+                    minHeight: '44px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    padding: '0 2px',
+                    boxShadow: analyticsEnabled ? '0 0 10px rgba(37,99,235,0.4)' : 'none',
+                  }}
                 >
                   <span
-                    className={`absolute top-0.5 left-0.5 w-4 h-4 rounded-full bg-white shadow-sm transition-transform duration-200 ${
-                      analyticsEnabled ? 'translate-x-5' : 'translate-x-0'
-                    }`}
+                    style={{
+                      display: 'block',
+                      width: '18px',
+                      height: '18px',
+                      borderRadius: '50%',
+                      background: '#fff',
+                      boxShadow: '0 1px 4px rgba(0,0,0,0.3)',
+                      transform: analyticsEnabled ? 'translateX(18px)' : 'translateX(0)',
+                      transition: 'transform 0.2s',
+                    }}
                   />
                 </button>
               </div>
             </div>
 
-            {/* Modal footer */}
-            <div className="px-6 py-5 border-t border-blue-500/[0.15] flex items-center justify-between gap-3">
-              <div className="flex items-center gap-3">
-                <Link href={c.privacyHref} onClick={closeModal} className="text-xs text-blue-400/60 hover:text-blue-300 underline underline-offset-2 transition-colors duration-200">
+            {/* footer */}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 24px 20px', borderTop: '1px solid rgba(59,130,246,0.12)', gap: '12px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                <Link href={c.privacyHref} onClick={closeModal} style={{ color: 'rgba(96,165,250,0.6)', fontSize: '11px', textDecoration: 'underline', textUnderlineOffset: '2px' }}>
                   {c.privacyLink}
                 </Link>
-                <span className="text-white/20 text-xs">·</span>
-                <Link href={c.cookieHref} onClick={closeModal} className="text-xs text-blue-400/60 hover:text-blue-300 underline underline-offset-2 transition-colors duration-200">
+                <span style={{ color: 'rgba(255,255,255,0.18)', fontSize: '11px' }}>·</span>
+                <Link href={c.cookieHref} onClick={closeModal} style={{ color: 'rgba(96,165,250,0.6)', fontSize: '11px', textDecoration: 'underline', textUnderlineOffset: '2px' }}>
                   {c.cookieLink}
                 </Link>
               </div>
               <button
                 onClick={savePreferences}
                 data-testid="cookie-save-btn"
-                className="px-5 py-2 rounded-full text-xs font-bold text-white bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 shadow-[0_0_14px_rgba(37,99,235,0.35)] hover:shadow-[0_0_22px_rgba(37,99,235,0.5)] transition-all duration-200 flex items-center gap-1.5"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  padding: '10px 20px',
+                  borderRadius: '999px',
+                  fontSize: '13px',
+                  fontWeight: 700,
+                  color: '#fff',
+                  background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
+                  border: 'none',
+                  boxShadow: '0 0 14px rgba(37,99,235,0.35)',
+                  cursor: 'pointer',
+                  minHeight: '44px',
+                  WebkitTapHighlightColor: 'transparent',
+                }}
               >
                 {c.save}
-                <ChevronRight className="w-3 h-3" />
+                <ChevronRight size={13} />
               </button>
             </div>
           </div>
