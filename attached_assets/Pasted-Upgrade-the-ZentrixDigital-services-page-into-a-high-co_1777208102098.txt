@@ -1,0 +1,172 @@
+Upgrade the ZentrixDigital /services page into a high-converting sales page.
+
+Goal:
+Make the services page stronger, more trustworthy, SEO-friendly, and focused on generating leads.
+
+IMPORTANT:
+- Do NOT redesign the entire website.
+- Keep the current ZentrixDigital style.
+- Keep the website responsive for desktop, tablet, and mobile.
+- Keep NL/EN language behavior working.
+- Do not break existing navigation, footer, WhatsApp button, or contact links.
+
+Update the /services page content with this structure:
+
+1. Hero section
+NL headline:
+Professionele websites en systemen die klanten opleveren
+
+NL subheadline:
+Geen standaard websites. Wij bouwen digitale oplossingen die jouw bedrijf laten groeien — meer aanvragen, meer overzicht en meer omzet.
+
+EN headline:
+Professional websites and systems that generate customers
+
+EN subheadline:
+No generic websites. We build digital solutions that help your business grow — more inquiries, more structure and more revenue.
+
+CTA:
+NL: Vraag gratis analyse aan
+EN: Request free analysis
+
+2. Problem section
+Explain clearly:
+- Many websites look good but do not convert
+- Visitors do not know what action to take
+- Businesses lose potential customers silently
+- Manual processes waste time
+- Weak online structure hurts trust
+
+3. Solution section
+Explain that ZentrixDigital builds:
+- Conversion-focused websites
+- Custom applications
+- CRM systems
+- Booking systems
+- Business automation
+- SEO-ready digital structures
+
+4. Services cards
+Create clean cards for:
+
+NL:
+- Website laten maken
+- Applicatie laten maken
+- CRM systeem laten maken
+- Boekingssysteem laten maken
+- Bedrijfsprocessen automatiseren
+
+EN:
+- Website Development
+- Application Development
+- CRM System Development
+- Booking System Development
+- Business Automation
+
+Each card must include:
+- short benefit-driven description
+- link to the matching page if it exists
+- clear CTA text
+
+5. Results section
+Add result-driven benefits:
+NL:
+- Meer aanvragen
+- Hogere conversie
+- Professionele uitstraling
+- Minder handmatig werk
+- Meer overzicht
+
+EN:
+- More inquiries
+- Higher conversion
+- Professional brand image
+- Less manual work
+- More business overview
+
+6. Social proof / example cases section
+Add this carefully without claiming fake real clients.
+
+Use label:
+NL: Voorbeeldscenario’s
+EN: Example scenarios
+
+Add 3 example scenarios:
+- Makelaar: betere website structuur en duidelijke CTA’s kunnen meer aanvragen opleveren
+- Beauty salon: online boekingssysteem kan afspraken makkelijker maken
+- Klein bedrijf: CRM systeem kan klantopvolging en overzicht verbeteren
+
+IMPORTANT:
+Do not claim these are real completed client cases unless already present on the site.
+Use “voorbeeldscenario” language.
+
+7. Target audience section
+NL:
+Voor wie is dit?
+- Makelaars
+- Advocaten
+- Beauty salons
+- ZZP’ers
+- Kleine bedrijven
+
+EN:
+Who is this for?
+- Real estate agencies
+- Law firms
+- Beauty salons
+- Freelancers
+- Small businesses
+
+8. Final CTA section
+NL:
+Stop met klanten mislopen.
+Vraag een gratis analyse aan en ontdek waar jouw website of proces sterker kan.
+
+EN:
+Stop losing potential customers.
+Request a free analysis and discover where your website or process can perform better.
+
+9. SEO requirements
+Update page title and meta description.
+
+NL title:
+Diensten | Websites, Applicaties & Slimme Systemen | ZentrixDigital
+
+NL meta description:
+ZentrixDigital bouwt professionele websites, applicaties, CRM systemen, boekingssystemen en automatisering voor bedrijven die meer klanten en overzicht willen.
+
+EN title:
+Services | Websites, Applications & Smart Systems | ZentrixDigital
+
+EN meta description:
+ZentrixDigital builds professional websites, applications, CRM systems, booking systems and automation for businesses that want more customers and structure.
+
+10. Internal linking
+Make sure the services page links to:
+- /website-laten-maken-zzp/
+- /website-laten-maken-bedrijven/
+- /crm-systeem-laten-maken/
+- /boekingssysteem-laten-maken/
+- /bedrijfsprocessen-automatiseren/
+- /en/website-for-freelancers/
+- /en/website-for-businesses/
+- /en/crm-system-development/
+- /en/booking-system-development/
+- /en/business-automation/
+
+Only show Dutch links in NL mode and English links in EN mode.
+
+11. Technical checks
+- Run build/check if available.
+- Fix any errors.
+- Do not remove existing pages.
+- Do not break sitemap.xml.
+- Do not break robots.txt.
+- Keep all links crawlable normal anchor links.
+
+After finishing:
+1. Show changed files.
+2. Commit changes with message:
+   "Upgrade services page for conversion and SEO"
+3. Push to GitHub:
+   origin main
