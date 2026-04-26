@@ -160,9 +160,27 @@ const Footer = () => {
           <p className="text-xs text-white">
             &copy; {currentYear} ZentrixDigital. {t.footer.rights}
           </p>
-          <p className="text-xs text-white">
-            www.zentrixdigital.eu
-          </p>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 justify-center sm:justify-end">
+            <Link
+              href={language === 'nl' ? '/privacybeleid' : '/en/privacy-policy'}
+              className="text-xs text-white/50 hover:text-white transition-colors duration-200"
+            >
+              {language === 'nl' ? 'Privacybeleid' : 'Privacy policy'}
+            </Link>
+            <Link
+              href={language === 'nl' ? '/algemene-voorwaarden' : '/en/terms-and-conditions'}
+              className="text-xs text-white/50 hover:text-white transition-colors duration-200"
+            >
+              {language === 'nl' ? 'Algemene voorwaarden' : 'Terms'}
+            </Link>
+            <button
+              onClick={() => window.dispatchEvent(new Event('zentrix-open-cookie-settings'))}
+              data-testid="footer-cookie-settings"
+              className="text-xs text-white/50 hover:text-white transition-colors duration-200 cursor-pointer"
+            >
+              {language === 'nl' ? 'Cookie-instellingen' : 'Cookie settings'}
+            </button>
+          </div>
         </div>
 
       </div>

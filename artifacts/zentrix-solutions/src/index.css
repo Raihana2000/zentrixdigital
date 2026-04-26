@@ -329,6 +329,16 @@
 
 /* ── Responsive page top clearance (matches navbar height at each bp) */
 .page-top-pad { padding-top: 78px; }
+
+/* ── Prose styles for legal pages ───────────────────────────────── */
+.prose-zentrix { color: rgba(255,255,255,0.75); font-size: 0.9375rem; line-height: 1.75; }
+.prose-zentrix h2 { color: #fff; font-size: 1.125rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem; letter-spacing: -0.01em; }
+.prose-zentrix p { margin-bottom: 1rem; }
+.prose-zentrix ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
+.prose-zentrix ul li { margin-bottom: 0.375rem; }
+.prose-zentrix a { color: rgba(96,165,250,0.9); text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s; }
+.prose-zentrix a:hover { color: rgb(147,197,253); }
+.prose-zentrix strong { color: rgba(255,255,255,0.9); font-weight: 600; }
 @media (min-width: 480px)  { .page-top-pad { padding-top: 88px; } }
 @media (min-width: 768px)  { .page-top-pad { padding-top: 100px; } }
 @media (min-width: 1024px) { .page-top-pad { padding-top: 118px; } }

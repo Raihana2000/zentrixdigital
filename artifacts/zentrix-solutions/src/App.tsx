@@ -8,6 +8,7 @@ import { TranslationProvider } from "@/context/TranslationContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import CookieBanner from "@/components/CookieBanner";
 
 // Pages
 import Home from "@/pages/home";
@@ -32,6 +33,14 @@ import SeoBoekingssysteem from "@/pages/seo-boekingssysteem";
 import SeoBookingEN from "@/pages/seo-booking-en";
 import SeoAutomatisering from "@/pages/seo-automatisering";
 import SeoAutomationEN from "@/pages/seo-automation-en";
+
+// Legal pages
+import CookiesNL from "@/pages/cookies-nl";
+import CookiesEN from "@/pages/cookies-en";
+import PrivacyNL from "@/pages/privacy-nl";
+import PrivacyEN from "@/pages/privacy-en";
+import TermsNL from "@/pages/terms-nl";
+import TermsEN from "@/pages/terms-en";
 
 const queryClient = new QueryClient();
 
@@ -64,11 +73,20 @@ function Router() {
           <Route path="/bedrijfsprocessen-automatiseren" component={SeoAutomatisering} />
           <Route path="/en/business-automation" component={SeoAutomationEN} />
 
+          {/* Legal pages */}
+          <Route path="/cookies" component={CookiesNL} />
+          <Route path="/en/cookies" component={CookiesEN} />
+          <Route path="/privacybeleid" component={PrivacyNL} />
+          <Route path="/en/privacy-policy" component={PrivacyEN} />
+          <Route path="/algemene-voorwaarden" component={TermsNL} />
+          <Route path="/en/terms-and-conditions" component={TermsEN} />
+
           <Route component={NotFound} />
         </Switch>
       </main>
       <Footer />
       <WhatsAppButton />
+      <CookieBanner />
     </div>
   );
 }
