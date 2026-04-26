@@ -19,7 +19,7 @@ const stagger: Variants = {
 const SERVICE_ICONS = [Code2, Cpu, Wrench, LineChart];
 
 const Services = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   useEffect(() => {
     window.scrollTo({ top: 0 });
@@ -122,24 +122,29 @@ const Services = () => {
         <div className="max-w-5xl mx-auto">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
             <motion.p variants={fadeUp} className="text-xs text-blue-400/70 uppercase tracking-widest font-semibold mb-3">
-              Oplossingen op maat
+              {language === 'nl' ? 'Oplossingen op maat' : 'Tailored solutions'}
             </motion.p>
             <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl font-bold text-white mb-8 tracking-tight">
-              Specifieke oplossingen voor uw situatie
+              {language === 'nl' ? 'Specifieke oplossingen voor uw situatie' : 'Specific solutions for your situation'}
             </motion.h2>
             <motion.div variants={stagger} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {[
+              {(language === 'nl' ? [
                 { href: '/website-laten-maken-zzp', label: 'Website laten maken voor ZZP', desc: 'Professionele website voor zelfstandige ondernemers' },
                 { href: '/website-laten-maken-bedrijven', label: 'Website laten maken voor bedrijven', desc: 'Bedrijfswebsite die leads genereert en vertrouwen opbouwt' },
                 { href: '/crm-systeem-laten-maken', label: 'CRM systeem laten maken', desc: 'Maatwerk klantbeheersysteem voor meer omzet' },
                 { href: '/boekingssysteem-laten-maken', label: 'Boekingssysteem laten maken', desc: 'Online afspraken automatisch inplannen en beheren' },
                 { href: '/bedrijfsprocessen-automatiseren', label: 'Bedrijfsprocessen automatiseren', desc: 'Workflows stroomlijnen en handmatig werk reduceren' },
-                { href: '/en/website-for-businesses', label: 'Website for Businesses (EN)', desc: 'Professional websites for international businesses' },
-              ].map(({ href, label, desc }) => (
+              ] : [
+                { href: '/en/website-for-freelancers', label: 'Website for Freelancers', desc: 'Professional website for independent professionals' },
+                { href: '/en/website-for-businesses', label: 'Website for Businesses', desc: 'Business website that generates leads and builds trust' },
+                { href: '/en/crm-system-development', label: 'CRM System Development', desc: 'Custom client management system for higher revenue' },
+                { href: '/en/booking-system-development', label: 'Booking System Development', desc: 'Automate appointment scheduling and management online' },
+                { href: '/en/business-automation', label: 'Business Automation', desc: 'Streamline workflows and reduce manual work' },
+              ]).map(({ href, label, desc }) => (
                 <motion.div key={href} variants={fadeUp}>
                   <Link
                     href={href}
-                    className="group flex flex-col gap-2 p-5 rounded-2xl border border-blue-500/[0.35] bg-gradient-to-b from-[#0d1525]/80 to-[#080d18]/60 hover:border-blue-400/[0.75] transition-all duration-300 h-full"
+                    className="group flex flex-col gap-2 p-5 rounded-2xl border border-blue-500/[0.55] bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 hover:border-blue-400/[0.90] transition-all duration-300 h-full"
                   >
                     <span className="text-sm font-semibold text-white group-hover:text-blue-300 transition-colors duration-200 flex items-center gap-1.5">
                       {label}

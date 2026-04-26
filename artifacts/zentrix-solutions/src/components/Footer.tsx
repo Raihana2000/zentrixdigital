@@ -5,7 +5,7 @@ import { useTranslation } from '@/hooks/useTranslation';
 import logoPath from "@assets/ChatGPT_Image_20_apr_2026,_10_49_46_1776675127194.png";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   const solutionsNL = [
@@ -24,6 +24,8 @@ const Footer = () => {
     { href: '/en/business-automation', label: 'Business Automation' },
   ];
 
+  const solutions = language === 'nl' ? solutionsNL : solutionsEN;
+
   return (
     <footer className="relative bg-[#060606] mt-24 overflow-hidden">
       {/* Top glow line */}
@@ -35,17 +37,16 @@ const Footer = () => {
       <div className="relative max-w-7xl mx-auto px-6 md:px-10 pt-16 pb-10">
 
         {/* ── Main grid ── */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-10 mb-16">
 
           {/* Brand column */}
-          <div className="md:col-span-4 flex flex-col gap-6">
+          <div className="sm:col-span-2 md:col-span-4 flex flex-col gap-6">
             <Link href="/" className="flex items-center w-fit" data-testid="footer-logo">
               <img src={logoPath} alt="ZentrixDigital" className="h-9 w-auto object-contain opacity-90" />
             </Link>
             <p className="text-white text-sm leading-relaxed max-w-xs">
               {t.footer.tagline}
             </p>
-            {/* CTA hint */}
             <Link href="/contact">
               <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-400 hover:text-blue-300 uppercase tracking-widest transition-colors duration-200 group">
                 {t.home.primaryCta}
@@ -97,11 +98,11 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Oplossingen / Solutions column */}
+          {/* Oplossingen / Solutions column — language-specific */}
           <div className="md:col-span-3 flex flex-col gap-5">
-            <h4 className="text-white font-semibold text-sm uppercase tracking-widest">Oplossingen</h4>
+            <h4 className="text-white font-semibold text-sm uppercase tracking-widest">{t.footer.solutionsLabel}</h4>
             <nav className="flex flex-col gap-3">
-              {solutionsNL.map(({ href, label }) => (
+              {solutions.map(({ href, label }) => (
                 <Link
                   key={href}
                   href={href}
@@ -113,44 +114,45 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Solutions EN column */}
+          {/* Contact column */}
           <div className="md:col-span-3 flex flex-col gap-5">
-            <h4 className="text-white font-semibold text-sm uppercase tracking-widest">Solutions</h4>
-            <nav className="flex flex-col gap-3">
-              {solutionsEN.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-white hover:text-blue-300 transition-colors duration-200 text-sm w-fit"
-                >
-                  {label}
-                </Link>
-              ))}
-            </nav>
-
-            {/* Contact info — compact */}
-            <div className="mt-4 pt-4 border-t border-blue-500/[0.15] flex flex-col gap-2.5">
+            <h4 className="text-white font-semibold text-sm uppercase tracking-widest">{t.nav.contact}</h4>
+            <address className="flex flex-col gap-3 not-italic">
+              <p className="text-white text-sm">{t.contact.company}</p>
+              <p className="text-white text-sm">{t.contact.location}</p>
               <a
                 href="tel:+31683284995"
-                className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-xs transition-colors duration-200 w-fit"
+                className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
               >
-                <Phone className="w-3 h-3 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
+                <Phone className="w-3.5 h-3.5 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
                 {t.contact.phone}
               </a>
               <a
                 href="mailto:info@zentrixdigital.eu"
-                className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-xs transition-colors duration-200 w-fit"
+                className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-sm transition-colors duration-200 w-fit"
               >
-                <Mail className="w-3 h-3 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
+                <Mail className="w-3.5 h-3.5 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
                 {t.contact.email}
               </a>
-              <div className="flex items-center gap-2 mt-1">
-                <Clock className="w-3 h-3 text-blue-400 shrink-0" />
-                <span className="text-xs text-white">{t.contact.hours.lines[0]}</span>
+            </address>
+
+            {/* Opening hours */}
+            <div className="pt-4 border-t border-blue-500/[0.18]">
+              <div className="flex items-center gap-2 mb-3">
+                <Clock className="w-3.5 h-3.5 text-blue-400 shrink-0" />
+                <p className="text-xs text-white uppercase tracking-widest font-semibold">
+                  {t.contact.hours.title}
+                </p>
               </div>
+              <ul className="flex flex-col gap-1.5">
+                {t.contact.hours.lines.map((line, i) => (
+                  <li key={i} className="text-xs text-white leading-snug">
+                    {line}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
-
         </div>
 
         {/* ── Bottom bar ── */}

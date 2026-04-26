@@ -1,0 +1,112 @@
+Fix the ZentrixDigital website navigation, footer, language behavior, mobile/tablet visibility, and opening hours.
+
+IMPORTANT:
+Do NOT redesign the whole website.
+Keep the current premium ZentrixDigital style.
+Only fix structure, navigation, translations, links, footer, responsiveness, and opening hours.
+
+PROBLEMS TO FIX:
+
+1. Language separation issue
+Currently Dutch and English solution links are shown next to each other in the footer.
+Fix this so:
+- When NL is active, only Dutch labels/pages are shown.
+- When EN is active, only English labels/pages are shown.
+- Do NOT show Dutch and English solution links at the same time.
+- The language toggle should switch the current matching page correctly.
+
+Examples:
+NL:
+Website voor ZZP
+Website voor bedrijven
+CRM systeem laten maken
+Boekingssysteem laten maken
+Procesautomatisering
+
+EN:
+Website for Freelancers
+Website for Businesses
+CRM System Development
+Booking System Development
+Business Automation
+
+2. Add Solutions/Oplossingen to the top navigation
+Add a clear dropdown or navigation item in the header:
+
+NL label:
+Oplossingen
+
+EN label:
+Solutions
+
+It must link/show:
+NL:
+- Website voor ZZP → /website-laten-maken-zzp
+- Website voor bedrijven → /website-laten-maken-bedrijven
+- CRM systeem laten maken → /crm-systeem-laten-maken
+- Boekingssysteem laten maken → /boekingssysteem-laten-maken
+- Procesautomatisering → /bedrijfsprocessen-automatiseren
+
+EN:
+- Website for Freelancers → /en/website-for-freelancers
+- Website for Businesses → /en/website-for-businesses
+- CRM System Development → /en/crm-system-development
+- Booking System Development → /en/booking-system-development
+- Business Automation → /en/business-automation
+
+Make it work on desktop, tablet and mobile.
+
+3. Fix mobile and iPad
+The new solution pages/links are not visible on mobile/iPad.
+Fix responsive navigation so:
+- Mobile menu includes Oplossingen/Solutions
+- Footer links display correctly on mobile/tablet
+- New pages are reachable and styled properly on mobile/tablet
+- No horizontal overflow
+- Buttons and text stay readable
+
+4. Restore opening hours everywhere
+Use these exact opening hours:
+
+NL:
+Maandag t/m donderdag: 09:00 – 17:00
+Vrijdag: 09:00 – 12:00
+Zaterdag: 09:00 – 17:00
+Zondag: Gesloten
+
+EN:
+Monday to Thursday: 09:00 – 17:00
+Friday: 09:00 – 12:00
+Saturday: 09:00 – 17:00
+Sunday: Closed
+
+Show these in the footer and contact sections where opening hours appear.
+
+5. Footer cleanup
+Footer must be clean and language-specific.
+
+NL footer headings:
+- Navigatie
+- Oplossingen
+- Contact
+
+EN footer headings:
+- Navigation
+- Solutions
+- Contact
+
+Do not show both Dutch and English solution columns together.
+
+6. Internal SEO links
+Keep the SEO pages internally linked, but only show links in the active language.
+Use normal crawlable anchor tags.
+
+7. Build and push
+After fixing:
+- Run build/check
+- Fix any errors
+- Show changed files
+- Commit with message:
+  "Fix bilingual navigation footer and responsive SEO links"
+- Push to GitHub:
+  origin main

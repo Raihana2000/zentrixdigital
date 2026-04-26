@@ -3,6 +3,7 @@ export const nl = {
     home: "Home",
     about: "Over ons",
     services: "Diensten",
+    solutions: "Oplossingen",
     contact: "Contact"
   },
   home: {
@@ -392,6 +393,7 @@ export const nl = {
   },
   footer: {
     navLabel: "Navigatie",
+    solutionsLabel: "Oplossingen",
     tagline: "Professionele websites, maatwerk applicaties en slimme digitale systemen voor ondernemers die online resultaat willen.",
     rights: "Alle rechten voorbehouden."
   }

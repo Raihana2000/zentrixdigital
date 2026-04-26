@@ -3,6 +3,7 @@ export const en = {
     home: "Home",
     about: "About",
     services: "Services",
+    solutions: "Solutions",
     contact: "Contact"
   },
   home: {
@@ -392,6 +393,7 @@ export const en = {
   },
   footer: {
     navLabel: "Navigation",
+    solutionsLabel: "Solutions",
     tagline: "Professional websites, custom applications, and smart digital systems for businesses that want real results online.",
     rights: "All rights reserved."
   }
