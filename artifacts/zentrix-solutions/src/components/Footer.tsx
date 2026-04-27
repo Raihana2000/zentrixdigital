@@ -157,6 +157,34 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* ── Populaire diensten ── */}
+        <div className="mb-10 pb-10 border-b border-blue-500/[0.10]">
+          <h4 className="text-white font-semibold text-sm uppercase tracking-widest mb-5">
+            {isNL ? 'Populaire diensten' : 'Popular services'}
+          </h4>
+          <div className="flex flex-wrap gap-x-6 gap-y-2.5">
+            {(isNL ? [
+              { href: '/website-laten-maken-amsterdam', label: 'Website laten maken Amsterdam' },
+              { href: '/webdesign-bedrijf', label: 'Webdesign bedrijf' },
+              { href: '/website-kosten', label: 'Kosten website laten maken' },
+              { href: '/website-voor-bedrijven', label: 'Website voor bedrijven' },
+              { href: '/website-laten-maken-zzp', label: 'Website voor ZZP' },
+              { href: '/website-laten-maken-bedrijven', label: 'Website voor MKB' },
+            ] : [
+              { href: '/website-laten-maken-amsterdam', label: 'Website Amsterdam' },
+              { href: '/webdesign-bedrijf', label: 'Web design agency' },
+              { href: '/website-kosten', label: 'Website pricing' },
+              { href: '/website-voor-bedrijven', label: 'Website for businesses' },
+              { href: '/en/website-for-freelancers', label: 'Website for freelancers' },
+              { href: '/en/website-for-businesses', label: 'Website for companies' },
+            ]).map(({ href, label }) => (
+              <Link key={href} href={href} className="text-white/50 hover:text-blue-300 transition-colors duration-200 text-xs w-fit">
+                {label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* ── Bottom bar ── */}
         <div className="pt-8 border-t border-blue-500/[0.12] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/50">

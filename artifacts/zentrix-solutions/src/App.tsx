@@ -34,6 +34,12 @@ import SeoBookingEN from "@/pages/seo-booking-en";
 import SeoAutomatisering from "@/pages/seo-automatisering";
 import SeoAutomationEN from "@/pages/seo-automation-en";
 
+// SEO traffic pages
+import SeoAmsterdam from "@/pages/seo-amsterdam";
+import SeoWebdesignBedrijf from "@/pages/seo-webdesign-bedrijf";
+import SeoWebsiteKosten from "@/pages/seo-website-kosten";
+import SeoWebsiteVoorBedrijven from "@/pages/seo-website-voor-bedrijven";
+
 // Legal pages
 import CookiesNL from "@/pages/cookies-nl";
 import CookiesEN from "@/pages/cookies-en";
@@ -64,6 +70,12 @@ function Router() {
           <Route path="/en/website-for-freelancers" component={SeoFreelancersEN} />
           <Route path="/website-laten-maken-bedrijven" component={SeoBedrijven} />
           <Route path="/en/website-for-businesses" component={SeoBusinessesEN} />
+
+          {/* SEO traffic pages */}
+          <Route path="/website-laten-maken-amsterdam" component={SeoAmsterdam} />
+          <Route path="/webdesign-bedrijf" component={SeoWebdesignBedrijf} />
+          <Route path="/website-kosten" component={SeoWebsiteKosten} />
+          <Route path="/website-voor-bedrijven" component={SeoWebsiteVoorBedrijven} />
 
           {/* SEO landing pages — systemen & automatisering */}
           <Route path="/crm-systeem-laten-maken" component={SeoCRM} />

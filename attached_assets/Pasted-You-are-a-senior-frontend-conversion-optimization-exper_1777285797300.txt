@@ -1,0 +1,153 @@
+You are a senior frontend + conversion optimization expert.
+
+Goal: Improve my existing website (ZentrixDigital) by adding SEO structure AND a high-converting sales funnel WITHOUT breaking the current design, layout, or styling.
+
+IMPORTANT:
+
+* Do NOT redesign the UI
+* Only enhance and insert sections cleanly
+* Keep everything responsive (mobile + tablet)
+* Maintain existing colors, fonts, spacing
+
+---
+
+## 1. SEO OPTIMIZATION (Homepage)
+
+Update the homepage content:
+
+* Add a clear H1 at the top:
+  "Professionele website laten maken in Amsterdam"
+
+* Add a strong subheadline:
+  "Wij bouwen snelle, moderne websites en slimme systemen die bedrijven helpen meer klanten te krijgen."
+
+* Ensure keywords are naturally used:
+
+  * website laten maken
+  * professionele website
+  * webdesign Amsterdam
+  * meer klanten krijgen
+
+* Add proper semantic structure:
+  h1 → h2 → h3 hierarchy
+
+---
+
+## 2. SALES FUNNEL STRUCTURE
+
+Insert these sections in order:
+
+---
+
+### SECTION 1: HERO (keep existing, just improve CTA)
+
+Add CTA buttons:
+
+* Primary: "Gratis strategiegesprek"
+* Secondary: "Bekijk voorbeelden"
+
+CTA scrolls to contact section.
+
+---
+
+### SECTION 2: PROBLEM SECTION
+
+Add a new section:
+
+Title:
+"Waarom veel websites geen klanten opleveren"
+
+Bullet points:
+
+* Geen duidelijke structuur
+* Slechte conversie
+* Niet geoptimaliseerd voor Google
+* Geen strategie achter de website
+
+---
+
+### SECTION 3: SOLUTION SECTION
+
+Title:
+"Wij bouwen websites die wél klanten opleveren"
+
+Add 3 blocks:
+
+* Conversiegericht design
+* Snelle en moderne techniek
+* SEO geoptimaliseerd
+
+---
+
+### SECTION 4: SOCIAL PROOF
+
+Add placeholder testimonials:
+
+* "Professioneel en snel geleverd"
+* "Onze website levert nu klanten op"
+* "Zeker een aanrader"
+
+---
+
+### SECTION 5: OFFER SECTION
+
+Title:
+"Website laten maken vanaf €700"
+
+Add:
+
+* Clear pricing indication
+* "Binnen 7 dagen live"
+* "Volledig op maat"
+
+---
+
+### SECTION 6: CTA (STRONG CLOSE)
+
+Add a strong closing section:
+
+Title:
+"Wil je meer klanten via je website?"
+
+Buttons:
+
+* "Start nu"
+* "Neem contact op"
+
+---
+
+## 3. CONTACT FUNNEL (IMPORTANT)
+
+Improve contact section:
+
+* Add short form:
+  Name
+  Email
+  Company
+  Message
+
+* Add WhatsApp button (NO visible number)
+
+* Use WhatsApp link with prefilled message
+
+---
+
+## 4. PERFORMANCE
+
+* Keep code clean
+* Do not add heavy libraries
+* Keep fast loading
+* Ensure mobile smooth scrolling
+
+---
+
+## 5. FINAL STEP
+
+After implementing:
+
+* Save all files
+* Commit changes
+* Push to GitHub automatically
+
+Commit message:
+"SEO + Conversion Funnel Optimization"

@@ -1,0 +1,97 @@
+You are a senior SEO strategist, frontend developer and conversion specialist.
+
+Goal:
+Add 4 complete Dutch SEO landing pages to my ZentrixDigital website and prepare the site for Google Ads conversion traffic.
+
+Important:
+- Do not break the current design.
+- Reuse existing layout, Navbar, Footer, buttons and styling.
+- Keep everything mobile and tablet responsive.
+- Keep Dutch as primary language.
+- Do not remove existing pages.
+- Do not change legal pages, cookie banner, analytics or routing unless needed to add the new pages.
+
+Create these new pages:
+
+1. /website-laten-maken-amsterdam
+Title: Website laten maken in Amsterdam die klanten oplevert
+Meta title: Website laten maken Amsterdam | ZentrixDigital
+Meta description: Professionele website laten maken in Amsterdam? Snel, modern en gericht op klanten. Vanaf €700.
+
+2. /webdesign-bedrijf
+Title: Professioneel webdesign bedrijf voor bedrijven die willen groeien
+Meta title: Webdesign bedrijf Nederland | ZentrixDigital
+Meta description: Professioneel webdesign bedrijf voor bedrijven die willen groeien. Moderne websites die klanten opleveren.
+
+3. /website-kosten
+Title: Wat kost een website laten maken in 2026?
+Meta title: Wat kost een website laten maken? | ZentrixDigital
+Meta description: Wat kost een website laten maken in 2026? Bekijk prijzen en mogelijkheden vanaf €700.
+
+4. /website-voor-bedrijven
+Title: Website laten maken voor bedrijven die willen groeien
+Meta title: Website laten maken voor bedrijven | ZentrixDigital
+Meta description: Professionele websites voor bedrijven die willen groeien. Meer klanten via slimme systemen.
+
+Each page must include:
+- Strong hero section
+- H1 with the main keyword
+- Subheadline
+- CTA button: "Gratis strategiegesprek"
+- 600–900 words of natural Dutch content
+- Sections with H2 and H3 headings
+- Conversion-focused copy
+- Internal links to /contact, /services, /websites and /applicaties
+- Final CTA section
+- WhatsApp/contact CTA without showing the phone number as visible text
+
+Content themes:
+- website laten maken
+- professionele website
+- webdesign Amsterdam
+- meer klanten krijgen
+- conversie
+- snelle website
+- mobielvriendelijk
+- SEO
+- slimme systemen
+- boekingssysteem
+- CRM / automatisering where relevant
+
+Add these pages to routing in the real production App.tsx.
+
+Add links to these SEO pages in the Footer under a section called:
+"Populaire diensten"
+
+Add the new URLs to public/sitemap.xml:
+https://www.zentrixdigital.eu/website-laten-maken-amsterdam
+https://www.zentrixdigital.eu/webdesign-bedrijf
+https://www.zentrixdigital.eu/website-kosten
+https://www.zentrixdigital.eu/website-voor-bedrijven
+
+Also add a small conversion block on the homepage:
+Title: "Binnen 7 dagen een professionele website die klanten oplevert"
+Text: "Voor ondernemers die niet alleen online zichtbaar willen zijn, maar ook meer aanvragen willen ontvangen."
+Buttons:
+- "Gratis strategiegesprek" → /contact
+- "Bekijk websites" → /websites
+
+Google Ads preparation:
+- Make /website-laten-maken-amsterdam the main landing page for ads.
+- Add strong CTA above the fold.
+- Mention: "Vanaf €700" and "Binnen 7 dagen live" naturally.
+- Do not add Google Ads code unless already configured.
+
+Technical:
+- Keep code clean.
+- Avoid heavy new libraries.
+- Ensure TypeScript passes.
+- Ensure build works with:
+PORT=3000 BASE_PATH=/ pnpm --filter zentrix-solutions build
+
+After implementation:
+- Run the build command.
+- Fix any errors.
+- Commit all changes with message:
+"Add SEO landing pages and conversion funnel"
+- Push to GitHub main.
