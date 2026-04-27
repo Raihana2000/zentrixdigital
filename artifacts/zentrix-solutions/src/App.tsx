@@ -34,6 +34,9 @@ import SeoBookingEN from "@/pages/seo-booking-en";
 import SeoAutomatisering from "@/pages/seo-automatisering";
 import SeoAutomationEN from "@/pages/seo-automation-en";
 
+// Portfolio / Concepts
+import Concepts from "@/pages/concepts";
+
 // SEO traffic pages
 import SeoAmsterdam from "@/pages/seo-amsterdam";
 import SeoWebdesignBedrijf from "@/pages/seo-webdesign-bedrijf";
@@ -70,6 +73,10 @@ function Router() {
           <Route path="/en/website-for-freelancers" component={SeoFreelancersEN} />
           <Route path="/website-laten-maken-bedrijven" component={SeoBedrijven} />
           <Route path="/en/website-for-businesses" component={SeoBusinessesEN} />
+
+          {/* Portfolio / Concepts */}
+          <Route path="/concepts" component={Concepts} />
+          <Route path="/concepten" component={Concepts} />
 
           {/* SEO traffic pages */}
           <Route path="/website-laten-maken-amsterdam" component={SeoAmsterdam} />

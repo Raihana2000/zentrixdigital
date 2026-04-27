@@ -4,6 +4,7 @@ export const nl = {
     about: "Over ons",
     services: "Diensten",
     solutions: "Oplossingen",
+    concepts: "Concepten",
     contact: "Contact"
   },
   home: {

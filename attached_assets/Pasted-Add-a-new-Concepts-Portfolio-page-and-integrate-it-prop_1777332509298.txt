@@ -1,0 +1,118 @@
+Add a new "Concepts / Portfolio" page and integrate it properly into my navigation with strong conversion-focused content.
+
+GOAL:
+Show my website concepts professionally and make them clickable proof that I can improve businesses.
+
+---
+
+1. CREATE NEW PAGE
+
+Route:
+- /concepts
+
+Page titles:
+EN: "Concepts & Website Improvements"
+NL: "Concepten & Website Verbeteringen"
+
+Intro text:
+EN:
+"A selection of website concepts focused on clarity, trust and client conversion. These examples show how ZentrixDigital transforms websites into client-generating systems."
+
+NL:
+"Een selectie van website concepten gericht op duidelijkheid, vertrouwen en conversie. Deze voorbeelden laten zien hoe ZentrixDigital websites transformeert naar klantgenererende systemen."
+
+---
+
+2. ADD CONCEPT CARD (WITH IMAGE)
+
+Add a card with:
+
+Title:
+EN: "Accounting Website Concept — Amsterdam"
+NL: "Administratiekantoor Website Concept — Amsterdam"
+
+Description:
+EN:
+"This concept demonstrates how a traditional accounting website can be improved to increase clarity, trust and client inquiries."
+
+NL:
+"Dit concept laat zien hoe een traditioneel administratiekantoor verbeterd kan worden voor meer duidelijkheid, vertrouwen en klantaanvragen."
+
+Extra line (important for conversion):
+EN:
+"Focused on stronger positioning and guiding visitors toward action."
+NL:
+"Gericht op sterke positionering en het sturen van bezoekers naar actie."
+
+Badge:
+"Concept project"
+
+Disclaimer:
+EN: "This is a concept project and not a live client website."
+NL: "Dit is een concept en geen live klantwebsite."
+
+Include image:
+Use my uploaded screenshot as the main visual.
+
+Make the image clickable (lightbox or full view).
+
+---
+
+3. NAVIGATION (VERY IMPORTANT)
+
+Add menu item EXACTLY here:
+
+Home → Services → **Concepts** → Solutions → About → Contact
+
+EN: "Concepts"
+NL: "Concepten"
+
+Ensure it links correctly to /concepts
+
+---
+
+4. DESIGN
+
+- Clean modern layout
+- Large image focus
+- Strong spacing
+- Hover effect on cards
+- Fully responsive (mobile/tablet)
+
+---
+
+5. LANGUAGE SUPPORT
+
+Make all text switchable between Dutch and English via existing toggle.
+
+---
+
+6. OPTIONAL (STRONG UPGRADE)
+
+Add small CTA under the concept:
+
+EN: "Want something similar for your business?"
+NL: "Wil je iets soortgelijks voor jouw bedrijf?"
+
+Button:
+EN: "Request a quick review"
+NL: "Vraag een snelle analyse aan"
+
+---
+
+7. DO NOT BREAK
+
+- Existing layout
+- Navigation
+- Mobile responsiveness
+
+---
+
+8. FINAL
+
+Test:
+- navigation link works
+- language toggle works
+- image loads correctly
+
+Push to GitHub after completion.

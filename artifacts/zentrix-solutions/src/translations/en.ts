@@ -4,6 +4,7 @@ export const en = {
     about: "About",
     services: "Services",
     solutions: "Solutions",
+    concepts: "Concepts",
     contact: "Contact"
   },
   home: {

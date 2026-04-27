@@ -55,6 +55,7 @@ const Navbar = () => {
     { href: '/', label: t.nav.home },
     { href: '/about', label: t.nav.about },
     { href: '/services', label: t.nav.services },
+    { href: '/concepts', label: t.nav.concepts },
   ];
 
   /* ── Scroll ── */

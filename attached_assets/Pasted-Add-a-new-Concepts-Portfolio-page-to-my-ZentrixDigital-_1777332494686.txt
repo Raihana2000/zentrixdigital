@@ -1,0 +1,127 @@
+Add a new "Concepts / Portfolio" page to my ZentrixDigital website with full Dutch and English support and improve language switching visibility.
+
+GOAL:
+Showcase concept projects (not real clients) in a professional way and make it easy for international visitors to switch language.
+
+---
+
+1. CREATE NEW PAGE
+
+Route:
+- /concepts (EN)
+- /concepten (NL if routing supports it, otherwise keep /concepts but translate content)
+
+Page title:
+EN: "Concepts & Website Improvements"
+NL: "Concepten & Website Verbeteringen"
+
+Intro text:
+EN:
+"A selection of website concepts and redesign ideas focused on clarity, trust and client conversion. These examples demonstrate how ZentrixDigital builds websites as client-generating systems."
+
+NL:
+"Een selectie van website concepten en redesign ideeën gericht op duidelijkheid, vertrouwen en conversie. Deze voorbeelden laten zien hoe ZentrixDigital websites bouwt als klantgenererende systemen."
+
+---
+
+2. ADD CONCEPT CARD (ACCOUNTING)
+
+Title:
+EN: "Accounting Website Concept — Amsterdam"
+NL: "Administratiekantoor Website Concept — Amsterdam"
+
+Description:
+EN:
+"This concept was created to demonstrate how a traditional accounting website can be redesigned to improve clarity, trust and user experience. The focus is on strong positioning and guiding visitors toward taking action."
+
+NL:
+"Dit concept is gemaakt om te laten zien hoe een traditioneel administratiekantoor verbeterd kan worden op het gebied van duidelijkheid, vertrouwen en gebruikservaring. De focus ligt op sterke positionering en het sturen van bezoekers naar actie."
+
+Badge:
+EN: "Concept project"
+NL: "Concept project"
+
+Disclaimer:
+EN:
+"This is a concept project and not an official client redesign."
+NL:
+"Dit is een conceptproject en geen officiële klantcase."
+
+Include image placeholder for your screenshot.
+
+---
+
+3. DESIGN
+
+- Clean modern cards layout
+- Grid system (1–3 columns depending on screen size)
+- Rounded corners, subtle shadow
+- Mobile responsive
+- Keep existing site style
+
+---
+
+4. ADD NAVBAR LINK
+
+Add new navigation item:
+
+EN: "Concepts"
+NL: "Concepten"
+
+Place it in the main menu (next to Services or About)
+
+Ensure routing works correctly.
+
+---
+
+5. LANGUAGE SYSTEM (IMPORTANT)
+
+Make sure ALL text supports existing language toggle.
+
+If using i18n:
+- Add keys for EN/NL
+- Ensure instant switching without reload if possible
+
+---
+
+6. IMPROVE LANGUAGE VISIBILITY (VERY IMPORTANT)
+
+Make language switch more obvious:
+
+- Make NL / EN toggle more visible (slightly bigger, clearer contrast)
+- Add small label next to it:
+
+EN: "Language"
+NL: "Taal"
+
+Optional helper text (small, subtle near header or hero):
+EN: "Switch language anytime"
+NL: "Wissel eenvoudig van taal"
+
+Ensure mobile visibility is also clear.
+
+---
+
+7. UX IMPROVEMENT
+
+- Add hover effect on language toggle
+- Make active language clearly highlighted
+- Ensure toggle is visible on all pages
+
+---
+
+8. DO NOT BREAK
+
+- Existing layout
+- Styling
+- Routing
+- Mobile responsiveness
+
+---
+
+9. FINAL STEP
+
+- Test both languages
+- Test navigation link
+- Test mobile view
+- Push changes to GitHub
