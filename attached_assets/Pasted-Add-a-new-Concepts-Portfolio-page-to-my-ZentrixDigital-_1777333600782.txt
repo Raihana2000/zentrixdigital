@@ -1,0 +1,132 @@
+Add a new Concepts / Portfolio page to my ZentrixDigital website and optimize it for mobile, tablet, desktop performance.
+
+GOAL:
+Show my website concepts professionally, with Dutch and English support, while keeping the website fast and fully responsive.
+
+1. CREATE NEW PAGE
+
+Route:
+- /concepts
+
+Page titles:
+EN: "Concepts & Website Improvements"
+NL: "Concepten & Website Verbeteringen"
+
+Intro text EN:
+"A selection of website concepts focused on clarity, trust and client conversion. These examples show how ZentrixDigital transforms websites into client-generating systems."
+
+Intro text NL:
+"Een selectie van website concepten gericht op duidelijkheid, vertrouwen en conversie. Deze voorbeelden laten zien hoe ZentrixDigital websites transformeert naar klantgenererende systemen."
+
+2. NAVIGATION
+
+Add a new navigation item between Services/Diensten and Solutions/Oplossingen.
+
+EN: "Concepts"
+NL: "Concepten"
+
+Make sure it links to /concepts.
+
+3. CONCEPT CARD
+
+Add one concept card using the screenshot I uploaded to Replit.
+
+Title EN:
+"Accounting Website Concept — Amsterdam"
+
+Title NL:
+"Administratiekantoor Website Concept — Amsterdam"
+
+Description EN:
+"This concept demonstrates how a traditional accounting website can be improved to increase clarity, trust and client inquiries. It focuses on stronger positioning and guiding visitors toward action."
+
+Description NL:
+"Dit concept laat zien hoe een traditioneel administratiekantoor verbeterd kan worden voor meer duidelijkheid, vertrouwen en klantaanvragen. De focus ligt op sterke positionering en het sturen van bezoekers naar actie."
+
+Badge:
+EN: "Concept project"
+NL: "Concept project"
+
+Disclaimer EN:
+"This is a concept project and not a live client website."
+
+Disclaimer NL:
+"Dit is een conceptproject en geen live klantwebsite."
+
+CTA EN:
+"Request a quick review"
+
+CTA NL:
+"Vraag een snelle analyse aan"
+
+4. RESPONSIVE DESIGN
+
+Make the page fully responsive for:
+- mobile
+- iPad/tablet
+- desktop
+
+Requirements:
+- readable text on mobile
+- buttons minimum 44px height
+- good spacing between sections
+- image scales properly without distortion
+- no horizontal scrolling
+- cards stack cleanly on mobile
+- tablet layout should look intentional, not broken
+- navbar must remain clean on mobile
+
+5. PERFORMANCE OPTIMIZATION
+
+Keep the website fast on mobile, tablet and desktop.
+
+Do:
+- compress/optimize the uploaded screenshot if needed
+- use lazy loading for concept images
+- prevent layout shift
+- use responsive image sizes where possible
+- avoid adding heavy libraries
+- remove unused imports if any
+- keep CSS efficient
+- do not add animations that slow mobile performance
+
+6. LANGUAGE SWITCH VISIBILITY
+
+Make the Dutch/English language toggle more visible for international visitors.
+
+Requirements:
+- active language clearly highlighted
+- label: "Taal" in Dutch and "Language" in English
+- visible on desktop and mobile
+- do not make navbar crowded
+
+7. DO NOT BREAK EXISTING WORK
+
+Do not remove or break:
+- existing pages
+- existing translations
+- existing navigation
+- existing styling
+- mobile layout
+- current contact forms
+- current SEO setup
+
+8. TESTING
+
+After implementation:
+- run the project locally
+- test /concepts route
+- test Dutch and English language switching
+- test mobile, tablet and desktop responsiveness
+- run build/test command if available
+- fix any errors before committing
+
+9. GITHUB PUSH
+
+After everything works:
+- git status
+- git add .
+- git commit -m "Add concepts portfolio page and improve responsive performance"
+- git push origin main
+
+Show me what files were changed and confirm that the push succeeded.
