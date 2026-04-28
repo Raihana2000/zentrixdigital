@@ -52,7 +52,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-12 gap-x-6 gap-y-10 mb-16">
 
           {/* Brand column */}
-          <div className="col-span-2 sm:col-span-2 md:col-span-4 flex flex-col gap-6">
+          <div className="col-span-2 sm:col-span-2 md:col-span-3 flex flex-col gap-6">
             <Link href="/" className="flex items-center w-fit" data-testid="footer-logo">
               <img src={logoPath} alt="ZentrixDigital" className="h-9 w-auto object-contain opacity-90" />
             </Link>
@@ -126,7 +126,7 @@ const Footer = () => {
           </div>
 
           {/* Contact column */}
-          <div className="col-span-2 sm:col-span-1 md:col-span-1 flex flex-col gap-5">
+          <div className="col-span-2 sm:col-span-1 md:col-span-2 min-w-0 flex flex-col gap-5">
             <h4 className="text-white font-semibold text-sm uppercase tracking-widest">{t.nav.contact}</h4>
             <address className="flex flex-col gap-3 not-italic">
               <p className="text-white text-sm">{t.contact.company}</p>
@@ -135,7 +135,7 @@ const Footer = () => {
                 <Phone className="w-3.5 h-3.5 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
                 {t.contact.phone}
               </a>
-              <a href="mailto:info@zentrixdigital.eu" className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-sm transition-colors duration-200 w-fit">
+              <a href="mailto:info@zentrixdigital.eu" className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-sm transition-colors duration-200 min-w-0 max-w-full">
                 <Mail className="w-3.5 h-3.5 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
                 {t.contact.email}
               </a>
