@@ -55,7 +55,7 @@ const HomeSolutions = ({ language }: { language: 'nl' | 'en' }) => {
   const items = solutionsData[language];
   const isNL = language === 'nl';
   return (
-    <section className="py-24 px-5 bg-[#080d16]">
+    <section className="py-14 sm:py-20 lg:py-24 px-5 bg-[#080d16]">
       <div className="max-w-6xl mx-auto">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <motion.div variants={fadeUp} className="text-center mb-12">
@@ -197,7 +197,7 @@ const Home = () => {
       </section>
 
       {/* ─── PROBLEM SECTION ─────────────────────────────────── */}
-      <section className="py-28 px-5 bg-[#080d16]">
+      <section className="py-16 sm:py-24 lg:py-28 px-5 bg-[#080d16]">
         <div className="pointer-events-none absolute left-0 right-0 h-px glow-line opacity-50" />
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -227,8 +227,8 @@ const Home = () => {
                     <Icon className="w-5 h-5 text-red-400/80" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-semibold text-white mb-2">{p.title}</h3>
-                    <p className="text-xs text-[#F5F7FF] leading-relaxed">{p.text}</p>
+                    <h3 className="text-base font-semibold text-white mb-2">{p.title}</h3>
+                    <p className="text-sm text-[#F5F7FF] leading-relaxed">{p.text}</p>
                   </div>
                 </motion.div>
               );
@@ -238,7 +238,7 @@ const Home = () => {
       </section>
 
       {/* ─── SERVICES ────────────────────────────────────────── */}
-      <section className="py-32 px-5 bg-[#0B0B0B]">
+      <section className="py-20 sm:py-28 lg:py-32 px-5 bg-[#0B0B0B]">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
@@ -275,7 +275,7 @@ const Home = () => {
                     </div>
                     <div className="flex-1 flex flex-col gap-3">
                       <h3 className="text-base font-semibold text-white tracking-tight">{svc.title}</h3>
-                      <p className="text-xs text-[#F5F7FF] leading-relaxed flex-1">{svc.desc}</p>
+                      <p className="text-sm text-[#F5F7FF] leading-relaxed flex-1">{svc.desc}</p>
                     </div>
                     <span className="text-blue-500/70 text-xs font-bold uppercase tracking-widest flex items-center gap-1 group-hover:gap-2 group-hover:text-blue-400 transition-all duration-200">
                       {t.home.servicesMoreInfo} <ArrowRight className="w-3 h-3" />
@@ -289,7 +289,7 @@ const Home = () => {
       </section>
 
       {/* ─── EXTENSIONS ──────────────────────────────────────── */}
-      <section className="py-32 px-5 bg-gradient-to-b from-[#060b13] to-[#080d18]">
+      <section className="py-20 sm:py-28 lg:py-32 px-5 bg-gradient-to-b from-[#060b13] to-[#080d18]">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
@@ -321,8 +321,8 @@ const Home = () => {
                     <Icon className="w-4 h-4 text-blue-400" />
                   </div>
                   <div className="flex flex-col gap-1 min-w-0">
-                    <h3 className="text-sm font-semibold text-white">{ext.title}</h3>
-                    <p className="text-xs text-[#F5F7FF] leading-relaxed">{ext.text}</p>
+                    <h3 className="text-[15px] font-semibold text-white">{ext.title}</h3>
+                    <p className="text-sm text-[#F5F7FF] leading-relaxed">{ext.text}</p>
                   </div>
                 </motion.div>
               );
@@ -343,7 +343,7 @@ const Home = () => {
       </section>
 
       {/* ─── WHO WE HELP ─────────────────────────────────────── */}
-      <section className="py-28 px-5 bg-[#0B0B0B]">
+      <section className="py-16 sm:py-24 lg:py-28 px-5 bg-[#0B0B0B]">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
@@ -372,8 +372,8 @@ const Home = () => {
                     <Icon className="w-5 h-5 text-blue-400" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-semibold text-white mb-2">{item.title}</h3>
-                    <p className="text-xs text-[#F5F7FF] leading-relaxed">{item.text}</p>
+                    <h3 className="text-base font-semibold text-white mb-2">{item.title}</h3>
+                    <p className="text-sm text-[#F5F7FF] leading-relaxed">{item.text}</p>
                   </div>
                 </motion.div>
               );
@@ -383,7 +383,7 @@ const Home = () => {
       </section>
 
       {/* ─── WHY ZENTRIX ─────────────────────────────────────── */}
-      <section className="py-32 px-5 bg-[#080d16]">
+      <section className="py-20 sm:py-28 lg:py-32 px-5 bg-[#080d16]">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
@@ -408,8 +408,8 @@ const Home = () => {
                     <CheckCircle2 className="w-4 h-4 text-blue-400" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-semibold text-white mb-1.5">{item.title}</h3>
-                    <p className="text-xs text-[#F5F7FF] leading-relaxed">{item.text}</p>
+                    <h3 className="text-base font-semibold text-white mb-1.5">{item.title}</h3>
+                    <p className="text-sm text-[#F5F7FF] leading-relaxed">{item.text}</p>
                   </div>
                 </motion.div>
               ))}
@@ -419,7 +419,7 @@ const Home = () => {
       </section>
 
       {/* ─── PROCESS ─────────────────────────────────────────── */}
-      <section className="py-28 px-5 bg-[#0B0B0B]">
+      <section className="py-16 sm:py-24 lg:py-28 px-5 bg-[#0B0B0B]">
         <div className="max-w-5xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
@@ -451,7 +451,7 @@ const Home = () => {
                     <span className="text-blue-500/40 text-xs font-black uppercase tracking-widest">0{i + 1}</span>
                   </div>
                   <div>
-                    <h3 className="text-sm font-semibold text-white mb-2">{step.title}</h3>
+                    <h3 className="text-base font-semibold text-white mb-2">{step.title}</h3>
                     <p className="text-xs text-[#F5F7FF] leading-relaxed">{step.text}</p>
                   </div>
                 </motion.div>
@@ -462,7 +462,7 @@ const Home = () => {
       </section>
 
       {/* ─── PORTFOLIO / ON REQUEST ───────────────────────────── */}
-      <section className="py-28 px-5 bg-[#080d16]">
+      <section className="py-16 sm:py-24 lg:py-28 px-5 bg-[#080d16]">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
@@ -495,7 +495,7 @@ const Home = () => {
       </section>
 
       {/* ─── GEOGRAPHIC REACH ────────────────────────────────── */}
-      <section className="py-20 px-5 bg-[#0B0B0B]">
+      <section className="py-12 sm:py-16 lg:py-20 px-5 bg-[#0B0B0B]">
         <div className="max-w-5xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
@@ -525,7 +525,7 @@ const Home = () => {
       <HomeSolutions language={language} />
 
       {/* ─── FINAL CTA ───────────────────────────────────────── */}
-      <section className="py-32 px-5 bg-[#060b13]">
+      <section className="py-20 sm:py-28 lg:py-32 px-5 bg-[#060b13]">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}

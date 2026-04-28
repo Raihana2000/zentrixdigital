@@ -306,7 +306,7 @@ const Services = () => {
       />
 
       {/* ─── HERO ──────────────────────────────────────────────── */}
-      <section className="relative py-28 md:py-36 px-5 overflow-hidden">
+      <section className="relative py-16 md:py-28 lg:py-36 px-5 overflow-hidden">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_30%_0%,rgba(37,99,235,0.11),transparent_60%)]" />
         <div
           className="pointer-events-none absolute inset-0 z-0 opacity-[0.02]"
@@ -345,7 +345,7 @@ const Services = () => {
       </section>
 
       {/* ─── PROBLEM SECTION ───────────────────────────────────── */}
-      <section className="py-20 px-5 bg-[#080d16]">
+      <section className="py-12 sm:py-16 lg:py-20 px-5 bg-[#080d16]">
         <div className="max-w-5xl mx-auto">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
             <motion.div variants={fadeUp} className="mb-10">
@@ -364,7 +364,7 @@ const Services = () => {
                   <XCircle className="w-4 h-4 text-red-400/60 shrink-0 mt-0.5" />
                   <div>
                     <p className="text-sm font-semibold text-white mb-1">{p.title}</p>
-                    <p className="text-xs text-white/60 leading-relaxed">{p.text}</p>
+                    <p className="text-sm text-white/60 leading-relaxed">{p.text}</p>
                   </div>
                 </motion.div>
               ))}
@@ -374,7 +374,7 @@ const Services = () => {
       </section>
 
       {/* ─── SOLUTION SECTION ──────────────────────────────────── */}
-      <section className="py-20 px-5 bg-[#0B0B0B]">
+      <section className="py-12 sm:py-16 lg:py-20 px-5 bg-[#0B0B0B]">
         <div className="max-w-5xl mx-auto">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
             <motion.div variants={fadeUp} className="mb-10">
@@ -397,7 +397,7 @@ const Services = () => {
       </section>
 
       {/* ─── SERVICE CARDS ─────────────────────────────────────── */}
-      <section className="py-20 px-5 bg-[#080d16]">
+      <section className="py-12 sm:py-16 lg:py-20 px-5 bg-[#080d16]">
         <div className="max-w-6xl mx-auto">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
             <motion.div variants={fadeUp} className="text-center mb-12">
@@ -422,10 +422,10 @@ const Services = () => {
                         </div>
                         <div className="flex-1">
                           <h3 className="text-base font-bold text-white mb-2 tracking-tight">{card.title}</h3>
-                          <p className="text-xs text-white/70 leading-relaxed mb-4">{card.desc}</p>
+                          <p className="text-sm text-white/70 leading-relaxed mb-4">{card.desc}</p>
                           <ul className="flex flex-col gap-1.5 mb-4">
                             {card.bullets.map((b, bi) => (
-                              <li key={bi} className="flex items-center gap-2 text-xs text-white/60">
+                              <li key={bi} className="flex items-center gap-2 text-sm text-white/60">
                                 <CheckCircle2 className="w-3 h-3 text-blue-500/50 shrink-0" />
                                 {b}
                               </li>
@@ -447,7 +447,7 @@ const Services = () => {
       </section>
 
       {/* ─── RESULTS SECTION ───────────────────────────────────── */}
-      <section className="py-20 px-5 bg-[#0B0B0B]">
+      <section className="py-12 sm:py-16 lg:py-20 px-5 bg-[#0B0B0B]">
         <div className="max-w-5xl mx-auto">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
             <motion.div variants={fadeUp} className="text-center mb-12">
@@ -469,7 +469,7 @@ const Services = () => {
                       <RIcon className="w-5 h-5 text-blue-400" />
                     </div>
                     <p className="text-sm font-bold text-white">{r.label}</p>
-                    <p className="text-xs text-white/55 leading-relaxed">{r.desc}</p>
+                    <p className="text-sm text-white/55 leading-relaxed">{r.desc}</p>
                   </motion.div>
                 );
               })}
@@ -479,7 +479,7 @@ const Services = () => {
       </section>
 
       {/* ─── EXAMPLE SCENARIOS ─────────────────────────────────── */}
-      <section className="py-20 px-5 bg-[#080d16]">
+      <section className="py-12 sm:py-16 lg:py-20 px-5 bg-[#080d16]">
         <div className="max-w-5xl mx-auto">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
             <motion.div variants={fadeUp} className="mb-10">
@@ -488,7 +488,7 @@ const Services = () => {
                 {c.scenariosBadge}
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 tracking-tight">{c.scenariosTitle}</h2>
-              <p className="text-xs text-white/40 italic max-w-2xl">{c.scenariosNote}</p>
+              <p className="text-sm text-white/40 italic max-w-2xl">{c.scenariosNote}</p>
             </motion.div>
             <motion.div variants={stagger} className="grid grid-cols-1 sm:grid-cols-3 gap-5">
               {c.scenarios.map((s, i) => {
@@ -505,7 +505,7 @@ const Services = () => {
                       <span className="text-xs font-bold text-blue-400/80 uppercase tracking-widest">{s.sector}</span>
                     </div>
                     <h3 className="text-sm font-bold text-white">{s.title}</h3>
-                    <p className="text-xs text-white/60 leading-relaxed">{s.text}</p>
+                    <p className="text-sm text-white/60 leading-relaxed">{s.text}</p>
                   </motion.div>
                 );
               })}
@@ -515,7 +515,7 @@ const Services = () => {
       </section>
 
       {/* ─── TARGET AUDIENCE ───────────────────────────────────── */}
-      <section className="py-20 px-5 bg-[#0B0B0B]">
+      <section className="py-12 sm:py-16 lg:py-20 px-5 bg-[#0B0B0B]">
         <div className="max-w-5xl mx-auto">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
             <motion.div variants={fadeUp} className="text-center mb-10">
@@ -564,7 +564,7 @@ const Services = () => {
                       {label}
                       <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                     </span>
-                    <span className="text-xs text-white/60 leading-relaxed">{desc}</span>
+                    <span className="text-sm text-white/60 leading-relaxed">{desc}</span>
                   </Link>
                 </motion.div>
               ))}
@@ -574,7 +574,7 @@ const Services = () => {
       </section>
 
       {/* ─── FINAL CTA ─────────────────────────────────────────── */}
-      <section className="py-32 px-5 bg-[#060b13]">
+      <section className="py-20 sm:py-28 lg:py-32 px-5 bg-[#060b13]">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}

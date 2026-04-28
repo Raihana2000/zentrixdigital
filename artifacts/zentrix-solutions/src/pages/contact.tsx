@@ -41,7 +41,7 @@ const Contact = () => {
       />
 
       {/* ─── HERO ──────────────────────────────────────────────── */}
-      <section className="relative py-28 md:py-36 px-5 text-center overflow-hidden">
+      <section className="relative py-20 md:py-28 lg:py-36 px-5 text-center overflow-hidden">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute top-[-15%] left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-700/8 blur-[140px] rounded-full" />
         </div>
@@ -169,7 +169,7 @@ const Contact = () => {
                   </div>
                   <ul className="flex flex-col gap-2 pl-4 sm:pl-[52px]">
                     {t.contact.hours.lines.map((line, i) => (
-                      <li key={i} className="text-xs text-white leading-snug">
+                      <li key={i} className="text-sm text-white leading-snug">
                         {line}
                       </li>
                     ))}

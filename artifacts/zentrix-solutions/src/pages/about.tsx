@@ -34,7 +34,7 @@ const About = () => {
       />
 
       {/* ─── HERO ──────────────────────────────────────────────── */}
-      <section className="relative py-28 md:py-36 px-5 overflow-hidden">
+      <section className="relative py-20 md:py-28 lg:py-36 px-5 overflow-hidden">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_70%_0%,rgba(37,99,235,0.1),transparent_60%)]" />
         <div
           className="pointer-events-none absolute inset-0 z-0 opacity-[0.02]"
@@ -63,7 +63,7 @@ const About = () => {
       </section>
 
       {/* ─── WHO WE ARE / MISSION ──────────────────────────────── */}
-      <section className="py-28 px-5 bg-[#080d16]">
+      <section className="py-16 sm:py-24 lg:py-28 px-5 bg-[#080d16]">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
@@ -99,7 +99,7 @@ const About = () => {
       </section>
 
       {/* ─── VALUES ────────────────────────────────────────────── */}
-      <section className="py-28 px-5 bg-[#0B0B0B]">
+      <section className="py-16 sm:py-24 lg:py-28 px-5 bg-[#0B0B0B]">
         <div className="max-w-6xl mx-auto">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
             <motion.div variants={fadeUp} className="text-center mb-16">
@@ -120,7 +120,7 @@ const About = () => {
                     </div>
                     <div className="flex flex-col gap-2">
                       <h3 className="text-sm font-semibold text-white">{value.title}</h3>
-                      <p className="text-xs text-[#F5F7FF] leading-relaxed">{value.desc}</p>
+                      <p className="text-sm text-[#F5F7FF] leading-relaxed">{value.desc}</p>
                     </div>
                   </motion.div>
                 );
@@ -131,7 +131,7 @@ const About = () => {
       </section>
 
       {/* ─── WHAT SETS US APART ────────────────────────────────── */}
-      <section className="py-28 px-5 bg-[#080d16]">
+      <section className="py-16 sm:py-24 lg:py-28 px-5 bg-[#080d16]">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
@@ -158,7 +158,7 @@ const About = () => {
       </section>
 
       {/* ─── CTA ───────────────────────────────────────────────── */}
-      <section className="py-28 px-5 bg-[#0B0B0B]">
+      <section className="py-16 sm:py-24 lg:py-28 px-5 bg-[#0B0B0B]">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
