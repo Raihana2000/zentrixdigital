@@ -114,7 +114,7 @@ const Contact = () => {
                     testid: "contact-email"
                   },
                   {
-                    href: "https://www.linkedin.com/in/karim-hizi-95663b405/",
+                    href: "https://www.linkedin.com/in/k-hizi-95663b405/",
                     external: true,
                     icon: null,
                     label: t.contact.labelLinkedIn,

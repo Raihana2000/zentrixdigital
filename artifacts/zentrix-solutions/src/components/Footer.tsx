@@ -67,7 +67,7 @@ const Footer = () => {
             </Link>
 
             <a
-              href="https://www.linkedin.com/in/karim-hizi-95663b405/"
+              href="https://www.linkedin.com/in/k-hizi-95663b405/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-xs font-semibold text-white hover:text-white transition-all duration-300 group w-fit"
