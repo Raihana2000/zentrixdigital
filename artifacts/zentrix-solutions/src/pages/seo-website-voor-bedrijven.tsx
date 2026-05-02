@@ -42,7 +42,7 @@ const data = {
   processTitle: "Zo werken wij samen",
   process: [
     { title: "Gratis strategiegesprek", text: "We leren uw bedrijf, uw doelgroep en uw doelen kennen. U ontvangt eerlijk advies over wat uw website moet kunnen en wat het realistisch kost." },
-    { title: "Bouwen in 7 dagen", text: "Uw bedrijfswebsite wordt volledig op maat gebouwd — conversiebewust, SEO-klaar en uitbreidbaar met de systemen die uw bedrijf nodig heeft." },
+    { title: "Ontwerp & bouw op maat", text: "Uw bedrijfswebsite wordt volledig op maat gebouwd — conversiebewust, SEO-klaar en uitbreidbaar met de systemen die uw bedrijf nodig heeft. Binnen 7 werkdagen startklaar bij snelle aanlevering van teksten, logo en domeingegevens." },
     { title: "Live en groeiend", text: "Na lancering helpen wij u met verdere optimalisatie, betere Google-posities en uitbreidingen die meegroeien met uw bedrijf en ambities." }
   ],
   ctaTitle: "Wil uw bedrijf online groeien?",
@@ -54,7 +54,7 @@ const SeoWebsiteVoorBedrijven = () => (
   <ServiceDetailPage
     data={data}
     pageTitle="Website laten maken voor bedrijven | ZentrixDigital"
-    metaDesc="Professionele website laten maken voor bedrijven die willen groeien. Meer klanten via slimme systemen en SEO. Vanaf €700, binnen 7 dagen live."
+    metaDesc="Professionele website laten maken voor bedrijven die willen groeien. Meer klanten via slimme systemen en SEO. Snelle oplevering mogelijk bij complete input."
     canonical="https://www.zentrixdigital.eu/website-voor-bedrijven"
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"

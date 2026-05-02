@@ -11,7 +11,7 @@ const data = {
     "Gevonden worden in Google op zoektermen die uw doelklanten gebruiken",
     "Volledig mobielvriendelijk — meer dan 70% van bezoekers komt via smartphone",
     "Snelle laadtijden voor betere Google-ranking en meer conversie",
-    "Binnen 7 dagen live — zodat u snel kunt beginnen met meer klanten ontvangen",
+    "Snelle oplevering mogelijk bij complete input — zodat u snel kunt beginnen met meer klanten ontvangen",
     "Geen verborgen kosten: transparante prijs vanaf €700"
   ],
   includedTitle: "Wat zit er in uw Amsterdamse bedrijfswebsite?",
@@ -43,7 +43,7 @@ const data = {
   processTitle: "Hoe wij werken",
   process: [
     { title: "Gratis strategiegesprek", text: "We bespreken uw doelen, uw Amsterdamse doelgroep en wat uw website moet bereiken. Geen verplichtingen, wel concreet en eerlijk advies." },
-    { title: "Ontwerp & bouw binnen 7 dagen", text: "Wij bouwen uw website volledig op maat — conversiebewust, SEO-geoptimaliseerd en gericht op de Amsterdamse markt. Binnen één week live." },
+    { title: "Ontwerp & bouw — snel en op maat", text: "Wij bouwen uw website volledig op maat — conversiebewust, SEO-geoptimaliseerd en gericht op de Amsterdamse markt. Binnen 7 werkdagen startklaar bij snelle aanlevering van teksten, logo en domeingegevens." },
     { title: "Live en groeiend", text: "Uw website gaat live en begint direct voor u te werken. Wij begeleiden u daarna bij verdere groei, uitbreidingen en betere Google-posities." }
   ],
   ctaTitle: "Klaar voor een website die klanten oplevert in Amsterdam?",
@@ -55,7 +55,7 @@ const SeoAmsterdam = () => (
   <ServiceDetailPage
     data={data}
     pageTitle="Website laten maken Amsterdam | ZentrixDigital"
-    metaDesc="Professionele website laten maken in Amsterdam? Snel, modern en gericht op klanten. Vanaf €700, binnen 7 dagen live. Vraag gratis strategiegesprek aan."
+    metaDesc="Professionele website laten maken in Amsterdam? Snel, modern en gericht op klanten. Snelle oplevering mogelijk bij complete input. Vraag gratis strategiegesprek aan."
     canonical="https://www.zentrixdigital.eu/website-laten-maken-amsterdam"
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"
