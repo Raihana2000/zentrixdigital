@@ -37,6 +37,10 @@ import SeoAutomationEN from "@/pages/seo-automation-en";
 // Portfolio / Concepts
 import Concepts from "@/pages/concepts";
 
+// SEO landing pages — MKB / SME
+import SeoMKB from "@/pages/seo-mkb";
+import SeoSMBEN from "@/pages/seo-smb-en";
+
 // SEO traffic pages
 import SeoAmsterdam from "@/pages/seo-amsterdam";
 import SeoWebdesignBedrijf from "@/pages/seo-webdesign-bedrijf";
@@ -77,6 +81,10 @@ function Router() {
           {/* Portfolio / Concepts */}
           <Route path="/concepts" component={Concepts} />
           <Route path="/concepten" component={Concepts} />
+
+          {/* SEO landing pages — MKB / SME */}
+          <Route path="/website-voor-mkb" component={SeoMKB} />
+          <Route path="/en/website-for-smes" component={SeoSMBEN} />
 
           {/* SEO traffic pages */}
           <Route path="/website-laten-maken-amsterdam" component={SeoAmsterdam} />

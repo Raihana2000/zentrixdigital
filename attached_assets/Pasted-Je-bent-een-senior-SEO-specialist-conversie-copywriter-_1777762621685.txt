@@ -1,0 +1,559 @@
+Je bent een senior SEO-specialist, conversie-copywriter, UX-designer, frontend developer en meertalige localization specialist.
+
+Analyseer en verbeter de website van ZentrixDigital: https://www.zentrixdigital.eu/
+
+BELANGRIJK:
+- Fix ALLES in beide talen: Nederlands én Engels.
+- De Nederlandse versie blijft de hoofdversie.
+- De Engelse versie moet geen letterlijke vertaling zijn, maar professioneel en natuurlijk Engels.
+- De taalwisselaar moet ALLE teksten aanpassen: hero, menu, knoppen, cards, formulieren, footer, FAQ, populaire diensten, kleine labels, error states, meta content waar technisch mogelijk, alt-teksten en CTA’s.
+- Geen half vertaalde pagina’s.
+- Geen gemixte Nederlands/Engels teksten.
+- Verwijder geen bestaande SEO-waarde.
+- Behoud de hoofdpositionering rond “Professionele website laten maken in Amsterdam”.
+- Maak de website scherper, professioneler en conversiegerichter.
+- Zorg dat alle aanpassingen production-ready zijn.
+- Maak geen loze claims, geen nep-reviews, geen fake “trusted by” logo’s en geen overdreven garanties.
+- Gebruik alleen eerlijke, geloofwaardige commerciële taal.
+- Alles moet mobiel, tablet en desktop goed werken.
+- Geen lege pagina’s, geen kapotte links, geen placeholder-content.
+- Geen bestaande routes verwijderen zonder nette redirect of duidelijke canonical-oplossing.
+- Controleer dat alle links in “Populaire diensten” naar bestaande, werkende pagina’s gaan.
+
+DOEL VAN DE AANPASSING:
+ZentrixDigital moet niet overkomen als een standaard webdesigner, maar als een moderne agency die websites, maatwerkapplicaties en slimme online systemen bouwt voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online presentatie willen.
+
+In het Engels moet de positionering zijn:
+ZentrixDigital is a modern web and app agency that builds professional websites, custom web applications and smart online systems for entrepreneurs and businesses that want more trust, better enquiries and a stronger digital presence.
+
+BELANGRIJKSTE SEO-FOCUS NEDERLANDS:
+Homepage:
+- Focus keyword: “website laten maken Amsterdam”
+- H1 moet blijven of worden:
+  “Professionele website laten maken in Amsterdam”
+- Verwerk natuurlijk:
+  professionele websites, maatwerk applicaties, ondernemers, bedrijven, online aanvragen, WhatsApp, formulieren, CRM en Amsterdam.
+
+Andere Nederlandse pagina’s:
+- /websites: focus op “professionele website laten maken”
+- /website-laten-maken-amsterdam: focus op “website laten maken Amsterdam”
+- /webdesign-bedrijf: focus op “webdesign bedrijf”
+- /kosten-website-laten-maken: focus op “kosten website laten maken”
+- /website-laten-maken-bedrijven: focus op “website laten maken voor bedrijven”
+- /website-voor-bedrijven: controleer of deze pagina niet te veel overlapt met /website-laten-maken-bedrijven. Als ze bijna dezelfde zoekintentie hebben, maak één pagina duidelijk de hoofdversie en maak de andere specifieker.
+- /website-voor-zzp: focus op “website voor zzp” en “website laten maken zzp”
+- /website-voor-mkb: deze pagina ontbreekt nu of werkt niet goed. Maak deze route/pagina volledig aan als hij nog niet bestaat. Focus op “website voor mkb” en “website laten maken voor mkb”.
+- /applicaties: focus op “maatwerk applicatie laten bouwen”
+- /crm-systeem-laten-maken: focus op “CRM systeem laten maken”
+- /contact: focus op “gratis websiteanalyse aanvragen” en “offerte aanvragen website”
+
+BELANGRIJKSTE SEO-FOCUS ENGELS:
+Homepage:
+- Focus keyword:
+  “web design agency Amsterdam”
+  of
+  “professional website development Amsterdam”
+- Engelse H1:
+  “Professional website development in Amsterdam”
+- Verwerk natuurlijk:
+  professional websites, custom web applications, entrepreneurs, businesses, online enquiries, WhatsApp, forms, CRM, Amsterdam, Netherlands.
+
+Andere Engelse pagina’s:
+- /websites: focus op “professional website development”
+- /website-laten-maken-amsterdam of Engelse equivalent: focus op “website development Amsterdam”
+- /webdesign-bedrijf of Engelse equivalent: focus op “web design company”
+- /kosten-website-laten-maken of Engelse equivalent: focus op “website development costs”
+- /website-laten-maken-bedrijven of Engelse equivalent: focus op “website development for businesses”
+- /website-voor-zzp of Engelse equivalent: focus op “website development for freelancers”
+- /website-voor-mkb of Engelse equivalent: focus op “website development for SMEs”
+- /applicaties: focus op “custom web application development”
+- /crm-systeem-laten-maken: focus op “custom CRM system development”
+- /contact: focus op “request a free website review” en “request a website quote”
+
+POPULAIRE DIENSTEN BLOK:
+Controleer het blok “Populaire diensten” volledig.
+
+Nederlandse populaire diensten moeten zichtbaar zijn als:
+- Website laten maken Amsterdam
+- Webdesign bedrijf
+- Kosten website laten maken
+- Website voor bedrijven
+- Website voor ZZP
+- Website voor MKB
+
+Alle Nederlandse items moeten linken naar bestaande routes:
+- Website laten maken Amsterdam → /website-laten-maken-amsterdam
+- Webdesign bedrijf → /webdesign-bedrijf
+- Kosten website laten maken → /kosten-website-laten-maken
+- Website voor bedrijven → /website-laten-maken-bedrijven of /website-voor-bedrijven, kies de meest logische bestaande hoofdroute en voorkom overlap
+- Website voor ZZP → /website-voor-zzp
+- Website voor MKB → /website-voor-mkb
+
+Als /website-voor-mkb nog niet bestaat:
+- Maak deze pagina volledig aan.
+- Voeg een sterke SEO-title, meta description, H1, H2’s, intro, dienstenblokken, FAQ, CTA en interne links toe.
+- De pagina mag niet leeg zijn en mag geen placeholder zijn.
+- De pagina moet uniek genoeg zijn en niet simpelweg gekopieerd van “website voor bedrijven” of “website voor zzp”.
+
+Engelse populaire diensten moeten zichtbaar zijn als:
+- Website development Amsterdam
+- Web design company
+- Website development costs
+- Website for businesses
+- Website for freelancers
+- Website for SMEs
+
+Alle Engelse items moeten linken naar de juiste Engelse content of correcte taalversie:
+- Website development Amsterdam → Engelse versie van /website-laten-maken-amsterdam
+- Web design company → Engelse versie van /webdesign-bedrijf
+- Website development costs → Engelse versie van /kosten-website-laten-maken
+- Website for businesses → Engelse versie van /website-laten-maken-bedrijven of /website-voor-bedrijven
+- Website for freelancers → Engelse versie van /website-voor-zzp
+- Website for SMEs → Engelse versie van /website-voor-mkb
+
+TAALWISSELAAR / LANGUAGE SWITCHER FIX:
+Er is een bug waarbij het wisselen van Nederlands naar Engels soms teruggaat naar de homepage. Dit moet volledig opgelost worden.
+
+Vereisten:
+- Als gebruiker op een specifieke Nederlandse pagina zit en naar Engels schakelt, moet hij op de Engelse variant van dezelfde pagina blijven.
+- Als gebruiker op een specifieke Engelse pagina zit en naar Nederlands schakelt, moet hij op de Nederlandse variant van dezelfde pagina blijven.
+- De language switcher mag NIET standaard teruggaan naar de homepage, behalve als er echt geen equivalent bestaat.
+- Voor alle belangrijke routes moet een route mapping bestaan tussen NL en EN.
+- Voeg een centrale routeMap of localeRouteMap toe als die nog niet bestaat.
+- Gebruik deze mapping voor de language switcher in plaats van hardcoded homepage redirects.
+- Zorg dat query parameters waar relevant behouden blijven.
+- Zorg dat hash anchors waar relevant behouden blijven.
+- Test minimaal deze routewissels:
+
+NL → EN:
+- / → Engelse homepage
+- /websites → Engelse websites-content
+- /website-laten-maken-amsterdam → Engelse equivalent
+- /webdesign-bedrijf → Engelse equivalent
+- /kosten-website-laten-maken → Engelse equivalent
+- /website-laten-maken-bedrijven → Engelse equivalent
+- /website-voor-bedrijven → Engelse equivalent, als deze route blijft bestaan
+- /website-voor-zzp → Engelse equivalent
+- /website-voor-mkb → Engelse equivalent
+- /applicaties → Engelse applicaties-content
+- /crm-systeem-laten-maken → Engelse CRM-content
+- /contact → Engelse contact-content
+
+EN → NL:
+- Engelse homepage → /
+- Engelse websites-content → /websites
+- Engelse variant van website development Amsterdam → /website-laten-maken-amsterdam
+- Engelse variant van web design company → /webdesign-bedrijf
+- Engelse variant van website development costs → /kosten-website-laten-maken
+- Engelse variant van website development for businesses → /website-laten-maken-bedrijven
+- Engelse variant van website for freelancers → /website-voor-zzp
+- Engelse variant van website for SMEs → /website-voor-mkb
+- Engelse applicaties-content → /applicaties
+- Engelse CRM-content → /crm-systeem-laten-maken
+- Engelse contact-content → /contact
+
+Als het project geen aparte Engelse URL’s gebruikt maar één route met language state/context:
+- Zorg dat de route behouden blijft bij het wisselen van taal.
+- Alleen de contenttaal moet veranderen.
+- De gebruiker mag niet teruggestuurd worden naar de homepage.
+- Alle componenten moeten reageren op de actieve taal.
+- De actieve taal moet bewaard blijven bij navigatie, refresh en interne links.
+
+STRUCTUUR / ROUTES:
+Controleer hoe de website taal technisch regelt:
+- Als er een i18n-systeem of translation object bestaat, werk alle NL en EN strings daarin bij.
+- Als er aparte routebestanden zijn voor NL/EN, pas beide aan.
+- Als de taalwisselaar via state/context werkt, zorg dat alle componenten daar correct op reageren.
+- Geen tekst hardcoded in één taal laten staan.
+- Voeg waar nodig ontbrekende vertaalkeys toe.
+- Controleer dat de taalkeuze correct blijft werken bij navigatie tussen pagina’s.
+- Controleer of alle populaire diensten routes bestaan.
+- Maak ontbrekende routes aan, vooral /website-voor-mkb.
+- Zorg dat elke nieuwe route is opgenomen in router, sitemap, interne links en eventueel locale route mapping.
+
+SEO / HREFLANG:
+Controleer of meertalige SEO goed staat:
+- Voeg of controleer hreflang-tags voor Nederlands en Engels waar technisch mogelijk.
+- Gebruik correcte canonical tags.
+- Elke taalversie moet eigen title en meta description hebben.
+- Geen duplicate meta titles tussen NL en EN.
+- Geen dubbele H1’s.
+- Gebruik logische H2’s per sectie.
+- Structured data moet kloppen voor Organization, LocalBusiness, WebSite en Service.
+- Als structured data taalgevoelige velden heeft, maak deze passend per taal.
+- Nieuwe pagina /website-voor-mkb moet ook in sitemap.xml staan.
+- Als er een Engelse route-equivalent bestaat, voeg die ook toe aan sitemap en hreflang.
+- Controleer dat robots.txt de belangrijke pagina’s niet blokkeert.
+
+NIEUWE PAGINA /website-voor-mkb — NEDERLANDS:
+Maak een volledige pagina voor “Website voor MKB”.
+
+SEO-title:
+“Website voor MKB laten maken | ZentrixDigital Amsterdam”
+
+Meta description:
+“Laat een professionele website voor uw MKB-bedrijf maken door ZentrixDigital. Moderne websites met SEO-basis, WhatsApp, formulieren en uitbreidbare systemen.”
+
+H1:
+“Website voor MKB laten maken”
+
+Intro:
+“Als MKB-bedrijf heeft u meer nodig dan alleen een mooie website. Uw website moet vertrouwen opbouwen, duidelijk maken wat u aanbiedt en bezoekers snel naar contact, offerte of aanvraag begeleiden. ZentrixDigital bouwt professionele websites voor MKB-bedrijven die online serieuzer willen overkomen en makkelijker aanvragen willen ontvangen.”
+
+H2-secties:
+1. “Waarom een sterke website belangrijk is voor MKB-bedrijven”
+2. “Wat wij bouwen voor MKB-bedrijven”
+3. “Van website naar online systeem”
+4. “Voor welke MKB-bedrijven is dit geschikt?”
+5. “Website voor MKB laten maken door ZentrixDigital”
+
+Verwerk natuurlijk:
+- website voor MKB
+- website laten maken voor MKB
+- professionele website
+- MKB-bedrijf
+- aanvragen
+- contactformulier
+- WhatsApp
+- SEO-basis
+- maatwerk applicaties
+- CRM
+- klantportaal
+- Amsterdam
+- Nederland
+
+CTA:
+“Vraag gratis websiteanalyse aan”
+en
+“Bespreek uw MKB-website”
+
+FAQ:
+- Wat kost een website voor een MKB-bedrijf?
+- Hoe lang duurt het om een MKB-website te maken?
+- Kan mijn website later worden uitgebreid met CRM of een klantportaal?
+- Is de website geschikt voor mobiel?
+- Helpen jullie ook met SEO en Google Analytics?
+
+NIEUWE PAGINA /website-voor-mkb — ENGELS:
+Maak ook de Engelse content voor dezelfde pagina.
+
+SEO-title:
+“Website development for SMEs | ZentrixDigital Amsterdam”
+
+Meta description:
+“Professional website development for SMEs by ZentrixDigital. Modern websites with SEO foundation, WhatsApp, forms and scalable business systems.”
+
+H1:
+“Website development for SMEs”
+
+Intro:
+“As an SME, you need more than a good-looking website. Your website should build trust, explain your services clearly and guide visitors towards contact, quote requests or enquiries. ZentrixDigital builds professional websites for SMEs that want a stronger digital presence and a better online foundation.”
+
+H2-secties:
+1. “Why a strong website matters for SMEs”
+2. “What we build for SMEs”
+3. “From website to online system”
+4. “Which SMEs we help”
+5. “Website development for SMEs by ZentrixDigital”
+
+Verwerk natuurlijk:
+- website development for SMEs
+- professional website
+- SME business
+- enquiries
+- contact form
+- WhatsApp
+- SEO foundation
+- custom web applications
+- CRM
+- customer portal
+- Amsterdam
+- Netherlands
+
+CTA:
+“Request a free website review”
+and
+“Discuss your SME website”
+
+FAQ:
+- What does a website for an SME cost?
+- How long does it take to build an SME website?
+- Can my website later be expanded with CRM or a customer portal?
+- Will the website work well on mobile?
+- Do you help with SEO and Google Analytics?
+
+HOMEPAGE AANPASSINGEN — NEDERLANDS:
+Hero:
+H1:
+“Professionele website laten maken in Amsterdam”
+
+Subtitel:
+“ZentrixDigital bouwt moderne websites, maatwerkapplicaties en slimme contactsystemen voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online uitstraling willen.”
+
+CTA-knoppen:
+Primair: “Gratis websiteanalyse aanvragen”
+Secundair: “Bekijk onze oplossingen”
+
+Sectie:
+Titel:
+“Niet zomaar een website, maar een online systeem”
+
+Tekst:
+“Een goede website moet meer doen dan mooi ogen. Bezoekers moeten direct begrijpen wat u aanbiedt, waarom ze u kunnen vertrouwen en hoe ze eenvoudig contact opnemen. Daarom bouwt ZentrixDigital websites die uitbreidbaar zijn met WhatsApp, formulieren, boekingen, dashboards, CRM-systemen en andere slimme functies.”
+
+Sectie:
+Titel:
+“Voor wie bouwen wij?”
+
+Cards:
+1. “Startende ondernemers”
+Tekst:
+“Voor ondernemers die professioneel online willen starten met een sterke website, contactformulier en WhatsApp-koppeling.”
+
+2. “Lokale dienstverleners”
+Tekst:
+“Voor administratiekantoren, uitzendbureaus, makelaars, rijscholen, salons en servicebedrijven die meer aanvragen willen ontvangen.”
+
+3. “Groeiende bedrijven”
+Tekst:
+“Voor bedrijven die meer nodig hebben dan een standaard website: dashboards, CRM, boekingssystemen of klantportalen.”
+
+Sectie:
+Titel:
+“Meer dan een website nodig?”
+
+Tekst:
+“Sommige bedrijven hebben niet genoeg aan een gewone website. Daarom bouwt ZentrixDigital ook maatwerkapplicaties zoals klantportalen, dashboards, boekingssystemen, CRM-systemen en interne tools.”
+
+CTA:
+“Bekijk maatwerk applicaties”
+
+Vertrouwensblok:
+Titel:
+“Wat u krijgt bij ZentrixDigital”
+
+Punten:
+- Mobielvriendelijke website
+- SEO-basisstructuur
+- WhatsApp-contactknop
+- Contactformulier
+- Snelle laadtijd
+- Google Analytics mogelijk
+- Search Console setup mogelijk
+- Uitbreidbaar naar CRM, dashboard of klantportaal
+
+Sluitzin:
+“Eerlijk gebouwd. Geen loze beloftes. Geen standaard template zonder strategie.”
+
+Lokale SEO-zin:
+“ZentrixDigital is gevestigd in Amsterdam en werkt voor ondernemers in Amsterdam, Noord-Holland en de rest van Nederland.”
+
+HOMEPAGE AANPASSINGEN — ENGELS:
+Hero:
+H1:
+“Professional website development in Amsterdam”
+
+Subtitle:
+“ZentrixDigital builds modern websites, custom web applications and smart contact systems for entrepreneurs who want more trust, better enquiries and a stronger digital presence.”
+
+CTA buttons:
+Primary: “Request a free website review”
+Secondary: “View our solutions”
+
+Section:
+Title:
+“Not just a website, but an online system”
+
+Text:
+“A good website should do more than look nice. Visitors need to understand what you offer, why they can trust you and how they can contact you without friction. That is why ZentrixDigital builds websites that can be expanded with WhatsApp, forms, bookings, dashboards, CRM systems and other smart features.”
+
+Section:
+Title:
+“Who we build for”
+
+Cards:
+1. “Starting entrepreneurs”
+Text:
+“For entrepreneurs who want to launch professionally with a strong website, contact form and WhatsApp connection.”
+
+2. “Local service providers”
+Text:
+“For accountants, recruitment agencies, real estate businesses, driving schools, salons and service companies that want to receive better enquiries.”
+
+3. “Growing businesses”
+Text:
+“For companies that need more than a standard website: dashboards, CRM, booking systems or customer portals.”
+
+Section:
+Title:
+“Need more than a website?”
+
+Text:
+“Some businesses need more than a regular website. ZentrixDigital also builds custom web applications such as customer portals, dashboards, booking systems, CRM systems and internal tools.”
+
+CTA:
+“View custom applications”
+
+Trust block:
+Title:
+“What you get with ZentrixDigital”
+
+Points:
+- Mobile-friendly website
+- SEO foundation
+- WhatsApp contact button
+- Contact form
+- Fast loading speed
+- Google Analytics setup possible
+- Search Console setup possible
+- Expandable to CRM, dashboard or customer portal
+
+Closing sentence:
+“Built honestly. No empty promises. No generic template without strategy.”
+
+Local SEO sentence:
+“ZentrixDigital is based in Amsterdam and works with entrepreneurs in Amsterdam, North Holland and across the Netherlands.”
+
+CLAIMS VEILIGER MAKEN — BEIDE TALEN:
+Vervang harde claims zoals:
+“Binnen 7 dagen live”
+door:
+“Snelle oplevering mogelijk bij complete input”
+of:
+“Binnen 7 werkdagen startklaar bij snelle aanlevering van teksten, logo en domeingegevens.”
+
+Engels:
+Replace hard claims like:
+“Live within 7 days”
+with:
+“Fast delivery possible when all input is complete”
+or:
+“Ready to launch within 7 working days when texts, logo and domain details are provided on time.”
+
+CONTACTPAGINA — NEDERLANDS:
+Titel:
+“Gratis websiteanalyse aanvragen”
+
+Tekst:
+“Wilt u weten waar uw website of online presentatie sterker kan? Vraag vrijblijvend een korte analyse aan en ontvang 2–3 concrete verbeterpunten.”
+
+CTA’s:
+- “Vraag gratis analyse aan”
+- “Stuur een WhatsApp-bericht”
+
+Extra tekst:
+“Reactie meestal binnen 24 uur op werkdagen.”
+
+CONTACT PAGE — ENGLISH:
+Title:
+“Request a free website review”
+
+Text:
+“Want to know where your website or online presence can be improved? Request a short, no-obligation review and receive 2–3 concrete improvement points.”
+
+CTA’s:
+- “Request free review”
+- “Send a WhatsApp message”
+
+Extra text:
+“Usually replies within 24 hours on working days.”
+
+DESIGN / UX:
+- Behoud de premium donkere uitstraling.
+- Gebruik duidelijke contrasten: witte tekst op donkere achtergronden.
+- Cards moeten goed leesbaar zijn op mobiel, tablet en desktop.
+- Zorg dat alle knoppen minimaal 44px hoog zijn op mobiel.
+- Geen horizontale scroll op mobiel.
+- CTA’s moeten duidelijk zichtbaar zijn.
+- De WhatsApp-knop moet duidelijk aanwezig zijn, maar niet storend.
+- De LinkedIn-link moet correct verwijzen naar:
+  https://www.linkedin.com/in/k-hizi-95663b405/
+- Zorg dat de language switcher duidelijk werkt op desktop, tablet en mobiel.
+- Controleer dat menu-items in beide talen logisch zijn.
+- Controleer dat “Populaire diensten” op mobiel netjes onder elkaar valt en geen horizontale overflow veroorzaakt.
+
+INTERNE LINKS:
+Voeg interne links toe tussen:
+- homepage → websites
+- homepage → applicaties
+- homepage → CRM
+- homepage → website voor MKB
+- homepage → website voor ZZP
+- homepage → website laten maken Amsterdam
+- homepage → kosten website laten maken
+- homepage → webdesign bedrijf
+- websites → contact
+- applicaties → contact
+- CRM → contact
+- website voor MKB → contact
+- website voor MKB → CRM
+- website voor MKB → applicaties
+- Engelse homepage → English websites/applications/CRM/contact/SME content
+- Nederlandse homepage → Nederlandse websites/applicaties/CRM/contact/MKB content
+
+TECHNISCHE CONTROLE:
+Controleer:
+- sitemap.xml
+- robots.txt
+- canonical tags
+- hreflang-tags
+- meta titles
+- meta descriptions
+- Open Graph title/description/image
+- Twitter/X card tags
+- alt-teksten
+- structured data
+- language switcher
+- routing
+- redirects
+- populaire diensten links
+- mobile responsiveness
+- tablet responsiveness
+- desktop layout
+- build errors
+
+NIET DOEN:
+- Geen bestaande routes verwijderen zonder redirect.
+- Geen SEO-pagina’s samenvoegen zonder canonical/redirect-plan.
+- Geen fake reviews toevoegen.
+- Geen fake klantenlogo’s toevoegen.
+- Geen harde omzetgaranties.
+- Geen “wij leveren klanten gegarandeerd”.
+- Geen Engelse tekst op Nederlandse pagina’s laten staan.
+- Geen Nederlandse tekst op Engelse pagina’s laten staan.
+- Geen duplicate H1’s.
+- Geen lege pagina’s.
+- Geen placeholder content.
+- Geen populaire diensten links naar niet-bestaande pagina’s laten staan.
+- Geen taalwisselaar die terugvalt naar homepage als er een equivalent bestaat.
+
+CONTROLE NA AANPASSING:
+Voer daarna een volledige check uit:
+- Geen TypeScript errors
+- Geen build errors
+- Geen broken links
+- Geen dubbele H1’s
+- Geen kapotte mobiele layout
+- Geen ontbrekende alt-teksten bij belangrijke afbeeldingen
+- Geen half vertaalde content
+- Geen ontbrekende vertaalkeys
+- Geen console errors
+- Geen 404 op /website-voor-mkb
+- Geen 404 vanuit populaire diensten
+- Taalwisselaar behoudt de huidige pagina waar mogelijk
+- Lighthouse moet redelijk scoren op performance, accessibility, best practices en SEO
+- Controleer of de website lokaal buildt en production-ready is
+
+OPLEVERING:
+Geef na het aanpassen een overzicht van:
+1. Welke bestanden zijn aangepast
+2. Welke Nederlandse SEO-wijzigingen zijn gedaan
+3. Welke Engelse SEO-wijzigingen zijn gedaan
+4. Welke conversieverbeteringen zijn gedaan
+5. Welke routes/pagina’s zijn gecontroleerd
+6. Welke nieuwe routes/pagina’s zijn aangemaakt, vooral /website-voor-mkb
+7. Of er redirects/canonicals/hreflang-tags nodig waren
+8. Of de language switcher volledig werkt zonder terug te springen naar de homepage
+9. Of alle populaire diensten links werken
+10. Of de build succesvol is
+11. Welke punten daarna handmatig nog gecontroleerd moeten worden in Google Search Console

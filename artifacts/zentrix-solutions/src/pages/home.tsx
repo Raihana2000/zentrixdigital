@@ -196,6 +196,24 @@ const Home = () => {
         </motion.div>
       </section>
 
+      {/* ─── SYSTEM SECTION ─────────────────────────────────── */}
+      <section className="py-14 sm:py-20 px-5 bg-[#060b13]">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
+            className="rounded-3xl border border-blue-500/[0.38] p-7 sm:p-12 text-center"
+            style={{ background: 'radial-gradient(ellipse 100% 80% at 50% 0%, rgba(37,99,235,0.09) 0%, rgba(6,11,19,0) 70%), linear-gradient(135deg, rgba(13,21,37,0.9) 0%, rgba(8,13,24,0.95) 100%)' }}
+          >
+            <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
+              {t.home.systemSectionTitle}
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-[#F5F7FF] text-base leading-relaxed max-w-2xl mx-auto">
+              {t.home.systemSectionText}
+            </motion.p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ─── PROBLEM SECTION ─────────────────────────────────── */}
       <section className="py-16 sm:py-24 lg:py-28 px-5 bg-[#080d16]">
         <div className="pointer-events-none absolute left-0 right-0 h-px glow-line opacity-50" />
@@ -288,6 +306,32 @@ const Home = () => {
         </div>
       </section>
 
+      {/* ─── MORE THAN A WEBSITE ─────────────────────────────── */}
+      <section className="py-14 sm:py-20 px-5 bg-[#080d16]">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
+            className="flex flex-col md:flex-row items-center gap-8 md:gap-12 p-7 sm:p-10 rounded-3xl border border-blue-500/[0.38] bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80"
+          >
+            <motion.div variants={fadeUp} className="flex-1 min-w-0">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 tracking-tight">
+                {t.home.moreAppsTitle}
+              </h2>
+              <p className="text-[#F5F7FF] text-base leading-relaxed">
+                {t.home.moreAppsText}
+              </p>
+            </motion.div>
+            <motion.div variants={fadeUp} className="shrink-0 w-full md:w-auto">
+              <Link href="/applicaties">
+                <button className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-semibold text-sm transition-all duration-300 shadow-[0_0_24px_rgba(37,99,235,0.4)] hover:shadow-[0_0_36px_rgba(37,99,235,0.6)] hover:scale-[1.02]">
+                  {t.home.moreAppsCta} <ArrowRight className="w-4 h-4" />
+                </button>
+              </Link>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ─── EXTENSIONS ──────────────────────────────────────── */}
       <section className="py-20 sm:py-28 lg:py-32 px-5 bg-gradient-to-b from-[#060b13] to-[#080d18]">
         <div className="max-w-6xl mx-auto">
@@ -339,6 +383,40 @@ const Home = () => {
               </button>
             </Link>
           </motion.div>
+        </div>
+      </section>
+
+      {/* ─── TRUST BLOCK ─────────────────────────────────────── */}
+      <section className="py-14 sm:py-20 px-5 bg-[#080d16]">
+        <div className="max-w-5xl mx-auto">
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
+            className="text-center mb-10"
+          >
+            <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
+              {t.home.trustBlockTitle}
+            </motion.h2>
+          </motion.div>
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerFast}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-8"
+          >
+            {t.home.trustBlockItems.map((item, i) => (
+              <motion.div
+                key={i} variants={fadeUp}
+                className="flex items-center gap-3 p-4 rounded-xl bg-[rgba(9,14,26,0.98)] border border-blue-500/[0.45] hover:border-blue-400/[0.75] transition-all duration-200"
+              >
+                <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0" />
+                <span className="text-sm text-white font-medium">{item}</span>
+              </motion.div>
+            ))}
+          </motion.div>
+          <motion.p
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
+            className="text-center text-sm text-[#D9E1F2] italic"
+          >
+            {t.home.trustBlockClose}
+          </motion.p>
         </div>
       </section>
 
@@ -515,6 +593,33 @@ const Home = () => {
                   <p className="text-white font-bold text-xs leading-tight mb-1.5">{item.label}</p>
                   <p className="text-[#D9E1F2] text-xs leading-tight">{item.sub}</p>
                 </div>
+              ))}
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ─── POPULAIRE DIENSTEN ──────────────────────────────── */}
+      <section className="py-14 sm:py-20 px-5 bg-[#080d16]">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
+          >
+            <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl font-bold text-white mb-8 tracking-tight text-center">
+              {t.home.popularTitle}
+            </motion.h2>
+            <motion.div variants={stagger} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+              {t.home.popularItems.map((item) => (
+                <motion.div key={item.href} variants={fadeUp}>
+                  <Link
+                    href={item.href}
+                    className="group flex items-center justify-center text-center p-4 rounded-xl border border-blue-500/[0.45] bg-[rgba(9,14,26,0.98)] hover:border-blue-400/[0.80] hover:bg-[rgba(9,16,30,0.99)] transition-all duration-200 h-full min-h-[72px]"
+                  >
+                    <span className="text-xs font-semibold text-white group-hover:text-blue-300 transition-colors duration-200 leading-tight">
+                      {item.label}
+                    </span>
+                  </Link>
+                </motion.div>
               ))}
             </motion.div>
           </motion.div>

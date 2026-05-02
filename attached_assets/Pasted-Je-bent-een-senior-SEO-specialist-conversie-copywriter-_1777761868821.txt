@@ -1,0 +1,176 @@
+Je bent een senior SEO-specialist, conversie-copywriter, UX-designer en frontend developer.
+
+Analyseer en verbeter de website van ZentrixDigital: https://www.zentrixdigital.eu/
+
+BELANGRIJK:
+- Verwijder geen bestaande SEO-waarde.
+- Behoud de hoofdpositionering rond “Professionele website laten maken in Amsterdam”.
+- Maak de website scherper, professioneler en conversiegerichter.
+- Zorg dat alle aanpassingen production-ready zijn.
+- Maak geen loze claims, geen nep-reviews, geen fake “trusted by” logo’s en geen overdreven garanties.
+- Gebruik alleen eerlijke, geloofwaardige commerciële taal.
+- Alles moet mobiel, tablet en desktop goed werken.
+- Geen lege pagina’s, geen kapotte links, geen placeholder-content.
+
+DOEL VAN DE AANPASSING:
+ZentrixDigital moet niet overkomen als een standaard webdesigner, maar als een moderne agency die websites, maatwerkapplicaties en slimme online systemen bouwt voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online presentatie willen.
+
+BELANGRIJKSTE SEO-FOCUS:
+Homepage:
+- Focus keyword: “website laten maken Amsterdam”
+- H1 moet blijven of worden: “Professionele website laten maken in Amsterdam”
+- Verwerk ook natuurlijk: professionele websites, maatwerk applicaties, ondernemers, bedrijven, online aanvragen, WhatsApp, formulieren, CRM en Amsterdam.
+
+Andere pagina’s:
+- /websites: focus op “professionele website laten maken”
+- /website-laten-maken-bedrijven: focus op “website laten maken voor bedrijven”
+- /website-voor-bedrijven: controleer of deze pagina niet te veel overlapt met /website-laten-maken-bedrijven. Als ze bijna dezelfde zoekintentie hebben, maak één pagina duidelijk de hoofdversie en maak de andere specifieker, bijvoorbeeld “website voor zzp” of “website voor mkb”.
+- /applicaties: focus op “maatwerk applicatie laten bouwen”
+- /crm-systeem-laten-maken: focus op “CRM systeem laten maken”
+- /contact: focus op “gratis websiteanalyse aanvragen” en “offerte aanvragen website”
+
+HOMEPAGE AANPASSINGEN:
+1. Hero verbeteren:
+   H1:
+   “Professionele website laten maken in Amsterdam”
+
+   Subtitel:
+   “ZentrixDigital bouwt moderne websites, maatwerkapplicaties en slimme contactsystemen voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online uitstraling willen.”
+
+   CTA-knoppen:
+   Primaire knop: “Gratis websiteanalyse aanvragen”
+   Secundaire knop: “Bekijk onze oplossingen”
+
+2. Voeg direct onder de hero een sterke sectie toe:
+
+   Titel:
+   “Niet zomaar een website, maar een online systeem”
+
+   Tekst:
+   “Een goede website moet meer doen dan mooi ogen. Bezoekers moeten direct begrijpen wat u aanbiedt, waarom ze u kunnen vertrouwen en hoe ze eenvoudig contact opnemen. Daarom bouwt ZentrixDigital websites die uitbreidbaar zijn met WhatsApp, formulieren, boekingen, dashboards, CRM-systemen en andere slimme functies.”
+
+3. Voeg een sectie toe “Voor wie bouwen wij?”
+
+   Cards:
+   - Startende ondernemers
+     Tekst: “Voor ondernemers die professioneel online willen starten met een sterke website, contactformulier en WhatsApp-koppeling.”
+   - Lokale dienstverleners
+     Tekst: “Voor administratiekantoren, uitzendbureaus, makelaars, rijscholen, salons en servicebedrijven die meer aanvragen willen ontvangen.”
+   - Groeiende bedrijven
+     Tekst: “Voor bedrijven die meer nodig hebben dan een standaard website: dashboards, CRM, boekingssystemen of klantportalen.”
+
+4. Voeg een sectie toe “Meer dan een website nodig?”
+
+   Tekst:
+   “Sommige bedrijven hebben niet genoeg aan een gewone website. Daarom bouwt ZentrixDigital ook maatwerkapplicaties zoals klantportalen, dashboards, boekingssystemen, CRM-systemen en interne tools.”
+
+   CTA:
+   “Bekijk maatwerk applicaties”
+
+5. Voeg een bewijs-/vertrouwensblok toe zonder nepclaims:
+
+   Titel:
+   “Wat u krijgt bij ZentrixDigital”
+
+   Punten:
+   - Mobielvriendelijke website
+   - SEO-basisstructuur
+   - WhatsApp-contactknop
+   - Contactformulier
+   - Snelle laadtijd
+   - Google Analytics mogelijk
+   - Search Console setup mogelijk
+   - Uitbreidbaar naar CRM, dashboard of klantportaal
+
+   Sluitzin:
+   “Eerlijk gebouwd. Geen loze beloftes. Geen standaard template zonder strategie.”
+
+6. Formuleer claims veiliger:
+   Vervang harde claims zoals:
+   “Binnen 7 dagen live”
+   door:
+   “Snelle oplevering mogelijk bij complete input”
+   of:
+   “Binnen 7 werkdagen startklaar bij snelle aanlevering van teksten, logo en domeingegevens.”
+
+7. Voeg lokale SEO natuurlijk toe:
+   Tekst ergens op homepage/contactpagina:
+   “ZentrixDigital is gevestigd in Amsterdam en werkt voor ondernemers in Amsterdam, Noord-Holland en de rest van Nederland.”
+
+DESIGN / UX:
+- Behoud de premium donkere uitstraling.
+- Gebruik duidelijke contrasten: witte tekst op donkere achtergronden.
+- Cards moeten goed leesbaar zijn op mobiel, tablet en desktop.
+- Zorg dat alle knoppen minimaal 44px hoog zijn op mobiel.
+- Geen horizontale scroll op mobiel.
+- CTA’s moeten duidelijk zichtbaar zijn.
+- De WhatsApp-knop moet duidelijk aanwezig zijn, maar niet storend.
+- De LinkedIn-link moet correct verwijzen naar:
+  https://www.linkedin.com/in/k-hizi-95663b405/
+
+SEO TECHNISCH:
+- Controleer title tags en meta descriptions per pagina.
+- Elke pagina moet één duidelijke H1 hebben.
+- Gebruik H2’s logisch voor secties.
+- Voeg interne links toe tussen:
+  homepage → websites
+  homepage → applicaties
+  homepage → CRM
+  websites → contact
+  applicaties → contact
+  CRM → contact
+- Controleer canonical tags, vooral bij pagina’s die op elkaar lijken.
+- Zorg dat sitemap.xml en robots.txt correct blijven.
+- Verwijder geen bestaande routes zonder redirect.
+- Als een route wordt samengevoegd of hernoemd, voeg een nette 301 redirect toe.
+- Zorg dat structured data waar mogelijk correct blijft of wordt toegevoegd:
+  Organization
+  LocalBusiness
+  WebSite
+  Service
+
+CONTACT / CONVERSIE:
+Maak de contactpagina sterker met:
+- Titel: “Gratis websiteanalyse aanvragen”
+- Tekst: “Wilt u weten waar uw website of online presentatie sterker kan? Vraag vrijblijvend een korte analyse aan en ontvang 2–3 concrete verbeterpunten.”
+- CTA’s:
+  “Vraag gratis analyse aan”
+  “Stuur een WhatsApp-bericht”
+- Voeg tekst toe:
+  “Reactie meestal binnen 24 uur op werkdagen.”
+
+CONTENTREGELS:
+- Schrijf in professioneel Nederlands.
+- Gebruik geen overdreven marketingtaal.
+- Houd het helder, zakelijk en betrouwbaar.
+- Geen garanties op klanten of omzet.
+- Wel benadrukken:
+  vertrouwen
+  betere online uitstraling
+  makkelijker contact
+  meer aanvragen
+  slimme systemen
+  professionele basis
+  schaalbaarheid
+
+CONTROLE NA AANPASSING:
+Voer daarna een volledige check uit:
+- Geen TypeScript errors
+- Geen build errors
+- Geen broken links
+- Geen dubbele H1’s
+- Geen kapotte mobiele layout
+- Geen ontbrekende alt-teksten bij belangrijke afbeeldingen
+- Geen lege pagina’s
+- Lighthouse moet redelijk scoren op performance, accessibility, best practices en SEO
+- Controleer of de website lokaal buildt en production-ready is
+
+OPLEVERING:
+Geef na het aanpassen een overzicht van:
+1. Welke bestanden zijn aangepast
+2. Welke SEO-wijzigingen zijn gedaan
+3. Welke conversieverbeteringen zijn gedaan
+4. Welke routes/pagina’s zijn gecontroleerd
+5. Of er redirects/canonicals nodig waren
+6. Of de build succesvol is
+7. Welke punten ik daarna handmatig nog moet controleren in Google Search Console

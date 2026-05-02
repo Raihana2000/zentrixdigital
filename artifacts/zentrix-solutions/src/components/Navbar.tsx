@@ -7,6 +7,8 @@ import logoPath from "@assets/ChatGPT_Image_20_apr_2026,_10_49_46_1776675127194.
 const ROUTE_MAP_NL_TO_EN: Record<string, string> = {
   '/website-laten-maken-zzp': '/en/website-for-freelancers',
   '/website-laten-maken-bedrijven': '/en/website-for-businesses',
+  '/website-voor-bedrijven': '/en/website-for-businesses',
+  '/website-voor-mkb': '/en/website-for-smes',
   '/crm-systeem-laten-maken': '/en/crm-system-development',
   '/boekingssysteem-laten-maken': '/en/booking-system-development',
   '/bedrijfsprocessen-automatiseren': '/en/business-automation',
@@ -15,6 +17,7 @@ const ROUTE_MAP_NL_TO_EN: Record<string, string> = {
 const ROUTE_MAP_EN_TO_NL: Record<string, string> = {
   '/en/website-for-freelancers': '/website-laten-maken-zzp',
   '/en/website-for-businesses': '/website-laten-maken-bedrijven',
+  '/en/website-for-smes': '/website-voor-mkb',
   '/en/crm-system-development': '/crm-systeem-laten-maken',
   '/en/booking-system-development': '/boekingssysteem-laten-maken',
   '/en/business-automation': '/bedrijfsprocessen-automatiseren',
@@ -35,6 +38,7 @@ const Navbar = () => {
   const solutionsNL = [
     { href: '/website-laten-maken-zzp', label: 'Website voor ZZP' },
     { href: '/website-laten-maken-bedrijven', label: 'Website voor bedrijven' },
+    { href: '/website-voor-mkb', label: 'Website voor MKB' },
     { href: '/crm-systeem-laten-maken', label: 'CRM systeem laten maken' },
     { href: '/boekingssysteem-laten-maken', label: 'Boekingssysteem laten maken' },
     { href: '/bedrijfsprocessen-automatiseren', label: 'Procesautomatisering' },
@@ -43,6 +47,7 @@ const Navbar = () => {
   const solutionsEN = [
     { href: '/en/website-for-freelancers', label: 'Website for Freelancers' },
     { href: '/en/website-for-businesses', label: 'Website for Businesses' },
+    { href: '/en/website-for-smes', label: 'Website for SMEs' },
     { href: '/en/crm-system-development', label: 'CRM System Development' },
     { href: '/en/booking-system-development', label: 'Booking System Development' },
     { href: '/en/business-automation', label: 'Business Automation' },
@@ -92,7 +97,7 @@ const Navbar = () => {
     const next = language === 'nl' ? 'en' : 'nl';
     setLanguage(next);
     const loc = location.replace(/\/$/, '');
-    navigate(next === 'en' ? (ROUTE_MAP_NL_TO_EN[loc] ?? '/') : (ROUTE_MAP_EN_TO_NL[loc] ?? '/'));
+    navigate(next === 'en' ? (ROUTE_MAP_NL_TO_EN[loc] ?? loc) : (ROUTE_MAP_EN_TO_NL[loc] ?? loc));
   };
 
   /* ── Desktop dropdown: hover (mouse) + click (touch/keyboard) ── */
