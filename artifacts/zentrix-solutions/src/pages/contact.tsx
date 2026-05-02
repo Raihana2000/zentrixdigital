@@ -117,22 +117,45 @@ const Contact = () => {
                     href: "https://www.linkedin.com/in/k-hizi-95663b405/",
                     external: true,
                     icon: null,
+                    svgKey: 'linkedin' as const,
                     label: t.contact.labelLinkedIn,
                     value: t.contact.linkedinCta,
                     testid: "contact-linkedin"
                   },
-                ].map(({ href, external, icon: Icon, label, value, testid }) => (
+                  {
+                    href: "https://www.instagram.com/zentrixdigital01/",
+                    external: true,
+                    icon: null,
+                    svgKey: 'instagram' as const,
+                    label: t.contact.labelInstagram,
+                    value: t.contact.instagramCta,
+                    testid: "contact-instagram"
+                  },
+                ].map(({ href, external, icon: Icon, svgKey, label, value, testid }) => (
                   <a
                     key={testid}
                     href={href}
                     target={external ? "_blank" : undefined}
                     rel={external ? "noopener noreferrer" : undefined}
+                    aria-label={testid === 'contact-instagram' ? 'Volg ZentrixDigital op Instagram' : undefined}
                     className="group flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.90] transition-all duration-300"
                     data-testid={testid}
                   >
                     <div className="w-10 h-10 rounded-xl bg-blue-600/[0.14] border border-blue-400/[0.30] flex items-center justify-center shrink-0 group-hover:bg-blue-500/20 group-hover:border-blue-400/[0.90] transition-all duration-300">
                       {Icon ? (
                         <Icon className="w-4.5 h-4.5 text-blue-400" size={18} />
+                      ) : svgKey === 'instagram' ? (
+                        <svg viewBox="0 0 24 24" className="w-[18px] h-[18px]" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                          <defs>
+                            <linearGradient id="ig-contact" x1="0%" y1="100%" x2="100%" y2="0%">
+                              <stop offset="0%" stopColor="#FD1D1D"/>
+                              <stop offset="50%" stopColor="#C13584"/>
+                              <stop offset="100%" stopColor="#405DE6"/>
+                            </linearGradient>
+                          </defs>
+                          <rect width="24" height="24" rx="6" fill="url(#ig-contact)"/>
+                          <path fill="white" d="M12 7.2A4.8 4.8 0 1 0 16.8 12 4.806 4.806 0 0 0 12 7.2Zm0 7.92A3.12 3.12 0 1 1 15.12 12 3.124 3.124 0 0 1 12 15.12ZM17.04 6.24a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2ZM20.4 4.8A5.6 5.6 0 0 0 16.8 3.2H7.2A5.606 5.606 0 0 0 1.6 8.8v9.6a5.6 5.6 0 0 0 5.6 5.6h9.6a5.6 5.6 0 0 0 5.6-5.6V8.8a5.606 5.606 0 0 0-1.6-4Zm0 13.6a3.92 3.92 0 0 1-3.92 3.92H7.52A3.92 3.92 0 0 1 3.6 18.4V8.8a3.924 3.924 0 0 1 3.92-3.92h8.96A3.924 3.924 0 0 1 20.4 8.8Z"/>
+                        </svg>
                       ) : (
                         <svg viewBox="0 0 24 24" className="w-[18px] h-[18px] fill-[#0A66C2] group-hover:fill-white transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                           <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>

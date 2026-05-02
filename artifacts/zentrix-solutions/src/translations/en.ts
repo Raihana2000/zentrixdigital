@@ -339,6 +339,8 @@ export const en = {
     labelEmail: "Email",
     labelLinkedIn: "LinkedIn",
     linkedinCta: "Follow us on LinkedIn",
+    labelInstagram: "Instagram",
+    instagramCta: "Follow us on Instagram",
     labelResponse: "Response time",
     responseTime: "Usually within 24 hours",
     whatsappCta: "Message via WhatsApp",
