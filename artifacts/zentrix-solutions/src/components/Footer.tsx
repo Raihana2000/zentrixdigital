@@ -186,17 +186,17 @@ const Footer = () => {
             {(isNL ? [
               { href: '/website-laten-maken-amsterdam', label: 'Website laten maken Amsterdam' },
               { href: '/webdesign-bedrijf', label: 'Webdesign bedrijf' },
-              { href: '/website-kosten', label: 'Kosten website laten maken' },
-              { href: '/website-voor-bedrijven', label: 'Website voor bedrijven' },
-              { href: '/website-laten-maken-zzp', label: 'Website voor ZZP' },
-              { href: '/website-laten-maken-bedrijven', label: 'Website voor MKB' },
+              { href: '/kosten-website-laten-maken', label: 'Kosten website laten maken' },
+              { href: '/website-laten-maken-bedrijven', label: 'Website voor bedrijven' },
+              { href: '/website-voor-zzp', label: 'Website voor ZZP' },
+              { href: '/website-voor-mkb', label: 'Website voor MKB' },
             ] : [
-              { href: '/website-laten-maken-amsterdam', label: 'Website Amsterdam' },
-              { href: '/webdesign-bedrijf', label: 'Web design agency' },
-              { href: '/website-kosten', label: 'Website pricing' },
-              { href: '/website-voor-bedrijven', label: 'Website for businesses' },
+              { href: '/en/website-development-amsterdam', label: 'Website development Amsterdam' },
+              { href: '/en/web-design-company', label: 'Web design company' },
+              { href: '/en/website-development-costs', label: 'Website development costs' },
+              { href: '/en/website-for-businesses', label: 'Website for businesses' },
               { href: '/en/website-for-freelancers', label: 'Website for freelancers' },
-              { href: '/en/website-for-businesses', label: 'Website for companies' },
+              { href: '/en/website-for-smes', label: 'Website for SMEs' },
             ]).map(({ href, label }) => (
               <Link key={href} href={href} className="text-white/50 hover:text-blue-300 transition-colors duration-200 text-xs w-fit">
                 {label}

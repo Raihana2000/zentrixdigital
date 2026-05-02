@@ -58,12 +58,13 @@ const SeoWebsiteKosten = () => (
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"
     contactLabel="Gratis offerte aanvragen"
+    langToggle={{ label: "English version", href: "/en/website-development-costs" }}
     relatedTitle="Gerelateerde pagina's"
     relatedLinks={[
       { label: "Website laten maken Amsterdam", href: "/website-laten-maken-amsterdam" },
       { label: "Professioneel webdesign bedrijf", href: "/webdesign-bedrijf" },
-      { label: "Website laten maken voor bedrijven", href: "/website-voor-bedrijven" },
-      { label: "Website voor ZZP", href: "/website-laten-maken-zzp" }
+      { label: "Website laten maken voor bedrijven", href: "/website-laten-maken-bedrijven" },
+      { label: "Website voor ZZP", href: "/website-voor-zzp" }
     ]}
   />
 );

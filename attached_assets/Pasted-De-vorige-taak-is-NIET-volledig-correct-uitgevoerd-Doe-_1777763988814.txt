@@ -1,0 +1,162 @@
+De vorige taak is NIET volledig correct uitgevoerd.
+
+Doe nu GEEN algemene verbetering en GEEN nieuwe marketingaanpassingen. Focus alleen op bugs oplossen en bewijs leveren.
+
+PROBLEMEN DIE NU BESTAAN:
+1. In de footer bij “Populaire diensten” staat “Website voor MKB”, maar deze lijkt geen werkende pagina te hebben.
+2. “Website voor MKB” moet werken in Nederlands én Engels.
+3. De Nederlandse route moet zijn:
+   /website-voor-mkb
+4. De Engelse route moet zijn:
+   /en/website-for-smes
+5. De taalwisselaar moet op deze pagina’s correct heen en terug werken:
+   /website-voor-mkb → /en/website-for-smes
+   /en/website-for-smes → /website-voor-mkb
+6. “Webdesign bedrijf” moet ook correct naar Engels schakelen.
+7. De taalwisselaar mag bij deze pagina’s NIET teruggaan naar de homepage.
+
+STOP MET ZEGGEN DAT HET WERKT ZONDER HET TE TESTEN.
+
+VOER DEZE CONTROLES UIT IN DE CODEBASE:
+- Zoek waar de routes worden gedefinieerd.
+- Controleer of /website-voor-mkb echt in de router staat.
+- Controleer of /en/website-for-smes echt in de router staat.
+- Controleer of beide routes een echte pagina/component renderen.
+- Controleer of de footerlink “Website voor MKB” naar /website-voor-mkb gaat.
+- Controleer of de Engelse footerlink “Website for SMEs” naar /en/website-for-smes gaat.
+- Controleer of de route mapping voor de language switcher deze routes bevat.
+- Controleer ook de mapping voor:
+  /webdesign-bedrijf ↔ /en/web-design-company
+- Als /en/web-design-company nog niet bestaat, maak deze route of koppel hem correct aan bestaande Engelse webdesign-content.
+- Voeg ontbrekende routes toe aan App.tsx of het routerbestand.
+- Voeg ontbrekende vertalingen toe aan nl.ts en en.ts.
+- Voeg ontbrekende sitemap entries toe voor:
+  /website-voor-mkb
+  /en/website-for-smes
+  /webdesign-bedrijf
+  /en/web-design-company
+
+NIEUWE PAGINA /website-voor-mkb:
+Maak een echte volledige pagina. Geen placeholder.
+
+H1:
+Website voor MKB laten maken
+
+SEO-title:
+Website voor MKB laten maken | ZentrixDigital Amsterdam
+
+Meta description:
+Laat een professionele website voor uw MKB-bedrijf maken door ZentrixDigital. Moderne websites met SEO-basis, WhatsApp, formulieren en uitbreidbare systemen.
+
+Secties:
+- Waarom een sterke website belangrijk is voor MKB-bedrijven
+- Wat wij bouwen voor MKB-bedrijven
+- Van website naar online systeem
+- Voor welke MKB-bedrijven is dit geschikt?
+- Website voor MKB laten maken door ZentrixDigital
+- FAQ
+- CTA naar contact
+
+NIEUWE ENGELSE PAGINA /en/website-for-smes:
+Maak een echte volledige Engelse pagina. Geen placeholder.
+
+H1:
+Website development for SMEs
+
+SEO-title:
+Website development for SMEs | ZentrixDigital Amsterdam
+
+Meta description:
+Professional website development for SMEs by ZentrixDigital. Modern websites with SEO foundation, WhatsApp, forms and scalable business systems.
+
+Secties:
+- Why a strong website matters for SMEs
+- What we build for SMEs
+- From website to online system
+- Which SMEs we help
+- Website development for SMEs by ZentrixDigital
+- FAQ
+- CTA to contact
+
+LANGUAGE SWITCHER:
+Maak een centrale route map als die nog niet bestaat.
+
+Minimaal moet deze mapping bestaan:
+
+const localeRouteMap = {
+  "/": "/en",
+  "/en": "/",
+
+  "/website-voor-mkb": "/en/website-for-smes",
+  "/en/website-for-smes": "/website-voor-mkb",
+
+  "/webdesign-bedrijf": "/en/web-design-company",
+  "/en/web-design-company": "/webdesign-bedrijf",
+
+  "/website-laten-maken-amsterdam": "/en/website-development-amsterdam",
+  "/en/website-development-amsterdam": "/website-laten-maken-amsterdam",
+
+  "/kosten-website-laten-maken": "/en/website-development-costs",
+  "/en/website-development-costs": "/kosten-website-laten-maken",
+
+  "/website-voor-zzp": "/en/website-for-freelancers",
+  "/en/website-for-freelancers": "/website-voor-zzp",
+
+  "/website-laten-maken-bedrijven": "/en/website-for-businesses",
+  "/en/website-for-businesses": "/website-laten-maken-bedrijven",
+
+  "/applicaties": "/en/applications",
+  "/en/applications": "/applicaties",
+
+  "/crm-systeem-laten-maken": "/en/custom-crm-system",
+  "/en/custom-crm-system": "/crm-systeem-laten-maken",
+
+  "/contact": "/en/contact",
+  "/en/contact": "/contact"
+};
+
+Gebruik deze mapping in de language switcher. De switcher mag niet standaard naar homepage gaan als er een mapping bestaat.
+
+POPULAIRE DIENSTEN:
+Controleer footer/populaire diensten.
+
+Nederlands:
+- Website laten maken Amsterdam → /website-laten-maken-amsterdam
+- Webdesign bedrijf → /webdesign-bedrijf
+- Kosten website laten maken → /kosten-website-laten-maken
+- Website voor bedrijven → /website-laten-maken-bedrijven
+- Website voor ZZP → /website-voor-zzp
+- Website voor MKB → /website-voor-mkb
+
+Engels:
+- Website development Amsterdam → /en/website-development-amsterdam
+- Web design company → /en/web-design-company
+- Website development costs → /en/website-development-costs
+- Website for businesses → /en/website-for-businesses
+- Website for freelancers → /en/website-for-freelancers
+- Website for SMEs → /en/website-for-smes
+
+NA HET FIXEN:
+Voer deze commando’s uit:
+
+npm run check
+npm run build
+
+Als dit project pnpm gebruikt, gebruik dan:
+
+pnpm check
+pnpm build
+
+Daarna moet je letterlijk rapporteren:
+1. In welk bestand de route /website-voor-mkb is toegevoegd.
+2. In welk bestand de route /en/website-for-smes is toegevoegd.
+3. In welk bestand de language switcher route mapping is aangepast.
+4. In welk bestand de footer/populaire diensten links zijn aangepast.
+5. Of /website-voor-mkb lokaal opent zonder 404.
+6. Of /en/website-for-smes lokaal opent zonder 404.
+7. Of /webdesign-bedrijf naar /en/web-design-company schakelt.
+8. Of /website-voor-mkb naar /en/website-for-smes schakelt.
+9. Of de build succesvol is.
+
+BELANGRIJK:
+Zeg niet “alles werkt perfect” zonder bovenstaande punten concreet te bewijzen.

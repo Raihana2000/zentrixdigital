@@ -58,11 +58,12 @@ const SeoWebdesignBedrijf = () => (
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"
     contactLabel="Gratis strategiegesprek aanvragen"
+    langToggle={{ label: "English version", href: "/en/web-design-company" }}
     relatedTitle="Gerelateerde pagina's"
     relatedLinks={[
       { label: "Website laten maken Amsterdam", href: "/website-laten-maken-amsterdam" },
-      { label: "Wat kost een website laten maken?", href: "/website-kosten" },
-      { label: "Website laten maken voor bedrijven", href: "/website-voor-bedrijven" },
+      { label: "Kosten website laten maken", href: "/kosten-website-laten-maken" },
+      { label: "Website laten maken voor bedrijven", href: "/website-laten-maken-bedrijven" },
       { label: "Professionele website laten maken", href: "/websites" }
     ]}
   />

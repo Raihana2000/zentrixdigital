@@ -41,11 +41,16 @@ import Concepts from "@/pages/concepts";
 import SeoMKB from "@/pages/seo-mkb";
 import SeoSMBEN from "@/pages/seo-smb-en";
 
-// SEO traffic pages
+// SEO traffic pages — NL
 import SeoAmsterdam from "@/pages/seo-amsterdam";
 import SeoWebdesignBedrijf from "@/pages/seo-webdesign-bedrijf";
 import SeoWebsiteKosten from "@/pages/seo-website-kosten";
 import SeoWebsiteVoorBedrijven from "@/pages/seo-website-voor-bedrijven";
+
+// SEO traffic pages — EN
+import SeoWebdesignEN from "@/pages/seo-webdesign-en";
+import SeoAmsterdamEN from "@/pages/seo-amsterdam-en";
+import SeoCostsEN from "@/pages/seo-costs-en";
 
 // Legal pages
 import CookiesNL from "@/pages/cookies-nl";
@@ -86,11 +91,20 @@ function Router() {
           <Route path="/website-voor-mkb" component={SeoMKB} />
           <Route path="/en/website-for-smes" component={SeoSMBEN} />
 
-          {/* SEO traffic pages */}
+          {/* SEO traffic pages — NL (canonical routes) */}
           <Route path="/website-laten-maken-amsterdam" component={SeoAmsterdam} />
           <Route path="/webdesign-bedrijf" component={SeoWebdesignBedrijf} />
           <Route path="/website-kosten" component={SeoWebsiteKosten} />
           <Route path="/website-voor-bedrijven" component={SeoWebsiteVoorBedrijven} />
+
+          {/* SEO traffic pages — NL aliases */}
+          <Route path="/website-voor-zzp" component={SeoZZP} />
+          <Route path="/kosten-website-laten-maken" component={SeoWebsiteKosten} />
+
+          {/* SEO traffic pages — EN */}
+          <Route path="/en/web-design-company" component={SeoWebdesignEN} />
+          <Route path="/en/website-development-amsterdam" component={SeoAmsterdamEN} />
+          <Route path="/en/website-development-costs" component={SeoCostsEN} />
 
           {/* SEO landing pages — systemen & automatisering */}
           <Route path="/crm-systeem-laten-maken" component={SeoCRM} />

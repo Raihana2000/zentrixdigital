@@ -60,6 +60,7 @@ const SeoAmsterdam = () => (
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"
     contactLabel="Gratis strategiegesprek aanvragen"
+    langToggle={{ label: "English version", href: "/en/website-development-amsterdam" }}
     relatedTitle="Gerelateerde pagina's"
     relatedLinks={[
       { label: "Wat kost een website laten maken?", href: "/website-kosten" },

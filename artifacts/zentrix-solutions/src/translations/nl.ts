@@ -116,9 +116,9 @@ export const nl = {
     popularItems: [
       { label: "Website laten maken Amsterdam", href: "/website-laten-maken-amsterdam" },
       { label: "Webdesign bedrijf", href: "/webdesign-bedrijf" },
-      { label: "Kosten website laten maken", href: "/website-kosten" },
+      { label: "Kosten website laten maken", href: "/kosten-website-laten-maken" },
       { label: "Website voor bedrijven", href: "/website-laten-maken-bedrijven" },
-      { label: "Website voor ZZP", href: "/website-laten-maken-zzp" },
+      { label: "Website voor ZZP", href: "/website-voor-zzp" },
       { label: "Website voor MKB", href: "/website-voor-mkb" }
     ],
     localSeoText: "ZentrixDigital is gevestigd in Amsterdam en werkt voor ondernemers in Amsterdam, Noord-Holland en de rest van Nederland.",

@@ -114,9 +114,9 @@ export const en = {
     trustBlockClose: "Honestly built. No empty promises. No off-the-shelf template without strategy.",
     popularTitle: "Popular services",
     popularItems: [
-      { label: "Website development Amsterdam", href: "/website-laten-maken-amsterdam" },
-      { label: "Web design company", href: "/webdesign-bedrijf" },
-      { label: "Website development costs", href: "/website-kosten" },
+      { label: "Website development Amsterdam", href: "/en/website-development-amsterdam" },
+      { label: "Web design company", href: "/en/web-design-company" },
+      { label: "Website development costs", href: "/en/website-development-costs" },
       { label: "Website for businesses", href: "/en/website-for-businesses" },
       { label: "Website for freelancers", href: "/en/website-for-freelancers" },
       { label: "Website for SMEs", href: "/en/website-for-smes" }
