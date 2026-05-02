@@ -119,7 +119,7 @@ export const en = {
       { label: "Website development costs", href: "/en/website-development-costs" },
       { label: "Website for businesses", href: "/en/website-for-businesses" },
       { label: "Website for freelancers", href: "/en/website-for-freelancers" },
-      { label: "Website for SMEs", href: "/en/website-for-smes" }
+      { label: "Website for small businesses", href: "/en/website-for-smes" }
     ],
     localSeoText: "ZentrixDigital is based in Amsterdam and works with businesses across Amsterdam, North Holland, and the rest of the Netherlands.",
     ctaTitle: "Ready to get more from your online presence?",

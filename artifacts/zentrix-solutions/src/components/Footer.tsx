@@ -196,7 +196,7 @@ const Footer = () => {
               { href: '/en/website-development-costs', label: 'Website development costs' },
               { href: '/en/website-for-businesses', label: 'Website for businesses' },
               { href: '/en/website-for-freelancers', label: 'Website for freelancers' },
-              { href: '/en/website-for-smes', label: 'Website for SMEs' },
+              { href: '/en/website-for-smes', label: 'Website for small businesses' },
             ]).map(({ href, label }) => (
               <Link key={href} href={href} className="text-white/50 hover:text-blue-300 transition-colors duration-200 text-xs w-fit">
                 {label}
