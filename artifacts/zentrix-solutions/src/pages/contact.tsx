@@ -16,17 +16,31 @@ const Contact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast({
-        title: t.contact.toastTitle,
-        description: t.contact.toastDesc,
+    const fd = new FormData(e.currentTarget);
+    const body = {
+      name: fd.get('name'),
+      email: fd.get('email'),
+      phone: fd.get('phone'),
+      message: fd.get('message'),
+    };
+    try {
+      const endpoint = import.meta.env.VITE_CONTACT_FORM_ENDPOINT ?? '/api/contact';
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
       });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      setIsSubmitting(false);
+      toast({ title: t.contact.toastTitle, description: t.contact.toastDesc });
       (e.target as HTMLFormElement).reset();
-    }, 900);
+    } catch {
+      setIsSubmitting(false);
+      toast({ title: t.contact.toastTitle, description: t.contact.toastDesc, variant: 'destructive' });
+    }
   };
 
   const inputCls = "premium-input";
@@ -228,7 +242,7 @@ const Contact = () => {
                     {t.contact.form.name}
                   </label>
                   <input
-                    id="name" type="text" required
+                    id="name" name="name" type="text" required
                     placeholder={t.contact.form.namePlaceholder}
                     data-testid="input-name"
                     className={inputCls}
@@ -241,7 +255,7 @@ const Contact = () => {
                       {t.contact.form.email}
                     </label>
                     <input
-                      id="email" type="email" required
+                      id="email" name="email" type="email" required
                       placeholder={t.contact.form.emailPlaceholder}
                       data-testid="input-email"
                       className={inputCls}
@@ -252,7 +266,7 @@ const Contact = () => {
                       {t.contact.form.phone}
                     </label>
                     <input
-                      id="phone" type="tel"
+                      id="phone" name="phone" type="tel"
                       placeholder={t.contact.form.phonePlaceholder}
                       data-testid="input-phone"
                       className={inputCls}
@@ -265,7 +279,7 @@ const Contact = () => {
                     {t.contact.form.message}
                   </label>
                   <textarea
-                    id="message" required rows={5}
+                    id="message" name="message" required rows={5}
                     placeholder={t.contact.form.messagePlaceholder}
                     data-testid="input-message"
                     className={textareaCls}

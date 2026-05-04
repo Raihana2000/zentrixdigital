@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import { CheckCircle2, ArrowRight, ArrowLeft, ExternalLink } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
+import LeadForm from '@/components/LeadForm';
 import { useTranslation } from '@/hooks/useTranslation';
 
 export interface ServicePageData {
@@ -70,6 +71,14 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   const [, navigate] = useLocation();
   const { setLanguage } = useTranslation();
 
+  const BASE = 'https://www.zentrixdigital.eu';
+  const hreflangNl = canonical && langToggle
+    ? (langToggle.href.startsWith('/en/') ? canonical : `${BASE}${langToggle.href}`)
+    : undefined;
+  const hreflangEn = canonical && langToggle
+    ? (langToggle.href.startsWith('/en/') ? `${BASE}${langToggle.href}` : canonical)
+    : undefined;
+
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [pageTitle]);
@@ -88,7 +97,13 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   return (
     <div className="flex flex-col min-h-screen bg-[#0B0B0B] page-top-pad">
       {canonical && metaDesc && (
-        <SEOHead title={pageTitle} description={metaDesc} canonical={canonical} />
+        <SEOHead
+          title={pageTitle}
+          description={metaDesc}
+          canonical={canonical}
+          hreflangNl={hreflangNl}
+          hreflangEn={hreflangEn}
+        />
       )}
 
       {/* ─── HERO ──────────────────────────────────────────────── */}
@@ -283,6 +298,15 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           </div>
         </section>
       )}
+
+      {/* ─── INLINE LEAD FORM ──────────────────────────────────── */}
+      <section className="py-16 px-5 bg-[#060b13]">
+        <div className="max-w-2xl mx-auto">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
+            <LeadForm />
+          </motion.div>
+        </div>
+      </section>
 
       {/* ─── CTA ───────────────────────────────────────────────── */}
       <section className="py-28 px-5 bg-[#060b13]">

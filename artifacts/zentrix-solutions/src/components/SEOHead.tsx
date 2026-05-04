@@ -5,6 +5,8 @@ interface SEOHeadProps {
   title: string;
   description: string;
   canonical: string;
+  hreflangNl?: string;
+  hreflangEn?: string;
 }
 
 const setMeta = (selector: string, attr: string, value: string) => {
@@ -25,7 +27,7 @@ const setOrCreateHreflang = (hreflang: string, href: string) => {
   el.href = href;
 };
 
-const SEOHead = ({ title, description, canonical }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, hreflangNl, hreflangEn }: SEOHeadProps) => {
   const { language } = useTranslation();
 
   useEffect(() => {
@@ -47,10 +49,10 @@ const SEOHead = ({ title, description, canonical }: SEOHeadProps) => {
     setMeta('meta[name="twitter:description"]', 'content', description);
     setMeta('meta[name="twitter:image:alt"]', 'content', title);
 
-    setOrCreateHreflang('nl', canonical);
-    setOrCreateHreflang('en', canonical);
-    setOrCreateHreflang('x-default', canonical);
-  }, [title, description, canonical, language]);
+    setOrCreateHreflang('nl', hreflangNl ?? canonical);
+    setOrCreateHreflang('en', hreflangEn ?? canonical);
+    setOrCreateHreflang('x-default', hreflangNl ?? canonical);
+  }, [title, description, canonical, hreflangNl, hreflangEn, language]);
 
   return null;
 };

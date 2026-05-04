@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-const WA_URL = "https://wa.me/31683284995?text=Goedendag,%20ik%20heb%20interesse%20in%20jullie%20diensten.%20Kunnen%20jullie%20mij%20verder%20helpen%3F";
+const WA_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER ?? "31683284995";
+const WA_URL = `https://wa.me/${WA_NUMBER}?text=Goedendag,%20ik%20heb%20interesse%20in%20jullie%20diensten.%20Kunnen%20jullie%20mij%20verder%20helpen%3F`;
 
 const WhatsAppButton = () => {
   const [hovered, setHovered] = useState(false);

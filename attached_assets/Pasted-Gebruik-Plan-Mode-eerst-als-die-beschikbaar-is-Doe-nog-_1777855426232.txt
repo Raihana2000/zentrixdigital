@@ -1,0 +1,118 @@
+Gebruik Plan Mode eerst als die beschikbaar is. Doe nog geen codewijzigingen voordat je de inventaris en het relevante-bestandenplan hebt opgeleverd.
+
+Context:
+- Bedrijf: ZentrixDigital
+- Website: www.zentrixdigital.eu
+- Publieke route-hints: <PUBLIC_ROUTE_HINTS>
+- Bekende stack: <KNOWN_STACK>
+- Talen/locales die moeten blijven werken: <LOCALES>
+- Repo-context: <REPO_CONTEXT>
+- Feature-scope: <FEATURE_SCOPE>
+- Vereiste secrets/env vars: <SECRETS_LIST>
+- Niet wijzigen tenzij strikt noodzakelijk: styling, routing, taalfunctionaliteit, componentstructuur, package manager, lockfile-strategie, SEO-basis (canonical/sitemap/robots/structured data) en alles in <DO_NOT_TOUCH>
+
+Niet-onderhandelbare regels:
+1. Behoud bestaande styling, layout, design tokens, routing, taalfunctionaliteit en componentstructuur, tenzij een wijziging strikt noodzakelijk is voor:
+   - build-fix
+   - runtime-fix
+   - juiste implementatie van de gevraagde feature
+   - noodzakelijke SEO/canonical/redirect-correctie
+2. Als je iets structureels toch moet wijzigen, documenteer dat expliciet in audit/change-justifications.md met:
+   - wat is gewijzigd
+   - waarom dit strikt noodzakelijk was
+   - welke alternatieven zijn verworpen
+3. Wissel NIET van package manager. Gebruik de bestaande lockfile- en scriptstrategie van het project.
+4. Scan niet blind de hele repo. Identificeer eerst alleen de relevante bestanden.
+5. Als essentiële info ontbreekt (stack onduidelijk, secrets ontbreken, endpoint onbekend, featuredoel ambigu), stop dan vóór codewijzigingen en maak NEED_INPUT.md in plaats van te gokken.
+
+Voer deze stappen exact uit:
+
+Stap A — repo-inventaris
+- Inventariseer repositorystructuur, framework, package manager, buildscripts, test/lint/typecheck scripts, i18n-opzet, SEO-opzet, sitemap/robots/canonical-opzet en gedeelde layout/componentzones.
+- Schrijf audit/repo-inventory.md.
+- Maak een tabel met: pad/patroon, rol, relevantie, wijzigingsrisico.
+
+Stap B — relevante-bestandenplan
+- Bepaal welke bestanden echt relevant zijn voor <FEATURE_SCOPE>.
+- Markeer protected zones:
+  - routing
+  - i18n
+  - layout/header/footer
+  - globale styles/design tokens
+  - SEO metadata / robots / sitemap / structured data
+  - formulieren/integraties
+- Schrijf audit/relevant-files.md met:
+  - relevant files
+  - niet-relevante files die je bewust ongemoeid laat
+  - risico per zone
+
+Stap C — implementatieplan
+- Maak eerst audit/change-plan.md met een minimale diff-strategie.
+- Geef per wijziging:
+  - doel
+  - bestanden
+  - waarom dit de kleinste veilige aanpak is
+  - verwachte impact op styling/routing/i18n
+- Start pas daarna met implementeren.
+
+Stap D — implementatie
+- Pas alleen de relevante bestanden aan.
+- Hergebruik bestaande componenten, helpers, styles en patterns waar mogelijk.
+- Voeg geen nieuwe dependency toe tenzij het zonder dependency niet verantwoord kan.
+- Als een nieuwe dependency echt nodig is, onderbouw dit in audit/change-justifications.md.
+- Als replit.md ontbreekt of verouderd is, maak of update die dan zodat toekomstige runs goedkoper en consistenter zijn. Leg daarin vast:
+  - architectuur
+  - coding conventions
+  - package manager
+  - protected zones
+  - stijlregels
+  - regels voor minimaal-diff wijzigingen
+
+Stap E — build/test/verify
+- Gebruik de bestaande package manager en bestaande scripts.
+- Maak alleen indien nodig een verify-workflow en eventueel een dev-workflow; overschrijf bestaande workflows niet zonder noodzaak.
+- Voer pas na alle codewijzigingen één geconsolideerde verificatieronde uit:
+  1. install
+  2. lint (als script bestaat)
+  3. typecheck (als script bestaat)
+  4. test (als script bestaat)
+  5. build (als script bestaat)
+- Herhaal niet onnodig. Als één stap faalt:
+  - fix alleen de direct betrokken bestanden
+  - herhaal alleen de mislukte stap
+  - voer daarna maximaal één volledige eindrun uit
+- Als dit een ondersteunde JS-webapp is en browservalidatie nuttig is, gebruik App Testing alleen als laatste stap.
+
+Stap F — output
+Schrijf na afloop:
+- audit/final-summary.md
+- audit/rollback-plan.md
+- audit/changed-files.md
+- audit/post-verify-results.md
+
+In audit/final-summary.md moet staan:
+- wat is gewijzigd
+- welke routes/components geraakt zijn
+- of styling/routing/i18n behouden zijn
+- welke structurele wijzigingen noodzakelijk waren
+- welke handmatige checks ik nog moet doen
+
+In audit/rollback-plan.md moet staan:
+- welke checkpoint/commit als rollback-basis geldt
+- welke bestanden het grootste risico hebben
+- exacte rollback-stappen
+
+Specifieke SEO- en publicatieregels:
+- Bewaak canonical, sitemap, robots, metadata en structured data.
+- Als aparte taal-URL’s bestaan of locale-routing wordt gebruikt, zorg dat taalfunctionaliteit intact blijft.
+- Wijzig geen slug, canonical of redirect zonder expliciete reden en documentatie.
+- Als er een organisatie-/bedrijfsprofiel op home of about zichtbaar is, controleer of structured data logisch en consistent is.
+
+Belangrijke stopregel:
+Als je niet met hoge zekerheid kunt bepalen welke files relevant zijn of welke env vars nodig zijn, stop dan met implementeren, maak NEED_INPUT.md en geef precies aan wat ontbreekt.
+
+Einddoel:
+Implementeer <FEATURE_SCOPE> voor ZentrixDigital met minimale compute-kosten, minimale diff, behoud van bestaande UX/SEO-structuur en een reproduceerbare verify/rollback-uitkomst.
+
+Acceptatiecriteria:
+<ACCEPTANCE_CRITERIA>
