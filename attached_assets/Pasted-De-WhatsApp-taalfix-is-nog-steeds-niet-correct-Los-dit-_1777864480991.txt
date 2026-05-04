@@ -1,0 +1,66 @@
+De WhatsApp-taalfix is nog steeds niet correct. Los dit nu gericht op met bewijs.
+
+Probleem:
+Wanneer de website op Engels staat en ik op de WhatsApp-knop klik, opent WhatsApp nog steeds met Nederlandse vooraf ingevulde tekst. Dit moet Engels zijn.
+
+Belangrijk:
+Doe geen brede SEO- of layoutwijzigingen. Fix alleen WhatsApp CTA localization.
+
+Taken:
+1. Zoek letterlijk in de hele repo naar:
+   - "Goedendag"
+   - "whatsapp"
+   - "wa.me"
+   - "api.whatsapp.com"
+   - "text="
+   - "WHATSAPP"
+2. Maak een overzicht in audit/whatsapp-localization-debug.md met:
+   - alle gevonden WhatsApp-links/components/configs
+   - welke knop waar gebruikt wordt
+   - welke route/component de floating WhatsApp-knop gebruikt
+   - waar de Nederlandse tekst nog hardcoded stond
+3. Fix ALLE WhatsApp-links, inclusief:
+   - floating WhatsApp button
+   - header/footer WhatsApp links
+   - CTA-secties
+   - servicepagina’s
+   - contactpagina
+   - NL- en EN-servicepagina’s
+4. De WhatsApp-message moet taalafhankelijk zijn:
+
+NL:
+Goedendag, ik heb interesse in jullie diensten. Kunnen jullie mij verder helpen?
+
+EN:
+Hello, I’m interested in your services. Could you help me further?
+
+5. Gebruik encodeURIComponent voor de message.
+6. Gebruik één centrale helper, bijvoorbeeld:
+   buildWhatsAppUrl(locale)
+   of
+   getWhatsAppHref(language)
+   zodat er nergens meer losse hardcoded WhatsApp-teksten staan.
+7. De actieve taal moet betrouwbaar worden bepaald:
+   - eerst bestaande locale/i18n/language state gebruiken
+   - als dat niet beschikbaar is, afleiden uit route of document.documentElement.lang
+   - fallback mag NL zijn
+8. Controleer dat bij actieve EN-taal de href daadwerkelijk bevat:
+   text=Hello%2C%20I%E2%80%99m%20interested
+9. Controleer dat bij actieve NL-taal de href daadwerkelijk bevat:
+   text=Goedendag
+10. Verwijder of vervang alle overgebleven hardcoded Nederlandse WhatsApp-berichten.
+11. Voeg geen nieuwe dependencies toe.
+12. Breek geen styling, routing, taalfunctionaliteit, header/footer of componentstructuur.
+13. Run build/typecheck/lint als scripts bestaan.
+14. Schrijf audit/whatsapp-localization-final.md met:
+   - gewijzigde bestanden
+   - welke WhatsApp-knoppen zijn getest
+   - hoe NL/EN nu bepaald wordt
+   - buildresultaat
+15. Commit met:
+   Fix all localized WhatsApp links
+
+Acceptatie:
+- Op NL opent WhatsApp met Nederlandse tekst.
+- Op EN opent WhatsApp met Engelse tekst.
+- Geen enkele hardcoded "Goedendag" blijft over buiten de NL translation/helper.
