@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- NL – Kernpagina's -->
   <url>
     <loc>https://www.zentrixdigital.eu/</loc>
     <lastmod>2026-04-26</lastmod>
@@ -22,8 +20,6 @@
     <loc>https://www.zentrixdigital.eu/concepts</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
-
-  <!-- NL – Diensten -->
   <url>
     <loc>https://www.zentrixdigital.eu/websites</loc>
     <lastmod>2026-04-26</lastmod>
@@ -40,8 +36,6 @@
     <loc>https://www.zentrixdigital.eu/digitale-groeiondersteuning</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
-
-  <!-- NL – SEO-landingspagina's -->
   <url>
     <loc>https://www.zentrixdigital.eu/website-laten-maken-zzp</loc>
     <lastmod>2026-04-26</lastmod>
@@ -82,8 +76,6 @@
     <loc>https://www.zentrixdigital.eu/bedrijfsprocessen-automatiseren</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
-
-  <!-- NL – Juridisch -->
   <url>
     <loc>https://www.zentrixdigital.eu/privacy</loc>
     <lastmod>2026-04-26</lastmod>
@@ -96,8 +88,6 @@
     <loc>https://www.zentrixdigital.eu/terms</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
-
-  <!-- EN – SEO landing pages -->
   <url>
     <loc>https://www.zentrixdigital.eu/en/website-for-freelancers</loc>
     <lastmod>2026-04-26</lastmod>
@@ -134,8 +124,6 @@
     <loc>https://www.zentrixdigital.eu/en/business-automation</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
-
-  <!-- EN – Legal -->
   <url>
     <loc>https://www.zentrixdigital.eu/en/privacy</loc>
     <lastmod>2026-04-26</lastmod>
@@ -148,5 +136,4 @@
     <loc>https://www.zentrixdigital.eu/en/terms</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
-
 </urlset>
