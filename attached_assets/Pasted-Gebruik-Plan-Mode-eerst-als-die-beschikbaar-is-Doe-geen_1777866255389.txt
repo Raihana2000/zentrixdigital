@@ -1,0 +1,149 @@
+Gebruik Plan Mode eerst als die beschikbaar is. Doe geen brede SEO-herbouw. Fix alleen de sitemap.xml-problemen voor ZentrixDigital.
+
+Context:
+- Website: https://www.zentrixdigital.eu
+- Probleem: Google Search Console gaf bij sitemap.xml “Kan niet ophalen”.
+- De sitemap bestaat en toont XML, maar moet volledig strak, consistent en Google-proof worden gemaakt.
+- Bestaande routes, styling, taalfunctionaliteit, header/footer, componentstructuur en design tokens mogen niet worden gewijzigd.
+- Geen package manager wijzigen.
+- Geen nieuwe dependency toevoegen tenzij absoluut noodzakelijk.
+
+Doel:
+Maak /sitemap.xml volledig geldige, consistente en door Google ophaalbare XML.
+
+Taken:
+
+1. Zoek waar sitemap.xml wordt opgeslagen of gegenereerd.
+   Controleer onder andere:
+   - public/sitemap.xml
+   - client/public/sitemap.xml
+   - server routes
+   - Vite/static asset config
+   - eventuele custom sitemap generator
+   - robots.txt verwijzing naar sitemap
+
+2. Controleer dat /sitemap.xml live rechtstreeks pure XML oplevert:
+   - geen HTML
+   - geen React app shell
+   - geen divs
+   - geen scripts
+   - geen browser/layout wrapper
+   - geen extra nodes buiten <urlset>
+
+3. Zorg dat de sitemap begint met exact:
+   <?xml version="1.0" encoding="UTF-8"?>
+
+4. Zorg dat de root exact een geldige sitemap namespace gebruikt:
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+5. Controleer dat elke URL-entry alleen geldige sitemap-tags gebruikt:
+   - <url>
+   - <loc>
+   - <lastmod> optioneel, maar bij voorkeur overal aanwezig
+
+6. Maak alle URL’s consistent.
+   Kies deze stijl:
+   - homepage: https://www.zentrixdigital.eu/
+   - alle andere routes: zonder trailing slash
+   Voorbeeld:
+   Goed: https://www.zentrixdigital.eu/websites
+   Niet: https://www.zentrixdigital.eu/websites/
+
+7. Voeg ontbrekende <lastmod> toe waar die ontbreekt.
+   Gebruik voor bestaande oudere pagina’s 2026-04-26.
+   Gebruik voor nieuwe/recente pagina’s 2026-05-02 of de meest logische bestaande datum uit de sitemap.
+   Belangrijk: alle lastmod-waarden moeten geldig ISO-datumformaat hebben: YYYY-MM-DD.
+
+8. Controleer dat alle belangrijke bestaande routes in de sitemap staan:
+   - https://www.zentrixdigital.eu/
+   - https://www.zentrixdigital.eu/about
+   - https://www.zentrixdigital.eu/services
+   - https://www.zentrixdigital.eu/contact
+   - https://www.zentrixdigital.eu/websites
+   - https://www.zentrixdigital.eu/applicaties
+   - https://www.zentrixdigital.eu/onderhoud-optimalisatie
+   - https://www.zentrixdigital.eu/digitale-groeiondersteuning
+   - https://www.zentrixdigital.eu/website-laten-maken-zzp
+   - https://www.zentrixdigital.eu/website-laten-maken-bedrijven
+   - https://www.zentrixdigital.eu/website-voor-bedrijven
+   - https://www.zentrixdigital.eu/website-voor-mkb
+   - https://www.zentrixdigital.eu/website-laten-maken-amsterdam
+   - https://www.zentrixdigital.eu/webdesign-bedrijf
+   - https://www.zentrixdigital.eu/website-kosten
+   - https://www.zentrixdigital.eu/crm-systeem-laten-maken
+   - https://www.zentrixdigital.eu/boekingssysteem-laten-maken
+   - https://www.zentrixdigital.eu/bedrijfsprocessen-automatiseren
+   - https://www.zentrixdigital.eu/concepts
+   - https://www.zentrixdigital.eu/privacy
+   - https://www.zentrixdigital.eu/cookies
+   - https://www.zentrixdigital.eu/terms
+
+9. Controleer dat de Engelse routes ook in de sitemap staan als ze live bestaan:
+   - https://www.zentrixdigital.eu/en/website-for-freelancers
+   - https://www.zentrixdigital.eu/en/website-for-businesses
+   - https://www.zentrixdigital.eu/en/website-for-smes
+   - https://www.zentrixdigital.eu/en/web-design-company
+   - https://www.zentrixdigital.eu/en/website-development-amsterdam
+   - https://www.zentrixdigital.eu/en/website-development-costs
+   - https://www.zentrixdigital.eu/en/crm-system-development
+   - https://www.zentrixdigital.eu/en/booking-system-development
+   - https://www.zentrixdigital.eu/en/business-automation
+   - https://www.zentrixdigital.eu/en/privacy
+   - https://www.zentrixdigital.eu/en/cookies
+   - https://www.zentrixdigital.eu/en/terms
+
+10. Controleer robots.txt.
+    Zorg dat robots.txt bereikbaar is op:
+    /robots.txt
+
+    En dat daarin minimaal staat:
+    User-agent: *
+    Allow: /
+
+    Sitemap: https://www.zentrixdigital.eu/sitemap.xml
+
+11. Controleer indien mogelijk de response headers van /sitemap.xml.
+    De content-type moet application/xml, text/xml of een vergelijkbare XML-content-type zijn.
+    Als de server/config dit verkeerd als text/html serveert, fix dit minimaal en veilig.
+
+12. Voeg een simpele validatie toe zonder nieuwe dependency, bijvoorbeeld een klein script of command dat controleert:
+    - sitemap bevat <?xml
+    - sitemap bevat <urlset
+    - sitemap bevat geen <html
+    - sitemap bevat geen <div
+    - sitemap bevat geen <script
+    - alle <loc> bevatten https://www.zentrixdigital.eu
+    - XML is syntactisch logisch opgebouwd
+
+13. Schrijf een auditbestand:
+    audit/sitemap-fix-summary.md
+
+    Daarin moet staan:
+    - waar sitemap.xml staat of hoe hij gegenereerd wordt
+    - wat aangepast is
+    - hoeveel URL’s erin staan
+    - welke trailing slash strategie is gekozen
+    - of robots.txt naar de sitemap verwijst
+    - hoe is gecontroleerd dat er geen HTML/div/script in zit
+    - welke build/verificatie is uitgevoerd
+    - wat ik daarna handmatig in Google Search Console moet doen
+
+14. Run bestaande verificatie:
+    - gebruik bestaande package manager
+    - run lint als script bestaat
+    - run typecheck als script bestaat
+    - run build als script bestaat
+    - geen onnodige herhaalde runs
+
+15. Commit de wijziging met:
+    Fix Google Search Console sitemap XML
+
+Acceptatiecriteria:
+- /sitemap.xml is pure geldige XML.
+- Geen <div>, <html>, <script> of React/app-shell in sitemap.
+- Alle URL’s zijn absolute https://www.zentrixdigital.eu URL’s.
+- URL-stijl is consistent: homepage met slash, andere routes zonder slash.
+- Elke URL heeft een geldige lastmod.
+- robots.txt verwijst naar https://www.zentrixdigital.eu/sitemap.xml.
+- Build slaagt.
+- audit/sitemap-fix-summary.md bestaat.

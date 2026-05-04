@@ -1,100 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- NL – Kernpagina's -->
   <url>
     <loc>https://www.zentrixdigital.eu/</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
   <url>
-    <loc>https://www.zentrixdigital.eu/about/</loc>
+    <loc>https://www.zentrixdigital.eu/about</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
   <url>
-    <loc>https://www.zentrixdigital.eu/services/</loc>
+    <loc>https://www.zentrixdigital.eu/services</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
   <url>
-    <loc>https://www.zentrixdigital.eu/contact/</loc>
+    <loc>https://www.zentrixdigital.eu/contact</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
   <url>
-    <loc>https://www.zentrixdigital.eu/websites/</loc>
+    <loc>https://www.zentrixdigital.eu/concepts</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <!-- NL – Diensten -->
+  <url>
+    <loc>https://www.zentrixdigital.eu/websites</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
   <url>
-    <loc>https://www.zentrixdigital.eu/applicaties/</loc>
+    <loc>https://www.zentrixdigital.eu/applicaties</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
   <url>
-    <loc>https://www.zentrixdigital.eu/onderhoud-optimalisatie/</loc>
+    <loc>https://www.zentrixdigital.eu/onderhoud-optimalisatie</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
   <url>
-    <loc>https://www.zentrixdigital.eu/digitale-groeiondersteuning/</loc>
+    <loc>https://www.zentrixdigital.eu/digitale-groeiondersteuning</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <!-- NL – SEO-landingspagina's -->
+  <url>
+    <loc>https://www.zentrixdigital.eu/website-laten-maken-zzp</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
   <url>
-    <loc>https://www.zentrixdigital.eu/website-laten-maken-zzp/</loc>
+    <loc>https://www.zentrixdigital.eu/website-laten-maken-bedrijven</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
   <url>
-    <loc>https://www.zentrixdigital.eu/website-laten-maken-bedrijven/</loc>
+    <loc>https://www.zentrixdigital.eu/website-voor-bedrijven</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
   <url>
-    <loc>https://www.zentrixdigital.eu/crm-systeem-laten-maken/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/boekingssysteem-laten-maken/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/bedrijfsprocessen-automatiseren/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/en/website-for-freelancers/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/en/website-for-businesses/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/en/crm-system-development/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/en/booking-system-development/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/en/business-automation/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/privacy/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/cookies/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/terms/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/en/privacy/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/en/cookies/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/en/terms/</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.zentrixdigital.eu/website-voor-mkb</loc>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
     <loc>https://www.zentrixdigital.eu/website-laten-maken-amsterdam</loc>
@@ -102,22 +64,47 @@
   </url>
   <url>
     <loc>https://www.zentrixdigital.eu/webdesign-bedrijf</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
     <loc>https://www.zentrixdigital.eu/website-kosten</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
   <url>
-    <loc>https://www.zentrixdigital.eu/website-voor-bedrijven</loc>
-  </url>
-  <url>
-    <loc>https://www.zentrixdigital.eu/concepts</loc>
+    <loc>https://www.zentrixdigital.eu/crm-systeem-laten-maken</loc>
     <lastmod>2026-04-26</lastmod>
   </url>
   <url>
-    <loc>https://www.zentrixdigital.eu/website-voor-mkb</loc>
-    <lastmod>2026-05-02</lastmod>
+    <loc>https://www.zentrixdigital.eu/boekingssysteem-laten-maken</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zentrixdigital.eu/bedrijfsprocessen-automatiseren</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <!-- NL – Juridisch -->
+  <url>
+    <loc>https://www.zentrixdigital.eu/privacy</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zentrixdigital.eu/cookies</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zentrixdigital.eu/terms</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <!-- EN – SEO landing pages -->
+  <url>
+    <loc>https://www.zentrixdigital.eu/en/website-for-freelancers</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zentrixdigital.eu/en/website-for-businesses</loc>
+    <lastmod>2026-04-26</lastmod>
   </url>
   <url>
     <loc>https://www.zentrixdigital.eu/en/website-for-smes</loc>
@@ -135,4 +122,31 @@
     <loc>https://www.zentrixdigital.eu/en/website-development-costs</loc>
     <lastmod>2026-05-02</lastmod>
   </url>
+  <url>
+    <loc>https://www.zentrixdigital.eu/en/crm-system-development</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zentrixdigital.eu/en/booking-system-development</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zentrixdigital.eu/en/business-automation</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
+  <!-- EN – Legal -->
+  <url>
+    <loc>https://www.zentrixdigital.eu/en/privacy</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zentrixdigital.eu/en/cookies</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zentrixdigital.eu/en/terms</loc>
+    <lastmod>2026-04-26</lastmod>
+  </url>
+
 </urlset>
