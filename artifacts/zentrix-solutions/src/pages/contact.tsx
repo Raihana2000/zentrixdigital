@@ -5,6 +5,7 @@ import type { Variants } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, CalendarClock, ArrowRight } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import SEOHead from '@/components/SEOHead';
+import { buildWhatsAppUrl } from '@/lib/whatsapp';
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 28 },
@@ -12,7 +13,7 @@ const fadeUp: Variants = {
 };
 
 const Contact = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -216,7 +217,7 @@ const Contact = () => {
 
               {/* WhatsApp CTA */}
               <a
-                href="https://wa.me/31683284995?text=Goedendag,%20ik%20heb%20interesse%20in%20jullie%20diensten.%20Kunnen%20jullie%20mij%20verder%20helpen%3F"
+                href={buildWhatsAppUrl(language)}
                 target="_blank"
                 rel="noreferrer"
                 data-testid="btn-whatsapp-contact"

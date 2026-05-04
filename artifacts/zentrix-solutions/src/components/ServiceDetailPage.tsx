@@ -83,6 +83,12 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
     window.scrollTo({ top: 0 });
   }, [pageTitle]);
 
+  useEffect(() => {
+    if (!langToggle) return;
+    const currentLang = langToggle.href.startsWith('/en/') ? 'nl' : 'en';
+    setLanguage(currentLang);
+  }, []);
+
   const handleLangToggle = () => {
     if (!langToggle) return;
     const targetLang = langToggle.href.startsWith('/en/') ? 'en' : 'nl';

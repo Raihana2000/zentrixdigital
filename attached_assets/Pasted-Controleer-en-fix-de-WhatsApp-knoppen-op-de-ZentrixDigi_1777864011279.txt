@@ -1,0 +1,38 @@
+Controleer en fix de WhatsApp-knoppen op de ZentrixDigital website.
+
+Probleem:
+Als de website op Engels staat, opent de WhatsApp-knop nog steeds met een Nederlandse vooraf ingevulde tekst. De WhatsApp-tekst moet meeschakelen met de actieve taal/localization.
+
+Doel:
+- Bij Nederlandse pagina’s of actieve NL-taal moet WhatsApp openen met Nederlandse tekst.
+- Bij Engelse pagina’s of actieve EN-taal moet WhatsApp openen met Engelse tekst.
+- Bestaande styling, layout, routing, header/footer, componentstructuur en taalfunctionaliteit mogen niet worden gebroken.
+
+Gebruik deze teksten:
+
+NL:
+Goedendag, ik heb interesse in jullie diensten. Kunnen jullie mij verder helpen?
+
+EN:
+Hello, I’m interested in your services. Could you help me further?
+
+Taken:
+1. Zoek alle WhatsApp-knoppen, floating WhatsApp buttons, CTA WhatsApp links en servicepagina WhatsApp-links.
+2. Controleer of de WhatsApp message hardcoded Nederlands is.
+3. Maak of gebruik een bestaande helper/component zodat WhatsApp-links taalafhankelijk worden opgebouwd.
+4. Gebruik de actieve locale/language state als die al bestaat.
+5. Als locale niet direct beschikbaar is, leid taal veilig af uit bestaande i18n-context, route, language toggle state of pagina-contentstructuur zonder routing te wijzigen.
+6. Gebruik encodeURIComponent voor de WhatsApp-message.
+7. Gebruik bestaande WHATSAPP_NUMBER env var als die al bestaat; hardcode geen nieuw telefoonnummer tenzij dat al zo in de code stond.
+8. Voeg optioneel lichte analytics events toe voor whatsapp_click_nl en whatsapp_click_en als GA/event helper al bestaat. Voeg geen nieuwe analytics dependency toe.
+9. Controleer dat NL en EN knoppen correct blijven werken op desktop en mobiel.
+10. Controleer build na afloop.
+11. Commit met bericht:
+Fix localized WhatsApp CTA messages
+
+Niet doen:
+- Geen bestaande routes/slugs wijzigen.
+- Geen styling/design tokens aanpassen.
+- Geen header/footer herstructureren.
+- Geen package manager wijzigen.
+- Geen nieuwe dependency toevoegen tenzij absoluut noodzakelijk.

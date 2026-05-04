@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
-
-const WA_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER ?? "31683284995";
-const WA_URL = `https://wa.me/${WA_NUMBER}?text=Goedendag,%20ik%20heb%20interesse%20in%20jullie%20diensten.%20Kunnen%20jullie%20mij%20verder%20helpen%3F`;
+import { useTranslation } from '@/hooks/useTranslation';
+import { buildWhatsAppUrl } from '@/lib/whatsapp';
 
 const WhatsAppButton = () => {
+  const { language } = useTranslation();
   const [hovered, setHovered] = useState(false);
+
+  const isNL = language !== 'en';
+  const label = isNL ? 'WhatsApp ons' : 'WhatsApp us';
+  const waUrl = buildWhatsAppUrl(language);
 
   return (
     <a
-      href={WA_URL}
+      href={waUrl}
       target="_blank"
       rel="noreferrer"
       data-testid="btn-whatsapp-float"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      aria-label="WhatsApp ons"
+      aria-label={label}
       className="fixed bottom-6 right-5 z-50 flex items-center gap-2.5 pl-4 pr-5 py-3.5 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] shadow-[0_4px_24px_rgba(37,211,102,0.45)] hover:shadow-[0_6px_32px_rgba(37,211,102,0.6)] transition-all duration-300"
       style={{ minHeight: '52px' }}
     >
@@ -29,7 +33,7 @@ const WhatsAppButton = () => {
 
       {/* Label — always show on md+, hidden on mobile */}
       <span className="hidden sm:inline text-white font-semibold text-sm whitespace-nowrap">
-        WhatsApp ons
+        {label}
       </span>
     </a>
   );
