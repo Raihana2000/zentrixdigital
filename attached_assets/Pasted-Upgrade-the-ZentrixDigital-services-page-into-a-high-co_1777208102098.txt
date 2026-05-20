@@ -1,11 +1,11 @@
-Upgrade the ZentrixDigital /services page into a high-converting sales page.
+Upgrade the reldio /services page into a high-converting sales page.
 
 Goal:
 Make the services page stronger, more trustworthy, SEO-friendly, and focused on generating leads.
 
 IMPORTANT:
 - Do NOT redesign the entire website.
-- Keep the current ZentrixDigital style.
+- Keep the current reldio style.
 - Keep the website responsive for desktop, tablet, and mobile.
 - Keep NL/EN language behavior working.
 - Do not break existing navigation, footer, WhatsApp button, or contact links.
@@ -38,7 +38,7 @@ Explain clearly:
 - Weak online structure hurts trust
 
 3. Solution section
-Explain that ZentrixDigital builds:
+Explain that reldio builds:
 - Conversion-focused websites
 - Custom applications
 - CRM systems
@@ -130,16 +130,16 @@ Request a free analysis and discover where your website or process can perform b
 Update page title and meta description.
 
 NL title:
-Diensten | Websites, Applicaties & Slimme Systemen | ZentrixDigital
+Diensten | Websites, Applicaties & Slimme Systemen | reldio
 
 NL meta description:
-ZentrixDigital bouwt professionele websites, applicaties, CRM systemen, boekingssystemen en automatisering voor bedrijven die meer klanten en overzicht willen.
+reldio bouwt professionele websites, applicaties, CRM systemen, boekingssystemen en automatisering voor bedrijven die meer klanten en overzicht willen.
 
 EN title:
-Services | Websites, Applications & Smart Systems | ZentrixDigital
+Services | Websites, Applications & Smart Systems | reldio
 
 EN meta description:
-ZentrixDigital builds professional websites, applications, CRM systems, booking systems and automation for businesses that want more customers and structure.
+reldio builds professional websites, applications, CRM systems, booking systems and automation for businesses that want more customers and structure.
 
 10. Internal linking
 Make sure the services page links to:

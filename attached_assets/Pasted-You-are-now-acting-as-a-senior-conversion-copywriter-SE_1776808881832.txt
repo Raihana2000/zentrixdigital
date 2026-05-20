@@ -1,7 +1,7 @@
 You are now acting as a senior conversion copywriter, SEO strategist, UX writer, and Dutch/English local-business marketer.
 
 Task:
-Rewrite the full website copy of ZentrixDigital in BOTH DUTCH AND ENGLISH.
+Rewrite the full website copy of reldio in BOTH DUTCH AND ENGLISH.
 
 IMPORTANT:
 - Every text block must be created in 2 versions: Dutch and English.
@@ -13,9 +13,9 @@ IMPORTANT:
 - Make sure the language toggle can display the full site correctly in both languages.
 
 MAIN GOAL:
-Position ZentrixDigital as a blue-ocean company, not a generic web agency.
+Position reldio as a blue-ocean company, not a generic web agency.
 
-ZentrixDigital should feel like:
+reldio should feel like:
 - a company that helps businesses become stronger online
 - through professional websites
 - smart applications
@@ -52,7 +52,7 @@ IMPORTANT WRITING RULES:
    - why it matters
    - what it solves
    - what the visitor gets
-   - why ZentrixDigital is a strong choice
+   - why reldio is a strong choice
 6. Make the copy sound stronger, clearer, and more distinctive than a standard web agency.
 
 SEO KEYWORDS TO USE NATURALLY:

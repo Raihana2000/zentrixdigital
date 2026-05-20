@@ -1,6 +1,6 @@
 Je bent een senior SEO-specialist, conversie-copywriter, UX-designer, frontend developer en meertalige localization specialist.
 
-Analyseer en verbeter de website van ZentrixDigital: https://www.zentrixdigital.eu/
+Analyseer en verbeter de website van reldio: https://www.reldio.eu/
 
 BELANGRIJK:
 - Fix ALLES in beide talen: Nederlands én Engels.
@@ -21,10 +21,10 @@ BELANGRIJK:
 - Controleer dat alle links in “Populaire diensten” naar bestaande, werkende pagina’s gaan.
 
 DOEL VAN DE AANPASSING:
-ZentrixDigital moet niet overkomen als een standaard webdesigner, maar als een moderne agency die websites, maatwerkapplicaties en slimme online systemen bouwt voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online presentatie willen.
+reldio moet niet overkomen als een standaard webdesigner, maar als een moderne agency die websites, maatwerkapplicaties en slimme online systemen bouwt voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online presentatie willen.
 
 In het Engels moet de positionering zijn:
-ZentrixDigital is a modern web and app agency that builds professional websites, custom web applications and smart online systems for entrepreneurs and businesses that want more trust, better enquiries and a stronger digital presence.
+reldio is a modern web and app agency that builds professional websites, custom web applications and smart online systems for entrepreneurs and businesses that want more trust, better enquiries and a stronger digital presence.
 
 BELANGRIJKSTE SEO-FOCUS NEDERLANDS:
 Homepage:
@@ -189,23 +189,23 @@ NIEUWE PAGINA /website-voor-mkb — NEDERLANDS:
 Maak een volledige pagina voor “Website voor MKB”.
 
 SEO-title:
-“Website voor MKB laten maken | ZentrixDigital Amsterdam”
+“Website voor MKB laten maken | reldio Amsterdam”
 
 Meta description:
-“Laat een professionele website voor uw MKB-bedrijf maken door ZentrixDigital. Moderne websites met SEO-basis, WhatsApp, formulieren en uitbreidbare systemen.”
+“Laat een professionele website voor uw MKB-bedrijf maken door reldio. Moderne websites met SEO-basis, WhatsApp, formulieren en uitbreidbare systemen.”
 
 H1:
 “Website voor MKB laten maken”
 
 Intro:
-“Als MKB-bedrijf heeft u meer nodig dan alleen een mooie website. Uw website moet vertrouwen opbouwen, duidelijk maken wat u aanbiedt en bezoekers snel naar contact, offerte of aanvraag begeleiden. ZentrixDigital bouwt professionele websites voor MKB-bedrijven die online serieuzer willen overkomen en makkelijker aanvragen willen ontvangen.”
+“Als MKB-bedrijf heeft u meer nodig dan alleen een mooie website. Uw website moet vertrouwen opbouwen, duidelijk maken wat u aanbiedt en bezoekers snel naar contact, offerte of aanvraag begeleiden. reldio bouwt professionele websites voor MKB-bedrijven die online serieuzer willen overkomen en makkelijker aanvragen willen ontvangen.”
 
 H2-secties:
 1. “Waarom een sterke website belangrijk is voor MKB-bedrijven”
 2. “Wat wij bouwen voor MKB-bedrijven”
 3. “Van website naar online systeem”
 4. “Voor welke MKB-bedrijven is dit geschikt?”
-5. “Website voor MKB laten maken door ZentrixDigital”
+5. “Website voor MKB laten maken door reldio”
 
 Verwerk natuurlijk:
 - website voor MKB
@@ -238,23 +238,23 @@ NIEUWE PAGINA /website-voor-mkb — ENGELS:
 Maak ook de Engelse content voor dezelfde pagina.
 
 SEO-title:
-“Website development for SMEs | ZentrixDigital Amsterdam”
+“Website development for SMEs | reldio Amsterdam”
 
 Meta description:
-“Professional website development for SMEs by ZentrixDigital. Modern websites with SEO foundation, WhatsApp, forms and scalable business systems.”
+“Professional website development for SMEs by reldio. Modern websites with SEO foundation, WhatsApp, forms and scalable business systems.”
 
 H1:
 “Website development for SMEs”
 
 Intro:
-“As an SME, you need more than a good-looking website. Your website should build trust, explain your services clearly and guide visitors towards contact, quote requests or enquiries. ZentrixDigital builds professional websites for SMEs that want a stronger digital presence and a better online foundation.”
+“As an SME, you need more than a good-looking website. Your website should build trust, explain your services clearly and guide visitors towards contact, quote requests or enquiries. reldio builds professional websites for SMEs that want a stronger digital presence and a better online foundation.”
 
 H2-secties:
 1. “Why a strong website matters for SMEs”
 2. “What we build for SMEs”
 3. “From website to online system”
 4. “Which SMEs we help”
-5. “Website development for SMEs by ZentrixDigital”
+5. “Website development for SMEs by reldio”
 
 Verwerk natuurlijk:
 - website development for SMEs
@@ -288,7 +288,7 @@ H1:
 “Professionele website laten maken in Amsterdam”
 
 Subtitel:
-“ZentrixDigital bouwt moderne websites, maatwerkapplicaties en slimme contactsystemen voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online uitstraling willen.”
+“reldio bouwt moderne websites, maatwerkapplicaties en slimme contactsystemen voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online uitstraling willen.”
 
 CTA-knoppen:
 Primair: “Gratis websiteanalyse aanvragen”
@@ -299,7 +299,7 @@ Titel:
 “Niet zomaar een website, maar een online systeem”
 
 Tekst:
-“Een goede website moet meer doen dan mooi ogen. Bezoekers moeten direct begrijpen wat u aanbiedt, waarom ze u kunnen vertrouwen en hoe ze eenvoudig contact opnemen. Daarom bouwt ZentrixDigital websites die uitbreidbaar zijn met WhatsApp, formulieren, boekingen, dashboards, CRM-systemen en andere slimme functies.”
+“Een goede website moet meer doen dan mooi ogen. Bezoekers moeten direct begrijpen wat u aanbiedt, waarom ze u kunnen vertrouwen en hoe ze eenvoudig contact opnemen. Daarom bouwt reldio websites die uitbreidbaar zijn met WhatsApp, formulieren, boekingen, dashboards, CRM-systemen en andere slimme functies.”
 
 Sectie:
 Titel:
@@ -323,14 +323,14 @@ Titel:
 “Meer dan een website nodig?”
 
 Tekst:
-“Sommige bedrijven hebben niet genoeg aan een gewone website. Daarom bouwt ZentrixDigital ook maatwerkapplicaties zoals klantportalen, dashboards, boekingssystemen, CRM-systemen en interne tools.”
+“Sommige bedrijven hebben niet genoeg aan een gewone website. Daarom bouwt reldio ook maatwerkapplicaties zoals klantportalen, dashboards, boekingssystemen, CRM-systemen en interne tools.”
 
 CTA:
 “Bekijk maatwerk applicaties”
 
 Vertrouwensblok:
 Titel:
-“Wat u krijgt bij ZentrixDigital”
+“Wat u krijgt bij reldio”
 
 Punten:
 - Mobielvriendelijke website
@@ -346,7 +346,7 @@ Sluitzin:
 “Eerlijk gebouwd. Geen loze beloftes. Geen standaard template zonder strategie.”
 
 Lokale SEO-zin:
-“ZentrixDigital is gevestigd in Amsterdam en werkt voor ondernemers in Amsterdam, Noord-Holland en de rest van Nederland.”
+“reldio is gevestigd in Amsterdam en werkt voor ondernemers in Amsterdam, Noord-Holland en de rest van Nederland.”
 
 HOMEPAGE AANPASSINGEN — ENGELS:
 Hero:
@@ -354,7 +354,7 @@ H1:
 “Professional website development in Amsterdam”
 
 Subtitle:
-“ZentrixDigital builds modern websites, custom web applications and smart contact systems for entrepreneurs who want more trust, better enquiries and a stronger digital presence.”
+“reldio builds modern websites, custom web applications and smart contact systems for entrepreneurs who want more trust, better enquiries and a stronger digital presence.”
 
 CTA buttons:
 Primary: “Request a free website review”
@@ -365,7 +365,7 @@ Title:
 “Not just a website, but an online system”
 
 Text:
-“A good website should do more than look nice. Visitors need to understand what you offer, why they can trust you and how they can contact you without friction. That is why ZentrixDigital builds websites that can be expanded with WhatsApp, forms, bookings, dashboards, CRM systems and other smart features.”
+“A good website should do more than look nice. Visitors need to understand what you offer, why they can trust you and how they can contact you without friction. That is why reldio builds websites that can be expanded with WhatsApp, forms, bookings, dashboards, CRM systems and other smart features.”
 
 Section:
 Title:
@@ -389,14 +389,14 @@ Title:
 “Need more than a website?”
 
 Text:
-“Some businesses need more than a regular website. ZentrixDigital also builds custom web applications such as customer portals, dashboards, booking systems, CRM systems and internal tools.”
+“Some businesses need more than a regular website. reldio also builds custom web applications such as customer portals, dashboards, booking systems, CRM systems and internal tools.”
 
 CTA:
 “View custom applications”
 
 Trust block:
 Title:
-“What you get with ZentrixDigital”
+“What you get with reldio”
 
 Points:
 - Mobile-friendly website
@@ -412,7 +412,7 @@ Closing sentence:
 “Built honestly. No empty promises. No generic template without strategy.”
 
 Local SEO sentence:
-“ZentrixDigital is based in Amsterdam and works with entrepreneurs in Amsterdam, North Holland and across the Netherlands.”
+“reldio is based in Amsterdam and works with entrepreneurs in Amsterdam, North Holland and across the Netherlands.”
 
 CLAIMS VEILIGER MAKEN — BEIDE TALEN:
 Vervang harde claims zoals:

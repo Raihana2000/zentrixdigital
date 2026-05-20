@@ -37,14 +37,14 @@ Do NOT focus on city keywords like Amsterdam unless already needed somewhere els
 Content requirements:
 - Keep copy clear, premium, modern, and persuasive.
 - Make it understandable for business owners.
-- Add a short intro section explaining what Zentrix Digital does.
+- Add a short intro section explaining what reldio does.
 - Add stronger service explanations.
 - Add a trust-building section.
 - Add a stronger CTA section.
 
 Technical requirements:
 - Keep the production canonical domain as:
-  https://www.zentrixdigital.eu
+  https://www.reldio.eu
 - Generate or verify:
   - /sitemap.xml
   - /robots.txt

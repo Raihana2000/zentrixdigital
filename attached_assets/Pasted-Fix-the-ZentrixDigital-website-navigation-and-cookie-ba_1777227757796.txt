@@ -1,4 +1,4 @@
-Fix the ZentrixDigital website navigation and cookie banner.
+Fix the reldio website navigation and cookie banner.
 
 Tasks:
 
@@ -21,7 +21,7 @@ Tasks:
   EN: "Cookie settings"
   When clicked, it should reopen the cookie banner/preferences.
 - Make the banner responsive and visible on mobile, tablet, and desktop.
-- Design: clean, premium, dark style matching ZentrixDigital, with blue accent buttons.
+- Design: clean, premium, dark style matching reldio, with blue accent buttons.
 
 2. Mobile navigation issue
 - On mobile, the "Oplossingen" menu is currently missing.

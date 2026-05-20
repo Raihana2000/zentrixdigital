@@ -30,7 +30,7 @@ const About = () => {
       <SEOHead
         title={t.meta.aboutTitle}
         description={t.meta.aboutDesc}
-        canonical="https://www.zentrixdigital.eu/about"
+        canonical="https://www.reldio.eu/about"
       />
 
       {/* ─── HERO ──────────────────────────────────────────────── */}
@@ -85,7 +85,7 @@ const About = () => {
               className="flex flex-col gap-5 p-8 rounded-2xl bg-[rgba(9,14,26,0.98)] border border-blue-500/[0.55] shadow-[0_10px_28px_rgba(0,0,0,0.34),0_0_0_1px_rgba(59,130,246,0.18)] shadow-[0_10px_28px_rgba(0,0,0,0.34),0_0_0_1px_rgba(59,130,246,0.18)]"
             >
               <span className="text-blue-500/60 text-xs font-bold uppercase tracking-widest">
-                ZentrixDigital
+                reldio
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-white leading-snug tracking-tight">
                 {t.about.missionTitle}
@@ -139,7 +139,7 @@ const About = () => {
           >
             <div className="pointer-events-none absolute top-0 left-0 w-[600px] h-[250px] bg-blue-700/8 blur-[120px] rounded-full" />
             <motion.span variants={fadeUp} className="inline-block text-blue-500/60 text-xs font-bold uppercase tracking-[0.2em] mb-5 relative z-10">
-              ZentrixDigital
+              reldio
             </motion.span>
             <motion.h2
               variants={fadeUp}

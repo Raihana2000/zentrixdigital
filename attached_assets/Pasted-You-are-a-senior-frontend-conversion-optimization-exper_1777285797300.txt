@@ -1,6 +1,6 @@
 You are a senior frontend + conversion optimization expert.
 
-Goal: Improve my existing website (ZentrixDigital) by adding SEO structure AND a high-converting sales funnel WITHOUT breaking the current design, layout, or styling.
+Goal: Improve my existing website (reldio) by adding SEO structure AND a high-converting sales funnel WITHOUT breaking the current design, layout, or styling.
 
 IMPORTANT:
 

@@ -43,7 +43,7 @@ for (const tag of forbidden) {
 
 // 4. All <loc> must contain the correct domain
 const locMatches = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)];
-const DOMAIN = "https://www.zentrixdigital.eu";
+const DOMAIN = "https://www.reldio.eu";
 
 for (const [, loc] of locMatches) {
   if (!loc.startsWith(DOMAIN)) {

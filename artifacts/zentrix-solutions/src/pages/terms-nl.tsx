@@ -7,18 +7,18 @@ const TermsNL: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-[#0B0B0B] page-top-pad">
       <SEOHead
-        title="Algemene Voorwaarden — ZentrixDigital"
-        description="Lees de algemene voorwaarden van ZentrixDigital."
-        canonical="https://www.zentrixdigital.eu/algemene-voorwaarden"
+        title="Algemene Voorwaarden — reldio"
+        description="Lees de algemene voorwaarden van reldio."
+        canonical="https://www.reldio.eu/algemene-voorwaarden"
       />
       <section className="py-24 px-5">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl font-black text-white mb-8 tracking-tight">Algemene Voorwaarden</h1>
           <div className="prose-zentrix">
-            <p>Deze voorwaarden zijn van toepassing op alle diensten van ZentrixDigital.</p>
+            <p>Deze voorwaarden zijn van toepassing op alle diensten van reldio.</p>
 
             <h2>1. Diensten</h2>
-            <p>ZentrixDigital levert websites, applicaties en digitale oplossingen.</p>
+            <p>reldio levert websites, applicaties en digitale oplossingen.</p>
 
             <h2>2. Aansprakelijkheid</h2>
             <p>Wij zijn niet aansprakelijk voor indirecte schade, verlies van gegevens of gemiste inkomsten.</p>
@@ -33,7 +33,7 @@ const TermsNL: React.FC = () => {
             <p>Op deze voorwaarden is Nederlands recht van toepassing.</p>
 
             <h2>6. Contact</h2>
-            <p><a href="mailto:info@zentrixdigital.eu">info@zentrixdigital.eu</a></p>
+            <p><a href="mailto:info@reldio.eu">info@reldio.eu</a></p>
           </div>
         </div>
       </section>

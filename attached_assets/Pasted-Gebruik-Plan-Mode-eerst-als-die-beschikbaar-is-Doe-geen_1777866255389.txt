@@ -1,7 +1,7 @@
-Gebruik Plan Mode eerst als die beschikbaar is. Doe geen brede SEO-herbouw. Fix alleen de sitemap.xml-problemen voor ZentrixDigital.
+Gebruik Plan Mode eerst als die beschikbaar is. Doe geen brede SEO-herbouw. Fix alleen de sitemap.xml-problemen voor reldio.
 
 Context:
-- Website: https://www.zentrixdigital.eu
+- Website: https://www.reldio.eu
 - Probleem: Google Search Console gaf bij sitemap.xml “Kan niet ophalen”.
 - De sitemap bestaat en toont XML, maar moet volledig strak, consistent en Google-proof worden gemaakt.
 - Bestaande routes, styling, taalfunctionaliteit, header/footer, componentstructuur en design tokens mogen niet worden gewijzigd.
@@ -43,11 +43,11 @@ Taken:
 
 6. Maak alle URL’s consistent.
    Kies deze stijl:
-   - homepage: https://www.zentrixdigital.eu/
+   - homepage: https://www.reldio.eu/
    - alle andere routes: zonder trailing slash
    Voorbeeld:
-   Goed: https://www.zentrixdigital.eu/websites
-   Niet: https://www.zentrixdigital.eu/websites/
+   Goed: https://www.reldio.eu/websites
+   Niet: https://www.reldio.eu/websites/
 
 7. Voeg ontbrekende <lastmod> toe waar die ontbreekt.
    Gebruik voor bestaande oudere pagina’s 2026-04-26.
@@ -55,42 +55,42 @@ Taken:
    Belangrijk: alle lastmod-waarden moeten geldig ISO-datumformaat hebben: YYYY-MM-DD.
 
 8. Controleer dat alle belangrijke bestaande routes in de sitemap staan:
-   - https://www.zentrixdigital.eu/
-   - https://www.zentrixdigital.eu/about
-   - https://www.zentrixdigital.eu/services
-   - https://www.zentrixdigital.eu/contact
-   - https://www.zentrixdigital.eu/websites
-   - https://www.zentrixdigital.eu/applicaties
-   - https://www.zentrixdigital.eu/onderhoud-optimalisatie
-   - https://www.zentrixdigital.eu/digitale-groeiondersteuning
-   - https://www.zentrixdigital.eu/website-laten-maken-zzp
-   - https://www.zentrixdigital.eu/website-laten-maken-bedrijven
-   - https://www.zentrixdigital.eu/website-voor-bedrijven
-   - https://www.zentrixdigital.eu/website-voor-mkb
-   - https://www.zentrixdigital.eu/website-laten-maken-amsterdam
-   - https://www.zentrixdigital.eu/webdesign-bedrijf
-   - https://www.zentrixdigital.eu/website-kosten
-   - https://www.zentrixdigital.eu/crm-systeem-laten-maken
-   - https://www.zentrixdigital.eu/boekingssysteem-laten-maken
-   - https://www.zentrixdigital.eu/bedrijfsprocessen-automatiseren
-   - https://www.zentrixdigital.eu/concepts
-   - https://www.zentrixdigital.eu/privacy
-   - https://www.zentrixdigital.eu/cookies
-   - https://www.zentrixdigital.eu/terms
+   - https://www.reldio.eu/
+   - https://www.reldio.eu/about
+   - https://www.reldio.eu/services
+   - https://www.reldio.eu/contact
+   - https://www.reldio.eu/websites
+   - https://www.reldio.eu/applicaties
+   - https://www.reldio.eu/onderhoud-optimalisatie
+   - https://www.reldio.eu/digitale-groeiondersteuning
+   - https://www.reldio.eu/website-laten-maken-zzp
+   - https://www.reldio.eu/website-laten-maken-bedrijven
+   - https://www.reldio.eu/website-voor-bedrijven
+   - https://www.reldio.eu/website-voor-mkb
+   - https://www.reldio.eu/website-laten-maken-amsterdam
+   - https://www.reldio.eu/webdesign-bedrijf
+   - https://www.reldio.eu/website-kosten
+   - https://www.reldio.eu/crm-systeem-laten-maken
+   - https://www.reldio.eu/boekingssysteem-laten-maken
+   - https://www.reldio.eu/bedrijfsprocessen-automatiseren
+   - https://www.reldio.eu/concepts
+   - https://www.reldio.eu/privacy
+   - https://www.reldio.eu/cookies
+   - https://www.reldio.eu/terms
 
 9. Controleer dat de Engelse routes ook in de sitemap staan als ze live bestaan:
-   - https://www.zentrixdigital.eu/en/website-for-freelancers
-   - https://www.zentrixdigital.eu/en/website-for-businesses
-   - https://www.zentrixdigital.eu/en/website-for-smes
-   - https://www.zentrixdigital.eu/en/web-design-company
-   - https://www.zentrixdigital.eu/en/website-development-amsterdam
-   - https://www.zentrixdigital.eu/en/website-development-costs
-   - https://www.zentrixdigital.eu/en/crm-system-development
-   - https://www.zentrixdigital.eu/en/booking-system-development
-   - https://www.zentrixdigital.eu/en/business-automation
-   - https://www.zentrixdigital.eu/en/privacy
-   - https://www.zentrixdigital.eu/en/cookies
-   - https://www.zentrixdigital.eu/en/terms
+   - https://www.reldio.eu/en/website-for-freelancers
+   - https://www.reldio.eu/en/website-for-businesses
+   - https://www.reldio.eu/en/website-for-smes
+   - https://www.reldio.eu/en/web-design-company
+   - https://www.reldio.eu/en/website-development-amsterdam
+   - https://www.reldio.eu/en/website-development-costs
+   - https://www.reldio.eu/en/crm-system-development
+   - https://www.reldio.eu/en/booking-system-development
+   - https://www.reldio.eu/en/business-automation
+   - https://www.reldio.eu/en/privacy
+   - https://www.reldio.eu/en/cookies
+   - https://www.reldio.eu/en/terms
 
 10. Controleer robots.txt.
     Zorg dat robots.txt bereikbaar is op:
@@ -100,7 +100,7 @@ Taken:
     User-agent: *
     Allow: /
 
-    Sitemap: https://www.zentrixdigital.eu/sitemap.xml
+    Sitemap: https://www.reldio.eu/sitemap.xml
 
 11. Controleer indien mogelijk de response headers van /sitemap.xml.
     De content-type moet application/xml, text/xml of een vergelijkbare XML-content-type zijn.
@@ -112,7 +112,7 @@ Taken:
     - sitemap bevat geen <html
     - sitemap bevat geen <div
     - sitemap bevat geen <script
-    - alle <loc> bevatten https://www.zentrixdigital.eu
+    - alle <loc> bevatten https://www.reldio.eu
     - XML is syntactisch logisch opgebouwd
 
 13. Schrijf een auditbestand:
@@ -141,9 +141,9 @@ Taken:
 Acceptatiecriteria:
 - /sitemap.xml is pure geldige XML.
 - Geen <div>, <html>, <script> of React/app-shell in sitemap.
-- Alle URL’s zijn absolute https://www.zentrixdigital.eu URL’s.
+- Alle URL’s zijn absolute https://www.reldio.eu URL’s.
 - URL-stijl is consistent: homepage met slash, andere routes zonder slash.
 - Elke URL heeft een geldige lastmod.
-- robots.txt verwijst naar https://www.zentrixdigital.eu/sitemap.xml.
+- robots.txt verwijst naar https://www.reldio.eu/sitemap.xml.
 - Build slaagt.
 - audit/sitemap-fix-summary.md bestaat.

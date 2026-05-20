@@ -10,7 +10,7 @@ export const nl = {
   home: {
     heroBadge: "WEBSITES · APPLICATIES · SLIMME SYSTEMEN",
     heroTitle: "Professionele website laten maken in Amsterdam",
-    heroSubtitle: "ZentrixDigital bouwt moderne websites, maatwerkapplicaties en slimme contactsystemen voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online uitstraling willen.",
+    heroSubtitle: "reldio bouwt moderne websites, maatwerkapplicaties en slimme contactsystemen voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online uitstraling willen.",
     primaryCta: "Gratis websiteanalyse aanvragen",
     secondaryCta: "Bekijk onze oplossingen",
     trustSignals: ["Professioneel en op maat", "Uitbreidbaar met slimme functies", "Heldere communicatie"],
@@ -67,7 +67,7 @@ export const nl = {
       { title: "Startende bedrijven", text: "Ondernemers die snel een professionele basis willen neerzetten en direct serieus overkomen." },
       { title: "Groeiende bedrijven", text: "Bedrijven die willen opschalen en hun digitale aanwezigheid naar het volgende niveau willen tillen." }
     ],
-    whyZentrixTitle: "Waarom bedrijven kiezen voor ZentrixDigital",
+    whyZentrixTitle: "Waarom bedrijven kiezen voor reldio",
     whyZentrixIntro: "Wij zijn geen standaard webbureau. Wij denken mee als partner — met oog voor uw resultaat, uitbreidbaarheid en de lange termijn.",
     whyZentrix: [
       { title: "Transparante aanpak", text: "Geen vage offertes of onduidelijke kosten. U weet precies wat wij doen, wanneer en waarvoor." },
@@ -96,11 +96,11 @@ export const nl = {
       { label: "Internationaal", sub: "Wereldwijd beschikbaar" }
     ],
     systemSectionTitle: "Niet zomaar een website, maar een online systeem",
-    systemSectionText: "Een goede website moet meer doen dan mooi ogen. Bezoekers moeten direct begrijpen wat u aanbiedt, waarom ze u kunnen vertrouwen en hoe ze eenvoudig contact opnemen. Daarom bouwt ZentrixDigital websites die uitbreidbaar zijn met WhatsApp, formulieren, boekingen, dashboards, CRM-systemen en andere slimme functies.",
+    systemSectionText: "Een goede website moet meer doen dan mooi ogen. Bezoekers moeten direct begrijpen wat u aanbiedt, waarom ze u kunnen vertrouwen en hoe ze eenvoudig contact opnemen. Daarom bouwt reldio websites die uitbreidbaar zijn met WhatsApp, formulieren, boekingen, dashboards, CRM-systemen en andere slimme functies.",
     moreAppsTitle: "Meer dan een website nodig?",
-    moreAppsText: "Sommige bedrijven hebben niet genoeg aan een gewone website. Daarom bouwt ZentrixDigital ook maatwerkapplicaties zoals klantportalen, dashboards, boekingssystemen, CRM-systemen en interne tools.",
+    moreAppsText: "Sommige bedrijven hebben niet genoeg aan een gewone website. Daarom bouwt reldio ook maatwerkapplicaties zoals klantportalen, dashboards, boekingssystemen, CRM-systemen en interne tools.",
     moreAppsCta: "Bekijk maatwerk applicaties",
-    trustBlockTitle: "Wat u krijgt bij ZentrixDigital",
+    trustBlockTitle: "Wat u krijgt bij reldio",
     trustBlockItems: [
       "Mobielvriendelijke website",
       "SEO-basisstructuur",
@@ -121,7 +121,7 @@ export const nl = {
       { label: "Website voor ZZP", href: "/website-voor-zzp" },
       { label: "Website voor MKB", href: "/website-voor-mkb" }
     ],
-    localSeoText: "ZentrixDigital is gevestigd in Amsterdam en werkt voor ondernemers in Amsterdam, Noord-Holland en de rest van Nederland.",
+    localSeoText: "reldio is gevestigd in Amsterdam en werkt voor ondernemers in Amsterdam, Noord-Holland en de rest van Nederland.",
     ctaTitle: "Klaar om meer te halen uit uw online aanwezigheid?",
     ctaText: "Of u nu een nieuwe website nodig heeft, een maatwerk applicatie wilt laten bouwen of uw website wilt uitbreiden met slimme functies — wij denken vrijblijvend met u mee.",
     ctaPrimary: "Gratis websiteanalyse aanvragen",
@@ -130,7 +130,7 @@ export const nl = {
   },
   about: {
     heroTitle: "Wij helpen bedrijven online sterker worden",
-    heroSubtitle: "ZentrixDigital is een modern digitaal bureau in Amsterdam. Wij bouwen professionele websites, maatwerk applicaties en slimme systemen die meegroeien met uw bedrijf.",
+    heroSubtitle: "reldio is een modern digitaal bureau in Amsterdam. Wij bouwen professionele websites, maatwerk applicaties en slimme systemen die meegroeien met uw bedrijf.",
     whoWeAreTitle: "Wie wij zijn",
     whoWeAreText: "Wij zijn een compact, toegewijd team met een eerlijke aanpak. Geen grootse beloftes of vage verhalen — maar concrete oplossingen die passen bij uw bedrijf. Wij bouwen niet alleen websites, maar ook de slimme functies en systemen eromheen: van WhatsApp-koppelingen en boekingssystemen tot klantportalen en dashboards. Zo groeit uw digitale aanwezigheid mee met uw bedrijf.",
     missionTitle: "Onze missie",
@@ -183,7 +183,7 @@ export const nl = {
     websites: {
       h1: "Professionele website laten maken voor uw bedrijf",
       intro: "Een sterke website is meer dan een digitale brochure. Het is het eerste wat een potentiële klant van u ziet — en dat ene moment bepaalt of ze verder kijken of meteen wegklikken. Wij bouwen professionele websites op maat die vertrouwen opbouwen, goed gevonden worden in Google en bezoekers omzetten in echte klanten. En het mooie: uw website kan later eenvoudig worden uitgebreid met slimme functies en systemen die bij uw bedrijf passen.",
-      benefitsTitle: "Wat u krijgt bij een website van ZentrixDigital",
+      benefitsTitle: "Wat u krijgt bij een website van reldio",
       benefits: [
         "Een professionele uitstraling die direct vertrouwen wekt bij nieuwe bezoekers",
         "Volledig mobielvriendelijk — perfect op smartphone, tablet én desktop",
@@ -388,10 +388,10 @@ export const nl = {
       send: "Verzenden"
     },
     infoTitle: "Bedrijfsinformatie",
-    company: "ZentrixDigital",
+    company: "reldio",
     location: "Amsterdam, Nederland",
     phone: "+31 (0) 6 83 28 49 95",
-    email: "info@zentrixdigital.eu",
+    email: "info@reldio.eu",
     infoNote: "Wij streven naar duidelijke communicatie, professionele opvolging en een transparant proces vanaf het eerste contact.",
     hours: {
       title: "Bereikbaarheid",
@@ -404,22 +404,22 @@ export const nl = {
     }
   },
   meta: {
-    homeTitle: "ZentrixDigital — Professionele website laten maken in Amsterdam",
-    homeDesc: "ZentrixDigital bouwt professionele websites en maatwerk applicaties voor ondernemers in heel Nederland. Uitbreidbaar met slimme functies. Gratis analyse aanvragen.",
-    aboutTitle: "Over ZentrixDigital — Modern digitaal bureau in Amsterdam",
-    aboutDesc: "ZentrixDigital is een modern digitaal bureau in Amsterdam. Professionele websites, maatwerk applicaties en slimme systemen voor ondernemers die online serieus genomen willen worden.",
-    servicesTitle: "Diensten | Websites, Applicaties & Slimme Systemen | ZentrixDigital",
-    servicesDesc: "ZentrixDigital bouwt professionele websites, applicaties, CRM systemen, boekingssystemen en automatisering voor bedrijven die meer klanten en overzicht willen.",
-    contactTitle: "Contact — ZentrixDigital | Gratis websiteanalyse aanvragen",
-    contactDesc: "Neem contact op met ZentrixDigital voor een gratis websiteanalyse. Reactie binnen 24 uur. Bel +31 (0) 6 83 28 49 95 of mail naar info@zentrixdigital.eu.",
-    websitesTitle: "Professionele website laten maken op maat — ZentrixDigital Amsterdam",
-    websitesDesc: "Website laten maken door ZentrixDigital? Wij bouwen conversiegerichte bedrijfswebsites uitbreidbaar met WhatsApp, boekingen, formulieren en meer. Gratis analyse.",
-    applicatiesTitle: "Maatwerk applicatie laten bouwen — ZentrixDigital",
-    applicatiesDesc: "Laat een webapplicatie op maat bouwen door ZentrixDigital. Klantportalen, dashboards, boekingssystemen en slimme koppelingen die meegroeien met uw bedrijf.",
-    onderhoudTitle: "Website onderhoud en optimalisatie — ZentrixDigital",
-    onderhoudDesc: "Professioneel website onderhoud door ZentrixDigital. Wij zorgen voor snelheid, veiligheid en stabiele prestaties — zodat u zich kunt focussen op uw bedrijf.",
-    groeiTitle: "Digitale groeiondersteuning voor bedrijven — ZentrixDigital",
-    groeiDesc: "Verbeter uw online zichtbaarheid en conversie met digitale groeiondersteuning van ZentrixDigital. Slimme uitbreidingen, betere positionering en meer resultaat."
+    homeTitle: "reldio — Professionele website laten maken in Amsterdam",
+    homeDesc: "reldio bouwt professionele websites en maatwerk applicaties voor ondernemers in heel Nederland. Uitbreidbaar met slimme functies. Gratis analyse aanvragen.",
+    aboutTitle: "Over reldio — Modern digitaal bureau in Amsterdam",
+    aboutDesc: "reldio is een modern digitaal bureau in Amsterdam. Professionele websites, maatwerk applicaties en slimme systemen voor ondernemers die online serieus genomen willen worden.",
+    servicesTitle: "Diensten | Websites, Applicaties & Slimme Systemen | reldio",
+    servicesDesc: "reldio bouwt professionele websites, applicaties, CRM systemen, boekingssystemen en automatisering voor bedrijven die meer klanten en overzicht willen.",
+    contactTitle: "Contact — reldio | Gratis websiteanalyse aanvragen",
+    contactDesc: "Neem contact op met reldio voor een gratis websiteanalyse. Reactie binnen 24 uur. Bel +31 (0) 6 83 28 49 95 of mail naar info@reldio.eu.",
+    websitesTitle: "Professionele website laten maken op maat — reldio Amsterdam",
+    websitesDesc: "Website laten maken door reldio? Wij bouwen conversiegerichte bedrijfswebsites uitbreidbaar met WhatsApp, boekingen, formulieren en meer. Gratis analyse.",
+    applicatiesTitle: "Maatwerk applicatie laten bouwen — reldio",
+    applicatiesDesc: "Laat een webapplicatie op maat bouwen door reldio. Klantportalen, dashboards, boekingssystemen en slimme koppelingen die meegroeien met uw bedrijf.",
+    onderhoudTitle: "Website onderhoud en optimalisatie — reldio",
+    onderhoudDesc: "Professioneel website onderhoud door reldio. Wij zorgen voor snelheid, veiligheid en stabiele prestaties — zodat u zich kunt focussen op uw bedrijf.",
+    groeiTitle: "Digitale groeiondersteuning voor bedrijven — reldio",
+    groeiDesc: "Verbeter uw online zichtbaarheid en conversie met digitale groeiondersteuning van reldio. Slimme uitbreidingen, betere positionering en meer resultaat."
   },
   footer: {
     navLabel: "Navigatie",

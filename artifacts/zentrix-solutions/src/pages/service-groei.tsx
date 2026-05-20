@@ -13,7 +13,7 @@ const ServiceGroei = () => {
       servicesLabel={t.nav.services}
       contactLabel={t.home.ctaSecondary}
       metaDesc={t.meta.groeiDesc}
-      canonical="https://www.zentrixdigital.eu/digitale-groeiondersteuning"
+      canonical="https://www.reldio.eu/digitale-groeiondersteuning"
     />
   );
 };

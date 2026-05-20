@@ -12,8 +12,8 @@ Find the navbar logo section and REPLACE it entirely with this:
 
 <a href="/" class="flex items-center gap-4 shrink-0">
   <img
-    src="/logo-zentrixdigital.png"
-    alt="ZentrixDigital"
+    src="/logo-reldio.png"
+    alt="reldio"
     class="logo-navbar"
   />
 </a>

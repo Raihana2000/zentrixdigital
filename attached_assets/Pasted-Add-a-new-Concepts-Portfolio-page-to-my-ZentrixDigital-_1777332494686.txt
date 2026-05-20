@@ -1,4 +1,4 @@
-Add a new "Concepts / Portfolio" page to my ZentrixDigital website with full Dutch and English support and improve language switching visibility.
+Add a new "Concepts / Portfolio" page to my reldio website with full Dutch and English support and improve language switching visibility.
 
 GOAL:
 Showcase concept projects (not real clients) in a professional way and make it easy for international visitors to switch language.
@@ -17,10 +17,10 @@ NL: "Concepten & Website Verbeteringen"
 
 Intro text:
 EN:
-"A selection of website concepts and redesign ideas focused on clarity, trust and client conversion. These examples demonstrate how ZentrixDigital builds websites as client-generating systems."
+"A selection of website concepts and redesign ideas focused on clarity, trust and client conversion. These examples demonstrate how reldio builds websites as client-generating systems."
 
 NL:
-"Een selectie van website concepten en redesign ideeën gericht op duidelijkheid, vertrouwen en conversie. Deze voorbeelden laten zien hoe ZentrixDigital websites bouwt als klantgenererende systemen."
+"Een selectie van website concepten en redesign ideeën gericht op duidelijkheid, vertrouwen en conversie. Deze voorbeelden laten zien hoe reldio websites bouwt als klantgenererende systemen."
 
 ---
 

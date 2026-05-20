@@ -1,11 +1,11 @@
-Perform a final production cleanup for ZentrixDigital.
+Perform a final production cleanup for reldio.
 
 Goal:
 Make the website fast, smooth, professional, SEO-ready, bilingual, and production-stable.
 
 IMPORTANT:
 - Do NOT redesign the website.
-- Keep the current premium ZentrixDigital look.
+- Keep the current premium reldio look.
 - Do NOT remove existing pages or content.
 - Do NOT break navigation, footer, language toggle, WhatsApp button, cookie banner, SEO pages, or sitemap.
 
@@ -184,7 +184,7 @@ Use consistent trailing slashes.
 
 11. Robots
 Ensure robots.txt exists and references:
-Sitemap: https://www.zentrixdigital.eu/sitemap.xml
+Sitemap: https://www.reldio.eu/sitemap.xml
 
 12. Build and production check
 - Run install only if needed.

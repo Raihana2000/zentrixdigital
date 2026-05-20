@@ -1,4 +1,4 @@
-Fix all footer, contact, card, and section text color inconsistencies across the entire ZentrixDigital website, and then commit and push the changes to GitHub.
+Fix all footer, contact, card, and section text color inconsistencies across the entire reldio website, and then commit and push the changes to GitHub.
 
 Main goal:
 Make all readable text on dark backgrounds clearly visible, consistent, and accessible, especially for users with weaker eyesight.

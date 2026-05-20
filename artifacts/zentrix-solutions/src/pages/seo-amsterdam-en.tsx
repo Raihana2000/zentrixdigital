@@ -3,8 +3,8 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Professional website development in Amsterdam",
-  intro: "Looking for a professional website built in Amsterdam? ZentrixDigital builds modern, conversion-focused websites for Amsterdam businesses that want to attract more customers online. We combine strategic design, strong SEO foundations and smart contact systems — tailored to your Amsterdam audience.",
-  benefitsTitle: "Why Amsterdam businesses choose ZentrixDigital",
+  intro: "Looking for a professional website built in Amsterdam? reldio builds modern, conversion-focused websites for Amsterdam businesses that want to attract more customers online. We combine strategic design, strong SEO foundations and smart contact systems — tailored to your Amsterdam audience.",
+  benefitsTitle: "Why Amsterdam businesses choose reldio",
   benefits: [
     "Local knowledge of the Amsterdam market and your target audience",
     "Conversion-focused design — built to turn visitors into customers",
@@ -52,9 +52,9 @@ const data = {
 const SeoAmsterdamEN = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Website development Amsterdam | ZentrixDigital"
-    metaDesc="Professional website development in Amsterdam by ZentrixDigital. Fast delivery possible with complete input. Conversion-focused, SEO-optimised. Request free consultation."
-    canonical="https://www.zentrixdigital.eu/en/website-development-amsterdam"
+    pageTitle="Website development Amsterdam | reldio"
+    metaDesc="Professional website development in Amsterdam by reldio. Fast delivery possible with complete input. Conversion-focused, SEO-optimised. Request free consultation."
+    canonical="https://www.reldio.eu/en/website-development-amsterdam"
     backLabel="Back to services"
     servicesLabel="View all services"
     contactLabel="Request free strategy call"

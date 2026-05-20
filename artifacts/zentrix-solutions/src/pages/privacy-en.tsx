@@ -7,15 +7,15 @@ const PrivacyEN: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-[#0B0B0B] page-top-pad">
       <SEOHead
-        title="Privacy Policy — ZentrixDigital"
-        description="Read the privacy policy of ZentrixDigital. We explain what data we collect and how we handle it."
-        canonical="https://www.zentrixdigital.eu/en/privacy-policy"
+        title="Privacy Policy — reldio"
+        description="Read the privacy policy of reldio. We explain what data we collect and how we handle it."
+        canonical="https://www.reldio.eu/en/privacy-policy"
       />
       <section className="py-24 px-5">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl font-black text-white mb-8 tracking-tight">Privacy Policy</h1>
           <div className="prose-zentrix">
-            <p>This privacy policy applies to the services of ZentrixDigital, founded by K. Hizi.</p>
+            <p>This privacy policy applies to the services of reldio, founded by K. Hizi.</p>
 
             <h2>1. What data do we collect?</h2>
             <p>We may collect the following information when you contact us:</p>
@@ -49,7 +49,7 @@ const PrivacyEN: React.FC = () => {
             </ul>
 
             <h2>6. Contact</h2>
-            <p>For questions, contact: <a href="mailto:info@zentrixdigital.eu">info@zentrixdigital.eu</a></p>
+            <p>For questions, contact: <a href="mailto:info@reldio.eu">info@reldio.eu</a></p>
           </div>
         </div>
       </section>

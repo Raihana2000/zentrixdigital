@@ -77,7 +77,7 @@ Check responsive behavior carefully:
 Make sure these look visually consistent:
 - homepage cards
 - “Voor wie wij websites en applicaties bouwen”
-- “Waarom bedrijven voor ZentrixDigital kiezen”
+- “Waarom bedrijven voor reldio kiezen”
 - process section
 - services overview
 - 4 service detail pages

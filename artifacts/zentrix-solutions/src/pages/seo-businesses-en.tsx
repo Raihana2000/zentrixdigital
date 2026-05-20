@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Website for Businesses",
-  intro: "A professional business website is your most powerful growth tool. ZentrixDigital builds modern websites for businesses that improve trust, drive conversions and scale alongside your organisation.",
+  intro: "A professional business website is your most powerful growth tool. reldio builds modern websites for businesses that improve trust, drive conversions and scale alongside your organisation.",
   benefitsTitle: "Why every business needs a professional website",
   benefits: [
     "Better visibility on Google — more organic traffic, more clients",
@@ -43,9 +43,9 @@ const data = {
 const SeoBusinessesEN = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Website for Businesses | ZentrixDigital"
-    metaDesc="Professional websites for businesses that improve trust, conversion and online growth. ZentrixDigital builds modern business websites. Request a free analysis."
-    canonical="https://www.zentrixdigital.eu/en/website-for-businesses"
+    pageTitle="Website for Businesses | reldio"
+    metaDesc="Professional websites for businesses that improve trust, conversion and online growth. reldio builds modern business websites. Request a free analysis."
+    canonical="https://www.reldio.eu/en/website-for-businesses"
     backLabel="Back to services"
     servicesLabel="View all services"
     contactLabel="Request free analysis"

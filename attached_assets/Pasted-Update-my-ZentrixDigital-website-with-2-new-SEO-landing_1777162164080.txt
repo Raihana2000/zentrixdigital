@@ -1,4 +1,4 @@
-Update my ZentrixDigital website with 2 new SEO landing pages in BOTH Dutch and English.
+Update my reldio website with 2 new SEO landing pages in BOTH Dutch and English.
 
 Goal:
 Create SEO pages that generate leads from ZZP/freelancers and businesses, while supporting international growth.
@@ -22,7 +22,7 @@ URL: /en/website-for-businesses
 H1: Website for Businesses
 
 Design requirements:
-- Keep the current ZentrixDigital branding and layout style
+- Keep the current reldio branding and layout style
 - Premium, modern, clean and conversion-focused
 - Fully responsive for mobile, tablet and desktop
 - Do NOT break or redesign the existing website
@@ -39,7 +39,7 @@ Each page must include:
 - Internal links to relevant pages
 
 Dutch ZZP SEO:
-Title: Website laten maken ZZP | ZentrixDigital
+Title: Website laten maken ZZP | reldio
 Meta description: Professionele website laten maken voor zzp’ers. Meer klanten, betere uitstraling en een website die vertrouwen opbouwt.
 Use keywords naturally:
 - website laten maken zzp
@@ -47,7 +47,7 @@ Use keywords naturally:
 - website voor zelfstandigen
 
 English freelancer SEO:
-Title: Website for Freelancers | ZentrixDigital
+Title: Website for Freelancers | reldio
 Meta description: Professional websites for freelancers that build trust, attract clients and support business growth.
 Use keywords naturally:
 - website for freelancers
@@ -55,15 +55,15 @@ Use keywords naturally:
 - freelance website design
 
 Dutch business SEO:
-Title: Website laten maken voor bedrijven | ZentrixDigital
-Meta description: Laat een professionele website maken voor je bedrijf. ZentrixDigital bouwt moderne websites die vertrouwen, leads en groei ondersteunen.
+Title: Website laten maken voor bedrijven | reldio
+Meta description: Laat een professionele website maken voor je bedrijf. reldio bouwt moderne websites die vertrouwen, leads en groei ondersteunen.
 Use keywords naturally:
 - website laten maken voor bedrijven
 - professionele website voor bedrijven
 - website voor kleine bedrijven
 
 English business SEO:
-Title: Website for Businesses | ZentrixDigital
+Title: Website for Businesses | reldio
 Meta description: Professional websites for businesses that improve trust, conversion and online growth.
 Use keywords naturally:
 - website for businesses
@@ -102,4 +102,4 @@ After completing everything:
 4. Push directly to GitHub:
    origin main
 
-Make this production-ready and consistent with the current ZentrixDigital website.
+Make this production-ready and consistent with the current reldio website.

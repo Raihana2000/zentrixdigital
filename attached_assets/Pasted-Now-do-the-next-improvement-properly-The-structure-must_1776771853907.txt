@@ -103,11 +103,11 @@ If the project supports metadata per page, add:
 Dutch and English meta titles and meta descriptions for each standalone service page.
 
 Examples:
-- NL: Professionele website laten maken | ZentrixDigital
-- EN: Professional website development | ZentrixDigital
+- NL: Professionele website laten maken | reldio
+- EN: Professional website development | reldio
 
-- NL: Maatwerk applicaties laten ontwikkelen | ZentrixDigital
-- EN: Custom application development | ZentrixDigital
+- NL: Maatwerk applicaties laten ontwikkelen | reldio
+- EN: Custom application development | reldio
 
 Descriptions must match the language version and not be duplicated carelessly.
 

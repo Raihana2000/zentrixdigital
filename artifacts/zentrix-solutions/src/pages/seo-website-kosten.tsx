@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Wat kost een website laten maken in 2026?",
-  intro: "De kosten voor een website laten maken variëren sterk — van een paar honderd euro voor een eenvoudige website tot tienduizenden euro's voor een complex platform. In deze pagina geven wij u een eerlijk en transparant overzicht van de prijzen, factoren en wat u kunt verwachten bij ZentrixDigital.",
+  intro: "De kosten voor een website laten maken variëren sterk — van een paar honderd euro voor een eenvoudige website tot tienduizenden euro's voor een complex platform. In deze pagina geven wij u een eerlijk en transparant overzicht van de prijzen, factoren en wat u kunt verwachten bij reldio.",
   benefitsTitle: "Wat bepaalt de kosten van een website?",
   benefits: [
     "Omvang: een one-pager kost minder dan een website met 10+ pagina's en subpagina's",
@@ -25,7 +25,7 @@ const data = {
   extrasTitle: "Goedkope website versus professionele investering",
   extras: [
     "Een €200 Wix-website trekt zelden klanten aan — het ontbreekt aan strategie, SEO en conversie",
-    "Een te dure bureau vraagt €15.000 voor iets dat ZentrixDigital bouwt voor €1.500",
+    "Een te dure bureau vraagt €15.000 voor iets dat reldio bouwt voor €1.500",
     "De prijs is niet wat telt — de ROI telt: wat levert uw website op per maand?",
     "Een goede website verdient zichzelf terug binnen 1–3 maanden via extra klanten",
     "Wij werken transparant: u weet vooraf exact wat het kost en wat u krijgt",
@@ -38,7 +38,7 @@ const data = {
     { title: "Groeiend bedrijf (€2.500–€5.000)", text: "Een complete online aanwezigheid met systemen, koppelingen, klantportalen of boekingsfunctionaliteit — gericht op schaalbaarheid en omzetgroei." },
     { title: "Maatwerk platform (€5.000+)", text: "Complexe platforms, e-commerce oplossingen, CRM-systemen en maatwerk applicaties die uw bedrijfsprocessen volledig digitaliseren en automatiseren." }
   ],
-  processTitle: "Wat krijgt u bij ZentrixDigital?",
+  processTitle: "Wat krijgt u bij reldio?",
   process: [
     { title: "Transparante offerte", text: "Na een gratis gesprek ontvangt u een heldere offerte met exacte prijs, scope en opleverdatum — zonder verrassingen achteraf." },
     { title: "Maatwerk voor uw budget", text: "Wij denken mee over hoe u het meeste uit uw budget kunt halen. Soms is een slimme one-pager effectiever dan een duur platform." },
@@ -52,9 +52,9 @@ const data = {
 const SeoWebsiteKosten = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Wat kost een website laten maken? | ZentrixDigital"
+    pageTitle="Wat kost een website laten maken? | reldio"
     metaDesc="Wat kost een website laten maken in 2026? Eerlijk overzicht van prijzen en factoren. Vanaf €700 tot maatwerk platforms. Gratis offerte aanvragen."
-    canonical="https://www.zentrixdigital.eu/website-kosten"
+    canonical="https://www.reldio.eu/website-kosten"
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"
     contactLabel="Gratis offerte aanvragen"

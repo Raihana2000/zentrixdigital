@@ -21,7 +21,7 @@ const CONTENT = {
   nl: {
     badge: 'Portfolio',
     title: 'Concepten & Website Verbeteringen',
-    intro: 'Een selectie van website concepten en redesign ideeën gericht op duidelijkheid, vertrouwen en conversie. Deze voorbeelden laten zien hoe ZentrixDigital websites bouwt als klantgenererende systemen.',
+    intro: 'Een selectie van website concepten en redesign ideeën gericht op duidelijkheid, vertrouwen en conversie. Deze voorbeelden laten zien hoe reldio websites bouwt als klantgenererende systemen.',
     conceptBadge: 'Concept project',
     conceptTitle: 'Administratiekantoor Website Concept — Amsterdam',
     conceptDesc: 'Dit concept is gemaakt om te laten zien hoe een traditioneel administratiekantoor verbeterd kan worden op het gebied van duidelijkheid, vertrouwen en gebruikservaring.',
@@ -38,7 +38,7 @@ const CONTENT = {
   en: {
     badge: 'Portfolio',
     title: 'Concepts & Website Improvements',
-    intro: 'A selection of website concepts and redesign ideas focused on clarity, trust and client conversion. These examples demonstrate how ZentrixDigital builds websites as client-generating systems.',
+    intro: 'A selection of website concepts and redesign ideas focused on clarity, trust and client conversion. These examples demonstrate how reldio builds websites as client-generating systems.',
     conceptBadge: 'Concept project',
     conceptTitle: 'Accounting Website Concept — Amsterdam',
     conceptDesc: 'This concept was created to demonstrate how a traditional accounting website can be redesigned to improve clarity, trust and user experience.',
@@ -76,11 +76,11 @@ const Concepts: React.FC = () => {
   return (
     <>
       <SEOHead
-        title={isNL ? 'Concepten & Website Verbeteringen | ZentrixDigital' : 'Concepts & Website Improvements | ZentrixDigital'}
+        title={isNL ? 'Concepten & Website Verbeteringen | reldio' : 'Concepts & Website Improvements | reldio'}
         description={isNL
-          ? 'Bekijk website concepten en redesign ideeën van ZentrixDigital. Gericht op conversie, vertrouwen en meer klanten. Gratis analyse aanvragen.'
-          : 'View website concepts and redesign ideas by ZentrixDigital. Focused on conversion, trust and more clients. Request a free analysis.'}
-        canonical={`https://www.zentrixdigital.eu/concepts`}
+          ? 'Bekijk website concepten en redesign ideeën van reldio. Gericht op conversie, vertrouwen en meer klanten. Gratis analyse aanvragen.'
+          : 'View website concepts and redesign ideas by reldio. Focused on conversion, trust and more clients. Request a free analysis.'}
+        canonical={`https://www.reldio.eu/concepts`}
       />
 
       {/* ── Hero ── */}

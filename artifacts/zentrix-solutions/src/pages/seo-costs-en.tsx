@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "How much does website development cost in 2026?",
-  intro: "The cost of website development varies significantly — from a few hundred euros for a simple site to tens of thousands for a complex platform. On this page we give you an honest and transparent overview of prices, factors and what you can expect from ZentrixDigital.",
+  intro: "The cost of website development varies significantly — from a few hundred euros for a simple site to tens of thousands for a complex platform. On this page we give you an honest and transparent overview of prices, factors and what you can expect from reldio.",
   benefitsTitle: "What determines the cost of a website?",
   benefits: [
     "Scope: a one-pager costs less than a website with 10+ pages and subpages",
@@ -25,7 +25,7 @@ const data = {
   extrasTitle: "Cheap website vs professional investment",
   extras: [
     "A €200 Wix website rarely attracts customers — it lacks strategy, SEO and conversion focus",
-    "An overpriced agency charges €15,000 for something ZentrixDigital builds for €1,500",
+    "An overpriced agency charges €15,000 for something reldio builds for €1,500",
     "The price isn't what counts — the ROI counts: what does your website deliver per month?",
     "A good website pays for itself within 1–3 months through extra customers",
     "We work transparently: you know in advance exactly what it costs and what you get",
@@ -38,7 +38,7 @@ const data = {
     { title: "Growing business (€2,500–€5,000)", text: "A complete online presence with systems, integrations, client portals or booking functionality — focused on scalability and revenue growth." },
     { title: "Custom platform (€5,000+)", text: "Complex platforms, e-commerce solutions, CRM systems and custom applications that fully digitalise and automate your business processes." }
   ],
-  processTitle: "What you get with ZentrixDigital",
+  processTitle: "What you get with reldio",
   process: [
     { title: "Transparent quote", text: "After a free consultation you receive a clear quote with exact price, scope and timeline — no surprises afterwards." },
     { title: "Custom within your budget", text: "We help you get the most out of your budget. Sometimes a smart one-pager is more effective than an expensive platform." },
@@ -52,9 +52,9 @@ const data = {
 const SeoCostsEN = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Website development costs 2026 | ZentrixDigital"
+    pageTitle="Website development costs 2026 | reldio"
     metaDesc="How much does website development cost in 2026? Honest overview of prices and factors. From €700 to custom platforms. Request a free quote."
-    canonical="https://www.zentrixdigital.eu/en/website-development-costs"
+    canonical="https://www.reldio.eu/en/website-development-costs"
     backLabel="Back to services"
     servicesLabel="View all services"
     contactLabel="Request free quote"

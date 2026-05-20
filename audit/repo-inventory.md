@@ -1,4 +1,4 @@
-# Repo Inventory — ZentrixDigital Lead Upgrade
+# Repo Inventory — reldio Lead Upgrade
 
 ## Stack
 - **Framework**: React 18 + Vite 6 + Wouter 3 (routing)

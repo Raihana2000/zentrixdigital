@@ -88,7 +88,7 @@ Guidelines:
 - meta descriptions should increase click-through rate
 - Dutch pages need Dutch metadata
 - English pages need English metadata
-- keep branding consistent with ZentrixDigital
+- keep branding consistent with reldio
 
 6. Improve homepage keyword relevance
 Without making it spammy, refine homepage copy so it naturally supports search intent around:

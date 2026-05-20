@@ -1,4 +1,4 @@
-Add a new Concepts / Portfolio page to my ZentrixDigital website and optimize it for mobile, tablet, desktop performance.
+Add a new Concepts / Portfolio page to my reldio website and optimize it for mobile, tablet, desktop performance.
 
 GOAL:
 Show my website concepts professionally, with Dutch and English support, while keeping the website fast and fully responsive.
@@ -13,10 +13,10 @@ EN: "Concepts & Website Improvements"
 NL: "Concepten & Website Verbeteringen"
 
 Intro text EN:
-"A selection of website concepts focused on clarity, trust and client conversion. These examples show how ZentrixDigital transforms websites into client-generating systems."
+"A selection of website concepts focused on clarity, trust and client conversion. These examples show how reldio transforms websites into client-generating systems."
 
 Intro text NL:
-"Een selectie van website concepten gericht op duidelijkheid, vertrouwen en conversie. Deze voorbeelden laten zien hoe ZentrixDigital websites transformeert naar klantgenererende systemen."
+"Een selectie van website concepten gericht op duidelijkheid, vertrouwen en conversie. Deze voorbeelden laten zien hoe reldio websites transformeert naar klantgenererende systemen."
 
 2. NAVIGATION
 

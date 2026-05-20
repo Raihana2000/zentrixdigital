@@ -10,7 +10,7 @@ export const en = {
   home: {
     heroBadge: "WEBSITES · APPLICATIONS · SMART SYSTEMS",
     heroTitle: "Professional website development in Amsterdam",
-    heroSubtitle: "ZentrixDigital builds modern websites, custom applications and smart contact systems for businesses that want more trust, better enquiries and a stronger digital presence.",
+    heroSubtitle: "reldio builds modern websites, custom applications and smart contact systems for businesses that want more trust, better enquiries and a stronger digital presence.",
     primaryCta: "Request free website review",
     secondaryCta: "View our solutions",
     trustSignals: ["Professional and custom-built", "Expandable with smart features", "Clear communication"],
@@ -67,7 +67,7 @@ export const en = {
       { title: "Starting businesses", text: "Entrepreneurs who want to establish a professional foundation quickly and make a serious first impression." },
       { title: "Growing businesses", text: "Companies that want to scale and take their digital presence to the next level." }
     ],
-    whyZentrixTitle: "Why businesses choose ZentrixDigital",
+    whyZentrixTitle: "Why businesses choose reldio",
     whyZentrixIntro: "We're not a standard web agency. We work as a partner — focused on your results, expandability, and the long term.",
     whyZentrix: [
       { title: "Transparent approach", text: "No vague quotes or hidden costs. You know exactly what we do, when, and what it's for." },
@@ -96,11 +96,11 @@ export const en = {
       { label: "International", sub: "Available worldwide" }
     ],
     systemSectionTitle: "Not just a website — an online system",
-    systemSectionText: "A good website needs to do more than look attractive. Visitors should immediately understand what you offer, why they can trust you, and how to get in touch easily. That's why ZentrixDigital builds websites that are expandable with WhatsApp, forms, bookings, dashboards, CRM systems, and other smart features.",
+    systemSectionText: "A good website needs to do more than look attractive. Visitors should immediately understand what you offer, why they can trust you, and how to get in touch easily. That's why reldio builds websites that are expandable with WhatsApp, forms, bookings, dashboards, CRM systems, and other smart features.",
     moreAppsTitle: "Need more than a website?",
-    moreAppsText: "Some businesses need more than a standard website. That's why ZentrixDigital also builds custom applications such as client portals, dashboards, booking systems, CRM systems, and internal tools.",
+    moreAppsText: "Some businesses need more than a standard website. That's why reldio also builds custom applications such as client portals, dashboards, booking systems, CRM systems, and internal tools.",
     moreAppsCta: "View custom applications",
-    trustBlockTitle: "What you get with ZentrixDigital",
+    trustBlockTitle: "What you get with reldio",
     trustBlockItems: [
       "Mobile-friendly website",
       "SEO foundation",
@@ -121,7 +121,7 @@ export const en = {
       { label: "Website for freelancers", href: "/en/website-for-freelancers" },
       { label: "Website for small businesses", href: "/en/website-for-smes" }
     ],
-    localSeoText: "ZentrixDigital is based in Amsterdam and works with businesses across Amsterdam, North Holland, and the rest of the Netherlands.",
+    localSeoText: "reldio is based in Amsterdam and works with businesses across Amsterdam, North Holland, and the rest of the Netherlands.",
     ctaTitle: "Ready to get more from your online presence?",
     ctaText: "Whether you need a new website, a custom application, or want to expand your site with smart features — we're happy to think along with you, no obligation.",
     ctaPrimary: "Request free website review",
@@ -130,7 +130,7 @@ export const en = {
   },
   about: {
     heroTitle: "We help businesses become stronger online",
-    heroSubtitle: "ZentrixDigital is a modern digital agency based in Amsterdam. We build professional websites, custom applications, and smart systems that grow alongside your business.",
+    heroSubtitle: "reldio is a modern digital agency based in Amsterdam. We build professional websites, custom applications, and smart systems that grow alongside your business.",
     whoWeAreTitle: "Who we are",
     whoWeAreText: "We are a compact, dedicated team with an honest approach. No grand promises or vague stories — just concrete solutions that fit your business. We don't just build websites; we also build the smart features and systems around them: from WhatsApp integrations and booking systems to client portals and dashboards. That way, your digital presence grows with your business.",
     missionTitle: "Our mission",
@@ -183,7 +183,7 @@ export const en = {
     websites: {
       h1: "Professional website development for your business",
       intro: "A strong website is more than a digital brochure. It's the first thing a potential customer sees — and that single moment determines whether they look further or click away. We build professional custom websites that build trust, rank well on Google, and turn visitors into real customers. And the best part: your website can easily be expanded later with smart features and systems that fit your business.",
-      benefitsTitle: "What you get with a ZentrixDigital website",
+      benefitsTitle: "What you get with a reldio website",
       benefits: [
         "A professional appearance that instantly builds trust with new visitors",
         "Fully mobile-responsive — perfect on smartphone, tablet, and desktop",
@@ -388,10 +388,10 @@ export const en = {
       send: "Send"
     },
     infoTitle: "Business Information",
-    company: "ZentrixDigital",
+    company: "reldio",
     location: "Amsterdam, Netherlands",
     phone: "+31 (0) 6 83 28 49 95",
-    email: "info@zentrixdigital.eu",
+    email: "info@reldio.eu",
     infoNote: "We aim to communicate clearly, respond professionally, and keep the process transparent from the very first contact.",
     hours: {
       title: "Availability",
@@ -404,22 +404,22 @@ export const en = {
     }
   },
   meta: {
-    homeTitle: "ZentrixDigital — Professional Website Development for Businesses",
-    homeDesc: "ZentrixDigital builds professional websites and custom applications for businesses across the Netherlands. Expandable with smart features. Request a free analysis.",
-    aboutTitle: "About ZentrixDigital — Modern Digital Agency in Amsterdam",
-    aboutDesc: "ZentrixDigital is a modern digital agency based in Amsterdam. Professional websites, custom applications, and smart digital systems for businesses that want to grow online.",
-    servicesTitle: "Services | Websites, Applications & Smart Systems | ZentrixDigital",
-    servicesDesc: "ZentrixDigital builds professional websites, applications, CRM systems, booking systems and automation for businesses that want more customers and structure.",
-    contactTitle: "Contact ZentrixDigital — Request a Free Website Analysis",
-    contactDesc: "Contact ZentrixDigital for a free website analysis. We respond within 24 hours. Call +31 (0) 6 83 28 49 95 or email info@zentrixdigital.eu.",
-    websitesTitle: "Professional Business Website Development — ZentrixDigital",
-    websitesDesc: "Need a professional custom website? ZentrixDigital builds conversion-focused websites expandable with WhatsApp, booking systems, forms, and more. Free analysis.",
-    applicatiesTitle: "Custom Web Application Development — ZentrixDigital",
-    applicatiesDesc: "Need a custom web application built? ZentrixDigital develops client portals, dashboards, booking systems, and smart integrations that grow with your business.",
-    onderhoudTitle: "Website Maintenance and Optimization — ZentrixDigital",
-    onderhoudDesc: "Professional website maintenance by ZentrixDigital. We keep your website fast, secure, and performing at its best — so you can focus on your business.",
-    groeiTitle: "Digital Growth Support for Businesses — ZentrixDigital",
-    groeiDesc: "Strengthen your online visibility and conversion with digital growth support from ZentrixDigital. Smart add-ons, better positioning, and more results from your presence."
+    homeTitle: "reldio — Professional Website Development for Businesses",
+    homeDesc: "reldio builds professional websites and custom applications for businesses across the Netherlands. Expandable with smart features. Request a free analysis.",
+    aboutTitle: "About reldio — Modern Digital Agency in Amsterdam",
+    aboutDesc: "reldio is a modern digital agency based in Amsterdam. Professional websites, custom applications, and smart digital systems for businesses that want to grow online.",
+    servicesTitle: "Services | Websites, Applications & Smart Systems | reldio",
+    servicesDesc: "reldio builds professional websites, applications, CRM systems, booking systems and automation for businesses that want more customers and structure.",
+    contactTitle: "Contact reldio — Request a Free Website Analysis",
+    contactDesc: "Contact reldio for a free website analysis. We respond within 24 hours. Call +31 (0) 6 83 28 49 95 or email info@reldio.eu.",
+    websitesTitle: "Professional Business Website Development — reldio",
+    websitesDesc: "Need a professional custom website? reldio builds conversion-focused websites expandable with WhatsApp, booking systems, forms, and more. Free analysis.",
+    applicatiesTitle: "Custom Web Application Development — reldio",
+    applicatiesDesc: "Need a custom web application built? reldio develops client portals, dashboards, booking systems, and smart integrations that grow with your business.",
+    onderhoudTitle: "Website Maintenance and Optimization — reldio",
+    onderhoudDesc: "Professional website maintenance by reldio. We keep your website fast, secure, and performing at its best — so you can focus on your business.",
+    groeiTitle: "Digital Growth Support for Businesses — reldio",
+    groeiDesc: "Strengthen your online visibility and conversion with digital growth support from reldio. Smart add-ons, better positioning, and more results from your presence."
   },
   footer: {
     navLabel: "Navigation",

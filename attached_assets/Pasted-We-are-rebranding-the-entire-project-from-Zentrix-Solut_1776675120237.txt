@@ -1,4 +1,4 @@
-We are rebranding the entire project from "Zentrix Solutions" to "ZentrixDigital".
+We are rebranding the entire project from "Zentrix Solutions" to "reldio".
 
 Your task is to update EVERYTHING across the full codebase and UI to reflect the new brand consistently.
 
@@ -14,11 +14,11 @@ Find and replace ALL occurrences of:
 
 Replace with:
 
-* "ZentrixDigital"
+* "reldio"
 
 Rules:
 
-* Always use exact format: ZentrixDigital (no space, capital D)
+* Always use exact format: reldio (no space, capital D)
 * Do not leave any old references anywhere
 
 ---
@@ -27,7 +27,7 @@ Rules:
 
 Update:
 
-* Logo text → ZentrixDigital
+* Logo text → reldio
 * Navbar brand name
 * Footer brand name
 * Any tagline mentioning old name
@@ -41,7 +41,7 @@ Make sure it displays clean and modern.
 Replace the old logo everywhere:
 
 * Remove all old logo files
-* Add new logo file: /logo-zentrixdigital.png
+* Add new logo file: /logo-reldio.png
 * Use the new "ZD" style logo (modern, tech, blue accent)
 
 Update all references:
@@ -69,14 +69,14 @@ class="h-12 md:h-16 object-contain"
 
 Update ALL:
 
-* <title> → ZentrixDigital
+* <title> → reldio
 * meta description
 * Open Graph (og:title, og:description)
 * Twitter cards
 * JSON-LD (Organization name)
 
 Example:
-"name": "ZentrixDigital"
+"name": "reldio"
 
 ---
 
@@ -87,7 +87,7 @@ Rewrite any text mentioning old brand:
 Example:
 "Zentrix Solutions helpt bedrijven..."
 →
-"ZentrixDigital helpt bedrijven..."
+"reldio helpt bedrijven..."
 
 Keep tone:
 
@@ -117,7 +117,7 @@ Search entire project for:
 Ensure:
 
 * 0 old references remain
-* everything = ZentrixDigital
+* everything = reldio
 
 ---
 
@@ -132,7 +132,7 @@ Ensure:
 ---
 
 FINAL GOAL:
-The entire project must look like it was ALWAYS called "ZentrixDigital".
+The entire project must look like it was ALWAYS called "reldio".
 No traces of the old name should exist.
 
 Make it clean, consistent, modern and professional.

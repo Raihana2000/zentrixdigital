@@ -1,8 +1,8 @@
 Gebruik Plan Mode eerst als die beschikbaar is. Doe nog geen codewijzigingen voordat je de inventaris en het relevante-bestandenplan hebt opgeleverd.
 
 Context:
-- Bedrijf: ZentrixDigital
-- Website: www.zentrixdigital.eu
+- Bedrijf: reldio
+- Website: www.reldio.eu
 - Publieke route-hints: <PUBLIC_ROUTE_HINTS>
 - Bekende stack: <KNOWN_STACK>
 - Talen/locales die moeten blijven werken: <LOCALES>
@@ -112,7 +112,7 @@ Belangrijke stopregel:
 Als je niet met hoge zekerheid kunt bepalen welke files relevant zijn of welke env vars nodig zijn, stop dan met implementeren, maak NEED_INPUT.md en geef precies aan wat ontbreekt.
 
 Einddoel:
-Implementeer <FEATURE_SCOPE> voor ZentrixDigital met minimale compute-kosten, minimale diff, behoud van bestaande UX/SEO-structuur en een reproduceerbare verify/rollback-uitkomst.
+Implementeer <FEATURE_SCOPE> voor reldio met minimale compute-kosten, minimale diff, behoud van bestaande UX/SEO-structuur en een reproduceerbare verify/rollback-uitkomst.
 
 Acceptatiecriteria:
 <ACCEPTANCE_CRITERIA>

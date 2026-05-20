@@ -49,20 +49,20 @@ EN: Home, About, Services, Contact, Contact Us
 * favicon verwijzingen indien nodig
 
 Gebruik als hoofddomein:
-https://www.zentrixdigital.eu
+https://www.reldio.eu
 
 SEO-teksten:
 Titel NL:
-ZentrixDigital | Websites en applicaties die klanten opleveren
+reldio | Websites en applicaties die klanten opleveren
 
 Meta description NL:
-ZentrixDigital bouwt professionele websites en applicaties voor ondernemers die beter gevonden willen worden in Google en meer klanten willen aantrekken.
+reldio bouwt professionele websites en applicaties voor ondernemers die beter gevonden willen worden in Google en meer klanten willen aantrekken.
 
 Titel EN:
-ZentrixDigital | Websites and applications that bring in customers
+reldio | Websites and applications that bring in customers
 
 Meta description EN:
-ZentrixDigital builds professional websites and applications for businesses that want to rank better on Google and attract more customers.
+reldio builds professional websites and applications for businesses that want to rank better on Google and attract more customers.
 
 Open Graph / social:
 og:title
@@ -86,18 +86,18 @@ Gebruik bestaande afbeelding alleen als og:image als die publiek toegankelijk is
 Robots.txt inhoud:
 User-agent: *
 Allow: /
-Sitemap: https://www.zentrixdigital.eu/sitemap.xml
+Sitemap: https://www.reldio.eu/sitemap.xml
 
 Sitemap.xml moet minimaal bevatten:
 
-* https://www.zentrixdigital.eu/
+* https://www.reldio.eu/
 * belangrijke pagina’s zoals /about, /services, /contact als die routes bestaan
   Gebruik alleen routes die echt bestaan.
 
 4. CANONICAL EN INDEXERING
    Zorg dat:
 
-* canonical verwijst naar https://www.zentrixdigital.eu/
+* canonical verwijst naar https://www.reldio.eu/
 * de site indexeerbaar is
 * geen noindex tags aanwezig zijn
 * de juiste taal/meta informatie staat ingesteld
@@ -105,8 +105,8 @@ Sitemap.xml moet minimaal bevatten:
 5. STRUCTURED DATA TOEVOEGEN
    Voeg JSON-LD structured data toe voor een LocalBusiness of Organization, afhankelijk van wat het beste past bij de website.
    Gebruik:
-   Naam: ZentrixDigital
-   URL: https://www.zentrixdigital.eu
+   Naam: reldio
+   URL: https://www.reldio.eu
    Type: ProfessionalService of Organization als dat beter bij de code past
    Beschrijving: Professionele websites en applicaties voor bedrijven
    Zelfde domein gebruiken in structured data

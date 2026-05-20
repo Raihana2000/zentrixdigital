@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Business Automation Solutions",
-  intro: "Manual processes waste your team's valuable time and introduce unnecessary errors. ZentrixDigital automates business processes so your organisation works faster, makes fewer mistakes and scales without friction.",
+  intro: "Manual processes waste your team's valuable time and introduce unnecessary errors. reldio automates business processes so your organisation works faster, makes fewer mistakes and scales without friction.",
   benefitsTitle: "Benefits of business process automation",
   benefits: [
     "Less manual work — your team focuses on what truly matters",
@@ -43,9 +43,9 @@ const data = {
 const SeoAutomationEN = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Business Automation Solutions | ZentrixDigital"
-    metaDesc="Business automation software for more efficiency and fewer errors. ZentrixDigital builds workflow and process automation for SMEs. Request a free analysis."
-    canonical="https://www.zentrixdigital.eu/en/business-automation"
+    pageTitle="Business Automation Solutions | reldio"
+    metaDesc="Business automation software for more efficiency and fewer errors. reldio builds workflow and process automation for SMEs. Request a free analysis."
+    canonical="https://www.reldio.eu/en/business-automation"
     backLabel="Back to services"
     servicesLabel="View all services"
     contactLabel="Discover automation"

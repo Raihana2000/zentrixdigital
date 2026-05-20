@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Website laten maken voor ZZP",
-  intro: "Als zzp'er is uw website uw belangrijkste verkooptool. ZentrixDigital bouwt professionele websites voor zelfstandigen die klanten overtuigen, vertrouwen opbouwen en 24/7 voor u werken — volledig op maat en conversiebewust.",
+  intro: "Als zzp'er is uw website uw belangrijkste verkooptool. reldio bouwt professionele websites voor zelfstandigen die klanten overtuigen, vertrouwen opbouwen en 24/7 voor u werken — volledig op maat en conversiebewust.",
   benefitsTitle: "Voordelen van een professionele zzp-website",
   benefits: [
     "Gevonden worden op Google met de juiste zoekwoorden voor uw vakgebied",
@@ -43,9 +43,9 @@ const data = {
 const SeoZZP = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Website laten maken ZZP | ZentrixDigital"
+    pageTitle="Website laten maken ZZP | reldio"
     metaDesc="Professionele website laten maken voor zzp'ers. Meer klanten, betere uitstraling en een website die vertrouwen opbouwt. Gratis analyse aanvragen."
-    canonical="https://www.zentrixdigital.eu/website-laten-maken-zzp"
+    canonical="https://www.reldio.eu/website-laten-maken-zzp"
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"
     contactLabel="Gratis analyse aanvragen"

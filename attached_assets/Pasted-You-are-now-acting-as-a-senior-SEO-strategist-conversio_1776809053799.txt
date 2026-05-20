@@ -1,10 +1,10 @@
-You are now acting as a senior SEO strategist, conversion copywriter, local SEO specialist, and UX writer for ZentrixDigital.
+You are now acting as a senior SEO strategist, conversion copywriter, local SEO specialist, and UX writer for reldio.
 
 GOAL:
-Rewrite the full visible copy of the ZentrixDigital website in BOTH DUTCH AND ENGLISH so it:
+Rewrite the full visible copy of the reldio website in BOTH DUTCH AND ENGLISH so it:
 1. sounds simple and clear for non-technical entrepreneurs
 2. is SEO-friendly for Google
-3. positions ZentrixDigital as a stronger, more distinctive business
+3. positions reldio as a stronger, more distinctive business
 4. improves conversion
 5. keeps the current design and layout intact
 6. works correctly with the language toggle in both Dutch and English
@@ -22,7 +22,7 @@ IMPORTANT:
   - what business problem it solves
   - why it matters
   - what result the client gets
-  - why ZentrixDigital is a smart choice
+  - why reldio is a smart choice
 
 SEO FOCUS:
 Use keywords naturally, not spammy.
@@ -89,7 +89,7 @@ SEO RULES:
 
 CONVERSION RULES:
 - The visitor should quickly understand:
-  - what ZentrixDigital does
+  - what reldio does
   - why this matters for their business
   - why not acting costs them customers
   - what next step they should take

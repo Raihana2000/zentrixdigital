@@ -16,10 +16,10 @@ NL: "Concepten & Website Verbeteringen"
 
 Intro text:
 EN:
-"A selection of website concepts focused on clarity, trust and client conversion. These examples show how ZentrixDigital transforms websites into client-generating systems."
+"A selection of website concepts focused on clarity, trust and client conversion. These examples show how reldio transforms websites into client-generating systems."
 
 NL:
-"Een selectie van website concepten gericht op duidelijkheid, vertrouwen en conversie. Deze voorbeelden laten zien hoe ZentrixDigital websites transformeert naar klantgenererende systemen."
+"Een selectie van website concepten gericht op duidelijkheid, vertrouwen en conversie. Deze voorbeelden laten zien hoe reldio websites transformeert naar klantgenererende systemen."
 
 ---
 

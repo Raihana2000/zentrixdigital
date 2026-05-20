@@ -7,18 +7,18 @@ const TermsEN: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-[#0B0B0B] page-top-pad">
       <SEOHead
-        title="Terms and Conditions — ZentrixDigital"
-        description="Read the terms and conditions of ZentrixDigital."
-        canonical="https://www.zentrixdigital.eu/en/terms-and-conditions"
+        title="Terms and Conditions — reldio"
+        description="Read the terms and conditions of reldio."
+        canonical="https://www.reldio.eu/en/terms-and-conditions"
       />
       <section className="py-24 px-5">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl font-black text-white mb-8 tracking-tight">Terms and Conditions</h1>
           <div className="prose-zentrix">
-            <p>These terms apply to all services provided by ZentrixDigital.</p>
+            <p>These terms apply to all services provided by reldio.</p>
 
             <h2>1. Services</h2>
-            <p>ZentrixDigital provides websites, applications, and digital solutions.</p>
+            <p>reldio provides websites, applications, and digital solutions.</p>
 
             <h2>2. Liability</h2>
             <p>We are not liable for indirect damages, data loss, or loss of revenue.</p>
@@ -33,7 +33,7 @@ const TermsEN: React.FC = () => {
             <p>These terms are governed by Dutch law.</p>
 
             <h2>6. Contact</h2>
-            <p><a href="mailto:info@zentrixdigital.eu">info@zentrixdigital.eu</a></p>
+            <p><a href="mailto:info@reldio.eu">info@reldio.eu</a></p>
           </div>
         </div>
       </section>

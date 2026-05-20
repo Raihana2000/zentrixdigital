@@ -1,4 +1,4 @@
-# Sitemap Fix Summary — ZentrixDigital
+# Sitemap Fix Summary — reldio
 
 ## Waar staat sitemap.xml?
 
@@ -17,7 +17,7 @@ De Vite-config (`artifacts/zentrix-solutions/vite.config.ts`) bevat een custom `
 | Volgorde | Willekeurig | NL kern → NL diensten → NL SEO → NL juridisch → EN SEO → EN juridisch |
 
 **Trailing slash strategie**:
-- Homepage: `https://www.zentrixdigital.eu/` — MET slash (Google-best-practice voor roots)
+- Homepage: `https://www.reldio.eu/` — MET slash (Google-best-practice voor roots)
 - Alle overige routes: ZONDER trailing slash
 
 **Geen URL's verwijderd of toegevoegd** — alle 34 URLs waren al aanwezig, enkel genormaliseerd.
@@ -42,7 +42,7 @@ Staat op `/robots.txt`, inhoud correct:
 ```
 User-agent: *
 Allow: /
-Sitemap: https://www.zentrixdigital.eu/sitemap.xml
+Sitemap: https://www.reldio.eu/sitemap.xml
 ```
 Geen wijziging nodig.
 
@@ -54,7 +54,7 @@ Controles die het script uitvoert:
 - `<?xml` aanwezig als eerste token
 - `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">` aanwezig
 - Geen `<html`, `<div`, `<script`, `<body`, `<head`
-- Alle `<loc>` beginnen met `https://www.zentrixdigital.eu`
+- Alle `<loc>` beginnen met `https://www.reldio.eu`
 - Geen trailing slashes op niet-homepage URLs
 - Elke `<url>` heeft een `<lastmod>`
 - Alle `<lastmod>` zijn geldig ISO-datumformaat `YYYY-MM-DD`
@@ -82,11 +82,11 @@ curl -s http://localhost:80/sitemap.xml | head -5  → ✅ begint met <?xml
 
 ## Wat je daarna handmatig in Google Search Console moet doen
 
-1. Ga naar **Google Search Console** → jouw property `https://www.zentrixdigital.eu`
+1. Ga naar **Google Search Console** → jouw property `https://www.reldio.eu`
 2. Klik in het linkermenu op **Sitemaps**
 3. Verwijder de oude sitemap-vermelding als die er al staat (klik op de drie puntjes → Verwijderen)
 4. Voer in het invoerveld in: `sitemap.xml` en klik **Verzenden**
 5. Google zal de sitemap ophalen — status moet binnen enkele minuten/uren op **Geslaagd** staan
 6. Controleer na 1–2 dagen of de URL's als **Geïndexeerd** of **Ontdekt** worden vermeld onder **Pagina's**
 
-> **Tip**: als Google Search Console nog steeds "Kan niet ophalen" geeft na het opnieuw indienen, gebruik dan de URL-inspectietool op `https://www.zentrixdigital.eu/sitemap.xml` om te bevestigen dat Google de live URL als XML ziet.
+> **Tip**: als Google Search Console nog steeds "Kan niet ophalen" geeft na het opnieuw indienen, gebruik dan de URL-inspectietool op `https://www.reldio.eu/sitemap.xml` om te bevestigen dat Google de live URL als XML ziet.

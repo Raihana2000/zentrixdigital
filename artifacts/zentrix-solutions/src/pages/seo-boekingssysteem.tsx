@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Boekingssysteem laten maken",
-  intro: "Gemiste afspraken en handmatige planningschaos kosten u tijd en omzet. ZentrixDigital bouwt op maat gemaakte boekingssystemen die afspraken automatiseren, fouten elimineren en uw agenda 24/7 laten werken.",
+  intro: "Gemiste afspraken en handmatige planningschaos kosten u tijd en omzet. reldio bouwt op maat gemaakte boekingssystemen die afspraken automatiseren, fouten elimineren en uw agenda 24/7 laten werken.",
   benefitsTitle: "Voordelen van een maatwerk boekingssysteem",
   benefits: [
     "Automatische afsprakenbeheer — klanten boeken direct online",
@@ -43,9 +43,9 @@ const data = {
 const SeoBoekingssysteem = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Boekingssysteem laten maken | ZentrixDigital"
-    metaDesc="Boekingssysteem laten maken op maat. Automatische afspraken, minder fouten en meer tijd besparen. ZentrixDigital bouwt online reserveringssystemen."
-    canonical="https://www.zentrixdigital.eu/boekingssysteem-laten-maken"
+    pageTitle="Boekingssysteem laten maken | reldio"
+    metaDesc="Boekingssysteem laten maken op maat. Automatische afspraken, minder fouten en meer tijd besparen. reldio bouwt online reserveringssystemen."
+    canonical="https://www.reldio.eu/boekingssysteem-laten-maken"
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"
     contactLabel="Start met automatiseren"

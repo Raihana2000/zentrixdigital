@@ -3,8 +3,8 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Website laten maken in Amsterdam die klanten oplevert",
-  intro: "Een professionele website laten maken in Amsterdam is de slimste investering die u als ondernemer kunt doen. ZentrixDigital bouwt moderne, snelle en conversiegerichte websites voor bedrijven in Amsterdam en heel Nederland — websites die niet alleen mooi ogen, maar ook daadwerkelijk klanten opleveren.",
-  benefitsTitle: "Waarom bedrijven in Amsterdam kiezen voor ZentrixDigital",
+  intro: "Een professionele website laten maken in Amsterdam is de slimste investering die u als ondernemer kunt doen. reldio bouwt moderne, snelle en conversiegerichte websites voor bedrijven in Amsterdam en heel Nederland — websites die niet alleen mooi ogen, maar ook daadwerkelijk klanten opleveren.",
+  benefitsTitle: "Waarom bedrijven in Amsterdam kiezen voor reldio",
   benefits: [
     "Lokale expertise: wij begrijpen de Amsterdamse markt en uw doelgroep",
     "Websites die gemiddeld 3× meer aanvragen genereren dan standaard templates",
@@ -54,9 +54,9 @@ const data = {
 const SeoAmsterdam = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Website laten maken Amsterdam | ZentrixDigital"
+    pageTitle="Website laten maken Amsterdam | reldio"
     metaDesc="Professionele website laten maken in Amsterdam? Snel, modern en gericht op klanten. Snelle oplevering mogelijk bij complete input. Vraag gratis strategiegesprek aan."
-    canonical="https://www.zentrixdigital.eu/website-laten-maken-amsterdam"
+    canonical="https://www.reldio.eu/website-laten-maken-amsterdam"
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"
     contactLabel="Gratis strategiegesprek aanvragen"

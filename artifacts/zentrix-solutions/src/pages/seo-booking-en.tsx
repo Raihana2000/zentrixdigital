@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Booking System Development",
-  intro: "Missed appointments and manual planning chaos cost you time and revenue. ZentrixDigital builds custom booking systems that automate appointments, eliminate errors and keep your schedule running 24/7.",
+  intro: "Missed appointments and manual planning chaos cost you time and revenue. reldio builds custom booking systems that automate appointments, eliminate errors and keep your schedule running 24/7.",
   benefitsTitle: "Benefits of a custom booking system",
   benefits: [
     "Fully automated appointment management — clients book online directly",
@@ -43,9 +43,9 @@ const data = {
 const SeoBookingEN = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Booking System Development | ZentrixDigital"
-    metaDesc="Custom booking system development — automate appointments, reduce errors and save time. ZentrixDigital builds online appointment booking software."
-    canonical="https://www.zentrixdigital.eu/en/booking-system-development"
+    pageTitle="Booking System Development | reldio"
+    metaDesc="Custom booking system development — automate appointments, reduce errors and save time. reldio builds online appointment booking software."
+    canonical="https://www.reldio.eu/en/booking-system-development"
     backLabel="Back to services"
     servicesLabel="View all services"
     contactLabel="Start automating"

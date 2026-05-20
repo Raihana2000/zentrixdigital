@@ -1,6 +1,6 @@
 Je bent een senior SEO-specialist, conversie-copywriter, UX-designer en frontend developer.
 
-Analyseer en verbeter de website van ZentrixDigital: https://www.zentrixdigital.eu/
+Analyseer en verbeter de website van reldio: https://www.reldio.eu/
 
 BELANGRIJK:
 - Verwijder geen bestaande SEO-waarde.
@@ -13,7 +13,7 @@ BELANGRIJK:
 - Geen lege pagina’s, geen kapotte links, geen placeholder-content.
 
 DOEL VAN DE AANPASSING:
-ZentrixDigital moet niet overkomen als een standaard webdesigner, maar als een moderne agency die websites, maatwerkapplicaties en slimme online systemen bouwt voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online presentatie willen.
+reldio moet niet overkomen als een standaard webdesigner, maar als een moderne agency die websites, maatwerkapplicaties en slimme online systemen bouwt voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online presentatie willen.
 
 BELANGRIJKSTE SEO-FOCUS:
 Homepage:
@@ -35,7 +35,7 @@ HOMEPAGE AANPASSINGEN:
    “Professionele website laten maken in Amsterdam”
 
    Subtitel:
-   “ZentrixDigital bouwt moderne websites, maatwerkapplicaties en slimme contactsystemen voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online uitstraling willen.”
+   “reldio bouwt moderne websites, maatwerkapplicaties en slimme contactsystemen voor ondernemers die meer vertrouwen, betere aanvragen en een sterkere online uitstraling willen.”
 
    CTA-knoppen:
    Primaire knop: “Gratis websiteanalyse aanvragen”
@@ -47,7 +47,7 @@ HOMEPAGE AANPASSINGEN:
    “Niet zomaar een website, maar een online systeem”
 
    Tekst:
-   “Een goede website moet meer doen dan mooi ogen. Bezoekers moeten direct begrijpen wat u aanbiedt, waarom ze u kunnen vertrouwen en hoe ze eenvoudig contact opnemen. Daarom bouwt ZentrixDigital websites die uitbreidbaar zijn met WhatsApp, formulieren, boekingen, dashboards, CRM-systemen en andere slimme functies.”
+   “Een goede website moet meer doen dan mooi ogen. Bezoekers moeten direct begrijpen wat u aanbiedt, waarom ze u kunnen vertrouwen en hoe ze eenvoudig contact opnemen. Daarom bouwt reldio websites die uitbreidbaar zijn met WhatsApp, formulieren, boekingen, dashboards, CRM-systemen en andere slimme functies.”
 
 3. Voeg een sectie toe “Voor wie bouwen wij?”
 
@@ -62,7 +62,7 @@ HOMEPAGE AANPASSINGEN:
 4. Voeg een sectie toe “Meer dan een website nodig?”
 
    Tekst:
-   “Sommige bedrijven hebben niet genoeg aan een gewone website. Daarom bouwt ZentrixDigital ook maatwerkapplicaties zoals klantportalen, dashboards, boekingssystemen, CRM-systemen en interne tools.”
+   “Sommige bedrijven hebben niet genoeg aan een gewone website. Daarom bouwt reldio ook maatwerkapplicaties zoals klantportalen, dashboards, boekingssystemen, CRM-systemen en interne tools.”
 
    CTA:
    “Bekijk maatwerk applicaties”
@@ -70,7 +70,7 @@ HOMEPAGE AANPASSINGEN:
 5. Voeg een bewijs-/vertrouwensblok toe zonder nepclaims:
 
    Titel:
-   “Wat u krijgt bij ZentrixDigital”
+   “Wat u krijgt bij reldio”
 
    Punten:
    - Mobielvriendelijke website
@@ -95,7 +95,7 @@ HOMEPAGE AANPASSINGEN:
 
 7. Voeg lokale SEO natuurlijk toe:
    Tekst ergens op homepage/contactpagina:
-   “ZentrixDigital is gevestigd in Amsterdam en werkt voor ondernemers in Amsterdam, Noord-Holland en de rest van Nederland.”
+   “reldio is gevestigd in Amsterdam en werkt voor ondernemers in Amsterdam, Noord-Holland en de rest van Nederland.”
 
 DESIGN / UX:
 - Behoud de premium donkere uitstraling.

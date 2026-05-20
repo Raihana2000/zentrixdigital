@@ -71,7 +71,7 @@ const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   const [, navigate] = useLocation();
   const { setLanguage } = useTranslation();
 
-  const BASE = 'https://www.zentrixdigital.eu';
+  const BASE = 'https://www.reldio.eu';
   const hreflangNl = canonical && langToggle
     ? (langToggle.href.startsWith('/en/') ? canonical : `${BASE}${langToggle.href}`)
     : undefined;

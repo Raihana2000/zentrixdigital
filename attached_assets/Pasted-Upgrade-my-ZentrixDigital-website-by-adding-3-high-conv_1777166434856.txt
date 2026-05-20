@@ -1,4 +1,4 @@
-Upgrade my ZentrixDigital website by adding 3 high-converting SEO landing pages focused on systems and applications, in BOTH Dutch and English.
+Upgrade my reldio website by adding 3 high-converting SEO landing pages focused on systems and applications, in BOTH Dutch and English.
 
 Goal:
 Increase SEO rankings and attract higher-value clients for custom systems, automation, and applications.
@@ -105,7 +105,7 @@ EN keywords:
 DESIGN REQUIREMENTS
 ========================
 
-- Keep existing ZentrixDigital design system
+- Keep existing reldio design system
 - Premium, clean, conversion-focused
 - Mobile responsive
 - Do NOT break existing layout
@@ -149,4 +149,4 @@ FINAL STEPS
 5. Push to GitHub:
    origin main
 
-Make everything production-ready and consistent with ZentrixDigital branding.
+Make everything production-ready and consistent with reldio branding.

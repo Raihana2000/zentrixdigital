@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Bedrijfsprocessen automatiseren",
-  intro: "Handmatige processen kosten uw team kostbare tijd en introduceren onnodige fouten. ZentrixDigital automatiseert bedrijfsprocessen zodat uw organisatie sneller werkt, minder fouten maakt en probleemloos kan opschalen.",
+  intro: "Handmatige processen kosten uw team kostbare tijd en introduceren onnodige fouten. reldio automatiseert bedrijfsprocessen zodat uw organisatie sneller werkt, minder fouten maakt en probleemloos kan opschalen.",
   benefitsTitle: "Voordelen van procesautomatisering",
   benefits: [
     "Minder handmatig werk — uw team focust op wat écht telt",
@@ -43,9 +43,9 @@ const data = {
 const SeoAutomatisering = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Bedrijfsprocessen automatiseren | ZentrixDigital"
-    metaDesc="Bedrijfsprocessen automatiseren voor meer efficiëntie en minder fouten. ZentrixDigital bouwt workflow- en procesautomatisering voor het MKB. Gratis analyse."
-    canonical="https://www.zentrixdigital.eu/bedrijfsprocessen-automatiseren"
+    pageTitle="Bedrijfsprocessen automatiseren | reldio"
+    metaDesc="Bedrijfsprocessen automatiseren voor meer efficiëntie en minder fouten. reldio bouwt workflow- en procesautomatisering voor het MKB. Gratis analyse."
+    canonical="https://www.reldio.eu/bedrijfsprocessen-automatiseren"
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"
     contactLabel="Ontdek automatisering"

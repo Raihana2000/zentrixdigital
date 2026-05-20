@@ -7,9 +7,9 @@ const CookiesNL: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-[#0B0B0B] page-top-pad">
       <SEOHead
-        title="Cookiebeleid — ZentrixDigital"
-        description="Lees het cookiebeleid van ZentrixDigital. Wij leggen uit welke cookies wij gebruiken en hoe u uw voorkeuren kunt beheren."
-        canonical="https://www.zentrixdigital.eu/cookies"
+        title="Cookiebeleid — reldio"
+        description="Lees het cookiebeleid van reldio. Wij leggen uit welke cookies wij gebruiken en hoe u uw voorkeuren kunt beheren."
+        canonical="https://www.reldio.eu/cookies"
       />
       <section className="py-24 px-5">
         <div className="max-w-3xl mx-auto">
@@ -33,7 +33,7 @@ const CookiesNL: React.FC = () => {
             <p>Via de instellingen van jouw browser kun je cookies verwijderen of blokkeren. Houd er rekening mee dat het uitschakelen van cookies de functionaliteit van de website kan beïnvloeden.</p>
 
             <h2>5. Contact</h2>
-            <p>Voor vragen over ons cookiebeleid kun je contact opnemen via: <a href="mailto:info@zentrixdigital.eu">info@zentrixdigital.eu</a></p>
+            <p>Voor vragen over ons cookiebeleid kun je contact opnemen via: <a href="mailto:info@reldio.eu">info@reldio.eu</a></p>
           </div>
         </div>
       </section>

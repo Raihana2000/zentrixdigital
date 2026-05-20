@@ -1,8 +1,8 @@
-Fix the ZentrixDigital website navigation, footer, language behavior, mobile/tablet visibility, and opening hours.
+Fix the reldio website navigation, footer, language behavior, mobile/tablet visibility, and opening hours.
 
 IMPORTANT:
 Do NOT redesign the whole website.
-Keep the current premium ZentrixDigital style.
+Keep the current premium reldio style.
 Only fix structure, navigation, translations, links, footer, responsiveness, and opening hours.
 
 PROBLEMS TO FIX:

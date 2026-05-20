@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Website for Freelancers",
-  intro: "As a freelancer, your website is your most powerful sales tool. ZentrixDigital builds professional freelance websites that attract clients, build instant trust and support your business growth — fully tailored to your niche.",
+  intro: "As a freelancer, your website is your most powerful sales tool. reldio builds professional freelance websites that attract clients, build instant trust and support your business growth — fully tailored to your niche.",
   benefitsTitle: "Why invest in a professional freelance website?",
   benefits: [
     "Get found on Google by the right clients searching for your services",
@@ -43,9 +43,9 @@ const data = {
 const SeoFreelancersEN = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Website for Freelancers | ZentrixDigital"
+    pageTitle="Website for Freelancers | reldio"
     metaDesc="Professional websites for freelancers that build trust, attract clients and support business growth. Request a free analysis today."
-    canonical="https://www.zentrixdigital.eu/en/website-for-freelancers"
+    canonical="https://www.reldio.eu/en/website-for-freelancers"
     backLabel="Back to services"
     servicesLabel="View all services"
     contactLabel="Request free analysis"

@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "CRM systeem laten maken voor bedrijven",
-  intro: "Zonder goed klantenbeheer verdwijnen leads en kansen in de chaos. ZentrixDigital bouwt op maat gemaakte CRM-systemen die uw salesproces structureren, klantrelaties versterken en uw omzet aantoonbaar verhogen.",
+  intro: "Zonder goed klantenbeheer verdwijnen leads en kansen in de chaos. reldio bouwt op maat gemaakte CRM-systemen die uw salesproces structureren, klantrelaties versterken en uw omzet aantoonbaar verhogen.",
   benefitsTitle: "Voordelen van een maatwerk CRM systeem",
   benefits: [
     "Volledig overzicht van al uw klanten, leads en contactmomenten",
@@ -43,9 +43,9 @@ const data = {
 const SeoCRM = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="CRM systeem laten maken voor bedrijven | ZentrixDigital"
-    metaDesc="CRM systeem laten maken op maat. Meer overzicht, meer omzet en efficiënter werken. ZentrixDigital bouwt klantbeheersystemen voor het MKB."
-    canonical="https://www.zentrixdigital.eu/crm-systeem-laten-maken"
+    pageTitle="CRM systeem laten maken voor bedrijven | reldio"
+    metaDesc="CRM systeem laten maken op maat. Meer overzicht, meer omzet en efficiënter werken. reldio bouwt klantbeheersystemen voor het MKB."
+    canonical="https://www.reldio.eu/crm-systeem-laten-maken"
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"
     contactLabel="Vraag een demo aan"

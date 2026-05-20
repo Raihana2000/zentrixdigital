@@ -108,7 +108,7 @@ const Home = () => {
       <SEOHead
         title={t.meta.homeTitle}
         description={t.meta.homeDesc}
-        canonical="https://www.zentrixdigital.eu/"
+        canonical="https://www.reldio.eu/"
       />
 
       {/* ─── HERO ────────────────────────────────────────────── */}
@@ -642,7 +642,7 @@ const Home = () => {
             <div className="pointer-events-none absolute bottom-0 right-0 w-[300px] h-[200px] bg-blue-800/8 blur-[80px] rounded-full" />
 
             <motion.div variants={fadeUp} className="flex justify-center mb-10">
-              <img src={logoPath} alt="ZentrixDigital" className="h-9 w-auto object-contain opacity-70" loading="lazy" decoding="async" />
+              <img src={logoPath} alt="reldio" className="h-9 w-auto object-contain opacity-70" loading="lazy" decoding="async" />
             </motion.div>
 
             <motion.h2 variants={fadeUp} className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-white mb-6 leading-tight tracking-tight">

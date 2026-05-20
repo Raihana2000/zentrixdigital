@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Website laten maken voor bedrijven",
-  intro: "Een professionele website voor bedrijven is meer dan een visitekaartje — het is uw beste verkoper. ZentrixDigital bouwt bedrijfswebsites die vertrouwen opwekken, leads genereren en meegroeien met uw organisatie.",
+  intro: "Een professionele website voor bedrijven is meer dan een visitekaartje — het is uw beste verkoper. reldio bouwt bedrijfswebsites die vertrouwen opwekken, leads genereren en meegroeien met uw organisatie.",
   benefitsTitle: "Voordelen van een professionele bedrijfswebsite",
   benefits: [
     "Betere vindbaarheid in Google — meer bezoekers, meer klanten",
@@ -43,9 +43,9 @@ const data = {
 const SeoBedrijven = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Website laten maken voor bedrijven | ZentrixDigital"
-    metaDesc="Laat een professionele website maken voor je bedrijf. ZentrixDigital bouwt moderne websites die vertrouwen, leads en groei ondersteunen. Gratis analyse."
-    canonical="https://www.zentrixdigital.eu/website-laten-maken-bedrijven"
+    pageTitle="Website laten maken voor bedrijven | reldio"
+    metaDesc="Laat een professionele website maken voor je bedrijf. reldio bouwt moderne websites die vertrouwen, leads en groei ondersteunen. Gratis analyse."
+    canonical="https://www.reldio.eu/website-laten-maken-bedrijven"
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"
     contactLabel="Gratis analyse aanvragen"

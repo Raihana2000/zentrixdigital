@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Website voor MKB laten maken",
-  intro: "Als MKB-bedrijf heeft u meer nodig dan alleen een mooie website. Uw website moet vertrouwen opbouwen, duidelijk maken wat u aanbiedt en bezoekers snel naar contact, offerte of aanvraag begeleiden. ZentrixDigital bouwt professionele websites voor MKB-bedrijven die online serieuzer willen overkomen en makkelijker aanvragen willen ontvangen.",
+  intro: "Als MKB-bedrijf heeft u meer nodig dan alleen een mooie website. Uw website moet vertrouwen opbouwen, duidelijk maken wat u aanbiedt en bezoekers snel naar contact, offerte of aanvraag begeleiden. reldio bouwt professionele websites voor MKB-bedrijven die online serieuzer willen overkomen en makkelijker aanvragen willen ontvangen.",
   benefitsTitle: "Waarom een sterke website belangrijk is voor MKB-bedrijven",
   benefits: [
     "Betere vindbaarheid in Google — meer relevante bezoekers, meer aanvragen",
@@ -52,9 +52,9 @@ const data = {
 const SeoMKB = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Website voor MKB laten maken | ZentrixDigital Amsterdam"
-    metaDesc="Laat een professionele website voor uw MKB-bedrijf maken door ZentrixDigital. Moderne websites met SEO-basis, WhatsApp, formulieren en uitbreidbare systemen."
-    canonical="https://www.zentrixdigital.eu/website-voor-mkb"
+    pageTitle="Website voor MKB laten maken | reldio Amsterdam"
+    metaDesc="Laat een professionele website voor uw MKB-bedrijf maken door reldio. Moderne websites met SEO-basis, WhatsApp, formulieren en uitbreidbare systemen."
+    canonical="https://www.reldio.eu/website-voor-mkb"
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"
     contactLabel="Gratis analyse aanvragen"

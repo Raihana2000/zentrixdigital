@@ -1,6 +1,6 @@
-# ZentrixDigital — Website
+# reldio — Website
 
-Premium, meertalige website voor **ZentrixDigital**, een digitaal bureau uit Amsterdam dat websites, webapplicaties en maatwerk digitale oplossingen bouwt voor bedrijven in Nederland en Europa.
+Premium, meertalige website voor **reldio**, een digitaal bureau uit Amsterdam dat websites, webapplicaties en maatwerk digitale oplossingen bouwt voor bedrijven in Nederland en Europa.
 
 ---
 
@@ -78,6 +78,6 @@ Bewerk uitsluitend `artifacts/zentrix-solutions/src/data/cases.ts`:
 
 ## Contact
 
-- **E-mail:** info@zentrixdigital.eu
+- **E-mail:** info@reldio.eu
 - **Telefoon:** 06-83284995
 - **Locatie:** Amsterdam, Nederland

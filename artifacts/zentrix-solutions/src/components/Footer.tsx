@@ -54,7 +54,7 @@ const Footer = () => {
           {/* Brand column */}
           <div className="col-span-2 sm:col-span-2 md:col-span-3 flex flex-col gap-6">
             <Link href="/" className="flex items-center w-fit" data-testid="footer-logo">
-              <img src={logoPath} alt="ZentrixDigital" className="h-9 w-auto object-contain opacity-90" />
+              <img src={logoPath} alt="reldio" className="h-9 w-auto object-contain opacity-90" />
             </Link>
             <p className="text-white text-sm leading-relaxed max-w-xs">
               {t.footer.tagline}
@@ -82,10 +82,10 @@ const Footer = () => {
               </a>
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/zentrixdigital01/"
+                href="https://www.instagram.com/reldio01/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Volg ZentrixDigital op Instagram"
+                aria-label="Volg reldio op Instagram"
                 className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/[0.05] border border-white/[0.08] hover:bg-pink-600/15 hover:border-pink-500/30 transition-all duration-200"
               >
                 <svg viewBox="0 0 24 24" className="w-5 h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -155,7 +155,7 @@ const Footer = () => {
                 <Phone className="w-3.5 h-3.5 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
                 {t.contact.phone}
               </a>
-              <a href="mailto:info@zentrixdigital.eu" className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-sm transition-colors duration-200 min-w-0 max-w-full">
+              <a href="mailto:info@reldio.eu" className="group inline-flex items-center gap-2 text-white hover:text-blue-300 text-sm transition-colors duration-200 min-w-0 max-w-full">
                 <Mail className="w-3.5 h-3.5 text-blue-400 group-hover:text-blue-300 shrink-0 transition-colors duration-200" />
                 {t.contact.email}
               </a>
@@ -208,7 +208,7 @@ const Footer = () => {
         {/* ── Bottom bar ── */}
         <div className="pt-8 border-t border-blue-500/[0.12] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/50">
-            &copy; {currentYear} ZentrixDigital. {t.footer.rights}
+            &copy; {currentYear} reldio. {t.footer.rights}
           </p>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2 justify-center sm:justify-end">
             <button
@@ -219,7 +219,7 @@ const Footer = () => {
               {isNL ? 'Cookie-instellingen' : 'Cookie settings'}
             </button>
             <span className="text-white/15 text-xs">·</span>
-            <span className="text-xs text-white/30">www.zentrixdigital.eu</span>
+            <span className="text-xs text-white/30">www.reldio.eu</span>
           </div>
         </div>
 

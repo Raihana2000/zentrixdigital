@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Website development for small businesses and SMEs",
-  intro: "As a small business or SME, you need more than just an attractive website. Your site needs to build trust, clearly communicate what you offer, and guide visitors smoothly towards contact, quotes, or enquiries. ZentrixDigital builds professional websites for small businesses and SMEs that want to come across more credibly online and receive more inbound enquiries.",
+  intro: "As a small business or SME, you need more than just an attractive website. Your site needs to build trust, clearly communicate what you offer, and guide visitors smoothly towards contact, quotes, or enquiries. reldio builds professional websites for small businesses and SMEs that want to come across more credibly online and receive more inbound enquiries.",
   benefitsTitle: "Why a strong website matters for SMEs",
   benefits: [
     "Better visibility on Google — more relevant visitors, more enquiries",
@@ -52,9 +52,9 @@ const data = {
 const SeoSMBEN = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Website development for small businesses and SMEs | ZentrixDigital Amsterdam"
-    metaDesc="Professional website development for small businesses and SMEs by ZentrixDigital. Modern websites with SEO foundation, WhatsApp, forms and scalable business systems."
-    canonical="https://www.zentrixdigital.eu/en/website-for-smes"
+    pageTitle="Website development for small businesses and SMEs | reldio Amsterdam"
+    metaDesc="Professional website development for small businesses and SMEs by reldio. Modern websites with SEO foundation, WhatsApp, forms and scalable business systems."
+    canonical="https://www.reldio.eu/en/website-for-smes"
     backLabel="Back to services"
     servicesLabel="View all services"
     contactLabel="Request free analysis"

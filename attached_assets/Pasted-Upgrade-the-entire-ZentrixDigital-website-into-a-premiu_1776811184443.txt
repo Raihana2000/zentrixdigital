@@ -1,10 +1,10 @@
-Upgrade the entire ZentrixDigital website into a premium, high-converting digital agency website with a luxurious modern feel.
+Upgrade the entire reldio website into a premium, high-converting digital agency website with a luxurious modern feel.
 
 GOAL
 The website must feel like a serious premium digital agency, not a basic template. It should look more exclusive, more polished, more expensive, and more trustworthy. Keep the current dark/blue identity, but improve the design, spacing, visual hierarchy, interactions, and premium feel across all pages.
 
 BRAND STYLE
-- Brand: ZentrixDigital
+- Brand: reldio
 - Tone: premium, modern, sharp, confident, trustworthy
 - Look: black / deep navy / electric blue
 - Feel inspired by premium SaaS and agency websites, but unique
@@ -129,7 +129,7 @@ Make sure the design supports:
 IMPORTANT
 - Do not break routing or current content structure
 - Improve existing components rather than creating a messy new system
-- Keep branding recognizable as ZentrixDigital
+- Keep branding recognizable as reldio
 - Make the entire site feel like a premium agency someone would trust with serious money
 - Remove anything that feels cheap, generic, repetitive, flat, or outdated
 

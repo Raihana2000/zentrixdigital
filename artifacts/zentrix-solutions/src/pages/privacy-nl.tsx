@@ -7,15 +7,15 @@ const PrivacyNL: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-[#0B0B0B] page-top-pad">
       <SEOHead
-        title="Privacybeleid — ZentrixDigital"
-        description="Lees het privacybeleid van ZentrixDigital. Wij leggen uit welke gegevens wij verzamelen en hoe wij daarmee omgaan."
-        canonical="https://www.zentrixdigital.eu/privacybeleid"
+        title="Privacybeleid — reldio"
+        description="Lees het privacybeleid van reldio. Wij leggen uit welke gegevens wij verzamelen en hoe wij daarmee omgaan."
+        canonical="https://www.reldio.eu/privacybeleid"
       />
       <section className="py-24 px-5">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl font-black text-white mb-8 tracking-tight">Privacybeleid</h1>
           <div className="prose-zentrix">
-            <p>Dit privacybeleid is van toepassing op de diensten van ZentrixDigital, opgericht door K. Hizi.</p>
+            <p>Dit privacybeleid is van toepassing op de diensten van reldio, opgericht door K. Hizi.</p>
 
             <h2>1. Welke gegevens verzamelen wij?</h2>
             <p>Wij kunnen de volgende gegevens verzamelen wanneer je contact met ons opneemt:</p>
@@ -49,7 +49,7 @@ const PrivacyNL: React.FC = () => {
             </ul>
 
             <h2>6. Contact</h2>
-            <p>Voor vragen kun je contact opnemen via: <a href="mailto:info@zentrixdigital.eu">info@zentrixdigital.eu</a></p>
+            <p>Voor vragen kun je contact opnemen via: <a href="mailto:info@reldio.eu">info@reldio.eu</a></p>
           </div>
         </div>
       </section>

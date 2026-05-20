@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Professional web design company for businesses that want to grow",
-  intro: "ZentrixDigital is the web design company that thinks beyond just an attractive website. We combine strategic design, technical quality and conversion optimisation — so your website not only makes an impression, but actually brings in customers and revenue.",
+  intro: "reldio is the web design company that thinks beyond just an attractive website. We combine strategic design, technical quality and conversion optimisation — so your website not only makes an impression, but actually brings in customers and revenue.",
   benefitsTitle: "Why businesses choose our web design",
   benefits: [
     "Design focused on conversion — not just aesthetics",
@@ -52,9 +52,9 @@ const data = {
 const SeoWebdesignEN = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Web design company Netherlands | ZentrixDigital"
+    pageTitle="Web design company Netherlands | reldio"
     metaDesc="Professional web design company for businesses that want to grow. Modern websites that bring in customers. Conversion-focused and SEO-optimised. Based in Amsterdam."
-    canonical="https://www.zentrixdigital.eu/en/web-design-company"
+    canonical="https://www.reldio.eu/en/web-design-company"
     backLabel="Back to services"
     servicesLabel="View all services"
     contactLabel="Request free strategy call"

@@ -146,7 +146,7 @@ const Navbar = () => {
           <Link href="/" className="site-logo-link group" data-testid="nav-logo" onClick={closeMobile}>
             <img
               src={logoPath}
-              alt="ZentrixDigital"
+              alt="reldio"
               className="site-logo-img transition-all duration-500 group-hover:drop-shadow-[0_0_28px_rgba(59,130,246,0.9)]"
               loading="eager"
               decoding="async"
@@ -286,7 +286,7 @@ const Navbar = () => {
 
             {/* close button */}
             <div className="flex items-center justify-between px-6 pt-6 pb-2">
-              <img src={logoPath} alt="ZentrixDigital" className="h-12 w-auto object-contain opacity-80" />
+              <img src={logoPath} alt="reldio" className="h-12 w-auto object-contain opacity-80" />
               <button
                 onClick={closeMobile}
                 className="w-10 h-10 flex items-center justify-center rounded-xl text-white/50 hover:text-white hover:bg-white/[0.06] transition-all"

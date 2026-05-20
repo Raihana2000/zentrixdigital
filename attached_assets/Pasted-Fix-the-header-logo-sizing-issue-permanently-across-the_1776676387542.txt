@@ -41,8 +41,8 @@ Replace the current header logo markup with this exact structure:
 
 <a href="/" class="site-logo-link">
   <img
-    src="/logo-zentrixdigital.png"
-    alt="ZentrixDigital"
+    src="/logo-reldio.png"
+    alt="reldio"
     class="site-logo-img"
     loading="eager"
     decoding="async"
@@ -195,7 +195,7 @@ Add this as a final safeguard in the global stylesheet:
 
 header img[src*="logo"],
 nav img[src*="logo"],
-img[alt*="ZentrixDigital"],
+img[alt*="reldio"],
 img[alt*="logo"] {
 height: 96px !important;
 width: auto !important;
@@ -209,7 +209,7 @@ flex-shrink: 0 !important;
 @media (max-width: 1024px) {
 header img[src*="logo"],
 nav img[src*="logo"],
-img[alt*="ZentrixDigital"],
+img[alt*="reldio"],
 img[alt*="logo"] {
 height: 78px !important;
 min-height: 78px !important;
@@ -219,7 +219,7 @@ min-height: 78px !important;
 @media (max-width: 768px) {
 header img[src*="logo"],
 nav img[src*="logo"],
-img[alt*="ZentrixDigital"],
+img[alt*="reldio"],
 img[alt*="logo"] {
 height: 68px !important;
 min-height: 68px !important;
@@ -229,7 +229,7 @@ min-height: 68px !important;
 @media (max-width: 480px) {
 header img[src*="logo"],
 nav img[src*="logo"],
-img[alt*="ZentrixDigital"],
+img[alt*="reldio"],
 img[alt*="logo"] {
 height: 60px !important;
 min-height: 60px !important;

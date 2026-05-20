@@ -26,7 +26,7 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
 
-## ZentrixDigital Website (artifacts/zentrix-solutions)
+## reldio Website (artifacts/zentrix-solutions)
 
 React + Vite + Wouter + Tailwind + Framer Motion, bilingual NL/EN.
 

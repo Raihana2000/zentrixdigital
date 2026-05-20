@@ -13,7 +13,7 @@ const ServiceOnderhoud = () => {
       servicesLabel={t.nav.services}
       contactLabel={t.home.ctaSecondary}
       metaDesc={t.meta.onderhoudDesc}
-      canonical="https://www.zentrixdigital.eu/onderhoud-optimalisatie"
+      canonical="https://www.reldio.eu/onderhoud-optimalisatie"
     />
   );
 };

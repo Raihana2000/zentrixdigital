@@ -1,4 +1,4 @@
-Werk mijn volledige ZentrixDigital website professioneel bij en voer de onderstaande UI/UX- en toegankelijkheidsverbeteringen direct in de code door. Niet alleen designvoorstellen geven, maar echt de bestaande componenten, styles en pagina’s aanpassen. Alles moet direct zichtbaar zijn in de app. Behoud de huidige zwart/blauw branding, maar maak het premium, helderder, moderner en beter leesbaar.
+Werk mijn volledige reldio website professioneel bij en voer de onderstaande UI/UX- en toegankelijkheidsverbeteringen direct in de code door. Niet alleen designvoorstellen geven, maar echt de bestaande componenten, styles en pagina’s aanpassen. Alles moet direct zichtbaar zijn in de app. Behoud de huidige zwart/blauw branding, maar maak het premium, helderder, moderner en beter leesbaar.
 
 DOEL
 De website oogt nog te saai en op veel plekken is tekst op tegels/cards te grijs en daardoor minder goed leesbaar. Dat moet volledig opgelost worden. De site moet luxer, duidelijker, scherper en toegankelijker worden, ook voor slechtziende bezoekers.

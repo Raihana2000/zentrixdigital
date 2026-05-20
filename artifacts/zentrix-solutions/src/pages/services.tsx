@@ -302,7 +302,7 @@ const Services = () => {
       <SEOHead
         title={t.meta.servicesTitle}
         description={t.meta.servicesDesc}
-        canonical="https://www.zentrixdigital.eu/services"
+        canonical="https://www.reldio.eu/services"
       />
 
       {/* ─── HERO ──────────────────────────────────────────────── */}

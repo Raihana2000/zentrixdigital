@@ -1,4 +1,4 @@
-Controleer en fix de WhatsApp-knoppen op de ZentrixDigital website.
+Controleer en fix de WhatsApp-knoppen op de reldio website.
 
 Probleem:
 Als de website op Engels staat, opent de WhatsApp-knop nog steeds met een Nederlandse vooraf ingevulde tekst. De WhatsApp-tekst moet meeschakelen met de actieve taal/localization.

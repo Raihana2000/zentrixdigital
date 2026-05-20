@@ -344,7 +344,7 @@
 @media (min-width: 1024px) { .page-top-pad { padding-top: 118px; } }
 
 /* ── Backstop: target the element directly ───────────────────────── */
-img[alt="ZentrixDigital"] {
+img[alt="reldio"] {
   height: 96px !important;
   width: auto !important;
   min-height: 96px !important;
@@ -355,13 +355,13 @@ img[alt="ZentrixDigital"] {
 }
 
 @media (max-width: 1024px) {
-  img[alt="ZentrixDigital"] { height: 78px !important; min-height: 78px !important; }
+  img[alt="reldio"] { height: 78px !important; min-height: 78px !important; }
 }
 @media (max-width: 768px) {
-  img[alt="ZentrixDigital"] { height: 68px !important; min-height: 68px !important; }
+  img[alt="reldio"] { height: 68px !important; min-height: 68px !important; }
 }
 @media (max-width: 480px) {
-  img[alt="ZentrixDigital"] { height: 60px !important; min-height: 60px !important; }
+  img[alt="reldio"] { height: 60px !important; min-height: 60px !important; }
 }
 
 /* ── Prevent horizontal overflow ─────────────────────────────────── */

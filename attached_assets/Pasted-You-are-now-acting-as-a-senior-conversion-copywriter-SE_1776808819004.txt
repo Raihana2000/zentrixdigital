@@ -1,15 +1,15 @@
 You are now acting as a senior conversion copywriter, SEO strategist, UX writer, and Dutch local-business marketer.
 
 Task:
-Rewrite the full website copy of ZentrixDigital so it feels like a strong blue-ocean digital company instead of a generic web agency.
+Rewrite the full website copy of reldio so it feels like a strong blue-ocean digital company instead of a generic web agency.
 
 IMPORTANT GOAL:
 The website must immediately feel clear, valuable, and trustworthy to small business owners, local entrepreneurs, service providers, and non-technical people.
 The language must be simple, sharp, modern, persuasive, and easy to understand — even for entrepreneurs who are not smart with websites, apps, SEO, or technology.
 
 MAIN POSITIONING:
-ZentrixDigital does NOT just make websites or apps.
-ZentrixDigital helps businesses become stronger online through:
+reldio does NOT just make websites or apps.
+reldio helps businesses become stronger online through:
 - websites that build trust and generate contact
 - smart applications that improve work processes
 - maintenance that keeps websites fast, safe, and reliable
@@ -161,7 +161,7 @@ So include persuasion based on:
 - transparency
 
 The visitor must quickly understand:
-- what ZentrixDigital does
+- what reldio does
 - for whom
 - why it matters
 - what results it can bring
@@ -209,4 +209,4 @@ Make the copy polished, realistic, SEO-friendly, conversion-focused, and easy to
 
 FINAL INSTRUCTION:
 Do not just slightly improve the current text.
-Rewrite it properly so ZentrixDigital sounds more unique, clearer, stronger, and more blue-ocean than a normal web agency.
+Rewrite it properly so reldio sounds more unique, clearer, stronger, and more blue-ocean than a normal web agency.

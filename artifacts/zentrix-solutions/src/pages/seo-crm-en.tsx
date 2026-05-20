@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "CRM System Development for Businesses",
-  intro: "Without proper client management, leads and opportunities fall through the cracks. ZentrixDigital builds custom CRM systems that structure your sales process, strengthen client relationships and measurably increase your revenue.",
+  intro: "Without proper client management, leads and opportunities fall through the cracks. reldio builds custom CRM systems that structure your sales process, strengthen client relationships and measurably increase your revenue.",
   benefitsTitle: "Benefits of a custom CRM system",
   benefits: [
     "Complete overview of all your clients, leads and interaction history",
@@ -43,9 +43,9 @@ const data = {
 const SeoCRMEN = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="CRM System Development | ZentrixDigital"
-    metaDesc="Custom CRM system development for businesses. More structure, higher revenue and efficient client management. ZentrixDigital builds CRM software for SMEs."
-    canonical="https://www.zentrixdigital.eu/en/crm-system-development"
+    pageTitle="CRM System Development | reldio"
+    metaDesc="Custom CRM system development for businesses. More structure, higher revenue and efficient client management. reldio builds CRM software for SMEs."
+    canonical="https://www.reldio.eu/en/crm-system-development"
     backLabel="Back to services"
     servicesLabel="View all services"
     contactLabel="Request a consultation"

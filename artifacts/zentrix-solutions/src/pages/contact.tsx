@@ -52,7 +52,7 @@ const Contact = () => {
       <SEOHead
         title={t.meta.contactTitle}
         description={t.meta.contactDesc}
-        canonical="https://www.zentrixdigital.eu/contact"
+        canonical="https://www.reldio.eu/contact"
       />
 
       {/* ─── HERO ──────────────────────────────────────────────── */}
@@ -121,7 +121,7 @@ const Contact = () => {
                     testid: "contact-phone"
                   },
                   {
-                    href: "mailto:info@zentrixdigital.eu",
+                    href: "mailto:info@reldio.eu",
                     external: false,
                     icon: Mail,
                     label: t.contact.labelEmail,
@@ -138,7 +138,7 @@ const Contact = () => {
                     testid: "contact-linkedin"
                   },
                   {
-                    href: "https://www.instagram.com/zentrixdigital01/",
+                    href: "https://www.instagram.com/reldio01/",
                     external: true,
                     icon: null,
                     svgKey: 'instagram' as const,
@@ -152,7 +152,7 @@ const Contact = () => {
                     href={href}
                     target={external ? "_blank" : undefined}
                     rel={external ? "noopener noreferrer" : undefined}
-                    aria-label={testid === 'contact-instagram' ? 'Volg ZentrixDigital op Instagram' : undefined}
+                    aria-label={testid === 'contact-instagram' ? 'Volg reldio op Instagram' : undefined}
                     className="group flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-b from-[#0d1525]/95 to-[#080d18]/80 border border-blue-500/[0.55] shadow-[0_4px_24px_rgba(0,0,0,0.4),0_0_0_1px_rgba(59,130,246,0.10)] hover:border-blue-400/[0.90] transition-all duration-300"
                     data-testid={testid}
                   >

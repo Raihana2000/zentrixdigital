@@ -7,9 +7,9 @@ const CookiesEN: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-[#0B0B0B] page-top-pad">
       <SEOHead
-        title="Cookie Policy — ZentrixDigital"
-        description="Read the cookie policy of ZentrixDigital. We explain which cookies we use and how you can manage your preferences."
-        canonical="https://www.zentrixdigital.eu/en/cookies"
+        title="Cookie Policy — reldio"
+        description="Read the cookie policy of reldio. We explain which cookies we use and how you can manage your preferences."
+        canonical="https://www.reldio.eu/en/cookies"
       />
       <section className="py-24 px-5">
         <div className="max-w-3xl mx-auto">
@@ -33,7 +33,7 @@ const CookiesEN: React.FC = () => {
             <p>You can delete or block cookies through your browser settings. Please note that disabling cookies may affect the functionality of the website.</p>
 
             <h2>5. Contact</h2>
-            <p>For questions about our cookie policy, contact us at: <a href="mailto:info@zentrixdigital.eu">info@zentrixdigital.eu</a></p>
+            <p>For questions about our cookie policy, contact us at: <a href="mailto:info@reldio.eu">info@reldio.eu</a></p>
           </div>
         </div>
       </section>

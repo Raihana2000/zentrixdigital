@@ -13,7 +13,7 @@ const ServiceWebsites = () => {
       servicesLabel={t.nav.services}
       contactLabel={t.home.ctaSecondary}
       metaDesc={t.meta.websitesDesc}
-      canonical="https://www.zentrixdigital.eu/websites"
+      canonical="https://www.reldio.eu/websites"
     />
   );
 };

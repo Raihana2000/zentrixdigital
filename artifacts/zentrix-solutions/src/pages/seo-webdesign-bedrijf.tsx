@@ -3,7 +3,7 @@ import ServiceDetailPage from '@/components/ServiceDetailPage';
 
 const data = {
   h1: "Professioneel webdesign bedrijf voor bedrijven die willen groeien",
-  intro: "ZentrixDigital is het webdesign bedrijf dat verder denkt dan een mooie website. Wij combineren strategisch design, technische kwaliteit en conversie-optimalisatie — zodat uw website niet alleen indruk maakt, maar ook daadwerkelijk klanten en omzet oplevert.",
+  intro: "reldio is het webdesign bedrijf dat verder denkt dan een mooie website. Wij combineren strategisch design, technische kwaliteit en conversie-optimalisatie — zodat uw website niet alleen indruk maakt, maar ook daadwerkelijk klanten en omzet oplevert.",
   benefitsTitle: "Waarom bedrijven kiezen voor ons webdesign",
   benefits: [
     "Design dat is gericht op conversie — niet alleen op esthetiek",
@@ -52,9 +52,9 @@ const data = {
 const SeoWebdesignBedrijf = () => (
   <ServiceDetailPage
     data={data}
-    pageTitle="Webdesign bedrijf Nederland | ZentrixDigital"
+    pageTitle="Webdesign bedrijf Nederland | reldio"
     metaDesc="Professioneel webdesign bedrijf voor bedrijven die willen groeien. Moderne websites die klanten opleveren. Conversiegericht, SEO-geoptimaliseerd. Vanaf €700."
-    canonical="https://www.zentrixdigital.eu/webdesign-bedrijf"
+    canonical="https://www.reldio.eu/webdesign-bedrijf"
     backLabel="Terug naar diensten"
     servicesLabel="Bekijk alle diensten"
     contactLabel="Gratis strategiegesprek aanvragen"
